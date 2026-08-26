@@ -1,7 +1,7 @@
 set top "DigitalTop"
 set part "xc7k160tffg676-2"
 set clk_period 10.0
-set verilog_dir "/home/zx/buckyball/arch/build/sims.p2e.P2EPebbleLinuxConfig"
+set verilog_dir "../../thirdparty/buckyball/arch/build/sims.p2e.P2EPebbleLinuxConfig"
 set xdc_file "../constraints/pin.xdc"
 set output "buckyball_top"
 
