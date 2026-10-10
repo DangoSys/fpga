@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-10",
+  "part": "xc7a100tcsg324-1",
+  "physical_board_revision": "unknown",
+  "baseline": "1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097",
+  "tools": {
+    "scala": "2.13.16",
+    "chisel": "6.7.0",
+    "sbt": "1.12.11",
+    "vivado": "2024.1",
+    "firtool": "1.62.1"
+  },
+  "source_audit": {
+    "result": "PASS",
+    "files": 306
+  },
+  "configuration_tests": {
+    "result": "PASS",
+    "count": 4
+  },
+  "elaboration": {
+    "result": "PASS",
+    "operation": "separate trailing ancillary .f list; no RTL edits",
+    "emitted_sha256": "1d9ebad6f57f7f7624aedf7b6c8057c658d851d2063e8a402e0def39dd028166",
+    "rtl_sha256": "c194d98c459242259a4d4921c0679eaaa824bee13caa29b6f98078f13d1c2201"
+  },
+  "elaboration_features": {
+    "result": "PASS_STATIC_ELABORATION_AUDIT",
+    "functional_boot_test": false,
+    "isa": "rv64imafdcbzicsr_zifencei_zihpm_zfh_zba_zbb_zbs_xrocket",
+    "l2_bytes": 524288,
+    "required_modules": [
+      "FPU",
+      "Im2colBall",
+      "InclusiveCache",
+      "Int2FpBall",
+      "Int8AddBall",
+      "Int8MulBall",
+      "LutBall",
+      "MatAddBall",
+      "MaxPoolBall",
+      "PTW",
+      "SMatMulBall",
+      "ToInt8Ball",
+      "TransposeBall"
+    ],
+    "memory_regions": {
+      "0x3000": 4096,
+      "0x10000": 65536,
+      "0x2000000": 65536,
+      "0x2010000": 4096,
+      "0x8000000": 65536,
+      "0xc000000": 67108864,
+      "0x60000000": 268435456,
+      "0x80000000": 268435456
+    }
+  },
+  "mig": {
+    "generation": "PASS",
+    "synthesis": "PASS",
+    "lut": 5052,
+    "ff": 4193,
+    "bram_tiles": 0,
+    "dsp": 0,
+    "vendor_revision": "E.0"
+  },
+  "core_synthesis": {
+    "result": "SYNTHESIZED_OVER_CAPACITY",
+    "configuration": "original capacities, default behavioral memory lowering; diagnostic baseline only",
+    "lut": 195371,
+    "ff": 113625,
+    "bram_tiles": 144,
+    "dsp": 38,
+    "drc_overutilization_errors": 8,
+    "routed": false,
+    "lut6_primitives": 84607
+  },
+  "physical_linux_boot": "NOT_RUN",
+  "board_release_ready": false,
+  "software_platform": {
+    "sources_prepared": true,
+    "original_files": 19,
+    "adapted_files": [
+      "config/linux-config",
+      "opensbi-platform/buckyball/platform.c"
+    ],
+    "kernel_image_built": true,
+    "payload_sha256": "762d608b5e23a0a438c0139bc7487143fd97e30de110d44fb7e2ba27ac07477f",
+    "build_exit_code": 0,
+    "payload_bytes": 17409032
+  },
+  "fpga_memory_binding": {
+    "regression": "PASS against original generated memory RTL and independent scoreboard",
+    "memory_types": 10,
+    "instances": 45,
+    "dcache_array_ooc": {
+      "depth": 128,
+      "width": 256,
+      "LUT": 2,
+      "FF": 0,
+      "BRAM_tiles": 4,
+      "exit_code": 0
+    },
+    "complete_chip_synthesis": "NOT_RUN"
+  },
+  "evidence": "evidence/2026-10-10"
+}
