@@ -1,0 +1,10 @@
+/upstream/
+/thirdparty/
+/generated/
+/build/
+/target/
+/project/target/
+__pycache__/
+.Xil/
+*.log
+*.jou

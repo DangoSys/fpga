@@ -1,0 +1,192 @@
+{
+  "emitted_sha256": "9ef002f5d124fe7eac5ab7d047b1e145aa06b0c5c066924a37415d9755953546",
+  "core_rtl_sha256": "fcf8fc05c5725dc151e58b3f5fabb1fdf8429391ec72ae7e8b2cefe03def2b41",
+  "memory_rtl_sha256": "00fdf8c2a522a6202e71383a3d43614477d2f2410fb573dfa9399b0256bf4764",
+  "read_latency": 1,
+  "write_latency": 1,
+  "undefined_output_policy": "hold on disabled/write cycle",
+  "memories": [
+    {
+      "module_name": "mem_ext",
+      "depth": 4096,
+      "width": 128,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 8,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.mbus.scratchpad.mem.mem_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "cc_dir_ext",
+      "depth": 1024,
+      "width": 136,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 17,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory.cc_dir.cc_dir_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "cc_banks_0_ext",
+      "depth": 8192,
+      "width": 64,
+      "masked": false,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_7.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_6.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_5.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_4.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_3.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_2.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_1.cc_banks_0_ext",
+        "PebbleLinuxChip.system.coh_wrapper.l2.inclusive_cache_bank_sched.bankedStore.cc_banks_0.cc_banks_0_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "bbtile_dcache_data_arrays_0_ext",
+      "depth": 128,
+      "width": 256,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 8,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.bbtile_dcache_data_arrays_1.bbtile_dcache_data_arrays_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.bbtile_dcache_data_arrays_0.bbtile_dcache_data_arrays_0_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "bbtile_dcache_tag_array_ext",
+      "depth": 32,
+      "width": 92,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 23,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.bbtile_dcache_tag_array.bbtile_dcache_tag_array_ext"
+      ],
+      "ram_style": "distributed"
+    },
+    {
+      "module_name": "bbtile_icache_tag_array_ext",
+      "depth": 64,
+      "width": 168,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 21,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_tag_array.bbtile_icache_tag_array_ext"
+      ],
+      "ram_style": "distributed"
+    },
+    {
+      "module_name": "bbtile_icache_data_arrays_0_ext",
+      "depth": 256,
+      "width": 256,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 32,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_3.bbtile_icache_data_arrays_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_2.bbtile_icache_data_arrays_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_1.bbtile_icache_data_arrays_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_0.bbtile_icache_data_arrays_0_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "accumulator_ext",
+      "depth": 32,
+      "width": 512,
+      "masked": false,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.ballDomain.bbus.balls_1.smatmulArrayUnit.accumulator.accumulator_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "bufLo_ext",
+      "depth": 128,
+      "width": 128,
+      "masked": false,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.ballDomain.bbus.balls_2.im2colUnit.lineBuf.bufHi.bufLo_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.ballDomain.bbus.balls_2.im2colUnit.lineBuf.bufLo.bufLo_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "mem_0_ext",
+      "depth": 64,
+      "width": 128,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 8,
+      "extra_ports": [],
+      "hierarchy": [
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_23.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_22.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_21.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_20.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_19.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_18.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_17.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_16.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_15.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_14.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_13.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_12.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_11.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_10.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_9.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_8.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_7.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_6.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_5.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_4.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_3.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_2.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_1.mem.mem_0_ext",
+        "PebbleLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_0.mem.mem_0_ext"
+      ],
+      "ram_style": "block"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+PASS accumulator_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bbtile_dcache_tag_array_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bbtile_icache_tag_array_ext: original RTL + scoreboard, full depth/mask/enable
+PASS mem_0_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bufLo_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bbtile_dcache_data_arrays_0_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bbtile_icache_data_arrays_0_ext: original RTL + scoreboard, full depth/mask/enable
+PASS cc_dir_ext: original RTL + scoreboard, full depth/mask/enable
+PASS mem_ext: original RTL + scoreboard, full depth/mask/enable
+PASS cc_banks_0_ext: original RTL + scoreboard, full depth/mask/enable
+PASS all memory bindings
+build/fpga-memory/bound/tb_memories.sv:980: $finish called at 337727000 (1ps)
