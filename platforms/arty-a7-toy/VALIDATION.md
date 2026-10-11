@@ -46,7 +46,7 @@ simulation or power measurement is claimed. Gemmini stress coverage is limited
 to M8/N32/K8, shift zero and no loop bias; arbitrary tails, cross-K-tile loop
 accumulation and loop bias are not established by that test.
 
-## Physical acceptance still required
+## Package reproducibility
 
 The staged repository package was separately relocated into a fresh Linux
 directory. Scala/Chisel and OpenSBI were recompiled: generated core/RAM and the
@@ -61,9 +61,27 @@ API-key heuristic. The manifest now labels each digest with a `sha256` field;
 source paths, Git revision and digest values are unchanged. Gitleaks 8.30.1
 reports no leaks in the staged PR; no ignore rule or scanner waiver was added.
 
-Physical board revision is unknown; MIG parameters are official Digilent E.0.
-DDR calibration, physical Linux boot and operator execution on hardware remain
-untested. Treat the image as an engineering target for first bring-up.
+## Physical hardware check: 2026-10-12
+
+[The original hardware record](evidence/2026-10-12/README.md) adds evidence from
+the connected Arty A7-100T; the October 11 records remain unchanged.
+
+- Vivado 2025.1 JTAG programming succeeds on XC7A100T, startup status HIGH.
+- All 17,409,032 payload bytes are written to DDR and individually read back
+  before RUN; transfer/readback takes 544.1 seconds. Bitstream and payload hashes
+  match the original implementation and RTL-validated software.
+- Physical OpenSBI v1.9, Linux 6.6.0 and BusyBox shell boot. COW, page protection,
+  FP64 process context, timer and total system-check PASS; process exit status 0.
+  The intentional child SIGSEGV belongs to the passing page-protection oracle.
+- Subsequent shell reads of `/proc/version` and `/proc/meminfo` succeed;
+  MemTotal is 245,784 KiB. Transport restores the original 16 ms FTDI latency.
+
+PCB revision remains unknown; this exact official E.0 MIG image works on the
+connected board. Physical Gemmini operator regression, FP16/FP32 exhaustive
+checks, full 256 MiB DDR sweep, long-duration stability and power measurements
+are still pending. Programming uses volatile SRAM; no configuration flash was
+written. Treat the result as successful first bring-up, not full hardware release.
+
 DRC retains 360 warnings; methodology retains 49 warnings and 16 advisories,
 including DSP pipeline recommendations, MIG clock/reset structure, control-set
 packing and a potential D-cache SDQ address collision. Reports are preserved;

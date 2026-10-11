@@ -1,0 +1,72 @@
+{
+  "run_date": "2026-10-12",
+  "time_zone": "Asia/Shanghai",
+  "source_commit": "257b632a533dd98a7c526870edbd21c5a6976d09",
+  "source_pr": "https://github.com/DangoSys/fpga/pull/5",
+  "host_loader_sha256": "a62e48b779c9ce1d6f8f6669523e427cf48bd19be3bf50a554dc391b09b3e3b2",
+  "physical_board_revision": "unknown",
+  "files": {
+    "HARDWARE_RESULT.json": {
+      "sha256": "514fe87e3fb0753d416f670b2b8906e98ae6b6ec49b56154e0833e5863f085e7",
+      "kind": "original-run-artifact"
+    },
+    "PROGRAM_RESULT.json": {
+      "sha256": "f45536ce8d86fa2a735ab85a9008d662c793f31d3eadc430f426abd09b95c612",
+      "kind": "original-run-artifact"
+    },
+    "d2xx_load.py": {
+      "sha256": "bf9a8f8c931b71672932f72992cd03d15977d753eebc891800e6aaefa287218f",
+      "kind": "original-run-artifact"
+    },
+    "dfx_runtime.txt": {
+      "sha256": "b70e818734e3af5f8b01153d47a37c50449a5f53b008fb4f23849ec0f957b0b9",
+      "kind": "original-run-artifact"
+    },
+    "linux-console.log": {
+      "sha256": "aceb1739620d1b1554b809c849320ed0a5f20f9a6822d1a6c3dd33fca1d6a2d3",
+      "kind": "original-run-artifact"
+    },
+    "live-console-first.log": {
+      "sha256": "ac97f527e1ec985ba08ae2b1002a2c14ff0a54fbf8078b94ba4dbe421e3ad005",
+      "kind": "original-run-artifact"
+    },
+    "live-console.log": {
+      "sha256": "fb2b77f67b02c6e73e0b7bf1e2dbf3557c1d0b98ef0d69ac4c42191107e99bd6",
+      "kind": "original-run-artifact"
+    },
+    "live_check-first.py": {
+      "sha256": "a3e37a9671d8f526d706922cec581727dfa7bb80510789b08b785caa0443583e",
+      "kind": "original-run-artifact"
+    },
+    "live_check.py": {
+      "sha256": "822eb8fbb846eb0a41a30eadc163a735dc1932dffdded54dd2117f7aaf0c60e8",
+      "kind": "original-run-artifact"
+    },
+    "load-and-linux.log": {
+      "sha256": "9633ad82626f7e59ed0b503f0263c5d620c6b6276a262e385ae8785649c1bd8e",
+      "kind": "original-run-artifact"
+    },
+    "program.jou": {
+      "sha256": "9796d9c11dd2f362818c6833a96a9801f14fe25c357fb798db61f00df210d99d",
+      "kind": "original-run-artifact"
+    },
+    "program.log": {
+      "sha256": "c754d0f5066dbd34b9035fb77ee6e8ef3fe403b03b56b97f5cdd523aba313511",
+      "kind": "original-run-artifact"
+    },
+    "program_arty.tcl": {
+      "sha256": "fbb62bafb6df602b0f5f638fb05ae4ecc90494ac162b9a5f5ac314200f7a241c",
+      "kind": "programming-script-used-by-the-run",
+      "repository_path": "board/program_arty.tcl"
+    },
+    "summarize_hardware.py": {
+      "sha256": "a0f681a64ca0c441fc614bf8c2ccf664e2de86d02d3d2cfe2eb0b99e7f8edefd",
+      "kind": "original-run-artifact"
+    }
+  },
+  "notes": [
+    "Original bytes and original local paths retained for provenance.",
+    "Archived Python scripts are experiment records, not portable launchers.",
+    "The failed first shell probe is preserved; its missing uname/grep command links are not a failed Linux system check."
+  ]
+}

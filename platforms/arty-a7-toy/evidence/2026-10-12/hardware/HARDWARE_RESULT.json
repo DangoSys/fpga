@@ -1,0 +1,51 @@
+{
+  "bitstream_sha256": "ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1",
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "payload_bytes": 17409032,
+  "port": "COM5",
+  "uart_serial": "210319BCC5FCB",
+  "physical_board_revision": "unknown",
+  "transport": "installed FTDI D2XX, temporary 2ms latency; original host loader",
+  "result": "PASS_HARDWARE_LOAD_AND_LINUX_CHECK",
+  "physical_linux_boot_tested": true,
+  "elapsed_seconds": 577.9219999999996,
+  "jtag_programming": "PASS",
+  "startup_status": "HIGH",
+  "configuration": "volatile FPGA SRAM",
+  "complete_payload_ddr_readback": "PASS",
+  "verified_ddr_bytes": 17409032,
+  "load_readback_seconds": 544.1,
+  "linux_checks": {
+    "VM_COPY_ON_WRITE": "PASS",
+    "VM_PAGE_PROTECTION": "PASS",
+    "FP64_PROCESS_CONTEXT": "PASS",
+    "LINUX_TIMER": "PASS",
+    "LINUX_SYSTEM_CHECK": "PASS"
+  },
+  "system_check_process_exit_status": 0,
+  "live_shell": "PASS",
+  "linux_memtotal_kib": 245784,
+  "uart_latency_restored_ms": 16,
+  "hardware_gemmini_operator_tests_run": false,
+  "hardware_fp16_fp32_exhaustive_tests_run": false,
+  "coverage_notes": [
+    "Physical PCB revision remains unknown; this exact Rev E engineering image boots on the connected board.",
+    "SIGSEGV is intentional in the page-protection test; parent oracle passed.",
+    "First live probe used absent uname/grep symlinks; preserved. Shell builtins then read /proc successfully.",
+    "No flash programming, power measurements, long-duration stability or full 256MiB DDR sweep."
+  ],
+  "evidence_sha256": {
+    "d2xx_load.py": "bf9a8f8c931b71672932f72992cd03d15977d753eebc891800e6aaefa287218f",
+    "dfx_runtime.txt": "b70e818734e3af5f8b01153d47a37c50449a5f53b008fb4f23849ec0f957b0b9",
+    "linux-console.log": "aceb1739620d1b1554b809c849320ed0a5f20f9a6822d1a6c3dd33fca1d6a2d3",
+    "live-console-first.log": "ac97f527e1ec985ba08ae2b1002a2c14ff0a54fbf8078b94ba4dbe421e3ad005",
+    "live-console.log": "fb2b77f67b02c6e73e0b7bf1e2dbf3557c1d0b98ef0d69ac4c42191107e99bd6",
+    "live_check-first.py": "a3e37a9671d8f526d706922cec581727dfa7bb80510789b08b785caa0443583e",
+    "live_check.py": "822eb8fbb846eb0a41a30eadc163a735dc1932dffdded54dd2117f7aaf0c60e8",
+    "load-and-linux.log": "9633ad82626f7e59ed0b503f0263c5d620c6b6276a262e385ae8785649c1bd8e",
+    "program.jou": "9796d9c11dd2f362818c6833a96a9801f14fe25c357fb798db61f00df210d99d",
+    "program.log": "c754d0f5066dbd34b9035fb77ee6e8ef3fe403b03b56b97f5cdd523aba313511",
+    "PROGRAM_RESULT.json": "f45536ce8d86fa2a735ab85a9008d662c793f31d3eadc430f426abd09b95c612",
+    "summarize_hardware.py": "a0f681a64ca0c441fc614bf8c2ccf664e2de86d02d3d2cfe2eb0b99e7f8edefd"
+  }
+}

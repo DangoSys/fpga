@@ -1,0 +1,6 @@
+read version </proc/version;echo KERNEL:$version;read memory </proc/meminfo;
+echo MEMORY:$memory;echo FPGA_LIVE_DONE
+KERNEL:Linux version 6.6.0 (yys@amax) (riscv64-unknown-linux-gnu-gcc (GCC) 15.3.0, GNU ld (GNU Binutils) 2.46) #1 Sat Oct 10 16:24:07 CST 2026
+MEMORY:MemTotal: 245784 kB
+FPGA_LIVE_DONE
+~ # 

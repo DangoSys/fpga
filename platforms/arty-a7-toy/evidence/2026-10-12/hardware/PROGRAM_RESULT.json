@@ -1,0 +1,18 @@
+{
+  "result": "PASS_JTAG_PROGRAMMING",
+  "time_zone": "Asia/Shanghai",
+  "part": "xc7a100t",
+  "jtag_target": "Digilent/210319BCC5FCA",
+  "serial_port": "COM5",
+  "uart_serial": "210319BCC5FCB",
+  "bitstream": "D:\\Verilog_Dev\\toy-a7-gemmini-correct-20261010\\build\\board-20261011-132657\\toy_a7.bit",
+  "bitstream_sha256": "ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1",
+  "vivado_version": "2025.1",
+  "startup_status": "HIGH",
+  "configuration": "volatile FPGA SRAM",
+  "physical_board_revision": "unknown",
+  "first_256_byte_ddr_readback": "PASS",
+  "d2xx_4096_byte_ddr_readback": "PASS",
+  "loader_core_frequency_hz": 25000000,
+  "loader_ddr_capacity_bytes": 268435456
+}

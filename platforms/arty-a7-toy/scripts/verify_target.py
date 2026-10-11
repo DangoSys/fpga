@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+from verify_hardware_evidence import verify as verify_hardware
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "evidence/2026-10-11"
@@ -35,6 +36,7 @@ def main():
     assert record["part"] == "xc7a100tcsg324-1"
     assert record["core_rtl_sha256"] == lock["core_rtl_sha256"]
     assert record["gemmini_mesh_dsp"] == 64
+    # This immutable October 11 record predates the separate physical archive.
     assert not record["physical_linux_boot_tested"] and not record["board_release_ready"]
     for name, expected in record["board_sources"].items():
         if not name.endswith(".md"):
@@ -58,6 +60,7 @@ def main():
         assert marker in transcript, marker
     assert re.search(r"PASS BOARD_LINUX_USERSPACE cycles=273506752", transcript)
     assert read(EVIDENCE / "tests/uart-boot/RESULT.json")["result"] == "PASS_UART_LOAD_VERIFY_BOOT"
+    verify_hardware()
     if args.core:
         assert sha(ROOT / "build/serial-bound/ToyLinuxChip.sv") == lock["core_rtl_sha256"]
         assert sha(ROOT / "build/serial-bound/FpgaMemories.sv") == lock["memory_rtl_sha256"]

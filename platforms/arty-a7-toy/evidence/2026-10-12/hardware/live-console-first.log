@@ -1,0 +1,6 @@
+echo HARDWARE_RC:$?;uname -a;grep MemTotal /proc/meminfo;echo FPGA_LIVE_DONE
+HARDWARE_RC:0
+/bin/sh: uname: not found
+/bin/sh: grep: not found
+FPGA_LIVE_DONE
+~ # 
