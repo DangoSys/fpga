@@ -1,0 +1,7 @@
+# Preserve original source, vendor and measured-evidence bytes for hash checks.
+* -text
+* whitespace=trailing-space,space-before-tab,cr-at-eol
+# Do not rewrite whitespace in upstream snapshots or raw tool output.
+board/vendor/** -whitespace
+tests/reference/** -whitespace
+evidence/** -whitespace

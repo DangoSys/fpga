@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "test": "loop",
+  "binary_sha256": "bbe9646dc565ac9ac1188c6b3d53d24b1b37985ee158ee2ac918df04c3267ce2",
+  "original_cpu_oracle": true,
+  "ddr_phy_simulated": false,
+  "physical_linux_boot_tested": false,
+  "cycles": 684219
+}

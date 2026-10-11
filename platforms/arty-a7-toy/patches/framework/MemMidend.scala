@@ -1,0 +1,345 @@
+package framework.memdomain.midend
+
+import chisel3._
+import chisel3.util._
+import framework.top.GlobalConfig
+import framework.balldomain.blink.{BankRead, BankWrite}
+import chisel3.experimental.hierarchy.{instantiable, public}
+import framework.memdomain.backend.MemRequestIO
+
+// BankRead/BankWrite with is_shared flag, used for unified midend interface
+class BankReadWithShared(val b: GlobalConfig) extends Bundle {
+  val bankRead  = new BankRead(b)
+  val is_shared = Input(Bool())
+}
+
+class BankWriteWithShared(val b: GlobalConfig) extends Bundle {
+  val bankWrite = new BankWrite(b)
+  val is_shared = Input(Bool())
+}
+
+/**
+ * MemMidend: Midend module for memory scheduling
+ * Connects MemFrontend to MemManager
+ *
+ * Unified interface: bankRead/bankWrite Vecs include both balldomain and frontend requests.
+ * The last entry (index totalBallRead / totalBallWrite) is the frontend (DMA).
+ * All requests go through the same mapping table and channel allocation logic.
+ */
+@instantiable
+class MemMidend(val b: GlobalConfig, fixedRoutes: Boolean = true) extends Module {
+  val totalBallRead  = b.ballDomain.ballIdMappings.map(_.inBW).sum
+  val totalBallWrite = b.ballDomain.ballIdMappings.map(_.outBW).sum
+
+  // Total slots: balldomain entries + 1 frontend entry
+  val totalRead  = totalBallRead + 1
+  val totalWrite = totalBallWrite + 1
+
+  @public
+  val io = IO(new Bundle {
+    // Unified read/write interfaces: indices [0, totalBallRead) are balldomain,
+    // index totalBallRead is frontend (DMA). Same for write.
+    val bankRead          = Vec(totalRead, new BankReadWithShared(b))
+    val bankWrite         = Vec(totalWrite, new BankWriteWithShared(b))
+    val ballChannelActive = Input(Vec(b.ballDomain.ballNum, Bool()))
+    val ballChannelReady  = Output(Vec(b.ballDomain.ballNum, Bool()))
+
+    val hartid   = Input(UInt(b.tile.xLen.W))
+    val inst_ids = Input(Vec(b.frontend.rob_entries, UInt(64.W)))
+
+    // Output to backend (MemManager)
+    val mem_req = Vec(b.memDomain.bankChannel, new MemRequestIO(b))
+  })
+
+  if (fixedRoutes && b.memDomain.bankNum == 8 &&
+      b.ballDomain.ballNum == 1 && !b.memDomain.sharedEnable) {
+    require(totalBallRead == 2 && totalBallWrite == 4 && b.memDomain.bankChannel == 7)
+    require(b.ballDomain.ballIdMappings.head.ballName == "GemminiBall")
+    io.ballChannelReady(0) := io.ballChannelActive(0)
+
+    for (channel <- 0 until 7) {
+      val request = io.mem_req(channel)
+      request.read.req.valid := false.B
+      request.read.req.bits := 0.U.asTypeOf(request.read.req.bits)
+      request.read.resp.ready := false.B
+      request.write.req.valid := false.B
+      request.write.req.bits := 0.U.asTypeOf(request.write.req.bits)
+      request.write.resp.ready := false.B
+      request.bank_id := 0.U
+      request.group_id := 0.U
+      request.is_shared := false.B
+      request.hart_id := io.hartid
+      request.rob_id := 0.U
+      request.inst_id := 0.U
+    }
+    for (port <- 0 until totalBallRead) {
+      val source = io.bankRead(port)
+      val request = io.mem_req(port)
+      request.read <> source.bankRead.io
+      request.read.req.valid := source.bankRead.io.req.valid && io.ballChannelActive(0)
+      source.bankRead.io.req.ready := request.read.req.ready && io.ballChannelActive(0)
+      request.bank_id := source.bankRead.bank_id
+      request.group_id := source.bankRead.group_id
+      request.rob_id := source.bankRead.rob_id
+      request.inst_id := io.inst_ids(source.bankRead.rob_id)
+    }
+    for (port <- 0 until totalBallWrite) {
+      val source = io.bankWrite(port)
+      val request = io.mem_req(totalBallRead + port)
+      request.write <> source.bankWrite.io
+      request.write.req.valid := source.bankWrite.io.req.valid && io.ballChannelActive(0)
+      source.bankWrite.io.req.ready := request.write.req.ready && io.ballChannelActive(0)
+      request.bank_id := source.bankWrite.bank_id
+      request.group_id := source.bankWrite.group_id
+      request.rob_id := source.bankWrite.rob_id
+      request.inst_id := io.inst_ids(source.bankWrite.rob_id)
+    }
+
+    // The private backend captures its bank route BEFORE AccPipe accepts the
+    // SRAM request. Lock both direction and metadata from selection until the
+    // response is consumed; a new opposite-direction request must not replace
+    // the pending route during this one-cycle look-ahead.
+    val read = io.bankRead(totalBallRead).bankRead
+    val write = io.bankWrite(totalBallWrite).bankWrite
+    val dma = io.mem_req(6)
+    dma.read <> read.io
+    dma.write <> write.io
+    val pending = RegInit(false.B)
+    val accepted = RegInit(false.B)
+    val writeSelected = RegInit(false.B)
+    val bank = Reg(UInt(b.memDomain.vbankIdWidth.W))
+    val group = Reg(UInt(b.memDomain.groupIdWidth.W))
+    val rob = Reg(UInt(log2Up(b.frontend.rob_entries).W))
+    when(!pending && (read.io.req.valid || write.io.req.valid)) {
+      pending := true.B
+      accepted := false.B
+      writeSelected := write.io.req.valid
+      bank := Mux(write.io.req.valid, write.bank_id, read.bank_id)
+      group := Mux(write.io.req.valid, write.group_id, read.group_id)
+      rob := Mux(write.io.req.valid, write.rob_id, read.rob_id)
+    }
+    dma.read.req.valid := pending && !accepted && !writeSelected && read.io.req.valid
+    dma.write.req.valid := pending && !accepted && writeSelected && write.io.req.valid
+    read.io.req.ready := pending && !accepted && !writeSelected && dma.read.req.ready
+    write.io.req.ready := pending && !accepted && writeSelected && dma.write.req.ready
+    when(dma.read.req.fire || dma.write.req.fire) { accepted := true.B }
+    when(dma.read.resp.fire || dma.write.resp.fire) { pending := false.B }
+    dma.bank_id := bank
+    dma.group_id := group
+    dma.rob_id := rob
+    dma.inst_id := io.inst_ids(dma.rob_id)
+    assert(!(dma.read.req.fire && dma.write.req.fire))
+  } else {
+  // -----------------------------------------------------------------------------
+  // Mapping table for tracking all requests (balldomain + frontend)
+  // -----------------------------------------------------------------------------
+  class MappingTableEntry extends Bundle {
+    val valid  = Bool()
+    val isRead = Bool()
+    val id     = UInt(log2Ceil(math.max(totalRead, totalWrite)).W)
+    val isBall = Bool()
+    val ballId = UInt(log2Up(b.ballDomain.ballNum).W)
+  }
+
+  val mappingTable = RegInit(VecInit(Seq.fill(b.memDomain.bankChannel)(0.U.asTypeOf(new MappingTableEntry))))
+
+  // A route stays assigned until its Ball releases it (or a frontend channel
+  // drains), so maintain the reverse ownership at allocation time.  This keeps
+  // readiness and pending detection from repeatedly scanning every backend
+  // channel for the same port.
+  val portSlots  = math.max(totalRead, totalWrite)
+  val readPortAllocated  = RegInit(VecInit(Seq.fill(portSlots)(false.B)))
+  val writePortAllocated = RegInit(VecInit(Seq.fill(portSlots)(false.B)))
+
+  def isAllocated(isRead: Bool, id: UInt): Bool =
+    Mux(isRead, readPortAllocated(id), writePortAllocated(id))
+
+  val readPortBall = b.ballDomain.ballIdMappings.zipWithIndex.flatMap { case (mapping, ball) =>
+    Seq.fill(mapping.inBW)(ball)
+  }
+
+  val writePortBall = b.ballDomain.ballIdMappings.zipWithIndex.flatMap { case (mapping, ball) =>
+    Seq.fill(mapping.outBW)(ball)
+  }
+
+  for (ball <- 0 until b.ballDomain.ballNum) {
+    val readReady  = readPortBall.zipWithIndex
+      .filter(_._1 == ball)
+      .map { case (_, port) => isAllocated(true.B, port.U) }
+      .foldLeft(true.B)(_ && _)
+    val writeReady = writePortBall.zipWithIndex
+      .filter(_._1 == ball)
+      .map { case (_, port) => isAllocated(false.B, port.U) }
+      .foldLeft(true.B)(_ && _)
+    io.ballChannelReady(ball) := io.ballChannelActive(ball) && readReady && writeReady
+  }
+
+  // Allocate exactly one channel per cycle. Ball channels are allocated before
+  // their data traffic can start; frontend DMA channels are demand-allocated.
+  for (i <- 0 until totalRead) {
+    io.bankRead(i).bankRead.io.req.ready  := false.B
+    io.bankRead(i).bankRead.io.resp.valid := false.B
+    io.bankRead(i).bankRead.io.resp.bits  := DontCare
+
+  }
+
+  for (i <- 0 until totalWrite) {
+    io.bankWrite(i).bankWrite.io.req.ready  := false.B
+    io.bankWrite(i).bankWrite.io.resp.valid := false.B
+    io.bankWrite(i).bankWrite.io.resp.bits  := DontCare
+  }
+
+  val pendingReads = VecInit((0 until totalRead).map { i =>
+    val active =
+      if (i < totalBallRead) {
+        io.ballChannelActive(readPortBall(i))
+      } else {
+        io.bankRead(i).bankRead.io.req.valid
+      }
+    active && !isAllocated(true.B, i.U)
+  })
+
+  val pendingWrites = VecInit((0 until totalWrite).map { i =>
+    val active =
+      if (i < totalBallWrite) {
+        io.ballChannelActive(writePortBall(i))
+      } else {
+        io.bankWrite(i).bankWrite.io.req.valid
+      }
+    active && !isAllocated(false.B, i.U)
+  })
+
+  val pending      = VecInit(pendingReads ++ pendingWrites)
+  val freeChannels = mappingTable.map(entry => !entry.valid)
+
+  when(pending.asUInt.orR && freeChannels.reduce(_ || _)) {
+    val channel = PriorityEncoder(freeChannels)
+    val port    = PriorityEncoder(pending)
+    mappingTable(channel).valid  := true.B
+    mappingTable(channel).isRead := port < totalRead.U
+    mappingTable(channel).id     := Mux(port < totalRead.U, port, port - totalRead.U)
+    mappingTable(channel).isBall := Mux(
+      port < totalRead.U,
+      MuxLookup(port, false.B)((0 until totalBallRead).map(i => i.U -> true.B).toSeq),
+      MuxLookup(port - totalRead.U, false.B)((0 until totalBallWrite).map(i => i.U -> true.B).toSeq)
+    )
+    mappingTable(channel).ballId := Mux(
+      port < totalRead.U,
+      MuxLookup(port, 0.U)(readPortBall.zipWithIndex.map { case (ball, i) => i.U -> ball.U }.toSeq),
+      MuxLookup(port - totalRead.U, 0.U)(writePortBall.zipWithIndex.map { case (ball, i) => i.U -> ball.U }.toSeq)
+    )
+
+    when(port < totalRead.U) {
+      readPortAllocated(port) := true.B
+    }.otherwise {
+      writePortAllocated(port - totalRead.U) := true.B
+    }
+  }
+
+  // Connect mapped entries to backend channels
+  for (i <- 0 until b.memDomain.bankChannel) {
+    io.mem_req(i).read.req.valid   := false.B
+    io.mem_req(i).read.req.bits    := DontCare
+    io.mem_req(i).read.resp.ready  := false.B
+    io.mem_req(i).write.req.valid  := false.B
+    io.mem_req(i).write.req.bits   := DontCare
+    io.mem_req(i).write.resp.ready := false.B
+    io.mem_req(i).bank_id          := 0.U
+    io.mem_req(i).group_id         := 0.U
+    io.mem_req(i).is_shared        := false.B
+    io.mem_req(i).hart_id          := io.hartid
+    io.mem_req(i).rob_id           := 0.U
+    io.mem_req(i).inst_id          := 0.U
+
+    val isRead        = mappingTable(i).isRead
+    val rid           = mappingTable(i).id
+    val wid           = mappingTable(i).id
+    val ballRead      = io.bankRead(rid).bankRead.io
+    val ballWrite     = io.bankWrite(wid).bankWrite.io
+    val rbank_id      = io.bankRead(rid).bankRead.bank_id
+    val wbank_id      = io.bankWrite(wid).bankWrite.bank_id
+    val rgroup_id     = io.bankRead(rid).bankRead.group_id
+    val wgroup_id     = io.bankWrite(wid).bankWrite.group_id
+    val r_shared      = io.bankRead(rid).is_shared
+    val w_shared      = io.bankWrite(wid).is_shared
+    val rrob_id       = io.bankRead(rid).bankRead.rob_id
+    val wrob_id       = io.bankWrite(wid).bankWrite.rob_id
+    // A released Ball cannot issue new traffic, but its final bank response
+    // still needs the existing route until the physical channel drains.
+    val ballRouteOpen = !mappingTable(i).isBall ||
+      io.ballChannelReady(mappingTable(i).ballId) ||
+      !io.ballChannelActive(mappingTable(i).ballId)
+
+    when(mappingTable(i).valid) {
+      when(isRead) {
+        when(ballRouteOpen) {
+          io.mem_req(i).read <> ballRead
+          io.mem_req(i).bank_id   := rbank_id
+          io.mem_req(i).group_id  := rgroup_id
+          io.mem_req(i).is_shared := r_shared
+          io.mem_req(i).rob_id    := rrob_id
+          io.mem_req(i).inst_id   := io.inst_ids(rrob_id)
+        }
+      }.otherwise {
+        when(ballRouteOpen) {
+          io.mem_req(i).write <> ballWrite
+          io.mem_req(i).bank_id   := wbank_id
+          io.mem_req(i).group_id  := wgroup_id
+          io.mem_req(i).is_shared := w_shared
+          io.mem_req(i).rob_id    := wrob_id
+          io.mem_req(i).inst_id   := io.inst_ids(wrob_id)
+        }
+      }
+    }
+  }
+
+  // Mapping table release
+  for (i <- 0 until b.memDomain.bankChannel) {
+    val releaseCounter = RegInit(0.U(5.W))
+
+    // Releasing a Ball's logical channel can precede the final bank response.
+    // Keep its physical route until that response has been consumed; otherwise
+    // the response loses its consumer and leaves the AccPipe busy.
+    val ballReleased   = mappingTable(i).isBall &&
+      !io.ballChannelActive(mappingTable(i).ballId)
+    val channelDrained = !(io.mem_req(i).read.resp.valid ||
+      io.mem_req(i).write.resp.valid || io.mem_req(i).read.req.valid ||
+      io.mem_req(i).write.req.valid)
+
+    when(mappingTable(i).valid && ballReleased && channelDrained) {
+      mappingTable(i).valid  := false.B
+      mappingTable(i).isRead := false.B
+      mappingTable(i).id     := 0.U
+      mappingTable(i).isBall := false.B
+      mappingTable(i).ballId := 0.U
+      when(mappingTable(i).isRead) {
+        readPortAllocated(mappingTable(i).id) := false.B
+      }.otherwise {
+        writePortAllocated(mappingTable(i).id) := false.B
+      }
+      releaseCounter         := 0.U
+    }.elsewhen(mappingTable(i).valid && !mappingTable(i).isBall && !(io.mem_req(i).read.resp.valid ||
+      io.mem_req(i).write.resp.valid || io.mem_req(i).read.req.valid ||
+      io.mem_req(i).write.req.valid)) {
+      releaseCounter := releaseCounter + 1.U
+
+      when(releaseCounter === 16.U) {
+        releaseCounter         := 0.U
+        mappingTable(i).valid  := false.B
+        mappingTable(i).isRead := false.B
+        mappingTable(i).id     := 0.U
+        mappingTable(i).isBall := false.B
+        mappingTable(i).ballId := 0.U
+        when(mappingTable(i).isRead) {
+          readPortAllocated(mappingTable(i).id) := false.B
+        }.otherwise {
+          writePortAllocated(mappingTable(i).id) := false.B
+        }
+      }
+    }.otherwise {
+      releaseCounter := 0.U
+    }
+  }
+
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "bbkernel": "b80336ce647f6604713f1570e1e1355f705a4355",
+  "linux": "ffc253263a1375a65fa6c9f62a893e9767fbebfa",
+  "opensbi": "c0f87f10d1bfb9e72a84ddfafb5604ee1bfe9d04",
+  "busybox": "1a64f6a20aaf6ea4dbba68bbfa8cc1ab7e5c57c4"
+}

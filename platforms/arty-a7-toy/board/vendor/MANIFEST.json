@@ -1,0 +1,24 @@
+{
+  "repository": "Digilent/vivado-boards",
+  "commit": "36f34ab687b7fa9c778b779d027f3bce63b3ace9",
+  "vendor_revision": "E.0",
+  "physical_board_revision": "unknown",
+  "files": {
+    "board.xml": {
+      "url": "https://raw.githubusercontent.com/Digilent/vivado-boards/36f34ab687b7fa9c778b779d027f3bce63b3ace9/new/board_files/arty-a7-100/E.0/1.0/board.xml",
+      "sha256": "5bd9a7ca97ccb2fef617515a14401166464b45a06684d663c0be1a06b02a86df"
+    },
+    "part0_pins.xml": {
+      "url": "https://raw.githubusercontent.com/Digilent/vivado-boards/36f34ab687b7fa9c778b779d027f3bce63b3ace9/new/board_files/arty-a7-100/E.0/1.0/part0_pins.xml",
+      "sha256": "50aa844aa9c78af6342de68ae3c980f7618716447b28282878d5a106f86fed31"
+    },
+    "mig.prj": {
+      "url": "https://raw.githubusercontent.com/Digilent/vivado-boards/36f34ab687b7fa9c778b779d027f3bce63b3ace9/new/board_files/arty-a7-100/E.0/1.0/mig.prj",
+      "sha256": "914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329"
+    },
+    "preset.xml": {
+      "url": "https://raw.githubusercontent.com/Digilent/vivado-boards/36f34ab687b7fa9c778b779d027f3bce63b3ace9/new/board_files/arty-a7-100/E.0/1.0/preset.xml",
+      "sha256": "ff95b9b976323fefa588873588dfa2bdce1673759c0a9e91c12ee9f2a2955bce"
+    }
+  }
+}

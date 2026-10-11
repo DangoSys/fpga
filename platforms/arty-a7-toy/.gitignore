@@ -1,0 +1,12 @@
+/upstream/
+/thirdparty/
+/build/
+/target/
+/project/target/
+/project/project/
+__pycache__/
+.Xil/
+*.log
+!evidence/**/*.log
+*.jou
+toy-console.log

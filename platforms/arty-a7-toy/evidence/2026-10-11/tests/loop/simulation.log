@@ -1,0 +1,5 @@
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=684219
+- /home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-loop/tb_board_cpu.sv:51: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 5.242 s; speed 1.305 ms/s
+- Verilator: cpu 5.241 s on 1 threads; allocated 8 MB

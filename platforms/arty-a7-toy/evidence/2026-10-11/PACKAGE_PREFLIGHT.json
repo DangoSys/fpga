@@ -1,0 +1,21 @@
+{
+  "result": "PASS_RELOCATED_PACKAGE",
+  "source": "staged FPGA repository package in a fresh isolated Linux directory",
+  "whole_command_timeout_seconds": 3600,
+  "scala_and_chisel_recompiled": true,
+  "dependencies_reused_from_pinned_isolated_build": true,
+  "linux_image_reused_from_pinned_software_build": true,
+  "kernel_recompiled_in_this_preflight": false,
+  "core_rtl_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+  "memory_rtl_sha256": "8307d252185ba71a4516d1932d235a5a188816f84a5ed237bb5f3c1281d4b580",
+  "core_and_memory_equal_validated_bytes": true,
+  "opensbi_recompiled": true,
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "payload_equal_validated_bytes": true,
+  "python_compile_passed": true,
+  "bash_syntax_passed": true,
+  "axi_scu_loader_unit_tests_passed": true,
+  "explicit_sha256_manifest_export_verified_files": 336,
+  "new_manifest_export_test": "Git objects from the pinned upstream commit, after manifest schema clarification",
+  "physical_hardware_tested": false
+}
