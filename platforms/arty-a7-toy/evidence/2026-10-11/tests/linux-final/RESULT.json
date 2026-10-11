@@ -1,0 +1,17 @@
+{
+  "result": "PASS_RTL_LINUX_USERSPACE",
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "checks": [
+    "OpenSBI",
+    "Linux version",
+    "PASS VM_COPY_ON_WRITE",
+    "PASS VM_PAGE_PROTECTION",
+    "PASS FP64_PROCESS_CONTEXT",
+    "PASS LINUX_TIMER",
+    "PASS LINUX_SYSTEM_CHECK",
+    "PASS BOARD_LINUX_USERSPACE"
+  ],
+  "physical_mig_simulated": false,
+  "physical_board_tested": false,
+  "uart_rx_command_tested": true
+}

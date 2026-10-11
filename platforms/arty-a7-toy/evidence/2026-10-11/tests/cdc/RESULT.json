@@ -1,0 +1,10 @@
+{
+  "result": "PASS_BOARD_CDC",
+  "board_run": "board-20261011-132657",
+  "core_clock_hz": 25000000,
+  "ui_clock_hz": 83333333,
+  "read_beats": 90,
+  "physical_mig_simulated": false,
+  "xci_sha256": "33a73fd614db8bd3daf6d45a6c747e087caacd7e7ef6f610f3cc894120eac025",
+  "bench_sha256": "0903001dfe5bb2d8d5a36eb84545f6e08a2eb3c8bd86c8f20a1ff37c9bb51de2"
+}

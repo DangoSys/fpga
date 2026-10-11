@@ -1,0 +1,315 @@
+{
+  "result": "PASS_BOARD_IMPLEMENTATION_AND_RTL_REGRESSIONS",
+  "run": "board-20261011-132657",
+  "part": "xc7a100tcsg324-1",
+  "elapsed_seconds": 1406.1690039649839,
+  "timeout_seconds": 3600,
+  "timeout_triggered": false,
+  "core_rtl_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+  "board_sources": {
+    "board/SOURCE_MANIFEST.json": "03d99f1f43bbf68d92df61db52bdee0019723e2e194ee5f9c12a5ac6d4c5a105",
+    "board/loader_axi.sv": "05609b0870054ea675aedb406f6215cd456f18db6d6428b461cbae03d9a662f4",
+    "board/README.md": "891e436088f5e2205de4e0dffbaec8217f074e5b9f216657fa29142cd1d46799",
+    "board/uart_rx.sv": "0b35263884577324f146ff7fd516e5b561dcc8787e0d8ad599669bac1958406d",
+    "board/arty_a7.xdc": "f13869ba386038557084adabafeb5255943d0b67f1db4b88fd907e4f095d016f",
+    "board/toy_a7_top.sv": "404cf6ab82b7bc0aeff2d3eeb7855f2e2028784ff4408a6c97eec023464c039f",
+    "board/ddr_uart_loader.sv": "980f4cd2e3fa2a00b66143f879bc749ed952c2c1e54331460821bac0300c43d6",
+    "board/axi_scu.sv": "a3d2808a2bcaa1aa4381e51c9df3ba358d96acdbabd08939e60c073c65550dfc",
+    "board/build_board.tcl": "4fdb448d41a2119eade666fc0b26bd436edd5fda2204a4849e40e00ed4050526",
+    "board/toy_a7_platform.sv": "db7e7bd98ce81d6c538157e462232d380fe7318a2d0cfeb3afed6773ba127c4c",
+    "board/axi_fullwidth.sv": "bf07ae27724dbd0a361d732dfb57109f06beef207c47a066d400cb06d7f07d5a",
+    "board/uart_tx.sv": "c20d420fc20be4f6313bdde5abc45ef0b9f8e93bf75350dd9951bc8868b3b65c",
+    "board/vendor/mig.prj": "914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329",
+    "board/vendor/preset.xml": "ff95b9b976323fefa588873588dfa2bdce1673759c0a9e91c12ee9f2a2955bce",
+    "board/vendor/part0_pins.xml": "50aa844aa9c78af6342de68ae3c980f7618716447b28282878d5a106f86fed31",
+    "board/vendor/board.xml": "5bd9a7ca97ccb2fef617515a14401166464b45a06684d663c0be1a06b02a86df",
+    "board/vendor/MANIFEST.json": "3fbfac2499bc99a23356873a5d81e0f87d32f02ec1b7929ead51a15f33d9af85"
+  },
+  "previous_source_files_verified": 98,
+  "unchanged_upstream_files_verified": 336,
+  "previous_download_files_verified": 212,
+  "equivalent_driver_merge_comparison": {
+    "run": "board-20261011-135159",
+    "same_synthesis_input": true,
+    "routed_resources": {
+      "LUT": 53976.0,
+      "FF": 35492.0,
+      "BRAM_tiles": 29.0,
+      "DSP": 117.0,
+      "Slice": 15778
+    },
+    "selected": false,
+    "reason": "Higher occupied Slice count"
+  },
+  "memory_rtl_sha256": "8307d252185ba71a4516d1932d235a5a188816f84a5ed237bb5f3c1281d4b580",
+  "input_synthesis_run": null,
+  "control_set_merge": false,
+  "gemmini_mesh_dsp": 64,
+  "bitstream_sha256": "ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1",
+  "routed_dcp_sha256": "6bf677d11975285a207fa734e486faa258a5feae7eca8667154aafe1e94c39fe",
+  "routed_resources": {
+    "LUT": 54413.0,
+    "FF": 35600.0,
+    "BRAM_tiles": 29.0,
+    "DSP": 117.0,
+    "Slice": 15663,
+    "control_sets": 1256,
+    "LUT6_primitives": 20797
+  },
+  "timing": {
+    "wns_ns": 1.276,
+    "tns_ns": 0.0,
+    "failing_setup_endpoints": 0.0,
+    "setup_endpoints": 112427.0,
+    "whs_ns": 0.013,
+    "ths_ns": 0.0,
+    "failing_hold_endpoints": 0.0,
+    "hold_endpoints": 112385.0
+  },
+  "timing_checks": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 2,
+    "no_output_delay": 6,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "route_status": {
+    "logical nets": 121758,
+    "routable nets": 95231,
+    "fully routed nets": 95231,
+    "nets with routing errors": 0
+  },
+  "cdc": [
+    {
+      "rule": "CDC-3",
+      "severity": "Info",
+      "count": 17
+    },
+    {
+      "rule": "CDC-9",
+      "severity": "Info",
+      "count": 10
+    },
+    {
+      "rule": "CDC-15",
+      "severity": "Warning",
+      "count": 3
+    }
+  ],
+  "bus_skew_constraints": 10,
+  "worst_bus_skew_slack_ns": 10.844,
+  "drc": [
+    {
+      "rule": "DPIP-1",
+      "severity": "Warning",
+      "count": 152
+    },
+    {
+      "rule": "DPOP-1",
+      "severity": "Warning",
+      "count": 102
+    },
+    {
+      "rule": "DPOP-2",
+      "severity": "Warning",
+      "count": 104
+    },
+    {
+      "rule": "REQP-1709",
+      "severity": "Warning",
+      "count": 1
+    },
+    {
+      "rule": "RTSTAT-10",
+      "severity": "Warning",
+      "count": 1
+    }
+  ],
+  "methodology": [
+    {
+      "rule": "LUTAR-1",
+      "severity": "Warning",
+      "count": 2
+    },
+    {
+      "rule": "SYNTH-5",
+      "severity": "Warning",
+      "count": 16
+    },
+    {
+      "rule": "SYNTH-9",
+      "severity": "Warning",
+      "count": 5
+    },
+    {
+      "rule": "SYNTH-10",
+      "severity": "Warning",
+      "count": 21
+    },
+    {
+      "rule": "SYNTH-16",
+      "severity": "Warning",
+      "count": 1
+    },
+    {
+      "rule": "TIMING-10",
+      "severity": "Warning",
+      "count": 1
+    },
+    {
+      "rule": "ULMTCS-1",
+      "severity": "Warning",
+      "count": 1
+    },
+    {
+      "rule": "XDCB-5",
+      "severity": "Warning",
+      "count": 2
+    },
+    {
+      "rule": "REQP-1959",
+      "severity": "Advisory",
+      "count": 16
+    }
+  ],
+  "board_unit": {
+    "result": "PASS",
+    "tests": 3,
+    "physical_mig_simulated": false,
+    "sources": {
+      "board/loader_axi.sv": "05609b0870054ea675aedb406f6215cd456f18db6d6428b461cbae03d9a662f4",
+      "board/uart_rx.sv": "0b35263884577324f146ff7fd516e5b561dcc8787e0d8ad599669bac1958406d",
+      "board/toy_a7_top.sv": "404cf6ab82b7bc0aeff2d3eeb7855f2e2028784ff4408a6c97eec023464c039f",
+      "board/ddr_uart_loader.sv": "980f4cd2e3fa2a00b66143f879bc749ed952c2c1e54331460821bac0300c43d6",
+      "board/axi_scu.sv": "a3d2808a2bcaa1aa4381e51c9df3ba358d96acdbabd08939e60c073c65550dfc",
+      "board/toy_a7_platform.sv": "db7e7bd98ce81d6c538157e462232d380fe7318a2d0cfeb3afed6773ba127c4c",
+      "board/axi_fullwidth.sv": "bf07ae27724dbd0a361d732dfb57109f06beef207c47a066d400cb06d7f07d5a",
+      "board/uart_tx.sv": "c20d420fc20be4f6313bdde5abc45ef0b9f8e93bf75350dd9951bc8868b3b65c",
+      "tests/tb_axi_fullwidth.sv": "1d3964fab0eaa76a6f864f07a7dedf01639ba12a9400a15d0839e707ab73c4ed",
+      "tests/tb_axi_scu.sv": "3f58d9d98ba02663f913caecf0fd3e4aea11d0b2bc637e59566fcfe674fffe86"
+    }
+  },
+  "regression": {
+    "result": "PASS",
+    "tests": {
+      "cpu": {
+        "result": "PASS",
+        "test": "cpu",
+        "binary_sha256": "3bbf33f7bf2b6bb0f3888ab4a649a11272de3f74458f6ea36b266f9670df75f5",
+        "original_cpu_oracle": true,
+        "ddr_phy_simulated": false,
+        "physical_linux_boot_tested": false,
+        "cycles": 709434
+      },
+      "gemmini": {
+        "result": "PASS",
+        "test": "gemmini",
+        "binary_sha256": "d6307d194aadb9f23e14edf695ce98ab1ea361881237576b15c251573af2826e",
+        "original_cpu_oracle": true,
+        "ddr_phy_simulated": false,
+        "physical_linux_boot_tested": false,
+        "cycles": 251063
+      },
+      "loop": {
+        "result": "PASS",
+        "test": "loop",
+        "binary_sha256": "bbe9646dc565ac9ac1188c6b3d53d24b1b37985ee158ee2ac918df04c3267ce2",
+        "original_cpu_oracle": true,
+        "ddr_phy_simulated": false,
+        "physical_linux_boot_tested": false,
+        "cycles": 684219
+      },
+      "dma": {
+        "result": "PASS",
+        "test": "dma",
+        "binary_sha256": "082965476d4dcc98cc556b8f79fa2fdf659cea501665e207d04349d40469e9d2",
+        "original_cpu_oracle": true,
+        "ddr_phy_simulated": false,
+        "physical_linux_boot_tested": false,
+        "cycles": 1914839
+      }
+    }
+  },
+  "converter": {
+    "result": "PASS_BOARD_CDC",
+    "board_run": "board-20261011-132657",
+    "core_clock_hz": 25000000,
+    "ui_clock_hz": 83333333,
+    "read_beats": 90,
+    "physical_mig_simulated": false,
+    "xci_sha256": "33a73fd614db8bd3daf6d45a6c747e087caacd7e7ef6f610f3cc894120eac025",
+    "bench_sha256": "0903001dfe5bb2d8d5a36eb84545f6e08a2eb3c8bd86c8f20a1ff37c9bb51de2"
+  },
+  "uart_boot": {
+    "result": "PASS_UART_LOAD_VERIFY_BOOT",
+    "binary_sha256": "3bbf33f7bf2b6bb0f3888ab4a649a11272de3f74458f6ea36b266f9670df75f5",
+    "bytes_verified": 110592,
+    "testbench_cpu_release_override": false,
+    "preloaded_ddr_image": false,
+    "physical_mig_simulated": false,
+    "physical_board_tested": false,
+    "cycles": 61853990
+  },
+  "linux": {
+    "result": "PASS_RTL_LINUX_USERSPACE",
+    "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+    "checks": [
+      "OpenSBI",
+      "Linux version",
+      "PASS VM_COPY_ON_WRITE",
+      "PASS VM_PAGE_PROTECTION",
+      "PASS FP64_PROCESS_CONTEXT",
+      "PASS LINUX_TIMER",
+      "PASS LINUX_SYSTEM_CHECK",
+      "PASS BOARD_LINUX_USERSPACE"
+    ],
+    "physical_mig_simulated": false,
+    "physical_board_tested": false,
+    "uart_rx_command_tested": true
+  },
+  "firmware": {
+    "result": "PASS_BUILD",
+    "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+    "payload_bytes": 17409032,
+    "linux_image_sha256": "79aef0e6c72be764dfc37a55cbe7587e00531265b59343125b3a6950509d9e7a",
+    "linux_image_unchanged": true,
+    "clint_frequency_hz": 500000,
+    "core_frequency_hz": 25000000,
+    "console_base": "0x60020000",
+    "memory_bytes": 268435456,
+    "original_platform_sha256": "215cc16a14101a2b987fb05f8619ccf20eef610f5f88c6561575e9a25fff7773",
+    "adapted_platform_sha256": "f1a7a6d2921105055adb66e9df759d12196cdf9d63d15966c66276f69354fc9f",
+    "original_payload_sha256": "762d608b5e23a0a438c0139bc7487143fd97e30de110d44fb7e2ba27ac07477f",
+    "boot_tested": false,
+    "command": [
+      "make",
+      "-C",
+      "/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/opensbi-src",
+      "-j8",
+      "CROSS_COMPILE=riscv64-linux-gnu-",
+      "PLATFORM_DIR=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/platform",
+      "PLATFORM=buckyball",
+      "O=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/opensbi-build",
+      "FW_PAYLOAD_PATH=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/Image",
+      "BUCKYBALL_VISIBLE_HART_COUNT=1",
+      "BUCKYBALL_TOTAL_HART_COUNT=1",
+      "BUCKYBALL_HIDDEN_HART_BASE=1"
+    ]
+  },
+  "linux_cycles": 273506752,
+  "linux_console_characters": 7992,
+  "downloaded_files_verified": 368,
+  "physical_board_revision": "unknown",
+  "vendor_revision": "E.0",
+  "physical_ddr_calibration_tested": false,
+  "physical_linux_boot_tested": false,
+  "post_route_functional_simulation_run": false,
+  "board_release_ready": false
+}

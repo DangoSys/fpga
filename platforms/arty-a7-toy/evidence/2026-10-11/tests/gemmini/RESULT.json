@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "test": "gemmini",
+  "binary_sha256": "d6307d194aadb9f23e14edf695ce98ab1ea361881237576b15c251573af2826e",
+  "original_cpu_oracle": true,
+  "ddr_phy_simulated": false,
+  "physical_linux_boot_tested": false,
+  "cycles": 251063
+}

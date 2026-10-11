@@ -1,0 +1,41 @@
+{
+  "result": "PASS",
+  "tests": {
+    "cpu": {
+      "result": "PASS",
+      "test": "cpu",
+      "binary_sha256": "3bbf33f7bf2b6bb0f3888ab4a649a11272de3f74458f6ea36b266f9670df75f5",
+      "original_cpu_oracle": true,
+      "ddr_phy_simulated": false,
+      "physical_linux_boot_tested": false,
+      "cycles": 709434
+    },
+    "gemmini": {
+      "result": "PASS",
+      "test": "gemmini",
+      "binary_sha256": "d6307d194aadb9f23e14edf695ce98ab1ea361881237576b15c251573af2826e",
+      "original_cpu_oracle": true,
+      "ddr_phy_simulated": false,
+      "physical_linux_boot_tested": false,
+      "cycles": 251063
+    },
+    "loop": {
+      "result": "PASS",
+      "test": "loop",
+      "binary_sha256": "bbe9646dc565ac9ac1188c6b3d53d24b1b37985ee158ee2ac918df04c3267ce2",
+      "original_cpu_oracle": true,
+      "ddr_phy_simulated": false,
+      "physical_linux_boot_tested": false,
+      "cycles": 684219
+    },
+    "dma": {
+      "result": "PASS",
+      "test": "dma",
+      "binary_sha256": "082965476d4dcc98cc556b8f79fa2fdf659cea501665e207d04349d40469e9d2",
+      "original_cpu_oracle": true,
+      "ddr_phy_simulated": false,
+      "physical_linux_boot_tested": false,
+      "cycles": 1914839
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "result": "PASS_BUILD",
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "payload_bytes": 17409032,
+  "linux_image_sha256": "79aef0e6c72be764dfc37a55cbe7587e00531265b59343125b3a6950509d9e7a",
+  "linux_image_unchanged": true,
+  "clint_frequency_hz": 500000,
+  "core_frequency_hz": 25000000,
+  "console_base": "0x60020000",
+  "memory_bytes": 268435456,
+  "original_platform_sha256": "215cc16a14101a2b987fb05f8619ccf20eef610f5f88c6561575e9a25fff7773",
+  "adapted_platform_sha256": "f1a7a6d2921105055adb66e9df759d12196cdf9d63d15966c66276f69354fc9f",
+  "original_payload_sha256": "762d608b5e23a0a438c0139bc7487143fd97e30de110d44fb7e2ba27ac07477f",
+  "boot_tested": false,
+  "command": [
+    "make",
+    "-C",
+    "/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/opensbi-src",
+    "-j8",
+    "CROSS_COMPILE=riscv64-linux-gnu-",
+    "PLATFORM_DIR=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/platform",
+    "PLATFORM=buckyball",
+    "O=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/opensbi-build",
+    "FW_PAYLOAD_PATH=/home/yys/codex-builds/toy-a7-gemmini-correct-20261010/build/board-software/Image",
+    "BUCKYBALL_VISIBLE_HART_COUNT=1",
+    "BUCKYBALL_TOTAL_HART_COUNT=1",
+    "BUCKYBALL_HIDDEN_HART_BASE=1"
+  ]
+}
