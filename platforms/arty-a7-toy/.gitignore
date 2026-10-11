@@ -11,3 +11,4 @@ __pycache__/
 *.jou
 !evidence/**/*.jou
 toy-console.log
+/dfx_runtime.txt

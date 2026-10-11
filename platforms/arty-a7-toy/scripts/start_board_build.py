@@ -34,6 +34,8 @@ def worker(out):
     command=["timeout","--signal=TERM","--kill-after=15s","3600s",os.environ.get("VIVADO", "vivado"),
              "-mode","batch","-source",str(script),
              "-log",str(out/"vivado.log"),"-journal",str(out/"vivado.jou"),"-tclargs",str(out)]
+    if record.get("flash_boot"):
+        command.append("flash")
     record.update(status="RUNNING",started_at=now.isoformat(),deadline=(now+timedelta(hours=1)).isoformat(),
                   command=command,worker_pid=os.getpid())
     started=time.monotonic()
@@ -56,10 +58,15 @@ def worker(out):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--worker",type=Path)
+    p.add_argument("--flash",action="store_true",help="Use the validated Flash boot ROM and SPI port")
     args=p.parse_args()
     if args.worker:
         worker(args.worker.resolve());return
     assert sha(ROOT/"build/serial-bound/ToyLinuxChip.sv")==EXPECTED
+    if args.flash:
+        flash_manifest=json.loads((ROOT/"build/flash-boot/MANIFEST.json").read_text())
+        assert flash_manifest["original_core_sha256"]==EXPECTED
+        assert sha(ROOT/"build/flash-boot/ToyLinuxChip.sv")==flash_manifest["adapted_core_sha256"]
     for path in (ROOT/"build").glob("board-*/RUN.json"):
         assert json.loads(path.read_text())["status"] not in ("CREATED","RUNNING"),f"Active build: {path}"
     out=ROOT/"build"/("board-"+datetime.now(TZ).strftime("%Y%m%d-%H%M%S"))
@@ -71,7 +78,8 @@ def main():
     record=dict(status="CREATED",timeout_seconds=3600,termination_grace_seconds=15,
                 output_directory=str(out),part="xc7a100tcsg324-1",core_sha256=EXPECTED,
                 board_sources=files,core_clock_hz=25000000,uart_baud=1000000,
-                vendor_revision="E.0",physical_board_revision="unknown",physical_boot_tested=False)
+                vendor_revision="E.0",physical_board_revision="unknown",physical_boot_tested=False,
+                flash_boot=args.flash)
     save(out/"RUN.json",record)
     with (out/"launcher.log").open("w") as log:
         p=subprocess.Popen([sys.executable,str(Path(__file__).resolve()),"--worker",str(out)],

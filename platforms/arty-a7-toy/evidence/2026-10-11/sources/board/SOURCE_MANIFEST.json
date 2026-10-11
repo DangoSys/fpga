@@ -1,0 +1,18 @@
+{
+  "core_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+  "copied_files": {
+    "uart_rx.sv": "0b35263884577324f146ff7fd516e5b561dcc8787e0d8ad599669bac1958406d",
+    "uart_tx.sv": "c20d420fc20be4f6313bdde5abc45ef0b9f8e93bf75350dd9951bc8868b3b65c",
+    "vendor/board.xml": "5bd9a7ca97ccb2fef617515a14401166464b45a06684d663c0be1a06b02a86df",
+    "vendor/MANIFEST.json": "3fbfac2499bc99a23356873a5d81e0f87d32f02ec1b7929ead51a15f33d9af85",
+    "vendor/mig.prj": "914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329",
+    "vendor/part0_pins.xml": "50aa844aa9c78af6342de68ae3c980f7618716447b28282878d5a106f86fed31",
+    "vendor/preset.xml": "ff95b9b976323fefa588873588dfa2bdce1673759c0a9e91c12ee9f2a2955bce"
+  },
+  "clock_hz": 25000000,
+  "uart_baud": 1000000,
+  "memory_bytes": 268435456,
+  "clint_actual_hz": 500000,
+  "vendor_revision": "E.0",
+  "physical_board_revision": "unknown"
+}

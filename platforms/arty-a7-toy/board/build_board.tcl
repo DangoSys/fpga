@@ -1,6 +1,11 @@
 set root [file dirname [file dirname [file normalize [info script]]]]
 cd $root
-if {[llength $argv]!=1} {error "Usage: build_board.tcl OUTPUT_DIRECTORY"}
+if {[llength $argv]<1 || [llength $argv]>2} {error "Usage: build_board.tcl OUTPUT_DIRECTORY ?flash?"}
+set flash 0
+if {[llength $argv]==2} {
+  if {[lindex $argv 1] ne "flash"} {error "Second argument must be flash"}
+  set flash 1
+}
 set out [file normalize [lindex $argv 0]]
 file mkdir $out
 file mkdir $out/ip
@@ -22,12 +27,15 @@ report_ip_status -file $out/ip-status.rpt
 phase SYNTH_IP
 synth_ip [get_ips]
 phase SYNTH_BOARD
-read_verilog -sv $root/build/serial-bound/ToyLinuxChip.sv
+if {$flash} {read_verilog -sv $root/build/flash-boot/ToyLinuxChip.sv} else {
+  read_verilog -sv $root/build/serial-bound/ToyLinuxChip.sv
+}
 read_verilog -sv $root/build/serial-bound/FpgaMemories.sv
 foreach f [glob $root/board/*.sv] {read_verilog -sv $f}
 set_property verilog_define {SYNTHESIS BUCKYBALL_DISABLE_DPI} [current_fileset]
 read_xdc $root/board/arty_a7.xdc
-synth_design -top toy_a7_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt -directive AreaOptimized_high -resource_sharing on
+read_xdc $root/board/flash_boot.xdc
+synth_design -top toy_a7_top -part xc7a100tcsg324-1 -flatten_hierarchy rebuilt -directive AreaOptimized_high -resource_sharing on -generic FLASH_BOOT=$flash
 write_checkpoint -force $out/synthesized.dcp
 report_utilization -file $out/synth-utilization.rpt
 report_utilization -hierarchical -file $out/synth-hierarchy.rpt
@@ -75,4 +83,4 @@ phase BITSTREAM
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 write_bitstream -force $out/toy_a7.bit
 phase COMPLETE
-puts "PASS BOARD_PLACE_ROUTE_TIMING_BITSTREAM: engineering Rev E target; hardware revision and Linux boot unverified"
+puts "PASS BOARD_PLACE_ROUTE_TIMING_BITSTREAM: engineering Rev E target; flash=$flash; this build does not validate physical boot"

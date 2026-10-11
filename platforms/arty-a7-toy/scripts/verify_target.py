@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from verify_hardware_evidence import verify as verify_hardware
+from verify_flash_evidence import verify as verify_flash
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "evidence/2026-10-11"
@@ -40,7 +41,9 @@ def main():
     assert not record["physical_linux_boot_tested"] and not record["board_release_ready"]
     for name, expected in record["board_sources"].items():
         if not name.endswith(".md"):
-            assert sha(ROOT / name) == expected, name
+            # Keep the October 11 proof attached to its original board sources;
+            # later Flash-boot changes require their own implementation evidence.
+            assert sha(EVIDENCE / "sources" / name) == expected, name
     area = {}
     labels = {"Slice LUTs": "LUT", "Slice Registers": "FF", "Block RAM Tile": "BRAM_tiles",
               "DSPs": "DSP", "Slice": "Slice"}
@@ -61,6 +64,7 @@ def main():
     assert re.search(r"PASS BOARD_LINUX_USERSPACE cycles=273506752", transcript)
     assert read(EVIDENCE / "tests/uart-boot/RESULT.json")["result"] == "PASS_UART_LOAD_VERIFY_BOOT"
     verify_hardware()
+    verify_flash()
     if args.core:
         assert sha(ROOT / "build/serial-bound/ToyLinuxChip.sv") == lock["core_rtl_sha256"]
         assert sha(ROOT / "build/serial-bound/FpgaMemories.sv") == lock["memory_rtl_sha256"]

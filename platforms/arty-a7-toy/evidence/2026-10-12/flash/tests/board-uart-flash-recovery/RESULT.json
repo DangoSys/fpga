@@ -1,0 +1,11 @@
+{
+  "result": "PASS_UART_LOAD_VERIFY_BOOT",
+  "binary_sha256": "3bbf33f7bf2b6bb0f3888ab4a649a11272de3f74458f6ea36b266f9670df75f5",
+  "bytes_verified": 110592,
+  "testbench_cpu_release_override": false,
+  "preloaded_ddr_image": false,
+  "physical_mig_simulated": false,
+  "physical_board_tested": false,
+  "flash_rom_recovery": true,
+  "cycles": 61853714
+}

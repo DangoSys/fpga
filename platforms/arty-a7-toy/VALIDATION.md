@@ -79,8 +79,8 @@ the connected Arty A7-100T; the October 11 records remain unchanged.
 PCB revision remains unknown; this exact official E.0 MIG image works on the
 connected board. Physical Gemmini operator regression, FP16/FP32 exhaustive
 checks, full 256 MiB DDR sweep, long-duration stability and power measurements
-are still pending. Programming uses volatile SRAM; no configuration flash was
-written. Treat the result as successful first bring-up, not full hardware release.
+are still pending. This first run used volatile SRAM and did not write Flash.
+Treat the result as successful first bring-up, not full hardware release.
 
 DRC retains 360 warnings; methodology retains 49 warnings and 16 advisories,
 including DSP pipeline recommendations, MIG clock/reset structure, control-set
@@ -94,3 +94,20 @@ The corresponding 17,409,032-byte payload SHA256 is
 These binaries are not stored in Git. Rebuilt software may differ by compiler
 and build timestamps; a new core/board toolchain requires fresh functional and
 implementation checks rather than inheriting these measured results.
+
+## Persistent Flash target: 2026-10-12
+
+The [separate Flash archive](evidence/2026-10-12/flash/README.md) binds the new
+implementation to its exact input sources and keeps the earlier records intact.
+It adds a synchronous boot ROM and SPI reader, preserving the CPU, MMU, FPU,
+Gemmini and original Linux payload. Routed use is 53,944 LUTs, 15,618 Slice sites,
+35,645 FFs, 31 BRAM tiles and 117 DSPs. WNS/WHS are +1.276/+0.015 ns, routing
+errors are zero and critical CDC/DRC guards pass. Only 232 Slice sites remain.
+
+The identified S25FL128S was fully backed up before erase/program/verify; the
+16 MiB backup stays private. Vivado reconfiguration from Flash and a subsequent
+operator-confirmed loss of all power both boot OpenSBI/Linux without downloading
+a bitstream or software. The cold-start observer records one USB disconnect and
+five Linux checks with exit status 0. Runtime DDR/initramfs changes still vanish
+on reset; the stored startup image persists. Hardware Gemmini qualification and
+the other acceptance limits above remain pending.

@@ -34,7 +34,7 @@ def main():
     bench = bench.replace("always #5 clk=~clk;", "always #20 clk=~clk;\n  reg ui_clk=0; initial begin #3; forever #6 ui_clk=~ui_clk; end")
     # Reuse exactly the board's converter instance and port tie-offs.
     top = (ROOT / "board/toy_a7_top.sv").read_text()
-    declarations = top[top.index("  wire [3:0] ui_awid;"):top.index("  toy_a7_platform platform")]
+    declarations = top[top.index("  wire [3:0] ui_awid;"):top.index("  toy_a7_platform")]
     instance = top[top.index("  toy_axi_cdc memory_cdc"):top.index("  arty_ddr3 ddr_controller")]
     instance = instance.replace("ddr_", "m_").replace("ui_aresetn", "!reset")
     bench = bench.replace("  axi_fullwidth dut(.*);", declarations + instance + "  axi_fullwidth dut(.*);")

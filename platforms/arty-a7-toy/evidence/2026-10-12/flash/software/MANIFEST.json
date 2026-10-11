@@ -1,0 +1,18 @@
+{
+  "payload_bytes": 17409032,
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "lz4_bytes": 3636031,
+  "flash_image_bytes": 3636063,
+  "flash_offset": 4194304,
+  "flash_bytes": 16777216,
+  "lz4_version": "4.4.5",
+  "boot_code_bytes": 1256,
+  "boot_sha256": "267cfb97380f858cafc649356f2514066267822f4f0a1de27e2de3b1a1b979af",
+  "original_core_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+  "adapted_core_sha256": "67817bf756167acf063e0c65dc2c259d632c4646b43792205d25661bbed7575c",
+  "only_module_replaced": "TLROM",
+  "dtb_sha256": "0a19eba1b8112f854f892b3932eb31d25467cc5edb7cee58a132f5d5b4f7ae76",
+  "dtb_address": "0x11000",
+  "rom_bytes": 8192,
+  "payload_crc32": "de4616e3"
+}

@@ -1,5 +1,5 @@
 // Generated wiring; source CPU/accelerator RTL is byte-identical.
-module toy_a7_platform #(parameter UART_DIVISOR=25) (
+module toy_a7_platform #(parameter UART_DIVISOR=25, parameter FLASH_BOOT=0) (
   input wire clk, reset, uart_rx_in,
   output wire uart_tx_out, cpu_run, exited, loader_error,
   output wire [31:0] exit_code,
@@ -31,9 +31,13 @@ module toy_a7_platform #(parameter UART_DIVISOR=25) (
   input wire [1:0] ddr_rresp,
   input wire ddr_rlast,
   input wire ddr_rvalid,
-  output wire ddr_rready
+  output wire ddr_rready,
+  input wire flash_miso, flash_recovery,
+  output wire flash_mosi, flash_sck, flash_cs_n
 );
   wire cpu_reset=reset || !cpu_run;
+  wire loader_cpu_run;
+  assign cpu_run=loader_cpu_run || (FLASH_BOOT && !flash_recovery);
   wire irq;
   wire rx_valid, rx_error, tx_ready, loader_tx_valid, mmio_tx_valid;
   wire [7:0] rx_data, loader_tx_data, mmio_tx_data;
@@ -46,7 +50,7 @@ module toy_a7_platform #(parameter UART_DIVISOR=25) (
     .ready(tx_ready),.tx(uart_tx_out));
   ddr_uart_loader loader (.clk(clk),.reset(reset),.rx_valid(rx_valid && !cpu_run),.rx_data(rx_data),
     .rx_error(rx_error),.tx_valid(loader_tx_valid),.tx_data(loader_tx_data),.tx_ready(tx_ready),
-    .cpu_run(cpu_run),.error_seen(loader_error),.load_en(load_en),.load_addr(load_addr),
+    .cpu_run(loader_cpu_run),.error_seen(loader_error),.load_en(load_en),.load_addr(load_addr),
     .load_data(load_data),.load_mask(load_mask),.load_valid(load_valid),.load_error(load_error),.load_result(load_result));
   wire memory_aw_ready;
   wire memory_aw_valid;
@@ -400,7 +404,7 @@ module toy_a7_platform #(parameter UART_DIVISOR=25) (
   assign ddr_rready=cpu_run ? c_rready : l_rready;
   wire [1:0] scu_bresp;
   assign peripherals_b_bits_resp=|scu_bresp;
-  axi_scu peripherals (
+  axi_scu #(.FLASH_BOOT(FLASH_BOOT)) peripherals (
     .clk(clk),
     .reset(cpu_reset),
     .awid(peripherals_aw_bits_id),
@@ -440,6 +444,7 @@ module toy_a7_platform #(parameter UART_DIVISOR=25) (
     .tx_ready(tx_ready),
     .exited(exited),
     .exit_code(exit_code),
-    .interrupt(irq)
+    .interrupt(irq),.flash_miso(flash_miso),.flash_recovery(flash_recovery),
+    .flash_mosi(flash_mosi),.flash_sck(flash_sck),.flash_cs_n(flash_cs_n)
   );
 endmodule
