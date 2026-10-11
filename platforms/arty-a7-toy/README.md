@@ -2,9 +2,11 @@
 
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
-checks and Linux RTL tests pass. The physical board revision is unconfirmed:
-this is a **Rev E engineering bring-up target**, awaiting hardware DDR and Linux
-acceptance. See [measured results](VALIDATION.md) before programming.
+checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,
+the complete image was read back from DDR and five Linux checks passed on hardware.
+This remains a **Rev E engineering target**: PCB revision is unconfirmed and
+physical Gemmini tests are pending. See [measured results](VALIDATION.md) and
+[the hardware logs](evidence/2026-10-12/README.md).
 
 ## Architecture and scope
 
@@ -79,13 +81,26 @@ products and are not committed. A successful fresh board run produces
 
 ## First hardware boot
 
-1. Confirm the physical DDR/revision matches the official Rev E parameters;
-   connect PROG/UART USB and select the single XC7A100T in Hardware Manager.
-2. Program the selected `.bit` into volatile FPGA SRAM. On Windows:
-   `./program.ps1 -Bitstream <absolute-bitstream-path> -VivadoBin <Vivado-bin>`.
-   The script does not write flash and is not run automatically.
-3. Press BTN0, wait for LED0 (DDR calibrated), and close other serial clients.
-4. Install `pyserial`, then load and byte-verify the image before releasing CPU:
+Confirm the physical DDR/revision matches the official Rev E parameters and
+connect PROG/UART USB. The script requires exactly one attached JTAG target and
+one XC7A100T. It programs the selected `.bit` into volatile FPGA SRAM.
+
+The portable [program.tcl](program.tcl) delegates to
+[board/program_arty.tcl](board/program_arty.tcl), the script used by the hardware
+run. Set both paths to actual files; a clone contains sources and logs, so build
+the `.bit` and Linux payload first using the commands above.
+
+```bash
+vivado -mode batch -source /absolute/path/to/platforms/arty-a7-toy/program.tcl \
+  -tclargs /absolute/path/to/toy_a7.bit
+```
+
+Windows paths with spaces must be quoted. The equivalent PowerShell wrapper is
+`./program.ps1 -Bitstream <bitstream-path> -VivadoBin <Vivado-bin>`.
+
+After JTAG programming, press BTN0, wait for LED0 (DDR calibrated), and close
+other serial clients. Install `pyserial`, then load and byte-verify the Linux
+image before releasing the CPU:
 
 ```bash
 python host/load.py --port COM5 --check-linux build/board-software/fw_payload.bin
@@ -93,10 +108,14 @@ python host/load.py --port COM5 --check-linux build/board-software/fw_payload.bi
 
 Use the actual serial port. Expect OpenSBI, Linux, BusyBox and five PASS markers
 for COW, page protection, FP64 process context, the timer and the total Linux
-system check. A 17 MiB transfer with full readback takes several minutes at
-1 Mbps. After the script closes the port, an interactive console is available
+system check. The recorded 17 MiB transfer/readback took 544.1 seconds with a
+temporary 2 ms FTDI D2XX latency; default VCP settings can take substantially
+longer. The archived transport script records that experiment; normal loading
+uses `host/load.py`. After it closes the port, an interactive console is available
 with `python -m serial.tools.miniterm COM5 1000000 --eol LF`.
 
 LED1 indicates loader error or nonzero exit, LED2 CPU released, LED3 heartbeat.
 LEDs alone do not establish software success. Preserve the console transcript
 and DDR calibration result; operator acceptance additionally needs Gemmini tests.
+FPGA SRAM and the DDR image are volatile: repeat programming and loading after
+power loss. See the hardware record for exact bitstream/payload SHA256 values.

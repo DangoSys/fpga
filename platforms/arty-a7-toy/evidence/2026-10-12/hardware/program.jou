@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Oct 12 01:51:01 2026
+# Process ID         : 13116
+# Current directory  : D:/Verilog_Dev/fpga-arty-a7-pr/platforms/arty-a7-toy
+# Command line       : vivado.exe -mode batch -source D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\board\program_arty.tcl -log D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\build\hardware-20261012-015059\program.log -journal D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\build\hardware-20261012-015059\program.jou -tclargs D:\Verilog_Dev\toy-a7-gemmini-correct-20261010\build\board-20261011-132657\toy_a7.bit
+# Log file           : D:/Verilog_Dev/fpga-arty-a7-pr/platforms/arty-a7-toy/build/hardware-20261012-015059/program.log
+# Journal file       : D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\build\hardware-20261012-015059\program.jou
+# Running On         : LAPTOP-IQGP9732
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 8945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 33605 MB
+# Swap memory        : 66571 MB
+# Total Virtual      : 100177 MB
+# Available Virtual  : 74928 MB
+#-----------------------------------------------------------
+source {D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\board\program_arty.tcl}

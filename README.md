@@ -14,9 +14,11 @@ The Arty A7 platforms have their own pinned Chisel build, serial loader, firmwar
 constraints and verification record. Follow its guide directly; the setup and
 demo below describe the existing Kintex-7 flow.
 
-The Toy/Linux target passes complete board implementation and Linux RTL checks.
-Its current Rev E DDR engineering target still requires physical DDR calibration
-and Linux boot acceptance; see its guide before programming.
+The Toy/Linux target passes complete board implementation, Linux RTL checks and
+a physical Arty A7-100T boot with full image readback and five Linux checks.
+Its PCB revision remains unconfirmed and physical Gemmini testing is pending;
+see [the hardware record](platforms/arty-a7-toy/evidence/2026-10-12/README.md)
+and its build/programming guide before using another board.
 
 ## Kintex-7 setup
 

@@ -2,7 +2,8 @@
 
 Build and programming commands are in [the platform guide](../README.md).
 This directory targets Arty A7-100T `xc7a100tcsg324-1` with official Digilent
-Rev E.0 DDR parameters. Physical board revision and DDR acceptance are pending.
+Rev E.0 DDR parameters. The recorded hardware run passes full payload DDR
+readback and Linux checks; physical PCB revision remains unconfirmed.
 
 - `toy_a7_top.sv`: 100 MHz input, MMCM/BUFG clocks, per-domain reset sequencing,
   physical UART/LED/DDR pins, actual MIG and AXI Clock Converter instances.
@@ -19,7 +20,8 @@ Rev E.0 DDR parameters. Physical board revision and DDR acceptance are pending.
   bitstream. Setup/hold, CDC Critical, bus skew, routing errors and DRC errors
   stop the build. No warning severity downgrade or CDC waiver is applied.
 - `program_arty.tcl`: explicit volatile JTAG programming; exactly one target
-  and one XC7A100T required. It does not program configuration flash.
+  and one XC7A100T required. The platform's `../program.tcl` entry delegates here.
+  The exact script used for first bring-up is also archived with the hardware logs.
 
 `vendor/` contains unmodified pinned Digilent MIG/board inputs and their license.
 Vivado generates proprietary vendor IP into ignored build directories locally.
