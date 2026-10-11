@@ -1,0 +1,41 @@
+{
+  "result": "PASS_FLASH_PROGRAM_AND_AUTOMATIC_LINUX_BOOT",
+  "recorded_at": "2026-10-12T03:10:52.818431+08:00",
+  "physical_board": "Arty A7-100T",
+  "physical_board_revision": "unknown",
+  "part": "xc7a100tcsg324-1",
+  "flash_part": "s25fl128sxxxxxx0-spi-x1_x2_x4",
+  "flash_jedec": "012018",
+  "flash_bytes": 16777216,
+  "port": "COM5",
+  "uart_baud": 1000000,
+  "bitstream_sha256": "78d2e703372c13c5044674c8d4eea5b775d6b12771d21df37ba0f90617723c18",
+  "packed_payload_sha256": "73507c2176800c410699407766caf95f2f5185b4f3fc8c7e74e0d496101ca494",
+  "flash_image_sha256": "422b45a9af8d43645063c233b737d77a8fab480b687f316e4aaa8d3aace69630",
+  "backup_bytes": 16777216,
+  "backup_sha256": "064c2e4bb290cb26d92eab770b0824bac70b867377dc51741dd5ed2634a3280a",
+  "backup_published": false,
+  "flash_program_verify": "PASS",
+  "configuration_from_flash": "PASS",
+  "payload_crc": "PASS",
+  "original_payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "linux_checks": {
+    "VM_COPY_ON_WRITE": "PASS",
+    "VM_PAGE_PROTECTION": "PASS",
+    "FP64_PROCESS_CONTEXT": "PASS",
+    "LINUX_TIMER": "PASS",
+    "LINUX_SYSTEM_CHECK": "PASS"
+  },
+  "system_check_process_exit_status": 0,
+  "cold_power_cycle_tested": false,
+  "board_release_ready": false,
+  "physical_gemmini_operator_tests_run": false,
+  "observer_note": "Initial monitor waited despite a passing system check because Linux emitted CRCRLF. Only the UART monitors were stopped after Vivado had exited successfully. Raw logs were checked independently; observer now accepts repeated CR and a separate cold-start test follows.",
+  "evidence_sha256": {
+    "program.log": "0dd1d38183ef4c82d0c0c7eec8b16fb1913037e070fe0095fb5624b4af610306",
+    "program.jou": "7db8abe5e3d98d3fec16adb503f13fb2df8e29c5dfcd97c65b2173a728ec5a52",
+    "command-1.log": "41dce217c172b02d32aeac2a377703b11d845d570f59e6f3afbfd53b65090334",
+    "linux-console.log": "df9e249f7257e97089a61c8a19ac6ce1b4815777ff4c4ddfcb81a4f7c6ac874c",
+    "RESULT-monitor-interrupted.json": "525848d5cdfe2944c0242dc3c31853a0f37dad085159d91f07d2a751b7284095"
+  }
+}

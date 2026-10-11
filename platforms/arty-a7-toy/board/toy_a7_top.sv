@@ -1,9 +1,11 @@
-module toy_a7_top (
+module toy_a7_top #(parameter FLASH_BOOT=0) (
   input wire CLK100MHZ, btn0, uart_txd_in, output wire uart_rxd_out, output wire [3:0] led,
   inout wire [15:0] ddr3_dq, inout wire [1:0] ddr3_dqs_n, ddr3_dqs_p,
   output wire [13:0] ddr3_addr, output wire [2:0] ddr3_ba,
   output wire ddr3_ras_n, ddr3_cas_n, ddr3_we_n, ddr3_reset_n,
-  output wire [0:0] ddr3_ck_p, ddr3_ck_n, ddr3_cke, ddr3_cs_n, ddr3_odt, output wire [1:0] ddr3_dm
+  output wire [0:0] ddr3_ck_p, ddr3_ck_n, ddr3_cke, ddr3_cs_n, ddr3_odt, output wire [1:0] ddr3_dm,
+  input wire sw0, flash_miso,
+  output wire flash_mosi, flash_cs_n, flash_wp_n, flash_hold_n
 );
   wire clk_in,fb,fb_buf,core_raw,sys_raw,ref_raw,clk,sys_clk,ref_clk,locked;
   IBUF input_clock (.I(CLK100MHZ),.O(clk_in));
@@ -14,6 +16,19 @@ module toy_a7_top (
   BUFG fb_buffer (.I(fb),.O(fb_buf)); BUFG core_buffer (.I(core_raw),.O(clk));
   BUFG sys_buffer (.I(sys_raw),.O(sys_clk)); BUFG ref_buffer (.I(ref_raw),.O(ref_clk));
   wire ui_clk,ui_rst,mig_locked,calibrated;
+  wire flash_sck;
+  assign flash_wp_n=1;assign flash_hold_n=1;
+  generate if(FLASH_BOOT) begin : flash_clock
+    STARTUPE2 startup (.CLK(1'b0),.GSR(1'b0),.GTS(1'b0),.KEYCLEARB(1'b1),.PACK(1'b0),
+      .USRCCLKO(flash_sck),.USRCCLKTS(1'b0),.USRDONEO(1'b1),.USRDONETS(1'b1),
+      .CFGCLK(),.CFGMCLK(),.EOS(),.PREQ());
+  end endgenerate
+  (* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg sw_meta=0,sw_sync=0;
+  reg flash_recovery=0;
+  always @(posedge clk) begin
+    sw_meta<=sw0;sw_sync<=sw_meta;
+    if(reset) flash_recovery<=sw_sync;
+  end
   (* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg [2:0] lock_sync=7;
   always @(posedge clk or negedge locked) if(!locked) lock_sync<=7;else lock_sync<={lock_sync[1:0],1'b0};
   (* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg btn_meta=0,btn_sync=0;
@@ -93,7 +108,7 @@ module toy_a7_top (
   wire ui_rlast;
   wire ui_rvalid;
   wire ui_rready;
-  toy_a7_platform platform (
+  toy_a7_platform #(.FLASH_BOOT(FLASH_BOOT)) platform (
     .clk(clk),
     .reset(reset),
     .uart_rx_in(uart_txd_in),
@@ -102,6 +117,8 @@ module toy_a7_top (
     .exited(exited),
     .loader_error(loader_error),
     .exit_code(exit_code),
+    .flash_miso(flash_miso),.flash_mosi(flash_mosi),.flash_sck(flash_sck),
+    .flash_cs_n(flash_cs_n),.flash_recovery(flash_recovery),
     .ddr_awid(ddr_awid),
     .ddr_awaddr(ddr_awaddr),
     .ddr_awlen(ddr_awlen),

@@ -1,0 +1,27 @@
+{
+  "status": "RUNNING",
+  "timeout_seconds": 3600,
+  "bitstream_sha256": "78d2e703372c13c5044674c8d4eea5b775d6b12771d21df37ba0f90617723c18",
+  "packed_payload_sha256": "73507c2176800c410699407766caf95f2f5185b4f3fc8c7e74e0d496101ca494",
+  "part": "s25fl128sxxxxxx0-spi-x1_x2_x4",
+  "port": "COM5",
+  "started_at": "2026-10-12T03:02:05.422494+08:00",
+  "commands": [
+    null,
+    [
+      "D:/Xilinx/2025.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-source",
+      "D:\\Verilog_Dev\\fpga-arty-a7-pr\\platforms\\arty-a7-toy\\board\\program_flash.tcl",
+      "-log",
+      "D:\\Verilog_Dev\\fpga-arty-a7-pr\\platforms\\arty-a7-toy\\build\\flash-program-20261012\\program.log",
+      "-journal",
+      "D:\\Verilog_Dev\\fpga-arty-a7-pr\\platforms\\arty-a7-toy\\build\\flash-program-20261012\\program.jou",
+      "-tclargs",
+      "D:\\Verilog_Dev\\fpga-arty-a7-pr\\platforms\\arty-a7-toy\\build\\flash-program-20261012\\toy_flash.mcs",
+      "s25fl128sxxxxxx0-spi-x1_x2_x4",
+      "D:\\Verilog_Dev\\fpga-arty-a7-pr\\platforms\\arty-a7-toy\\build\\flash-program-20261012\\flash-before.bin"
+    ]
+  ]
+}

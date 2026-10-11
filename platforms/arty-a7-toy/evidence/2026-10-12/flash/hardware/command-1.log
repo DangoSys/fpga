@@ -1,0 +1,105 @@
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Oct 12 03:02:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {D:\Verilog_Dev\fpga-arty-a7-pr\platforms\arty-a7-toy\board\program_flash.tcl}
+# if {$argc!=3} {error "Usage: program_flash.tcl image.mcs FLASH_PART fresh-backup.bin"}
+# lassign $argv image part backup
+# set image [file normalize $image]
+# set backup [file normalize $backup]
+# if {![file isfile $image]} {error "Missing Flash image"}
+# if {[file exists $backup]} {error "Refusing to overwrite an existing backup"}
+# if {$part ni {s25fl128sxxxxxx0-spi-x1_x2_x4 s25fl128sxxxxxx1-spi-x1_x2_x4 mt25ql128-spi-x1_x2_x4}} {
+#   error "Select the exact supported 128-Mbit Arty Flash model"
+# }
+# open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 494.469 ; gain = 216.141
+# connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.1
+  **** Build date : May  6 2025 at 09:15:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.1.0
+  ****** Build date   : May 14 2025-03:15:27
+    **** Build number : 2025.1.1747163727
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 494.469 ; gain = 0.000
+# set targets [get_hw_targets -quiet]
+# if {[llength $targets]!=1} {error "Expected one attached JTAG target"}
+# open_hw_target [lindex $targets 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319BCC5FCA
+# set devices [get_hw_devices -quiet -filter {PART == xc7a100t}]
+# if {[llength $devices]!=1} {error "Expected one XC7A100T"}
+# set device [lindex $devices 0]
+# current_hw_device $device
+# set choices [get_cfgmem_parts -of_objects $device -filter "NAME == $part"]
+# if {[llength $choices]!=1} {error "Flash part is not uniquely compatible with this FPGA"}
+# create_hw_cfgmem -hw_device $device [lindex $choices 0]
+# set memory [get_property PROGRAM.HW_CFGMEM $device]
+# create_hw_bitstream -hw_device $device [get_property PROGRAM.HW_CFGMEM_BITFILE $device]
+# program_hw_devices $device
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# file mkdir [file dirname $backup]
+# readback_hw_cfgmem -all -file $backup -format bin $memory
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Readback Operation...
+INFO: [Xicom 50-213] Readback file: D:/Verilog_Dev/fpga-arty-a7-pr/platforms/arty-a7-toy/build/flash-program-20261012/flash-before.bin
+Readback Operation successful.
+readback_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:43 . Memory (MB): peak = 579.055 ; gain = 24.844
+# if {[file size $backup]!=16777216} {error "Incomplete backup; programming cancelled"}
+# puts "PASS FLASH_BACKUP: $backup bytes=16777216"
+PASS FLASH_BACKUP: D:/Verilog_Dev/fpga-arty-a7-pr/platforms/arty-a7-toy/build/flash-program-20261012/flash-before.bin bytes=16777216
+# set_property PROGRAM.ADDRESS_RANGE use_file $memory
+# set_property PROGRAM.FILES [list $image] $memory
+# set_property PROGRAM.BLANK_CHECK 0 $memory
+# set_property PROGRAM.ERASE 1 $memory
+# set_property PROGRAM.CFG_PROGRAM 1 $memory
+# set_property PROGRAM.VERIFY 1 $memory
+# set_property PROGRAM.CHECKSUM 0 $memory
+# program_hw_cfgmem $memory
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:02:21 . Memory (MB): peak = 579.055 ; gain = 0.000
+# puts "PASS FLASH_PROGRAM_VERIFY: $part $image"
+PASS FLASH_PROGRAM_VERIFY: s25fl128sxxxxxx0-spi-x1_x2_x4 D:/Verilog_Dev/fpga-arty-a7-pr/platforms/arty-a7-toy/build/flash-program-20261012/toy_flash.mcs
+# boot_hw_device -timeout 60 $device
+INFO: [Labtoolstcl 44-664] Will wait up to 60 seconds for booting to complete.
+INFO: [Labtools 27-32] Done pin status: HIGH
+# refresh_hw_device $device
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+# if {[get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $device]!=1 ||
+#     [get_property REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS $device]!=1 ||
+#     [get_property REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR $device]!=0} {
+#   error "FPGA did not successfully reconfigure from Flash"
+# }
+# puts "FLASH_BOOT_CONFIG_STATUS [get_property REGISTER.CONFIG_STATUS $device]"
+FLASH_BOOT_CONFIG_STATUS 01010000000100000111100111111100
+# close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210319BCC5FCA
+# disconnect_hw_server
+# close_hw_manager
+# exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 03:05:34 2026...

@@ -1,0 +1,9 @@
+{
+  "result": "PASS_VIVADO_FLASH_PACK",
+  "bitstream_sha256": "78d2e703372c13c5044674c8d4eea5b775d6b12771d21df37ba0f90617723c18",
+  "packed_payload_sha256": "73507c2176800c410699407766caf95f2f5185b4f3fc8c7e74e0d496101ca494",
+  "flash_image_sha256": "422b45a9af8d43645063c233b737d77a8fab480b687f316e4aaa8d3aace69630",
+  "configuration_offset": 0,
+  "software_offset": 4194304,
+  "flash_bytes": 16777216
+}

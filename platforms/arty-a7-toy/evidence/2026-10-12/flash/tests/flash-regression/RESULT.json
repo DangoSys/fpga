@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "cycles": {
+    "valid": 8841590,
+    "bad_header": 17918,
+    "bad_payload": 8130742
+  },
+  "empty_ddr": true,
+  "original_cpu_oracle": true,
+  "forced_run": false,
+  "physical_flash_tested": false
+}

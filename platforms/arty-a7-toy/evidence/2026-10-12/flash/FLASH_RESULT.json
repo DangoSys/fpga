@@ -1,0 +1,28 @@
+{
+  "result": "PASS_FLASH_IMPLEMENTATION_AND_PHYSICAL_COLD_BOOT",
+  "part": "xc7a100tcsg324-1",
+  "physical_board_revision": "unknown",
+  "original_core_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+  "flash_core_sha256": "67817bf756167acf063e0c65dc2c259d632c4646b43792205d25661bbed7575c",
+  "payload_sha256": "eb2ee34cc1a744498ac63b4e3fae425d4bb06be422ae6d41bd1ead696201134f",
+  "bitstream_sha256": "78d2e703372c13c5044674c8d4eea5b775d6b12771d21df37ba0f90617723c18",
+  "routed_resources": {
+    "LUT": 53944,
+    "FF": 35645,
+    "BRAM_tiles": 31,
+    "DSP": 117,
+    "Slice": 15618
+  },
+  "wns_ns": 1.276,
+  "whs_ns": 0.015,
+  "routing_errors": 0,
+  "physical_cold_boot_tested": true,
+  "operator_confirmed_all_power_removed": true,
+  "operator_confirmation": "已拔掉全部供电并重接",
+  "operator_action": "Remove USB and all other power, wait at least five seconds, reconnect",
+  "configuration_or_software_download_during_cold_test": false,
+  "board_release_ready": false,
+  "hardware_gemmini_operator_tests_run": false,
+  "physical_fp16_fp32_exhaustive_tests_run": false,
+  "recorded_at": "2026-10-12T03:15:55.464857+08:00"
+}

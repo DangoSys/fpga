@@ -1,0 +1,401 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Mon Oct 12 03:00:28 2026
+| Host         : amax running 64-bit Ubuntu 24.04 LTS
+| Command      : report_methodology -file /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/methodology.rpt
+| Design       : toy_a7_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: toy_a7_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 67
++-----------+----------+-----------------------------------------------------------+------------+
+| Rule      | Severity | Description                                               | Violations |
++-----------+----------+-----------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                              | 2          |
+| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 16         |
+| SYNTH-9   | Warning  | Small multiplier                                          | 5          |
+| SYNTH-10  | Warning  | Wide multiplier                                           | 21         |
+| SYNTH-16  | Warning  | Address collision                                         | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                          | 1          |
+| ULMTCS-1  | Warning  | Control Sets use limits recommend reduction               | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects               | 4          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                         | 16         |
++-----------+----------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell ddr_controller/u_arty_ddr3_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__7/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__8/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__9/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[0]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[10]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[11]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[1]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[2]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[3]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[4]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[5]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[6]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[7]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[8]/PRE,
+ddr_controller/u_arty_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[9]/PRE
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell platform/loader/in_pipe_v_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) platform/chip/system/clint_domain/intsource/reg_0/reg_0_reg[0]/CLR,
+platform/chip/system/clint_domain/intsource/reg_0/reg_0_reg[1]/CLR,
+platform/chip/system/ibus_intsource/reg_0__0/reg_0_reg/CLR,
+platform/chip/system/plic_domain/intsource/reg_0/reg_0_reg/CLR
+platform/chip/system/plic_domain/intsource_1/reg_0/reg_0_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-5#1 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#2 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#3 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#4 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#5 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#6 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#7 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#8 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_0_127_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#9 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#10 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#11 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#12 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#13 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#14 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#15 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#16 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance platform/loader/payload_reg_128_255_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at sharedFma/fma/product_pipe_b_reg[11]_i_1 of size 20x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at sharedFma/fma/product_pipe_b_reg[15]_i_1 of size 20x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at sharedFma/fma/product_pipe_b_reg[19]_i_1 of size 20x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at sharedFma/fma/product_pipe_b_reg[3]_i_1 of size 20x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at sharedFma/fma/product_pipe_b_reg[7]_i_1 of size 20x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1 of size 23x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__0 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__1 of size 23x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__10 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__11 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__2 of size 18x23, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__3 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__4 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__5 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__6 of size 18x23, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__7 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__8 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/cores_0/div/remainder1__9 of size 18x18, it is decomposed from a wide multipler into 17 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0 of size 18x20, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0__0 of size 20x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0__1 of size 18x20, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0__2 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0__3 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b0__4 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b_reg__0 of size 20x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/fpuOpts_0/sharedFma/fma/product_pipe_b_reg__1 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
+Related violations: <none>
+
+SYNTH-16#1 Warning
+Address collision  
+Block RAM platform/chip/system/tile_prci_domain/element_reset_domain_bbtile/dcache/mshrs/sdq_ext/Memory_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 1263 control sets (vs. available limit of 15850, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ *miso_meta_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '18' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/yys/codex-builds/toy-a7-flash-20261012/board/flash_boot.xdc (Line: 13)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ *rx_meta_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/yys/codex-builds/toy-a7-flash-20261012/board/arty_a7.xdc (Line: 18)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ *sw_meta_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '17' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/yys/codex-builds/toy-a7-flash-20261012/board/flash_boot.xdc (Line: 10)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/ip/arty_ddr3/arty_ddr3/user_design/constraints/arty_ddr3.xdc (Line: 356)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr_controller/u_arty_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

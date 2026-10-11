@@ -8,6 +8,13 @@ This remains a **Rev E engineering target**: PCB revision is unconfirmed and
 physical Gemmini tests are pending. See [measured results](VALIDATION.md) and
 [the hardware logs](evidence/2026-10-12/README.md).
 
+For stored configuration/software and autonomous power-on startup, see
+[persistent Flash boot](FLASH_BOOT.md). The separate Flash target has passed
+complete FPGA implementation, Flash verification and a physical power cycle:
+it boots the original Linux image and passes all five system checks without
+reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.md).
+Runtime DDR and changes to the initramfs remain volatile.
+
 ## Architecture and scope
 
 - RV64IMAFDC with Zfh/Zba/Zbb/Zbs, M/S/U, PMP, Sv39, interrupts and 8 KiB I/D

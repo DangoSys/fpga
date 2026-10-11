@@ -14,6 +14,8 @@ module tb_axi_scu;
   reg rx_valid=0,rx_error=0;reg [7:0] rx_data=0;
   wire tx_valid;wire [7:0] tx_data;reg tx_ready=0;
   wire exited,interrupt;wire [31:0] exit_code;
+  wire flash_miso=0,flash_recovery=0;
+  wire flash_mosi,flash_sck,flash_cs_n;
   integer tx_count=0;
   axi_scu dut(.*);
   always @(posedge clk) if(tx_valid && tx_ready) begin

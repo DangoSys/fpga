@@ -1,0 +1,17 @@
+{
+  "result": "PASS_FLASH_LINUX",
+  "checks": [
+    "PASS VM_COPY_ON_WRITE",
+    "PASS VM_PAGE_PROTECTION",
+    "PASS FP64_PROCESS_CONTEXT",
+    "PASS LINUX_TIMER",
+    "PASS LINUX_SYSTEM_CHECK"
+  ],
+  "exit_status": 0,
+  "usb_disconnections": 1,
+  "disconnect_required": true,
+  "elapsed_seconds": 135.172,
+  "recorded_at": "2026-10-11T19:11:36.626394+00:00",
+  "port": "COM5",
+  "transcript": "platforms\\arty-a7-toy\\build\\flash-program-20261012\\cold-boot-1.log"
+}

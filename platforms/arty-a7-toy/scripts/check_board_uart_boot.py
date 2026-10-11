@@ -4,6 +4,7 @@ Only the external DDR PHY is replaced with the stalled AXI memory model. No
 testbench override releases the CPU and no initial image is put into DDR.
 """
 import hashlib
+import argparse
 import json
 from pathlib import Path
 import re
@@ -104,6 +105,12 @@ UART = r'''
 
 
 def main():
+    global OUT
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--flash-recovery",action="store_true",help="Use the new ROM with SW0 recovery selected")
+    args=parser.parse_args()
+    if args.flash_recovery:
+        OUT=ROOT/"build/board-uart-flash-recovery"
     OUT.mkdir(parents=True, exist_ok=True)
     binary = ROOT / "build/cpu-smoke/smoke.bin"
     data = binary.read_bytes()
@@ -112,18 +119,29 @@ def main():
     bench = bench.replace("tb_board_cpu", "tb_board_uart_boot")
     bench = bench.replace("always #5 clk=~clk;", "always #20 clk=~clk;")
     bench = bench.replace("force platform.loader.cpu_run=1;", "")
+    if args.flash_recovery:
+        bench=bench.replace("toy_a7_platform platform(.*);", "toy_a7_platform #(.FLASH_BOOT(1)) platform(.*);")
+        bench=bench.replace("wire flash_recovery;", "wire flash_recovery=1;")
+        bench=bench.replace("wire flash_miso;", "wire flash_miso=0;")
+        bench=bench.replace(".CAPACITY(262144)", ".CAPACITY(268435456)")
     bench = bench.replace('.IMAGE("smoke.hex")', '.IMAGE("")')
     bench = bench.replace("cycles>4000000", "cycles>120000000")
     bench = bench.replace("endmodule", f"  localparam PROGRAM_BYTES={len(data)};\n" + UART + "\nendmodule")
     path = OUT / "tb_board_uart_boot.sv"
     path.write_text(bench)
-    files = [ROOT / "build/serial-bound/ToyLinuxChip.sv", ROOT / "build/serial-bound/FpgaMemories.sv",
+    core=ROOT/("build/flash-boot/ToyLinuxChip.sv" if args.flash_recovery else "build/serial-bound/ToyLinuxChip.sv")
+    files = [core, ROOT / "build/serial-bound/FpgaMemories.sv",
              ROOT / "tests/axi_smoke_memory.sv", path]
     files += [p for p in (ROOT / "board").glob("*.sv") if p.name != "toy_a7_top.sv"]
     with (OUT / "compile.log").open("w") as log:
         subprocess.run(["verilator", "--binary", "--timing", "-j", "8", "-Wno-fatal", "-DSYNTHESIS",
                         "-DBUCKYBALL_DISABLE_DPI", "--top-module", "tb_board_uart_boot", "--Mdir", str(OUT / "obj")]
-                       + [str(p) for p in files], stdout=log, stderr=log, check=True, timeout=900)
+                       + [str(p) for p in files], stdout=log, stderr=log, check=True, timeout=900,cwd=ROOT)
+    if args.flash_recovery:
+        # The bound ROM's readmemh path is relative to the platform directory.
+        import shutil
+        (OUT/"build/flash-boot").mkdir(parents=True,exist_ok=True)
+        shutil.copy2(ROOT/"build/flash-boot/bootrom.hex",OUT/"build/flash-boot/bootrom.hex")
     with (OUT / "simulation.log").open("w") as log:
         result = subprocess.run([str(OUT / "obj/Vtb_board_uart_boot")], cwd=OUT,
                                 stdout=log, stderr=log, timeout=1200)
@@ -134,6 +152,7 @@ def main():
     record = dict(result="PASS_UART_LOAD_VERIFY_BOOT", binary_sha256=hashlib.sha256(data).hexdigest(),
                   bytes_verified=len(data), testbench_cpu_release_override=False, preloaded_ddr_image=False,
                   physical_mig_simulated=False, physical_board_tested=False,
+                  flash_rom_recovery=args.flash_recovery,
                   cycles=int(re.search(r"through board AXI/SCU cycles=(\d+)", transcript)[1]))
     (OUT / "RESULT.json").write_text(json.dumps(record, indent=2) + "\n")
     print(transcript)

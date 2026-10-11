@@ -1,0 +1,7 @@
+PASS UART_PAYLOAD_READBACK bytes=110592 cycles=61134003
+PASS UART_VERIFIED_RUN cycles=61144580
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=61853714
+- /home/yys/codex-builds/toy-a7-flash-20261012/build/board-uart-flash-recovery/tb_board_uart_boot.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2s; walltime 429.844 s; speed 5.756 ms/s
+- Verilator: cpu 429.660 s on 1 threads; allocated 264 MB

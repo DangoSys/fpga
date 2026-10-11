@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct 12 03:01:08 2026
+# Process ID: 3073685
+# Current directory: /home/yys/codex-builds/toy-a7-flash-20261012
+# Command line: vivado -mode batch -source /home/yys/codex-builds/toy-a7-flash-20261012/board/make_flash_image.tcl -log /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.log -journal /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.jou -tclargs /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/toy_a7.bit /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/flash_payload.bin /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.mcs
+# Log file: /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.log
+# Journal file: /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.jou
+# Running On        :amax
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
+# Processor Detail  :INTEL(R) XEON(R) GOLD 6542Y
+# CPU Frequency     :897.901 MHz
+# CPU Physical cores:48
+# CPU Logical cores :96
+# Host memory       :540650 MB
+# Swap memory       :130443 MB
+# Total Virtual     :671094 MB
+# Available Virtual :586168 MB
+#-----------------------------------------------------------
+source /home/yys/codex-builds/toy-a7-flash-20261012/board/make_flash_image.tcl
+# if {$argc!=3} {error "Usage: make_flash_image.tcl toy_a7.bit flash_payload.bin output.mcs"}
+# lassign $argv bitfile payload output
+# set bitfile [file normalize $bitfile]
+# set payload [file normalize $payload]
+# set output [file normalize $output]
+# if {![file isfile $bitfile] || ![file isfile $payload]} {error "Missing input file"}
+# if {[file size $bitfile]>=0x400000} {error "Configuration exceeds the 4 MiB partition"}
+# if {[file size $payload]<=32 || [file size $payload]>0xc00000} {error "Invalid software partition size"}
+# set f [open $payload rb]
+# set magic [read $f 8]
+# close $f
+# if {$magic ne "TOYFLZ4\x00"} {error "Expected a packed TOYFLZ4 image"}
+# file mkdir [file dirname $output]
+# write_cfgmem -force -format mcs -interface SPIx1 -size 16 \
+#   -loadbit [list up 0x00000000 $bitfile] -loaddata [list up 0x00400000 $payload] -file $output
+Command: write_cfgmem -force -format mcs -interface SPIx1 -size 16 -loadbit {up 0x00000000 /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/toy_a7.bit} -loaddata {up 0x00400000 /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/flash_payload.bin} -file /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/toy_a7.bit
+Creating bitstream load up from address 0x00400000
+Loading datafile /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/flash_payload.bin
+Writing file /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.mcs
+Writing log file /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/toy_flash.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x002CB1F7    Oct 12 03:00:59 2026    /home/yys/codex-builds/toy-a7-flash-20261012/build/board-20261012-023749/toy_a7.bit
+0x00400000    0x00777B5E    Oct 12 02:36:05 2026    /home/yys/codex-builds/toy-a7-flash-20261012/build/flash-boot/flash_payload.bin
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# puts "PASS FLASH_IMAGE_LAYOUT: config=0x0 software=0x400000 capacity=16MiB"
+PASS FLASH_IMAGE_LAYOUT: config=0x0 software=0x400000 capacity=16MiB
+# exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 03:01:12 2026...
