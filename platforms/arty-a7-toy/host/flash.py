@@ -82,10 +82,14 @@ def main():
         packed_record = json.loads(
             args.mcs.with_suffix(args.mcs.suffix + ".json").read_text()
         )
-        assert packed_record["result"] == "PASS_VIVADO_FLASH_PACK"
-        assert packed_record["bitstream_sha256"] == sha(bit)
-        assert packed_record["packed_payload_sha256"] == sha(payload)
-        assert packed_record["flash_image_sha256"] == sha(args.mcs)
+        if packed_record["result"] != "PASS_VIVADO_FLASH_PACK":
+            raise ValueError("Prepacked flash image record did not pass packing")
+        if packed_record["bitstream_sha256"] != sha(bit):
+            raise ValueError("Prepacked flash image bitstream hash mismatch")
+        if packed_record["packed_payload_sha256"] != sha(payload):
+            raise ValueError("Prepacked flash image payload hash mismatch")
+        if packed_record["flash_image_sha256"] != sha(args.mcs):
+            raise ValueError("Prepacked flash image MCS hash mismatch")
         shutil.copy2(args.mcs.resolve(), image)
         commands[0] = None
     record = dict(

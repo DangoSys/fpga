@@ -16,7 +16,7 @@ if {[llength $devices] != 1} { error "Expected one XC7A100T; inspect the connect
 set device [lindex $devices 0]
 current_hw_device $device
 set_property PROGRAM.FILE $bitfile $device
-program_hw_devices $device
+if {![program_hw_devices $device]} {error "JTAG programming failed; device did not configure"}
 refresh_hw_device $device
 puts "ARTY_JTAG_PROGRAMMED: $bitfile"
 close_hw_target

@@ -34,7 +34,7 @@ set_property PROGRAM.ERASE 1 $memory
 set_property PROGRAM.CFG_PROGRAM 1 $memory
 set_property PROGRAM.VERIFY 1 $memory
 set_property PROGRAM.CHECKSUM 0 $memory
-program_hw_cfgmem $memory
+if {![program_hw_cfgmem $memory]} {error "Flash program/verify failed"}
 puts "PASS FLASH_PROGRAM_VERIFY: $part $image"
 # JP1 must be shorted; this reloads the FPGA from Flash without downloading .bit.
 boot_hw_device -timeout 60 $device

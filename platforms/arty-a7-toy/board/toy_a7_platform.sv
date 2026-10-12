@@ -403,7 +403,7 @@ module toy_a7_platform #(parameter UART_DIVISOR=25, parameter FLASH_BOOT=0) (
   assign l_rvalid=ddr_rvalid && !cpu_run;
   assign ddr_rready=cpu_run ? c_rready : l_rready;
   wire [1:0] scu_bresp;
-  assign peripherals_b_bits_resp=|scu_bresp;
+  assign peripherals_b_bits_resp=scu_bresp;
   axi_scu #(.FLASH_BOOT(FLASH_BOOT)) peripherals (
     .clk(clk),
     .reset(cpu_reset),
