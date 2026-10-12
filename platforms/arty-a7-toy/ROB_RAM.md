@@ -40,7 +40,9 @@ bank/缓存容量和板级端口，将 ROB 的两份 64 位操作数移入同步
 `31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9`。
 Linux RTL 启动、串口命令和五项用户态检查通过，273,506,752 周期与基线相同。
 25 MHz UART 整板实现通过并生成位流；完整报告见
-[本轮记录](evidence/2026-10-12/rob-ram/REPORT.md)。以上不是新位流的实物验收。
+[本轮记录](evidence/2026-10-12/rob-ram/REPORT.md)。该初始档案保持实现阶段的历史状态。
+后续实物复测已通过完整镜像读回与两轮各 15 个 Linux/Gemmini 程序，新增记录在
+[PR #9](https://github.com/DangoSys/fpga/pull/9)，绑定同一份候选位流摘要。
 
 | 布线后资源 | 同条件 UART 基线 | ROB RAM 候选 | 变化 |
 |---|---:|---:|---:|
@@ -78,4 +80,5 @@ python3 scripts/verify_rob_evidence.py
 候选 launcher 使用原整板 Tcl、原 25 MHz 约束和原策略，外层一小时 timeout。
 其结果不继承旧实物资格。默认 `elaborate.sh` 仍受旧 `verify_target.py --core`
 摘要门限保护；候选走上述独立入口和 `verify_rob_evidence.py --core`。
-候选未烧写板卡，也未生成或验证 Flash 启动版本，现有发布包不替换。
+后续候选已临时上板并通过上述回归；其 Flash 启动版本仍未生成或验证，
+现有发布包不替换。
