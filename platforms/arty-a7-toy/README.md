@@ -1,5 +1,8 @@
 # Toy/Linux on Arty A7-100T
 
+无需重新构建时，可从 [中文下载指南](DOWNLOADS.md) 获取已验证的 `.bit`、
+配套软件、烧录脚本和校验值；临时加载与 Flash 掉电启动分别提供下载包。
+
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
 checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,

@@ -14,11 +14,15 @@ The Arty A7 platforms have their own pinned Chisel build, serial loader, firmwar
 constraints and verification record. Follow its guide directly; the setup and
 demo below describe the existing Kintex-7 flow.
 
+Arty A7-100T 的 Toy/Linux 已验证位流、配套软件与烧录脚本可直接下载：
+[中文下载与使用说明](platforms/arty-a7-toy/DOWNLOADS.md)。
+提供临时 UART 加载、Flash 掉电启动两套包，另附对应源码和 SHA256 校验值。
+
 The Toy/Linux target passes complete board implementation, Linux RTL checks and
 a physical Arty A7-100T boot with full image readback and five Linux checks.
-Its PCB revision remains unconfirmed and physical Gemmini testing is pending;
-see [the hardware record](platforms/arty-a7-toy/evidence/2026-10-12/README.md)
-and its build/programming guide before using another board.
+PCB 修订号仍未确认；最新临时镜像已通过 Linux/Gemmini 实物回归，完整模型等仍未验收。
+详见 [中文测试报告](platforms/arty-a7-toy/evidence/2026-10-12/linux-gemmini/REPORT.md)
+及对应构建/烧录指南，不能直接认定其他板卡也已验证。
 
 ## Kintex-7 setup
 
