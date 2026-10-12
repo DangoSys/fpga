@@ -1,0 +1,90 @@
+[info] welcome to sbt 1.12.11 (N/A Java 17.0.20)
+[info] loading project definition from /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to toy-arty-a7-linux (in build file:/home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/)
+[info] compiling 213 Scala sources to /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/target/scala-2.13/classes ...
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/T1DecodePattern.scala:38:43: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,
+[warn] or remove the empty argument list from its definition (Java-defined methods are exempt).
+[warn] In Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable]
+[warn]   val attributes      = IO(Output(Property[Seq[AnyClassType]]))
+[warn]                                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/T1DecodePattern.scala:40:42: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,
+[warn] or remove the empty argument list from its definition (Java-defined methods are exempt).
+[warn] In Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable]
+[warn]   val attributesIn    = IO(Input(Property[Seq[AnyClassType]]))
+[warn]                                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:22:16: implicit conversion method bool2str should be enabled
+[warn] by making the implicit value scala.language.implicitConversions visible.
+[warn] This can be achieved by adding the import clause 'import scala.language.implicitConversions'
+[warn] or by setting the compiler option -language:implicitConversions.
+[warn] See the Scaladoc for value scala.language.implicitConversions for a discussion
+[warn] why the feature should be explicitly enabled.
+[warn]   implicit def bool2str(b: Boolean): String = if (b) "b1" else "b0"
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:72:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case SystemBusKey => up(SystemBusKey, site).copy(beatBytes = 16, dtsFrequency = Some(BigInt(50000000)))
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:73:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case MemoryBusKey => up(MemoryBusKey, site).copy(beatBytes = 16, dtsFrequency = Some(BigInt(50000000)))
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:74:27: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case PeripheryBusKey => up(PeripheryBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:75:25: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case ControlBusKey => up(ControlBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:76:23: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case FrontBusKey => up(FrontBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:78:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:116:5: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]     up(TilesLocated(InSubsystem), site).map {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:135:17: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]     val cache = up(InclusiveCacheKey, site)
+[warn]                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:138:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/src/main/scala/ToyLinuxConfig.scala:171:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:30:49: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys).lazyZip(zs)
+[warn]     (stalling.init, stalling.tail, valids.init).zipped.foreach {
+[warn]                                                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:41:34: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.init, stalling.tail).zipped.foreach {
+[warn]                                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:51:32: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.tail, valids.init).zipped.foreach {
+[warn]                                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:13:35: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]   implicit class CrossAble[X](xs: Traversable[X]) {
+[warn]                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:15:22: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]     def cross[Y](ys: Traversable[Y]): Traversable[(X, Y)] = for {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:15:39: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]     def cross[Y](ys: Traversable[Y]): Traversable[(X, Y)] = for {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:175:85: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]     if (bbPerCore(i).isDefined) Some(TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:183:85: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]     if (bbPerCore(i).isDefined) Some(TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:305:3: method DisableMonitors in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   DisableMonitors(implicit p => tlSlaveXbar.node :*= slaveNode)
+[warn]   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/system/tile/Configs.scala:59:40: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]         val prev                     = up(TilesLocated(`location`), site)
+[warn]                                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/upstream/arch/src/main/scala/framework/system/tile/Configs.scala:110:40: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]         val prev                     = up(TilesLocated(`location`), site)
+[warn]                                        ^
+[warn] 24 warnings found
+[info] done compiling
+[info] running fpga.arty.linux.EmitGlobalRobCheck 
+[success] Total time: 36 s, completed Oct 12, 2026, 7:47:43 PM

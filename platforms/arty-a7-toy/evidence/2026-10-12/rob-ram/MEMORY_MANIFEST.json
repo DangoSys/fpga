@@ -1,0 +1,140 @@
+{
+  "emitted_sha256": "dc7d0cd8ab3d819b1a72b54d624a8462f21c02708983bc7d45457c8d382a228f",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "memory_rtl_sha256": "d5a37896aee19c8d4931c87dc9683861abf32f096a1c1441f4362370d3d7b054",
+  "read_latency": 1,
+  "write_latency": 1,
+  "undefined_output_policy": "hold on disabled/write cycle",
+  "dual_port_collision_policy": "read/write same address is undefined",
+  "memories": [
+    {
+      "module_name": "tag_array_ext",
+      "depth": 32,
+      "width": 92,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 23,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.meta.tag_array.tag_array_ext"
+      ],
+      "ram_style": "distributed"
+    },
+    {
+      "module_name": "array_0_0_ext",
+      "depth": 128,
+      "width": 128,
+      "masked": true,
+      "read": 1,
+      "write": 1,
+      "readwrite": 0,
+      "mask_granularity": 64,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.array_2_1.array_0_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.array_2_0.array_0_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.array_0_1.array_0_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.dcache.data.array_0_0.array_0_0_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "bbtile_icache_tag_array_ext",
+      "depth": 64,
+      "width": 42,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 21,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_tag_array.bbtile_icache_tag_array_ext"
+      ],
+      "ram_style": "distributed"
+    },
+    {
+      "module_name": "bbtile_icache_data_arrays_0_ext",
+      "depth": 256,
+      "width": 64,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 32,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_3.bbtile_icache_data_arrays_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_2.bbtile_icache_data_arrays_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_1.bbtile_icache_data_arrays_0_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.frontend.icache.bbtile_icache_data_arrays_0.bbtile_icache_data_arrays_0_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "robOperands_ext",
+      "depth": 16,
+      "width": 128,
+      "masked": false,
+      "read": 1,
+      "write": 1,
+      "readwrite": 0,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.frontend.scheduler.rob.robOperands.robOperands_ext"
+      ],
+      "ram_style": "block"
+    },
+    {
+      "module_name": "sram_ext",
+      "depth": 8,
+      "width": 1269,
+      "masked": false,
+      "read": 1,
+      "write": 1,
+      "readwrite": 0,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.frontend.scheduler.subRob.sram.sram_ext"
+      ],
+      "ram_style": "distributed"
+    },
+    {
+      "module_name": "mem_ext",
+      "depth": 1024,
+      "width": 64,
+      "masked": true,
+      "read": 0,
+      "write": 0,
+      "readwrite": 1,
+      "mask_granularity": 8,
+      "extra_ports": [],
+      "hierarchy": [
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_7.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_6.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_5.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_4.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_3.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_2.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_1.mem.mem_ext",
+        "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.memDomain.backend.privateBackend.banks_0.mem.mem_ext"
+      ],
+      "ram_style": "block"
+    }
+  ],
+  "baseline_core_rtl_sha256": "03155e51ef07fec698c4c75f459478d065ed41fb324f00109d18a7426f330c05",
+  "additional_memory_adapters": [
+    {
+      "module": "regfile_32x65",
+      "implementation": "two single-write LUTRAM banks and LVT",
+      "read_ports": 3,
+      "write_ports": 2,
+      "read_latency": 0,
+      "same_address_write_priority": "W1",
+      "added_cycles": 0,
+      "adapter_sha256": "bbc9ad168c94204a946b3e107115fae7f6042fd6c7f95807d7af367449e28950"
+    }
+  ]
+}
