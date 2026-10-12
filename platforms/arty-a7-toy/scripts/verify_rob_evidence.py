@@ -87,7 +87,7 @@ def main():
         assert sha(ROOT / "build/serial-bound/ToyLinuxChip.sv") == record["core_rtl_sha256"]
         assert sha(ROOT / "build/serial-bound/FpgaMemories.sv") == record["memory_rtl_sha256"]
     print(f"PASS ROB RAM archive: {len(manifest['files'])} files; unchanged regression cycles; routed candidate")
-    print("Candidate has no physical-board or Flash qualification")
+    print("This initial archive predates physical tests; later hardware evidence is in PR #9")
 
 
 if __name__ == "__main__":

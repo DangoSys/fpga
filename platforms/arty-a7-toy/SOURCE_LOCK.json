@@ -401,7 +401,7 @@
     "scripts/verify_hardware_evidence.py": "60f3555a6b6ac6a9f567cf1b22caca9755bd4179dcea1f6731a70f8bd26a1202",
     "scripts/verify_linux_gemmini.py": "1413703dfa42a6be6ac60e0df6bf3eb95ce8b50671a3a803c7421302eace7b2b",
     "scripts/verify_linux_gemmini_archive.py": "cf8ab6737b2ad3525cf91e528aab64d78261146dec7473596d321812f3bad5e0",
-    "scripts/verify_rob_evidence.py": "da61951f6ff71a07408263d66ec60a24c407e71770d2ac7ef37c6429b5fb33a1",
+    "scripts/verify_rob_evidence.py": "584033d959522151572deb863c8213ef4ffc236e9ea60beb5dee1cb21fac0a1a",
     "scripts/verify_target.py": "39bdd529e55f2b36bed4ba6b10a4b0a400fcb685f6f3e5886d537e8c549932cd",
     "software/GEMMINI_LINUX.md": "31d991de14e315a1cf8ca24f5d3715a25a13d8601c8334687730a5b47959a963",
     "software/MODEL_COMPATIBILITY.md": "1e3a78574d019f4a3e1442b899cc654f2c5a3e41cf55a7650610eed75618a1cf",
