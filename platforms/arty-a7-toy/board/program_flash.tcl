@@ -22,9 +22,19 @@ if {[llength $choices]!=1} {error "Flash part is not uniquely compatible with th
 create_hw_cfgmem -hw_device $device [lindex $choices 0]
 set memory [get_property PROGRAM.HW_CFGMEM $device]
 create_hw_bitstream -hw_device $device [get_property PROGRAM.HW_CFGMEM_BITFILE $device]
-program_hw_devices $device
+if {[catch {program_hw_devices $device} message options]} {
+  return -options $options "SPI bridge programming failed: $message"
+}
+refresh_hw_device $device
+if {[get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR $device]!=0} {
+  error "SPI bridge configuration status rejected; Flash programming cancelled"
+}
 file mkdir [file dirname $backup]
-readback_hw_cfgmem -all -file $backup -format bin $memory
+if {[catch {readback_hw_cfgmem -all -file $backup -format bin $memory} message options]} {
+  return -options $options "Flash backup failed; programming cancelled: $message"
+}
 if {[file size $backup]!=16777216} {error "Incomplete backup; programming cancelled"}
 puts "PASS FLASH_BACKUP: $backup bytes=16777216"
 set_property PROGRAM.ADDRESS_RANGE use_file $memory
@@ -34,7 +44,9 @@ set_property PROGRAM.ERASE 1 $memory
 set_property PROGRAM.CFG_PROGRAM 1 $memory
 set_property PROGRAM.VERIFY 1 $memory
 set_property PROGRAM.CHECKSUM 0 $memory
-if {![program_hw_cfgmem $memory]} {error "Flash program/verify failed"}
+if {[catch {program_hw_cfgmem $memory} message options]} {
+  return -options $options "Flash program/verify failed: $message"
+}
 puts "PASS FLASH_PROGRAM_VERIFY: $part $image"
 # JP1 must be shorted; this reloads the FPGA from Flash without downloading .bit.
 boot_hw_device -timeout 60 $device

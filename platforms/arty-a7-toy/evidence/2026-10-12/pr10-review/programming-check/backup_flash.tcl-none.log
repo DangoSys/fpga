@@ -1,0 +1,3 @@
+PASS FLASH_BACKUP: mt25ql128-spi-x1_x2_x4 /home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/build/programming-check/tmpq84v9i8u/backup.bin bytes=16777216
+MOCK_EVENTS program_device readback
+MOCK_SUCCESS

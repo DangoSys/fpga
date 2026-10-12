@@ -1,5 +1,11 @@
 # Toy/Linux on Arty A7-100T
 
+## 当前源码修复的验收范围
+
+PR #10 修正了平台 AXI 写错误响应与烧录脚本校验，评估、回归和复现命令见
+[修正说明](REVIEW_FIXES.md)。下述实现及实物记录属于各自归档的旧源码/位流，
+当前 AXI RTL 修复尚未生成新位流或完成实物验收，不能直接沿用旧位流的资格。
+
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
 checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,

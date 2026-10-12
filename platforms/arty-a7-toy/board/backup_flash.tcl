@@ -21,9 +21,19 @@ if {[llength $choices]!=1} {error "Flash part is not uniquely compatible with th
 create_hw_cfgmem -hw_device $device [lindex $choices 0]
 set memory [get_property PROGRAM.HW_CFGMEM $device]
 create_hw_bitstream -hw_device $device [get_property PROGRAM.HW_CFGMEM_BITFILE $device]
-if {![program_hw_devices $device]} {error "SPI bridge programming failed"}
+if {[catch {program_hw_devices $device} message options]} {
+  return -options $options "SPI bridge programming failed: $message"
+}
+refresh_hw_device $device
+if {[get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR $device]!=0} {
+  error "SPI bridge configuration status rejected"
+}
 file mkdir [file dirname $backup]
-if {![readback_hw_cfgmem -all -file $backup -format bin $memory]} {error "Flash readback failed"}
+if {[catch {readback_hw_cfgmem -all -file $backup -format bin $memory} message options]} {
+  return -options $options "Flash readback failed: $message"
+}
 if {[file size $backup]!=16777216} {error "Incomplete Flash backup"}
 puts "PASS FLASH_BACKUP: $part $backup bytes=16777216"
 close_hw_target

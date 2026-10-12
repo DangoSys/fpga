@@ -1,0 +1,2 @@
+MOCK_EVENTS program_device readback
+MOCK_FAILURE Incomplete backup; programming cancelled

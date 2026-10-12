@@ -1,0 +1,10 @@
+PASS fullwidth AXI: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+/home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/tests/tb_axi_fullwidth.sv:107: $finish called at 9270000 (1ps)
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)
+PASS platform AXI B response: valid, invalid address, unaligned, burst, ID and backpressure
+/home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/tests/tb_platform_bresp.sv:52: $finish called at 420000 (1ps)
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)
+PASS programming scripts: 20 documented-return/status/error cases; no hardware
+PASS Flash image guards: 10 normal/-O tamper/control cases; no hardware

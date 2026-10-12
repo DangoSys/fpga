@@ -1,0 +1,2 @@
+FATAL: tests/tb_platform_bresp.sv:27: Platform B response addr=60030000 actual=01 expected=10
+       Time: 170000  Scope: tb_platform_bresp.write_case

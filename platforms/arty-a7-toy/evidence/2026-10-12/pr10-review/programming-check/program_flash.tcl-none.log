@@ -1,0 +1,5 @@
+PASS FLASH_BACKUP: /home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/build/programming-check/tmp1d4t8t_b/backup.bin bytes=16777216
+PASS FLASH_PROGRAM_VERIFY: mt25ql128-spi-x1_x2_x4 /home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/build/programming-check/tmp1d4t8t_b/input.bit
+FLASH_BOOT_CONFIG_STATUS DONE=1 EOS=1 CRC=0
+MOCK_EVENTS program_device readback program_flash boot
+MOCK_SUCCESS
