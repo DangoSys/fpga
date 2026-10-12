@@ -32,6 +32,12 @@ Flash 位流为 `78d2e703372c13c5044674c8d4eea5b775d6b12771d21df37ba0f90617723c1
 
 ## 使用与复现
 
+后续 ROB RAM 优化候选已完成独立实物复测，记录见
+[新位流实物报告](evidence/2026-10-12/rob-ram-hardware/REPORT.md)。该候选摘要为
+`dec8dcaea14b56db49ef8166d1605034695658f55f02dce73d4455fbc078ee5c`，源码在
+[PR #11](https://github.com/DangoSys/fpga/pull/11)。此处追加验证资料；上述 Release
+仍提供原摘要的 UART/Flash 文件，候选的 Flash 冷启动没有在本轮测试。
+
 解压后按包内中文 `README.md` 执行 `run_uart.ps1` 或 `run_flash.ps1`，脚本先校验
 产物再烧录。安装 Python/pyserial、Vivado Hardware Manager、Digilent/FTDI 驱动，
 连接 PROG/UART；替换真实串口和 Vivado 路径。Flash 入口要求明确指定实际 Flash 条目，

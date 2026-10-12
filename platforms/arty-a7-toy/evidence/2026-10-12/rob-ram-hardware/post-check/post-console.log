@@ -1,0 +1,8 @@
+kill -0 "$w" 2>/dev/null; printf "\nWATCHDOG_ALIVE_RC:%s\n" "$?"
+
+WATCHDOG_ALIVE_RC:1
+~ # while read a b c; do case "$a" in MemTotal:|MemAvailable:) printf "%s %s %s\
+n" "$a" "$b" "$c";; esac; done < /proc/meminfo; printf "LIVE_MEM_DONE\n"
+MemTotal: 245888 kB
+MemAvailable: 226060 kB
+LIVE_MEM_DONE

@@ -1,0 +1,24 @@
+{
+  "result": "PASS_WATCHDOG_SUCCESS_FAILURE_TIMEOUT_AND_REAP",
+  "cases": [
+    {
+      "program": "/bin/busybox true",
+      "exit_code": 0,
+      "watcher_alive_rc": 1,
+      "expected": true
+    },
+    {
+      "program": "/bin/busybox false",
+      "exit_code": 1,
+      "watcher_alive_rc": 1,
+      "expected": true
+    },
+    {
+      "program": "/bin/busybox sleep 5",
+      "exit_code": 137,
+      "watcher_alive_rc": 1,
+      "expected": true
+    }
+  ],
+  "flash_written": false
+}

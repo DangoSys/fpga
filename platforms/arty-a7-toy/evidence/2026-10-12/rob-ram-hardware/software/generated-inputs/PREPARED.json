@@ -1,0 +1,30 @@
+{
+  "result": "PREPARED_NOT_BUILT",
+  "dimension": 8,
+  "reference_commit": "1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097",
+  "original_cases": [
+    "gemmini_os_cisc_atranspose_test.c",
+    "gemmini_os_cisc_basic_test.c",
+    "gemmini_os_cisc_btranspose_test.c",
+    "gemmini_os_cisc_shift_test.c",
+    "gemmini_os_risc_abtranspose_test.c",
+    "gemmini_os_risc_atranspose_test.c",
+    "gemmini_os_risc_basic_test.c",
+    "gemmini_os_risc_btranspose_test.c",
+    "gemmini_os_risc_shift_test.c",
+    "gemmini_ws_cisc_conv_test.c",
+    "gemmini_ws_risc_basic_test.c",
+    "gemmini_ws_risc_btranspose_test.c",
+    "gemmini_ws_risc_shift_test.c"
+  ],
+  "new_blocked_matmul_cases": 16,
+  "profile": {
+    "gemmini_rows": 8,
+    "gemmini_columns": 8,
+    "bank_width": 64,
+    "bank_count": 8,
+    "virtual_bank_count": 16,
+    "bank_rows": 1024
+  },
+  "model_end_to_end_tested": false
+}

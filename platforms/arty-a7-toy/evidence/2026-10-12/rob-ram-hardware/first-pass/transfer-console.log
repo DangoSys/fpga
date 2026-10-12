@@ -1,0 +1,218 @@
+PASS VOLATILE_JTAG_PROGRAM
+D2XX UART B COM5: latency 16->2 ms
+PASS LOADER_INFO DDR=256MiB CPU=25MHz
+DDR_VERIFY 256/25797640
+DDR_VERIFY 1048832/25797640
+DDR_VERIFY 2097408/25797640
+DDR_VERIFY 3145984/25797640
+DDR_VERIFY 4194560/25797640
+DDR_VERIFY 5243136/25797640
+DDR_VERIFY 6291712/25797640
+DDR_VERIFY 7340288/25797640
+DDR_VERIFY 8388864/25797640
+DDR_VERIFY 9437440/25797640
+DDR_VERIFY 10486016/25797640
+DDR_VERIFY 11534592/25797640
+DDR_VERIFY 12583168/25797640
+DDR_VERIFY 13631744/25797640
+DDR_VERIFY 14680320/25797640
+DDR_VERIFY 15728896/25797640
+DDR_VERIFY 16777472/25797640
+DDR_VERIFY 17826048/25797640
+DDR_VERIFY 18874624/25797640
+DDR_VERIFY 19923200/25797640
+DDR_VERIFY 20971776/25797640
+DDR_VERIFY 22020352/25797640
+DDR_VERIFY 23068928/25797640
+DDR_VERIFY 24117504/25797640
+DDR_VERIFY 25166080/25797640
+PASS FULL_DDR_READBACK bytes=25797640 seconds=806.265
+PASS LINUX_BOOT
+RUN linux_system_check-linux
+/root/linux_system_check-linux & p=$!; (sleep 90; kill -KILL $p) & w=$!; wai
+t $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_RC_0:%s\
+n' $r
+BEGIN LINUX_SYSTEM_CHECK
+PASS VM_COPY_ON_WRITE
+linux_system_ch[26]: unhandled signal 11 code 0x2 at 0x0000003f9030e000 in linux_system_check-linux[10000+7a000]
+CPU: 0 PID: 26 Comm: linux_system_ch Not tainted 6.6.0 #1
+Hardware name: ucb-bar,buckyball (DT)
+epc : 00000000000105c6 ra : 000000000001041e sp : 0000003fca649b50
+ gp : 0000000000090078 tp : 0000000000096760 t0 : 0000000000000000
+ t1 : 0000000000000000 t2 : 0000000000000000 s0 : 0000003fca649bd0
+ s1 : 0000003f9030d000 a0 : 0000000000000000 a1 : 0000000000000000
+ a2 : 0000000000000000 a3 : 0000000000000000 a4 : 0000000000000000
+ a5 : 0000000000000000 a6 : 0000000000000000 a7 : 0000000000000000
+ s2 : 0000000000000042 s3 : 0000000000001000 s4 : 0000003f9030e000
+ s5 : 0000003fca649d88 s6 : 0000000000000002 s7 : 00000000000106ba
+ s8 : 00000000000101e0 s9 : 000000000000003a s10: 0000000000094e28
+ s11: 0000000000000000 t3 : 0000000000000000 t4 : 0000000000000000
+ t5 : 0000000000000000 t6 : 0000000000000000
+status: 800000020001e020 badaddr: 0000003f9030e000 cause: 000000000000000d
+PASS VM_PAGE_PROTECTION
+PASS FP64_PROCESS_CONTEXT
+PASS LINUX_TIMER elapsed_ns=102926000
+PASS LINUX_SYSTEM_CHECK
+
+WB_TEST_RC_0:0
+
+RUN gemmini_linux_check-linux
+~ # /root/gemmini_linux_check-linux & p=$!; (sleep 90; kill -KILL $p) & w=$!; wa
+it $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_RC_1:%s
+\n' $r
+BEGIN GEMMINI_LINUX_CHECK pid=28 dimension=8 bank_width=64
+BEGIN GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=2538000 accelerator_end_to_end_ns=894000
+BEGIN GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=614000 accelerator_end_to_end_ns=2600000
+BEGIN GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=5606000 accelerator_end_to_end_ns=5658000
+BEGIN GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=11158000 accelerator_end_to_end_ns=7596000
+BEGIN GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=4128000 accelerator_end_to_end_ns=10132000
+BEGIN GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=3960000 accelerator_end_to_end_ns=8644000
+BEGIN GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=1578000 accelerator_end_to_end_ns=1754000
+BEGIN GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=3308000 accelerator_end_to_end_ns=3742000
+BEGIN GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=638000 accelerator_end_to_end_ns=2802000
+BEGIN GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=628000 accelerator_end_to_end_ns=878000
+BEGIN GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=7116000 accelerator_end_to_end_ns=5728000
+BEGIN GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=5564000 accelerator_end_to_end_ns=7472000
+BEGIN GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=4206000 accelerator_end_to_end_ns=10058000
+BEGIN GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=3898000 accelerator_end_to_end_ns=8544000
+BEGIN GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=3336000 accelerator_end_to_end_ns=1660000
+BEGIN GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=1568000 accelerator_end_to_end_ns=3632000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+WB_TEST_RC_1:0
+
+RUN gemmini_os_cisc_atranspose_test-linux
+~ # /root/gemmini_os_cisc_atranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_2:%s\n' $r
+=== Gemmini OS CISC a_transpose Test ===
+Gemmini OS CISC a_transpose Test PASSED
+
+WB_TEST_RC_2:0
+
+RUN gemmini_os_cisc_basic_test-linux
+~ # /root/gemmini_os_cisc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_3:%s\n' $r
+=== Gemmini OS CISC Basic Test ===
+Gemmini OS CISC Basic Test PASSED
+
+WB_TEST_RC_3:0
+
+RUN gemmini_os_cisc_btranspose_test-linux
+~ # /root/gemmini_os_cisc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_4:%s\n' $r
+=== Gemmini OS CISC b_transpose Test ===
+Gemmini OS CISC b_transpose Test PASSED
+
+WB_TEST_RC_4:0
+
+RUN gemmini_os_cisc_shift_test-linux
+~ # /root/gemmini_os_cisc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_5:%s\n' $r
+=== Gemmini OS CISC in_shift Test ===
+Gemmini OS CISC in_shift Test PASSED
+
+WB_TEST_RC_5:0
+
+RUN gemmini_os_risc_abtranspose_test-linux
+~ # /root/gemmini_os_risc_abtranspose_test-linux & p=$!; (sleep 90; kill -KILL $
+p) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB
+_TEST_RC_6:%s\n' $r
+=== Gemmini OS RISC ab_transpose Test ===
+Gemmini OS RISC ab_transpose Test PASSED
+
+WB_TEST_RC_6:0
+
+RUN gemmini_os_risc_atranspose_test-linux
+~ # /root/gemmini_os_risc_atranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_7:%s\n' $r
+=== Gemmini OS RISC a_transpose Test ===
+Gemmini OS RISC a_transpose Test PASSED
+
+WB_TEST_RC_7:0
+
+RUN gemmini_os_risc_basic_test-linux
+~ # /root/gemmini_os_risc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_8:%s\n' $r
+=== Gemmini OS RISC Basic Test ===
+Gemmini OS RISC Basic Test PASSED
+
+WB_TEST_RC_8:0
+
+RUN gemmini_os_risc_btranspose_test-linux
+~ # /root/gemmini_os_risc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_9:%s\n' $r
+=== Gemmini OS RISC b_transpose Test ===
+Gemmini OS RISC b_transpose Test PASSED
+
+WB_TEST_RC_9:0
+
+RUN gemmini_os_risc_shift_test-linux
+~ # /root/gemmini_os_risc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_10:%s\n' $r
+=== Gemmini OS RISC in_shift Test ===
+Gemmini OS RISC in_shift Test PASSED
+
+WB_TEST_RC_10:0
+
+RUN gemmini_ws_cisc_conv_test-linux
+~ # /root/gemmini_ws_cisc_conv_test-linux & p=$!; (sleep 90; kill -KILL $p) & w=
+$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_R
+C_11:%s\n' $r
+=== Gemmini WS CISC Loop Conv Test ===
+Gemmini WS CISC Loop Conv Test PASSED
+
+WB_TEST_RC_11:0
+
+RUN gemmini_ws_risc_basic_test-linux
+~ # /root/gemmini_ws_risc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_12:%s\n' $r
+=== Gemmini WS RISC Basic Test ===
+Gemmini WS RISC Basic Test PASSED
+
+WB_TEST_RC_12:0
+
+RUN gemmini_ws_risc_btranspose_test-linux
+~ # /root/gemmini_ws_risc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_13:%s\n' $r
+=== Gemmini WS RISC b_transpose Test ===
+Gemmini WS RISC b_transpose Test PASSED
+
+WB_TEST_RC_13:0
+
+RUN gemmini_ws_risc_shift_test-linux
+~ # /root/gemmini_ws_risc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_14:%s\n' $r
+=== Gemmini WS RISC in_shift Test ===
+Gemmini WS RISC in_shift Test PASSED
+
+WB_TEST_RC_14:0
+
+D2XX closed; latency restored to 16 ms
+RESULT D:\Verilog_Dev\fpga-arty-a7-gemmini-linux\platforms\arty-a7-toy\build\hardware-gemmini-20261012-bcff9cd0\RESULT.json

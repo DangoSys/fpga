@@ -20,6 +20,11 @@ Runtime DDR and changes to the initramfs remain volatile.
 
 ## 2026-10-12：Linux/Gemmini 实物回归
 
+后续 [ROB RAM 候选实物复测](evidence/2026-10-12/rob-ram-hardware/REPORT.md)
+也已通过：完整镜像读回、两轮各 15 个程序、Linux 五项检查、原 Gemmini 13 项及
+每轮 16 项矩阵比较。优化源码在 PR #11，本 PR 追加实际日志和复现入口；
+现有 Release 文件与 Flash 镜像保留原版本。
+
 按标准 rootfs/bbkernel 流程构建的新镜像已完成全部 DDR 读回和实物启动；
 15 个程序返回 0，覆盖五项 Linux 系统检查、原 13 项 Gemmini 测试及新增 16 项
 OS/WS 矩阵对照（包含分块和尾块）。最终运行器回归与看门狗清理检查均通过。

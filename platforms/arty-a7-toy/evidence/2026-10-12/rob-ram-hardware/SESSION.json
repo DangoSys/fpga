@@ -1,0 +1,27 @@
+{
+  "started_at": "2026-10-12T21:04:12.519359+08:00",
+  "deadline": "2026-10-12T22:04:12.519359+08:00",
+  "timeout_seconds": 3600,
+  "command": [
+    "D:\\python\\python.exe",
+    "-u",
+    "D:\\Verilog_Dev\\fpga-arty-a7-gemmini-linux\\platforms\\arty-a7-toy\\host\\check_linux_gemmini.py",
+    "--payload",
+    "D:\\Verilog_Dev\\fpga-arty-a7-gemmini-linux\\platforms\\arty-a7-toy\\build\\linux-gemmini-20261012-e8e89f4c\\fw_payload.bin",
+    "--build-result",
+    "D:\\Verilog_Dev\\fpga-arty-a7-gemmini-linux\\platforms\\arty-a7-toy\\build\\linux-gemmini-20261012-e8e89f4c\\LINUX_GEMMINI_BUILD.json",
+    "--bitstream",
+    "D:\\Verilog_Dev\\fpga-arty-a7-gemmini-linux\\platforms\\arty-a7-toy\\build\\toy-a7-rob-ram-20261012-2ebcbc31\\board\\toy_a7.bit",
+    "--expected-bit-sha256",
+    "dec8dcaea14b56db49ef8166d1605034695658f55f02dce73d4455fbc078ee5c",
+    "--vivado",
+    "D:/Xilinx/2025.1/Vivado/bin/vivado.bat",
+    "--port",
+    "COM5"
+  ],
+  "flash_written": false,
+  "script_sha256": "3b23497e7b5b3516af22abb1fc38da48055c60dd786f75f5ada3faa201ca9268",
+  "uart_serial": "210319BCC5FCB",
+  "exit_code": 0,
+  "finished_at": "2026-10-12T21:19:28.986339+08:00"
+}
