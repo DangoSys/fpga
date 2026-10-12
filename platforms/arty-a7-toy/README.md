@@ -1,5 +1,8 @@
 # Toy/Linux on Arty A7-100T
 
+无需重新构建时，可从 [中文下载指南](DOWNLOADS.md) 获取已验证的 `.bit`、
+配套软件、烧录脚本和校验值；临时加载与 Flash 掉电启动分别提供下载包。
+
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
 checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,
@@ -16,6 +19,11 @@ reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.m
 Runtime DDR and changes to the initramfs remain volatile.
 
 ## 2026-10-12：Linux/Gemmini 实物回归
+
+后续 [ROB RAM 候选实物复测](evidence/2026-10-12/rob-ram-hardware/REPORT.md)
+也已通过：完整镜像读回、两轮各 15 个程序、Linux 五项检查、原 Gemmini 13 项及
+每轮 16 项矩阵比较。优化源码在 PR #11，本 PR 追加实际日志和复现入口；
+现有 Release 文件与 Flash 镜像保留原版本。
 
 按标准 rootfs/bbkernel 流程构建的新镜像已完成全部 DDR 读回和实物启动；
 15 个程序返回 0，覆盖五项 Linux 系统检查、原 13 项 Gemmini 测试及新增 16 项

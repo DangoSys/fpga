@@ -1,0 +1,270 @@
+{
+  "flash_written": false,
+  "model_end_to_end_tested": false,
+  "files": {
+    "first-pass/linux-console.log": {
+      "bytes": 14499,
+      "sha256": "492038f8ed6f1ca9af22fe8d04e95bcde597b714fc5e61119a1ab030c9bf2c7f"
+    },
+    "first-pass/PERFORMANCE.json": {
+      "bytes": 3751,
+      "sha256": "8a965e7d11aa0f8f579d35369757de8e52dd7675ab495b8c19c6ade423b438f9"
+    },
+    "first-pass/program-console.log": {
+      "bytes": 3148,
+      "sha256": "a804aadc44522767d581be24b083ded876a27243c75cb673a674e3ded7692913"
+    },
+    "first-pass/program.jou": {
+      "bytes": 1754,
+      "sha256": "4c9fb890a73372af4aa95cea71fbcd6b779fa43ff573654600b57182f97a4ddb"
+    },
+    "first-pass/program.log": {
+      "bytes": 4353,
+      "sha256": "91bc5daf46b6ab3ad89e36cdac360250b55b3f104c5263b77c16287083c2fddb"
+    },
+    "first-pass/RESULT.json": {
+      "bytes": 9709,
+      "sha256": "9a4439e54f79b35e8baa7b79251d223aa5d3c4a2a7bc6d5d227a4e400f15b816"
+    },
+    "first-pass/transfer-console.log": {
+      "bytes": 9022,
+      "sha256": "87bc321513fb3603245b13c2a30be9e8c4bb8897795a8f8f4c0ca77e163d0a55"
+    },
+    "HARDWARE_RESULT.json": {
+      "bytes": 2820,
+      "sha256": "82899cdb4f090927dc1a41864b604c8d02b7011997d2ffe9eea856a3f6e496cd"
+    },
+    "implementation/cdc.rpt": {
+      "bytes": 18459,
+      "sha256": "135fb071ef679e297772e213428481193b604b70e122ae57df1b397c7a73c17f"
+    },
+    "implementation/drc.rpt": {
+      "bytes": 258678,
+      "sha256": "e0c062aa6e13a01a4feed37ea85bff0a8f6ae05ca266d77967bcf432e2195769"
+    },
+    "implementation/MEMORY_MANIFEST.json": {
+      "bytes": 5624,
+      "sha256": "35a43d93e5bde0cd6b0379dc2755497d660e179a5ed190cec3de259e427226b4"
+    },
+    "implementation/OPTIN_RESULT.json": {
+      "bytes": 725,
+      "sha256": "bdb1d489c2d4e7d7fa4757d104bbc155f504f75ab75be26f79005b546f0c8b9b"
+    },
+    "implementation/RESULT.json": {
+      "bytes": 2132,
+      "sha256": "c415cbbe90ff1ae4bd699c8312453847f025e0ece0bdbdc0722650e972ca8b1d"
+    },
+    "implementation/route-status.rpt": {
+      "bytes": 651,
+      "sha256": "940f9a8a05963ffdc7ffc304e6f4226be99a07b3f5a83199d5bcd6e289897742"
+    },
+    "implementation/routed-timing.rpt": {
+      "bytes": 602572,
+      "sha256": "3c02fb09120654dba434c5b438117228bf2965953a5fb23f82d162736904bafe"
+    },
+    "implementation/routed-utilization.rpt": {
+      "bytes": 14179,
+      "sha256": "c5e97613245378c1cf377f5d464b93354ec980376e6a63c272d379d96db1bf5e"
+    },
+    "implementation/RUN.json": {
+      "bytes": 4107,
+      "sha256": "905863a76131fcac84f7164b461f03186497c61753565b08209a0872a722bcaa"
+    },
+    "implementation/ToyLinuxChip.profile.json": {
+      "bytes": 1255,
+      "sha256": "57e251b00a486f406e5e27f666f4416be730b4e08c8838584e4aac49ebb30f86"
+    },
+    "post-check/post-console.log": {
+      "bytes": 315,
+      "sha256": "4d2effa33782000122133d05e2b351679e3e068fea45c397f730848e3d88460f"
+    },
+    "post-check/RESULT.json": {
+      "bytes": 229,
+      "sha256": "6145883e9bd39a79dc52dc0188dbc828ed360ec3f41e8428915fc968be0be24e"
+    },
+    "repeat-pass/boot-console.log": {
+      "bytes": 14499,
+      "sha256": "492038f8ed6f1ca9af22fe8d04e95bcde597b714fc5e61119a1ab030c9bf2c7f"
+    },
+    "repeat-pass/linux-console.log": {
+      "bytes": 11628,
+      "sha256": "5fcf06aa8c9078e948ed2b66a7f1ebd9142c203b7d7d17d01ae96e1a9594822e"
+    },
+    "repeat-pass/LOAD_RESULT.json": {
+      "bytes": 9709,
+      "sha256": "9a4439e54f79b35e8baa7b79251d223aa5d3c4a2a7bc6d5d227a4e400f15b816"
+    },
+    "repeat-pass/PERFORMANCE.json": {
+      "bytes": 3748,
+      "sha256": "5dda26f0cb420b06213b92559c9a230084309a430c33de0074c2bf971b6d896a"
+    },
+    "repeat-pass/program-console.log": {
+      "bytes": 3148,
+      "sha256": "a804aadc44522767d581be24b083ded876a27243c75cb673a674e3ded7692913"
+    },
+    "repeat-pass/program.jou": {
+      "bytes": 1754,
+      "sha256": "4c9fb890a73372af4aa95cea71fbcd6b779fa43ff573654600b57182f97a4ddb"
+    },
+    "repeat-pass/program.log": {
+      "bytes": 4353,
+      "sha256": "91bc5daf46b6ab3ad89e36cdac360250b55b3f104c5263b77c16287083c2fddb"
+    },
+    "repeat-pass/RESULT.json": {
+      "bytes": 11734,
+      "sha256": "6ae9ce316eec352943e2622374c6158d3ab21200aeb8ddc85b6ab66c2eead964"
+    },
+    "REPORT.md": {
+      "bytes": 5236,
+      "sha256": "daf3bb87edfb8a9926bce97fa20b3f6b80c185a38999cffcdb7196d0e248bf14"
+    },
+    "SESSION.json": {
+      "bytes": 1195,
+      "sha256": "9a0ac867271f706695f853d48a5668d9377971acc73042a0bbd4fd9b465bf066"
+    },
+    "software/generated-inputs/ballISA.h": {
+      "bytes": 1088,
+      "sha256": "8f74e9230c45bc270c99b4b31fde6db6ed61b01c0055c7c62855de11bb571606"
+    },
+    "software/generated-inputs/CMakeLists.txt": {
+      "bytes": 3629,
+      "sha256": "4ea8d92e23c19d780fff7d6a2c1369ef3363dc1fe87acf1195656ce852684f4f"
+    },
+    "software/generated-inputs/gemmini_linux_check.c": {
+      "bytes": 5145,
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467"
+    },
+    "software/generated-inputs/gemmini_os_cisc_atranspose_test.c": {
+      "bytes": 1513,
+      "sha256": "d4b44df5f004b4e1d4ada02c247e5f66a6596dfa80cf70a09c54d7448b572712"
+    },
+    "software/generated-inputs/gemmini_os_cisc_basic_test.c": {
+      "bytes": 1384,
+      "sha256": "481733138780de0ef2ce7d867bc375cd22a64990f33b9eabd8a03a45c2e8861c"
+    },
+    "software/generated-inputs/gemmini_os_cisc_btranspose_test.c": {
+      "bytes": 1513,
+      "sha256": "efdf1cefe9277fde1dce1d62eb7c3364ddbb27926e99ddce9800f1fb54be1fec"
+    },
+    "software/generated-inputs/gemmini_os_cisc_shift_test.c": {
+      "bytes": 1507,
+      "sha256": "9676b4e45945de9cbe005be695ffd8d0f3a406fa0448875a8372cc1d1c20fb4c"
+    },
+    "software/generated-inputs/gemmini_os_risc_abtranspose_test.c": {
+      "bytes": 1715,
+      "sha256": "641982f9adc4b898a27d23967807d9f350c3db717b7c276df42281b7c6ba3558"
+    },
+    "software/generated-inputs/gemmini_os_risc_atranspose_test.c": {
+      "bytes": 1601,
+      "sha256": "4583e36cbea777a439e65fb4ca58e51574e2f7686217088922128c36fa8d74f9"
+    },
+    "software/generated-inputs/gemmini_os_risc_basic_test.c": {
+      "bytes": 2121,
+      "sha256": "cd8102c88b58a2ea289212779bd2bf50f9e35806e9039f4cc5a6abf73eef131f"
+    },
+    "software/generated-inputs/gemmini_os_risc_btranspose_test.c": {
+      "bytes": 1601,
+      "sha256": "01ee05bb7a92de708e1bac4041354d9f0363c70a4f5b898af784f47410f63798"
+    },
+    "software/generated-inputs/gemmini_os_risc_shift_test.c": {
+      "bytes": 1595,
+      "sha256": "aae1a632fd3fabc1ae9fea89daf9dc0693880c718f100c86b946257935a4076d"
+    },
+    "software/generated-inputs/gemmini_ws_cisc_conv_test.c": {
+      "bytes": 2717,
+      "sha256": "ab75719d036a6b61b4369514c6771ebac94a04e7448f2127b1be60bab2e8f28b"
+    },
+    "software/generated-inputs/gemmini_ws_risc_basic_test.c": {
+      "bytes": 1713,
+      "sha256": "f5aab861cf0f764e6179e24c70c75d9f3c7e9a0364a4e3aa818784f7f309c03a"
+    },
+    "software/generated-inputs/gemmini_ws_risc_btranspose_test.c": {
+      "bytes": 1811,
+      "sha256": "fff4938ea7c16864e3e1b91a2d30ef2d3eabeb3ed4a1153964f5d351d6980279"
+    },
+    "software/generated-inputs/gemmini_ws_risc_shift_test.c": {
+      "bytes": 1805,
+      "sha256": "a22209c0c02cd5d5b258525dd6266bbe3a7447b410a082e8da19a268478b6307"
+    },
+    "software/generated-inputs/params.h": {
+      "bytes": 126,
+      "sha256": "cc6bbe816a15f9a7bd133fbeb45d039733a22a6a6f94dace16eecea5eef61b24"
+    },
+    "software/generated-inputs/PREPARED.json": {
+      "bytes": 879,
+      "sha256": "890d8a759be94610a16a5ac976f0775e99220a4e4de3e44abd3c3aeeff99819e"
+    },
+    "software/LINUX_GEMMINI_BUILD.json": {
+      "bytes": 3119,
+      "sha256": "4d9229135d7f92b711c385628fcd96839ad0e667a6579f87d8f604ce8dd7cda3"
+    },
+    "sources/board/program_arty.tcl": {
+      "bytes": 1064,
+      "sha256": "fbb62bafb6df602b0f5f638fb05ae4ecc90494ac162b9a5f5ac314200f7a241c"
+    },
+    "sources/build.sbt": {
+      "bytes": 4345,
+      "sha256": "c4581ef9345fb3d3bd326c95b6f46a0ae8538ed6c0cc22ac675bd0c9a10fd407"
+    },
+    "sources/diagnostics/run_rob_hardware.py": {
+      "bytes": 1662,
+      "sha256": "00877023c88828cbfa06ce6d5111fa6b13552f96be19984dd1cef68a201991d7"
+    },
+    "sources/host/check_linux_gemmini.py": {
+      "bytes": 10604,
+      "sha256": "3b23497e7b5b3516af22abb1fc38da48055c60dd786f75f5ada3faa201ca9268"
+    },
+    "sources/host/check_live_shell.py": {
+      "bytes": 2672,
+      "sha256": "3b8b1c0a884a79c2255d45bbe53ce68587e2709ef53ea72aafa48f7475741e52"
+    },
+    "sources/host/check_watchdog.py": {
+      "bytes": 2989,
+      "sha256": "0d35f150a4cff87d99d6c368e9d1ba62312db9b780210bdb33269881421cc573"
+    },
+    "sources/host/ftdi_transport.py": {
+      "bytes": 4518,
+      "sha256": "f3a88c170f40121febde7fd283a50e54ab5af5b79f0651cb15db9af743d57de7"
+    },
+    "sources/host/load.py": {
+      "bytes": 4823,
+      "sha256": "a62e48b779c9ce1d6f8f6669523e427cf48bd19be3bf50a554dc391b09b3e3b2"
+    },
+    "sources/patches/framework/GlobalROB.scala": {
+      "bytes": 26125,
+      "sha256": "7998e486ffa0f6e4f1cdb3ee991ed5a7c8d389268da94e4fbbc9a9bd56573c7d"
+    },
+    "sources/program.tcl": {
+      "bytes": 360,
+      "sha256": "0ff928503cf00798dae132117435e34981a176c586d7aa16e587c47877ba031f"
+    },
+    "sources/scripts/verify_linux_gemmini.py": {
+      "bytes": 6737,
+      "sha256": "1413703dfa42a6be6ac60e0df6bf3eb95ce8b50671a3a803c7421302eace7b2b"
+    },
+    "sources/software/build_gemmini_image.py": {
+      "bytes": 3483,
+      "sha256": "949a59cbc4bd494cbe793b392aaccc237637c809667b6bd5dd211e2176e6fcbf"
+    },
+    "sources/software/gemmini_linux_check.c": {
+      "bytes": 5145,
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467"
+    },
+    "sources/software/linux_system_check.c": {
+      "bytes": 3890,
+      "sha256": "c1cedf2ce6e2583393c9e7f51fe20558c1402b8d81faf2152e8f6eeaf8058315"
+    },
+    "sources/software/prepare_gemmini_linux.py": {
+      "bytes": 4792,
+      "sha256": "358cee302a2a8ee6672cbf4c830776a6047dc33793a272a89f7343729ca0b3ec"
+    },
+    "watchdog/check.log": {
+      "bytes": 791,
+      "sha256": "58de5f54346dfd805737aea528347a5fa9430a7a0962964a08b349ede52b6303"
+    },
+    "watchdog/RESULT.json": {
+      "bytes": 513,
+      "sha256": "0982a18bad6beda608ad5191b2380bbe03683ecf16a2152011ca0f1838d11bbc"
+    }
+  }
+}

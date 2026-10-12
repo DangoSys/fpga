@@ -1,0 +1,9 @@
+{
+  "flash_written": false,
+  "configuration_changed": false,
+  "watchdog_alive_rc": 1,
+  "MemTotal_kib": 245888,
+  "MemAvailable_kib": 226060,
+  "uart_latency_restored_ms": 16,
+  "result": "PASS_POST_TEST_LIVE_SHELL"
+}
