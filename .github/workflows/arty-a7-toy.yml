@@ -39,3 +39,5 @@ jobs:
           timeout --signal=TERM --kill-after=15s 180s python3 scripts/check_board.py
           python3 scripts/check_programming_scripts.py
           python3 scripts/check_flash_guards.py
+          python3 scripts/check_runner_status.py
+          python3 scripts/check_platform_mutations.py

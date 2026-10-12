@@ -23,11 +23,14 @@ module tb_platform_bresp;
     while(!dut.peripherals_b_valid) @(negedge clk);
     repeat(5) begin
       // Observe the CPU input, through actual platform wiring and real SCU.
-      if(dut.chip.peripherals_b_bits_resp!==expected || dut.chip.peripherals_b_bits_id!==2)
-        $fatal(1,"Platform B response addr=%h actual=%b expected=%b",addr,dut.chip.peripherals_b_bits_resp,expected);
+      if(dut.chip.peripherals_b_valid!==1 || dut.chip.peripherals_b_bits_resp!==expected ||
+         dut.chip.peripherals_b_bits_id!==2)
+        $fatal(1,"Platform B response addr=%h valid=%b id=%b actual=%b expected=%b",addr,
+          dut.chip.peripherals_b_valid,dut.chip.peripherals_b_bits_id,dut.chip.peripherals_b_bits_resp,expected);
       @(negedge clk);
     end
     bready=1;@(negedge clk);bready=0;
+    if(dut.chip.peripherals_b_valid!==0) $fatal(1,"BVALID not cleared after handshake");
   endtask
   initial begin
     force dut.cpu_run=1;

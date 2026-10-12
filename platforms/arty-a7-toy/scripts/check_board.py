@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+from offline_check import run_check
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"build/board-unit"
@@ -73,4 +74,4 @@ LOADER_MEMORY="""
 
 
 if __name__=="__main__":
-    main()
+    run_check(main, OUT)

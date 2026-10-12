@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmpkggxjhnt\scripts\check_flash_guards.py", line 47, in <module>
+    main()
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmpkggxjhnt\scripts\check_flash_guards.py", line 37, in main
+    result.check_returncode()
+  File "D:\python\lib\subprocess.py", line 457, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['D:\\python\\python.exe', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\tests\\flash_guard_probe.py', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\host\\flash.py', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\build\\flash-guard-check\\tmpjayzjn7t\\chip.bit', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\build\\flash-guard-check\\tmpjayzjn7t\\payload.bin', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\build\\flash-guard-check\\tmpjayzjn7t\\image.mcs', 'D:\\Verilog_Dev\\fpga-arty-a7-pr10-review\\platforms\\arty-a7-toy\\build\\runner-status-check\\tmpkggxjhnt\\build\\flash-guard-check\\tmpjayzjn7t\\run', 'accept']' returned non-zero exit status 1.
+
+OBSERVED_RESULT {"result": "PASS_FLASH_GUARDS_NORMAL_AND_OPTIMIZED"}

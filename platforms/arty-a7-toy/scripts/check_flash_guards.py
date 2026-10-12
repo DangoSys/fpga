@@ -6,6 +6,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+from offline_check import run_check
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -44,4 +45,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_check(main, ROOT / "build/flash-guard-check")

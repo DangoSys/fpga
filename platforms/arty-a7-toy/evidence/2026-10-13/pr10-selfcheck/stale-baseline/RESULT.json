@@ -1,0 +1,28 @@
+{
+  "result": "PASS_EXPECTED_STALE_BASELINE",
+  "baseline_ref": "9fdcec6941e75282f7c2e8318d347168e034c343",
+  "physical_hardware_tested": false,
+  "cases": [
+    {
+      "script": "check_board.py",
+      "source_sha256": "e3618121401bd811eac50c017a016d3a548cdc004f8a47b01ae74466f02a786c",
+      "exit_code": 1,
+      "observed_result": "PASS",
+      "result": "PASS"
+    },
+    {
+      "script": "check_programming_scripts.py",
+      "source_sha256": "b91b146da58df41b8453a61fd8eaf87e7314d56a8e8fff327270cb3dbed10f10",
+      "exit_code": 1,
+      "observed_result": "PASS_OFFLINE_TCL_CONTRACTS",
+      "result": "PASS"
+    },
+    {
+      "script": "check_flash_guards.py",
+      "source_sha256": "42129a0be9f1399fac294799294fea791a83004463f9391f77b18c3d828e2535",
+      "exit_code": 1,
+      "observed_result": "PASS_FLASH_GUARDS_NORMAL_AND_OPTIMIZED",
+      "result": "PASS"
+    }
+  ]
+}

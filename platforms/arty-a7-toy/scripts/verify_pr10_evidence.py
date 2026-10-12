@@ -48,6 +48,39 @@ def main():
         log = (ARCHIVE / "original-pr" / (name + ".log")).read_text()
         require("MOCK_FAILURE expected boolean value" in log, name)
     print(f"PASS PR10 archive: {len(manifest['files'])} artifacts; 4/20/10 offline checks and expected negatives")
+    verify_selfcheck()
+
+
+def verify_selfcheck():
+    archive = ARCHIVE.parents[1] / "2026-10-13/pr10-selfcheck"
+
+    def load(name):
+        return json.loads((archive / name).read_text(encoding="utf-8"))
+
+    manifest = load("MANIFEST.json")
+    for name, item in manifest["files"].items():
+        data = (archive / name).read_bytes()
+        require(hashlib.sha256(data).hexdigest() == item["sha256"] and len(data) == item["bytes"], name)
+    record = load("RESULT.json")
+    require(record["result"] == "PASS_PR10_SELFCHECK", "selfcheck result")
+    require(not record["physical_hardware_tested"] and not record["new_bitstream_generated"], "selfcheck scope")
+    for name, expected in record["sources"].items():
+        require(manifest["files"]["sources/" + name]["sha256"] == expected, name)
+    require(load("board-unit/RESULT.json")["tests"] == 4, "selfcheck interface groups")
+    for directory, count in [("programming-check", 20), ("flash-guard-check", 10),
+                             ("runner-status-check", 3), ("backpressure-mutation", 3)]:
+        cases = load(directory + "/RESULT.json")["cases"]
+        require(len(cases) == count and all(case["result"] == "PASS" for case in cases), directory)
+    current = load("runner-status-check/RESULT.json")["cases"]
+    require(all(case["exit_code"] != 0 and case["observed_result"] == "FAILED" for case in current), "fresh failures")
+    old = load("stale-baseline/RESULT.json")["cases"]
+    require(len(old) == 3 and all(case["exit_code"] != 0 and case["observed_result"].startswith("PASS")
+                                for case in old), "stale baseline counterexamples")
+    mutations = {case["case"]: case for case in load("backpressure-mutation/RESULT.json")["cases"]}
+    require({name: case["exit_code"] for name, case in mutations.items()} ==
+            {"old-test": 0, "new-test": 1, "old-response": 1}, "mutation outcomes")
+    require("valid=0" in (archive / "backpressure-mutation/new-test.log").read_text(), "BVALID oracle")
+    print(f"PASS PR10 selfcheck archive: {len(manifest['files'])} artifacts; fresh failure status and BVALID oracles")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmpji_mwrjk/scripts/check_board.py", line 77, in <module>
+    run_check(main, OUT)
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmpji_mwrjk/scripts/offline_check.py", line 19, in run_check
+    main()
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmpji_mwrjk/scripts/check_board.py", line 28, in main
+    raise ValueError("CPU port fixture differs from its manifest")
+ValueError: CPU port fixture differs from its manifest
+
+OBSERVED_RESULT {"result": "FAILED", "physical_hardware_tested": false, "error_type": "ValueError", "error": "CPU port fixture differs from its manifest"}

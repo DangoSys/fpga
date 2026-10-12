@@ -1,0 +1,2 @@
+MOCK_EVENTS program_device readback
+MOCK_FAILURE Flash readback failed: injected readback exception

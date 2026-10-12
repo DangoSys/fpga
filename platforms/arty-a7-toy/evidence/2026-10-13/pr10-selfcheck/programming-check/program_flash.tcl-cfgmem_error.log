@@ -1,0 +1,3 @@
+PASS FLASH_BACKUP: /home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/programming-check/tmp7qvxfh88/backup.bin bytes=16777216
+MOCK_EVENTS program_device readback program_flash
+MOCK_FAILURE Flash program/verify failed: injected Flash verify exception
