@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "cycle_equivalence": true,
+  "coverage": [
+    "accepted operand integrity",
+    "ROB full",
+    "pointer wrap",
+    "issue backpressure",
+    "SubROB ownership stall",
+    "mid-flight resets",
+    "concurrent allocation/issue/completion",
+    "complete drain"
+  ],
+  "rtl_sha256": "e44723e3396d7e6421b9fae96a5d7b0b12ad0b4d55cc15128f21d7e048296fd0"
+}

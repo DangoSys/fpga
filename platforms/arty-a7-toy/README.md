@@ -21,6 +21,14 @@ it boots the original Linux image and passes all five system checks without
 reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.md).
 Runtime DDR and changes to the initramfs remain volatile.
 
+## 2026-10-12：可选 ROB 存储优化
+
+新增 [ROB RAM 候选](ROB_RAM.md)，整板布线后减少 484 LUT、1,657 FF 和
+84 Slice，增加 2 BRAM tile。CPU/Gemmini/Linux RTL 回归周期数保持不变；
+后续实物复测已通过完整镜像读回与两轮 Linux/Gemmini 回归，日志追加在
+[PR #9](https://github.com/DangoSys/fpga/pull/9)。默认构建与既有发布版本保留
+原寄存器路径；候选的 Flash 冷启动尚未验证。
+
 ## 2026-10-12：Linux/Gemmini 实物回归
 
 按标准 rootfs/bbkernel 流程构建的新镜像已完成全部 DDR 读回和实物启动；

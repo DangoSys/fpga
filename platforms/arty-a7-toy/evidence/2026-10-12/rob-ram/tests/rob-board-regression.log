@@ -1,0 +1,31 @@
+PASS fullwidth AXI: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+/home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/tests/tb_axi_fullwidth.sv:107: $finish called at 9270000 (1ps)
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=709434
+- /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/build/board-cpu/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 5.829 s; speed 1.217 ms/s
+- Verilator: cpu 5.826 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=251063
+- /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/build/board-gemmini/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 3ms; walltime 2.245 s; speed 1.118 ms/s
+- Verilator: cpu 2.243 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=684219
+- /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/build/board-loop/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 5.322 s; speed 1.286 ms/s
+- Verilator: cpu 5.319 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=1914839
+- /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/build/board-dma/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 19ms; walltime 14.201 s; speed 1.348 ms/s
+- Verilator: cpu 14.194 s on 1 threads; allocated 8 MB
+
+PASS BOARD_REGRESSION CPU/Gemmini/loop/DMA

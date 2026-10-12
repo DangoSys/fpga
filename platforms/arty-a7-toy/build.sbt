@@ -57,7 +57,7 @@ lazy val root = project.in(file(".")).dependsOn(inclusive, gemmini).settings(chi
     val directories = Seq("balldomain", "builtin", "dpi", "frontend", "gpdomain", "memdomain", "top",
       "system/core/rocket", "system/core/accelerator", "system/tile")
     val shared = directories.flatMap(d => ((framework / d) ** "*.scala").get)
-      .filterNot(f => Set("WithBuckyballTiles.scala", "WithBoomTile.scala", "MemMidend.scala", "MemStorer.scala", "PrivateMemBackend.scala", "SubROB.scala", "MemFrontend.scala", "MemLoader.scala")(f.getName))
+      .filterNot(f => Set("WithBuckyballTiles.scala", "WithBoomTile.scala", "MemMidend.scala", "MemStorer.scala", "PrivateMemBackend.scala", "SubROB.scala", "GlobalROB.scala", "MemFrontend.scala", "MemLoader.scala")(f.getName))
     shared ++ ((baseDirectory.value / "patches/framework") ** "*.scala").get ++
       ((baseDirectory.value / "patches/buckyball") ** "*.scala").get ++ ((upstream / "arch/src/main/scala/sims/hash") ** "*.scala").get ++ Seq("gemmini", "trace", "mxfp2int", "relu").flatMap { name =>
       val ball = upstream / "examples/balls" / name

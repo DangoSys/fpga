@@ -1,0 +1,14 @@
+{
+  "rob-default-raw": {
+    "emitted_sha256": "05d53ac2a64ae89cfdb2861b3652b0e5b9a5bea401757c29a35f9a0654a3a2eb",
+    "core_rtl_sha256": "4c6aacf64660bbbf14b1114e8d5e4439d6a4e1427aaf1f681c6a4f618f2d2779",
+    "memory_rtl_sha256": "8307d252185ba71a4516d1932d235a5a188816f84a5ed237bb5f3c1281d4b580"
+  },
+  "rob-optin-raw": {
+    "emitted_sha256": "9cf090b2ecdf1f59115c5f639151ef9c0037cf2531a619d3dab349f937ec5097",
+    "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+    "memory_rtl_sha256": "d5a37896aee19c8d4931c87dc9683861abf32f096a1c1441f4362370d3d7b054"
+  },
+  "result": "PASS_DEFAULT_AND_CANDIDATE_BYTE_IDENTITY",
+  "source_switch": "sbt -Dfpga.robOperandRam=true"
+}

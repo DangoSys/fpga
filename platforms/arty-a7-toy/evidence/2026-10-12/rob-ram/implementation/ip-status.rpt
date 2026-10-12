@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Mon Oct 12 20:14:28 2026
+| Host         : amax running 64-bit Ubuntu 24.04 LTS
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 2 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++---------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|               |            |                     | Log       |                    | Version |               | License    |                      |
++---------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| arty_ddr3     | Up-to-date | No changes required |  *(1)     | Memory Interface   | 4.2     | 4.2 (Rev. 1)  | Included   | xc7a100tcsg324-1     |
+|               |            |                     |           | Generator (MIG 7   | (Rev.   |               |            |                      |
+|               |            |                     |           | Series)            | 1)      |               |            |                      |
++---------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| toy_axi_cdc   | Up-to-date | No changes required |  *(2)     | AXI Clock          | 2.1     | 2.1 (Rev. 30) | Included   | xc7a100tcsg324-1     |
+|               |            |                     |           | Converter          | (Rev.   |               |            |                      |
+|               |            |                     |           |                    | 30)     |               |            |                      |
++---------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) /data0/tools/Xilinx/Vivado/2024.1/data/ip/xilinx/mig_7series_v4_2/doc/mig_7series_v4_2_changelog.txt
+*(2) /data0/tools/Xilinx/Vivado/2024.1/data/ip/xilinx/axi_clock_converter_v2_1/doc/axi_clock_converter_v2_1_changelog.txt
+
+
