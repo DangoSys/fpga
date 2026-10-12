@@ -1,0 +1,22 @@
+/bin/busybox true & p=$!; (sleep 1; kill -KILL $p) & w=$!; wait $p; r=$?; ki
+ll $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWATCH_SELF_0:%s\n' $r
+
+WATCH_SELF_0:0
+~ # kill -0 $w 2>/dev/null; printf '\nWATCH_REAP_0:%s\n' $?
+
+WATCH_REAP_0:1
+~ # /bin/busybox false & p=$!; (sleep 1; kill -KILL $p) & w=$!; wait $p; r=$?; k
+ill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWATCH_SELF_1:%s\n' $r
+
+WATCH_SELF_1:1
+~ # kill -0 $w 2>/dev/null; printf '\nWATCH_REAP_1:%s\n' $?
+
+WATCH_REAP_1:1
+~ # /bin/busybox sleep 5 & p=$!; (sleep 1; kill -KILL $p) & w=$!; wait $p; r=$?;
+ kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWATCH_SELF_2:%s\n' $r
+Killed
+
+WATCH_SELF_2:137
+~ # kill -0 $w 2>/dev/null; printf '\nWATCH_REAP_2:%s\n' $?
+
+WATCH_REAP_2:1

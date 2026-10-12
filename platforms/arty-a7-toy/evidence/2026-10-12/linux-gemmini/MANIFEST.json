@@ -1,0 +1,240 @@
+{
+  "run_date": "2026-10-12",
+  "time_zone": "Asia/Shanghai",
+  "result": "PASS_LINUX_AND_GEMMINI_HARDWARE",
+  "base_fpga_commit": "936aba48d51b2f280cd60d4968a05c8a5bfd540f",
+  "upstream_commit": "1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097",
+  "flash_written": false,
+  "model_end_to_end_tested": false,
+  "log_selection": "DDR/启动日志为有用阶段的原文前缀；两个回归的算子串口日志为完整原文。",
+  "files": {
+    "build/BOARD_FIRMWARE_RESULT.json": {
+      "sha256": "a1c458a50c26a7cd05bf17d362771db241d526d909821f7b2ed32a42ecf5a8c0",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "build/build.log": {
+      "sha256": "1c9ba6e82cae3182025567709bd6796910e194ff30a22f6545ec2ca8967037f7",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "build/INPUT_MANIFEST.json": {
+      "sha256": "b1bd6eb8c04f88d9ab1080118e6ed4ba4e760ad121ec1d30ed42936bc59226c4",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "build/LINUX_GEMMINI_BUILD.json": {
+      "sha256": "4d9229135d7f92b711c385628fcd96839ad0e667a6579f87d8f604ce8dd7cda3",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "build/SESSION.json": {
+      "sha256": "06e0cb8cd341a395a87d514381422da405c3c08c5312c69fd71a72a82b00ceb0",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "first-pass/boot-console.log": {
+      "sha256": "eb98e070415b15b6500d53eaeebc19b32f526cbe34cd3f2b8f9f652187c900c1",
+      "kind": "selected-stage-prefix"
+    },
+    "first-pass/linux-console.log": {
+      "sha256": "edf9345b7a7757c4149fc993ad203b541047332d49525fe5ed965de7c026a1b1",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "first-pass/LOAD_RESULT.json": {
+      "sha256": "a36ce2b6e39608aa4d1f0df71ae8354b5e446a360623891b3846a77d0388e657",
+      "kind": "derived-stage-record"
+    },
+    "first-pass/PERFORMANCE.json": {
+      "sha256": "fc681a9d01275898476837e413d4edfcd67fbc1c98fcb8be3ac443fabcfb0e0e",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "first-pass/RESULT.json": {
+      "sha256": "b2422db3c133cab82d69efe300642ca16c546054b091125c1b208f2cbd42e269",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/ballISA.h": {
+      "sha256": "8f74e9230c45bc270c99b4b31fde6db6ed61b01c0055c7c62855de11bb571606",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/CMakeLists.txt": {
+      "sha256": "4ea8d92e23c19d780fff7d6a2c1369ef3363dc1fe87acf1195656ce852684f4f",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_linux_check.c": {
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_cisc_atranspose_test.c": {
+      "sha256": "d4b44df5f004b4e1d4ada02c247e5f66a6596dfa80cf70a09c54d7448b572712",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_cisc_basic_test.c": {
+      "sha256": "481733138780de0ef2ce7d867bc375cd22a64990f33b9eabd8a03a45c2e8861c",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_cisc_btranspose_test.c": {
+      "sha256": "efdf1cefe9277fde1dce1d62eb7c3364ddbb27926e99ddce9800f1fb54be1fec",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_cisc_shift_test.c": {
+      "sha256": "9676b4e45945de9cbe005be695ffd8d0f3a406fa0448875a8372cc1d1c20fb4c",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_risc_abtranspose_test.c": {
+      "sha256": "641982f9adc4b898a27d23967807d9f350c3db717b7c276df42281b7c6ba3558",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_risc_atranspose_test.c": {
+      "sha256": "4583e36cbea777a439e65fb4ca58e51574e2f7686217088922128c36fa8d74f9",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_risc_basic_test.c": {
+      "sha256": "cd8102c88b58a2ea289212779bd2bf50f9e35806e9039f4cc5a6abf73eef131f",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_risc_btranspose_test.c": {
+      "sha256": "01ee05bb7a92de708e1bac4041354d9f0363c70a4f5b898af784f47410f63798",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_os_risc_shift_test.c": {
+      "sha256": "aae1a632fd3fabc1ae9fea89daf9dc0693880c718f100c86b946257935a4076d",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_ws_cisc_conv_test.c": {
+      "sha256": "ab75719d036a6b61b4369514c6771ebac94a04e7448f2127b1be60bab2e8f28b",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_ws_risc_basic_test.c": {
+      "sha256": "f5aab861cf0f764e6179e24c70c75d9f3c7e9a0364a4e3aa818784f7f309c03a",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_ws_risc_btranspose_test.c": {
+      "sha256": "fff4938ea7c16864e3e1b91a2d30ef2d3eabeb3ed4a1153964f5d351d6980279",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/gemmini_ws_risc_shift_test.c": {
+      "sha256": "a22209c0c02cd5d5b258525dd6266bbe3a7447b410a082e8da19a268478b6307",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/params.h": {
+      "sha256": "cc6bbe816a15f9a7bd133fbeb45d039733a22a6a6f94dace16eecea5eef61b24",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "generated-inputs/PREPARED.json": {
+      "sha256": "890d8a759be94610a16a5ac976f0775e99220a4e4de3e44abd3c3aeeff99819e",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/boot-console.log": {
+      "sha256": "eb98e070415b15b6500d53eaeebc19b32f526cbe34cd3f2b8f9f652187c900c1",
+      "kind": "selected-stage-prefix"
+    },
+    "hardware/linux-console.log": {
+      "sha256": "e5c5442fa53496bc2c72bb725678fa424c0a73f43a511fee1e678ca7b6ca6729",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/LOAD_RESULT.json": {
+      "sha256": "a36ce2b6e39608aa4d1f0df71ae8354b5e446a360623891b3846a77d0388e657",
+      "kind": "derived-stage-record"
+    },
+    "hardware/PERFORMANCE.json": {
+      "sha256": "696de0aa9b3129ae10369afe8d71553922b577170554a1b2d9639048d89d5b20",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/post-console.log": {
+      "sha256": "3b9b17bdc1c03a90b6fcc3b66ae796c721f41a3fe1a690dc753bc71ea84311ee",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/POST_RESULT.json": {
+      "sha256": "3d2ad49575d52bdf4fdcee730a69c7d79b6c5add809f9b7007607c2b883246ac",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/program-console.log": {
+      "sha256": "e4ee8fb155e0bb01fd4eef92a4e64c560a2921815eb60ce70c0cd72293c2f697",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/program.jou": {
+      "sha256": "0e45a26886ecdfaf1dec01dc4b9b256f5a40db1239e1d09f5aa7d439bcd36fac",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/program.log": {
+      "sha256": "7e71edb015aa3f1e9afd6b62c13364d7e2e760e6c6a48734de84e66eadbdb304",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "hardware/RESULT.json": {
+      "sha256": "184efe4a22b4d1078788d74167c40ae8fd65210650f01458d752be927a6e1206",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "load/linux-boot.log": {
+      "sha256": "eb98e070415b15b6500d53eaeebc19b32f526cbe34cd3f2b8f9f652187c900c1",
+      "kind": "selected-stage-prefix"
+    },
+    "load/RESULT.json": {
+      "sha256": "a36ce2b6e39608aa4d1f0df71ae8354b5e446a360623891b3846a77d0388e657",
+      "kind": "derived-stage-record"
+    },
+    "load/transfer.log": {
+      "sha256": "25799c30f382384cc2facce1320f1b11c86d555a7a6364fa3384079886aa39a4",
+      "kind": "selected-stage-prefix"
+    },
+    "README.md": {
+      "sha256": "77ef4fdb7507cf748201bf751109ac30aaa1f8d3af0d3d52bf53bf5da5f07045",
+      "kind": "documentation"
+    },
+    "REPORT.md": {
+      "sha256": "0b54513128c3e9432964b1082ebcb04af46b41e8034f7ddef35b7876b2e3a7bf",
+      "kind": "documentation"
+    },
+    "sources/board/program_arty.tcl": {
+      "sha256": "fbb62bafb6df602b0f5f638fb05ae4ecc90494ac162b9a5f5ac314200f7a241c",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/diagnostics/check_watchdog.py": {
+      "sha256": "de3dea9d9bdff5760788918ad7493651903e5bb633804796de1dd6d840b3d71c",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/diagnostics/post_gemmini_live.py": {
+      "sha256": "bfc88015da57b0601793b6253ed3b0659391916becbe81dd248c3a1c5e0f97b3",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/host/check_linux_gemmini.py": {
+      "sha256": "5554ebb0902b9cca203d48889f59ef160ad958aaac1dbb8d37c0579a1c3e5b2b",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/host/ftdi_transport.py": {
+      "sha256": "f3a88c170f40121febde7fd283a50e54ab5af5b79f0651cb15db9af743d57de7",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/host/load.py": {
+      "sha256": "a62e48b779c9ce1d6f8f6669523e427cf48bd19be3bf50a554dc391b09b3e3b2",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/program.tcl": {
+      "sha256": "0ff928503cf00798dae132117435e34981a176c586d7aa16e587c47877ba031f",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/scripts/remote_linux_gemmini.py": {
+      "sha256": "b99f6cea4cdbc5765cb9778ee12a6485a778f558e1871d40473cd532889c3e60",
+      "kind": "public-auth-interface-copy"
+    },
+    "sources/scripts/verify_linux_gemmini.py": {
+      "sha256": "ef336dfa911a71ef9b64618444864dc4f8620d2b53674422ea238fb1b11c2c26",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/software/build_gemmini_image.py": {
+      "sha256": "949a59cbc4bd494cbe793b392aaccc237637c809667b6bd5dd211e2176e6fcbf",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/software/gemmini_linux_check.c": {
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "sources/software/prepare_gemmini_linux.py": {
+      "sha256": "358cee302a2a8ee6672cbf4c830776a6047dc33793a272a89f7343729ca0b3ec",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "watchdog/check.log": {
+      "sha256": "58de5f54346dfd805737aea528347a5fa9430a7a0962964a08b349ede52b6303",
+      "kind": "run-artifact-or-executed-source"
+    },
+    "watchdog/RESULT.json": {
+      "sha256": "efc60f10a891ba2e224ee3130d4e776c00fc04eea5cc2e522690f85ddfb0475e",
+      "kind": "run-artifact-or-executed-source"
+    }
+  }
+}

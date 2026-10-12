@@ -1,0 +1,169 @@
+{
+  "result": "PASS_OFFLINE_VERIFICATION",
+  "console_sha256": "edf9345b7a7757c4149fc993ad203b541047332d49525fe5ed965de7c026a1b1",
+  "payload_sha256": "e2282b5a7ddf1aa01579919aa92df483ed79e739bf5d39530e07532e164118b0",
+  "matrix_measurements": [
+    {
+      "case": 1,
+      "mode": "OS",
+      "m": 8,
+      "n": 8,
+      "k": 8,
+      "cpu_ns": 638000,
+      "accelerator_end_to_end_ns": 2808000,
+      "cpu_over_accelerator": 0.2272
+    },
+    {
+      "case": 2,
+      "mode": "WS",
+      "m": 8,
+      "n": 8,
+      "k": 8,
+      "cpu_ns": 620000,
+      "accelerator_end_to_end_ns": 850000,
+      "cpu_over_accelerator": 0.7294
+    },
+    {
+      "case": 3,
+      "mode": "OS",
+      "m": 16,
+      "n": 16,
+      "k": 16,
+      "cpu_ns": 7132000,
+      "accelerator_end_to_end_ns": 7644000,
+      "cpu_over_accelerator": 0.933
+    },
+    {
+      "case": 4,
+      "mode": "WS",
+      "m": 16,
+      "n": 16,
+      "k": 16,
+      "cpu_ns": 7252000,
+      "accelerator_end_to_end_ns": 7738000,
+      "cpu_over_accelerator": 0.9372
+    },
+    {
+      "case": 5,
+      "mode": "OS",
+      "m": 13,
+      "n": 11,
+      "k": 17,
+      "cpu_ns": 4134000,
+      "accelerator_end_to_end_ns": 8688000,
+      "cpu_over_accelerator": 0.4758
+    },
+    {
+      "case": 6,
+      "mode": "WS",
+      "m": 13,
+      "n": 11,
+      "k": 17,
+      "cpu_ns": 3942000,
+      "accelerator_end_to_end_ns": 8714000,
+      "cpu_over_accelerator": 0.4524
+    },
+    {
+      "case": 7,
+      "mode": "OS",
+      "m": 8,
+      "n": 24,
+      "k": 8,
+      "cpu_ns": 3318000,
+      "accelerator_end_to_end_ns": 1698000,
+      "cpu_over_accelerator": 1.9541
+    },
+    {
+      "case": 8,
+      "mode": "WS",
+      "m": 8,
+      "n": 24,
+      "k": 8,
+      "cpu_ns": 1592000,
+      "accelerator_end_to_end_ns": 3510000,
+      "cpu_over_accelerator": 0.4536
+    },
+    {
+      "case": 9,
+      "mode": "OS",
+      "m": 8,
+      "n": 8,
+      "k": 8,
+      "cpu_ns": 610000,
+      "accelerator_end_to_end_ns": 2854000,
+      "cpu_over_accelerator": 0.2137
+    },
+    {
+      "case": 10,
+      "mode": "WS",
+      "m": 8,
+      "n": 8,
+      "k": 8,
+      "cpu_ns": 620000,
+      "accelerator_end_to_end_ns": 874000,
+      "cpu_over_accelerator": 0.7094
+    },
+    {
+      "case": 11,
+      "mode": "OS",
+      "m": 16,
+      "n": 16,
+      "k": 16,
+      "cpu_ns": 7168000,
+      "accelerator_end_to_end_ns": 7712000,
+      "cpu_over_accelerator": 0.9295
+    },
+    {
+      "case": 12,
+      "mode": "WS",
+      "m": 16,
+      "n": 16,
+      "k": 16,
+      "cpu_ns": 6948000,
+      "accelerator_end_to_end_ns": 9692000,
+      "cpu_over_accelerator": 0.7169
+    },
+    {
+      "case": 13,
+      "mode": "OS",
+      "m": 13,
+      "n": 11,
+      "k": 17,
+      "cpu_ns": 5656000,
+      "accelerator_end_to_end_ns": 8728000,
+      "cpu_over_accelerator": 0.648
+    },
+    {
+      "case": 14,
+      "mode": "WS",
+      "m": 13,
+      "n": 11,
+      "k": 17,
+      "cpu_ns": 4028000,
+      "accelerator_end_to_end_ns": 12712000,
+      "cpu_over_accelerator": 0.3169
+    },
+    {
+      "case": 15,
+      "mode": "OS",
+      "m": 8,
+      "n": 24,
+      "k": 8,
+      "cpu_ns": 3260000,
+      "accelerator_end_to_end_ns": 3618000,
+      "cpu_over_accelerator": 0.9011
+    },
+    {
+      "case": 16,
+      "mode": "WS",
+      "m": 8,
+      "n": 24,
+      "k": 8,
+      "cpu_ns": 1614000,
+      "accelerator_end_to_end_ns": 3752000,
+      "cpu_over_accelerator": 0.4302
+    }
+  ],
+  "timing_scope": "分块、DMA、配置、同步和 CPU 跨 K 累加；不是纯 MAC 延迟",
+  "model_end_to_end_tested": false
+}
