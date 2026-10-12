@@ -1,0 +1,86 @@
+{
+  "result": "PASS_BUILD_NOT_HARDWARE_TESTED",
+  "elapsed_seconds": 143.825,
+  "software_baseline": {
+    "bbkernel": "b80336ce647f6604713f1570e1e1355f705a4355",
+    "linux": "ffc253263a1375a65fa6c9f62a893e9767fbebfa",
+    "opensbi": "c0f87f10d1bfb9e72a84ddfafb5604ee1bfe9d04",
+    "busybox": "1a64f6a20aaf6ea4dbba68bbfa8cc1ab7e5c57c4"
+  },
+  "profile": {
+    "gemmini_rows": 8,
+    "gemmini_columns": 8,
+    "bank_width": 64,
+    "bank_count": 8,
+    "virtual_bank_count": 16,
+    "bank_rows": 1024
+  },
+  "payload_bytes": 25797640,
+  "payload_sha256": "e2282b5a7ddf1aa01579919aa92df483ed79e739bf5d39530e07532e164118b0",
+  "workloads": {
+    "gemmini_linux_check-linux": {
+      "bytes": 630680,
+      "sha256": "3d80717b1f0b593e22761e78626c38dec685c7a25c3d53ed42037357b652aa90"
+    },
+    "gemmini_os_cisc_atranspose_test-linux": {
+      "bytes": 604440,
+      "sha256": "a2a79cc1d7bb333494ae14307685fb4b8891869a5d1eb037c004c176e0b98f6c"
+    },
+    "gemmini_os_cisc_basic_test-linux": {
+      "bytes": 604408,
+      "sha256": "1215a8cafc2d6c11cfc8f01888f6bbecb8b2ca2201d5145f474bc852b68e4af4"
+    },
+    "gemmini_os_cisc_btranspose_test-linux": {
+      "bytes": 604440,
+      "sha256": "18fe78a5f89ce0123f475df151d407cdb1b68c99dda7ef94b5255f376a667ec9"
+    },
+    "gemmini_os_cisc_shift_test-linux": {
+      "bytes": 604408,
+      "sha256": "8b909fa200eeb000eb21cc71ca5ee2c960079fea2d57c62914e1ea3db4ba1651"
+    },
+    "gemmini_os_risc_abtranspose_test-linux": {
+      "bytes": 604960,
+      "sha256": "443f12c0b2c6695c88592ac6c40b29ec56b09750d4e993c60b1bfceb5fdd1b5d"
+    },
+    "gemmini_os_risc_atranspose_test-linux": {
+      "bytes": 604928,
+      "sha256": "40b99995cb6da30d2c3ba3a22b409033ddb2bd919b65b9eb1e0a3c19b67ff72e"
+    },
+    "gemmini_os_risc_basic_test-linux": {
+      "bytes": 604920,
+      "sha256": "c789f91569d945db7c3d0b9d3441ab8938bc63354b0cabdfc003b634928664ba"
+    },
+    "gemmini_os_risc_btranspose_test-linux": {
+      "bytes": 604928,
+      "sha256": "157bc4c831becf30652c60f62cbe65d33a60e8daa2eaa3ede2c8f8462f3a10b7"
+    },
+    "gemmini_os_risc_shift_test-linux": {
+      "bytes": 604888,
+      "sha256": "be2b3cdaf1508650b374a36ac71b6a2bc05773366534ccd4cb1ce0a6ff524a76"
+    },
+    "gemmini_ws_cisc_conv_test-linux": {
+      "bytes": 604408,
+      "sha256": "dd6d61b4f5d3a3058c6d2ca9a719c2a764533a01931a6e1c8d502f4793cdc9b4"
+    },
+    "gemmini_ws_risc_basic_test-linux": {
+      "bytes": 604920,
+      "sha256": "b71942c93c3c6e2fc0ae9a2bfb07f7c061eef863e1282bf1c38a58d3864fa796"
+    },
+    "gemmini_ws_risc_btranspose_test-linux": {
+      "bytes": 604960,
+      "sha256": "db3c5c781198f5c9f6d4df6c74ed640c1dc20e3964a32908b57b3e6264a584e7"
+    },
+    "gemmini_ws_risc_shift_test-linux": {
+      "bytes": 604920,
+      "sha256": "14ef70b0c8a134ab12deb37bb6d0b245b19243cf556eb0da970d823e7032a822"
+    },
+    "linux_system_check-linux": {
+      "bytes": 616848,
+      "sha256": "7fff55e3b560fd72482984f225b70a4a1154512452b96fc1467665b2acc32e00"
+    }
+  },
+  "rootfs_install_verified": true,
+  "flash_modified": false,
+  "hardware_gemmini_tested": false,
+  "model_end_to_end_tested": false
+}

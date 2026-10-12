@@ -77,9 +77,9 @@ the connected Arty A7-100T; the October 11 records remain unchanged.
   MemTotal is 245,784 KiB. Transport restores the original 16 ms FTDI latency.
 
 PCB revision remains unknown; this exact official E.0 MIG image works on the
-connected board. Physical Gemmini operator regression, FP16/FP32 exhaustive
-checks, full 256 MiB DDR sweep, long-duration stability and power measurements
-are still pending. This first run used volatile SRAM and did not write Flash.
+connected board. 该首次启动记录不包含 Gemmini 实物回归，后续覆盖见下方新增章节。
+FP16/FP32 全面检查、全 256 MiB DDR 扫描、长期稳定性和功耗仍未验证。
+This first run used volatile SRAM and did not write Flash.
 Treat the result as successful first bring-up, not full hardware release.
 
 DRC retains 360 warnings; methodology retains 49 warnings and 16 advisories,
@@ -111,3 +111,15 @@ a bitstream or software. The cold-start observer records one USB disconnect and
 five Linux checks with exit status 0. Runtime DDR/initramfs changes still vanish
 on reset; the stored startup image persists. Hardware Gemmini qualification and
 the other acceptance limits above remain pending.
+
+## Linux/Gemmini 实物回归：2026-10-12
+
+后续的新标准软件镜像完成 25,797,640 字节 DDR 完整读回（806.172 秒）、Linux 启动，
+板上 15 个程序摘要与构建记录一致。五项系统检查、原 13 项 Gemmini 测试及新增
+16 项 OS/WS 矩阵对照均通过；最终运行器和 watchdog 回收检查也通过。
+实际用例未超时；单独构造的 1 秒 watchdog 超时按预期返回 137。
+
+本轮使用相同已验证 UART 位流，没有增加或裁剪 RTL，也未改 Flash。
+上述两个历史归档的测试范围保持原样；本轮原始测试日志、精确来源及
+毫秒级计算计时见 [中文报告](evidence/2026-10-12/linux-gemmini/REPORT.md)。
+多数小矩阵端到端路径比朴素 CPU 参考更慢；完整模型及其他未覆盖项目仍待验证。

@@ -5,7 +5,7 @@ FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
 checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,
 the complete image was read back from DDR and five Linux checks passed on hardware.
 This remains a **Rev E engineering target**: PCB revision is unconfirmed and
-physical Gemmini tests are pending. See [measured results](VALIDATION.md) and
+the remaining acceptance scope is recorded in [measured results](VALIDATION.md) and
 [the hardware logs](evidence/2026-10-12/README.md).
 
 For stored configuration/software and autonomous power-on startup, see
@@ -14,6 +14,15 @@ complete FPGA implementation, Flash verification and a physical power cycle:
 it boots the original Linux image and passes all five system checks without
 reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.md).
 Runtime DDR and changes to the initramfs remain volatile.
+
+## 2026-10-12：Linux/Gemmini 实物回归
+
+按标准 rootfs/bbkernel 流程构建的新镜像已完成全部 DDR 读回和实物启动；
+15 个程序返回 0，覆盖五项 Linux 系统检查、原 13 项 Gemmini 测试及新增 16 项
+OS/WS 矩阵对照（包含分块和尾块）。最终运行器回归与看门狗清理检查均通过。
+多数小矩阵端到端路径暂时比 CPU 参考更慢，原始计时和测试记录见
+[中文实物报告](evidence/2026-10-12/linux-gemmini/REPORT.md)，复现方法见
+[验证指南](software/GEMMINI_LINUX.md)。本轮未写 Flash，整模型仍未验收。
 
 ## Architecture and scope
 

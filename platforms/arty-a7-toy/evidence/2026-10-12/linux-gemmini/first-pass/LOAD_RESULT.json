@@ -1,0 +1,12 @@
+{
+  "bitstream_sha256": "ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1",
+  "payload_sha256": "e2282b5a7ddf1aa01579919aa92df483ed79e739bf5d39530e07532e164118b0",
+  "ddr_readback_bytes": 25797640,
+  "ddr_transfer_seconds": 806.172,
+  "timeout_seconds": 3600,
+  "flash_written": false,
+  "result": "PASS_DDR_READBACK_AND_LINUX_BOOT",
+  "kind": "derived-load-stage-record",
+  "linux_boot": true,
+  "scope": "仅记录已完成的完整 DDR 校验及 Linux 启动阶段，不代表其他阶段的结论。"
+}

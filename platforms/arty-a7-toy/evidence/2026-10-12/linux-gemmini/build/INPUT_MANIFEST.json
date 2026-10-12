@@ -1,0 +1,203 @@
+{
+  "result": "PASS_REMOTE_INPUTS_MATCH_LOCAL",
+  "source_files": {
+    "SOFTWARE_BASELINE.json": {
+      "sha256": "3a5c9f65771e6fd7f8172674baf22263ba7c2d9244993c9162ba526344a7b0aa"
+    },
+    "evidence/2026-10-11/ToyLinuxChip.profile.json": {
+      "sha256": "57e251b00a486f406e5e27f666f4416be730b4e08c8838584e4aac49ebb30f86"
+    },
+    "scripts/build_board_firmware.py": {
+      "sha256": "1af5afa3b468fa13a0aaba57a977ba26ff2b0857a765ceda0a0b666fec39b344"
+    },
+    "software/build.sh": {
+      "sha256": "908b5678edf5a710187480974c0c699ca8833faede20d044b7131060c3161292"
+    },
+    "software/build_gemmini_image.py": {
+      "sha256": "949a59cbc4bd494cbe793b392aaccc237637c809667b6bd5dd211e2176e6fcbf"
+    },
+    "software/gemmini_linux_check.c": {
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467"
+    },
+    "software/linux_system_check.c": {
+      "sha256": "c1cedf2ce6e2583393c9e7f51fe20558c1402b8d81faf2152e8f6eeaf8058315"
+    },
+    "software/prepare_dependencies.py": {
+      "sha256": "5bf2eca25081e014ff0de67ae0aeb41cb4380a2767a08a109a3bf6c19238b308"
+    },
+    "software/prepare_gemmini_linux.py": {
+      "sha256": "358cee302a2a8ee6672cbf4c830776a6047dc33793a272a89f7343729ca0b3ec"
+    },
+    "software/prepare_platform.py": {
+      "sha256": "f053463897045e1929d65aa9614b7b871c1c6c342f1f15865793883c858f3d61"
+    },
+    "tests/REFERENCE_MANIFEST.json": {
+      "sha256": "de4c11a8bca5bf8bb0fba0eada731177772756f307abd5523bbe5d60ffe3ff25"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/00_fence.c": {
+      "sha256": "465a066c9f4b4dc7f75a8981983ea98ea29ca9838afc179f385dbfa569e45fb8"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/01_barrier.c": {
+      "sha256": "5e3e8ac07f8a18eb771696e668e64754ce0dc5603a997dade467b26d8298b139"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/16_mvout.c": {
+      "sha256": "d2dddcf237327aa65828ebf713466727544d08e41f93f0471fc3813169136e41"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/32_mset.c": {
+      "sha256": "84c0ddded8d13f38a27613b019255a83638da85f31fddb36f5934b108c37499e"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/33_mvin.c": {
+      "sha256": "713fdc01623938acefe64899e1b4a1f1c712bbb1fc48241d5a4392ff6e44e5fe"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/34_mvin_2d.c": {
+      "sha256": "c79c07850fec290219221eebd6f5689ec0ad6ccd9c9ee29122ebb10a42d9ada7"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/35_mvin_mmio.c": {
+      "sha256": "3729c4e3e5997594d8c8498eb90243327a508a6b1ddcf8484c69706d5a105f10"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/bb_func7.h": {
+      "sha256": "f331dee3ce71c92b0934e80bb43b389dd041a39906ae149e848f1a66b057740c"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/isa.c": {
+      "sha256": "939f5e399bfc8d7b365624f1f9b70b30d6d3211908a06230bb2f268dba9b7773"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/isa/isa.h": {
+      "sha256": "f23d3ee4440cb928645a4e3f1402ec94a3074b38f8f3f52836ab30486a9f6895"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/mem/mem.c": {
+      "sha256": "1ff9240196f37dbe2bc5af79d54508e718b5986ad69567ed74491133f19d5996"
+    },
+    "tests/reference/bb-tests/workloads/lib/bbhw/mem/mem.h": {
+      "sha256": "57021a3076bb25a2a597c6f1f6ed147ab92acc7fca4768da87f96c2a22edb3ad"
+    },
+    "tests/reference/bb-tests/workloads/lib/buckyball.c": {
+      "sha256": "c4c4b9fb107b89407c0654dab809885af7b855e985d7a6d2b80ea2d3d4394673"
+    },
+    "tests/reference/bb-tests/workloads/lib/buckyball.h": {
+      "sha256": "c832025bdcbd13960537c317145623fe99eb15d333ad4645e3cd2aee0c493c50"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/CMakeLists.txt": {
+      "sha256": "724fd8f7733f25b39d46c142f777c588a603124a3f6484a04267a81242d0d11b"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_cisc_atranspose_test.c": {
+      "sha256": "4a275b5e4a227d1a98270df7743428dbc423fe8a01f1daed621a59c9734e6246"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_cisc_basic_test.c": {
+      "sha256": "c0050f3b79e787b35662daceb065e0d1f70f77136ac8f3d5413ad470423facc4"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_cisc_btranspose_test.c": {
+      "sha256": "3027b5dd089b56ace3884f37d604035156a40f3054b21ae8fd8c3c861a98a4d2"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_cisc_shift_test.c": {
+      "sha256": "b7b38aa6ea09431a6a47fa4d7959f7db40fc4b9fcd9551cbf3f52f4bdecd33e0"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_risc_abtranspose_test.c": {
+      "sha256": "a7f5f12fa7972b66f42a80d1d9311dea6fa5b1a659735c6100b32fae9d33484e"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_risc_atranspose_test.c": {
+      "sha256": "28ed257342db8009a4b38a022da5a532e477a10e6c8dcfdff1dd05070dfaedbf"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_risc_basic_test.c": {
+      "sha256": "7aa2d5a79425697cff9731fd3ce122572c72e844fab636a32e20f44cbd485f07"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_risc_btranspose_test.c": {
+      "sha256": "eb3c6f237d1de012bb48e61d516d1f1d91af28217a29e30da084eeb54e7612c2"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_os_risc_shift_test.c": {
+      "sha256": "9900168f5dcbecba4768e28ed390fef9ec80e592147942f3c21af6b964d3a51e"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_ws_cisc_conv_test.c": {
+      "sha256": "2c277ac5740e7cc28198ba3b213fb29bbb1af4c7cfe114c23f30240955b026f7"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_ws_risc_basic_test.c": {
+      "sha256": "c34824e7d4fefbe98d1f8d606bdb14c042917e1603ebdfe4d98a7f8a31147158"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_ws_risc_btranspose_test.c": {
+      "sha256": "3869bc9ce52591118fcfb6fe1ceab4f3a8a0fe496b12dbd2b84f20ac3fde0fbc"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/ctests/gemmini_ws_risc_shift_test.c": {
+      "sha256": "ba8cd9b3148f707c7a451dc016fff5d0bb6df3b7f05accd6a22c3202ea7bd663"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini.h": {
+      "sha256": "28d76de0a7cea15ad56857dc0bf96e66931a004d43531d57415fef9180060794"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_compute_accumulated.h": {
+      "sha256": "884721bb02de7c8e5ad5df6ce64a55eb1877de69ce1b5b82ddeed32615f59e21"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_compute_preloaded.h": {
+      "sha256": "bbab5fa3af8537b10dd9102008e4fac64553a6f265837aea7fa7ffa07d941fa3"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_config.h": {
+      "sha256": "c02b851181bbba2e3c562714dade47ef9fd37d94671827df9fca2da99b429265"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_flush.h": {
+      "sha256": "9e57eb61e455a3296e3177c2f56a50ee4b85467e17db925ec959e83e9d469822"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_loop_conv_ws.h": {
+      "sha256": "3111bf7ece22ff56a2a248c802dd5dc0cc5a7cb8323a427b916c2de98b306fe6"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_loop_ws.h": {
+      "sha256": "19530b9162e59cce3deb707312c2cfe4ec885fa73b54cc79bf3e6f52d45a73e0"
+    },
+    "tests/reference/examples/balls/gemmini/workloads/isa/gemmini_preload.h": {
+      "sha256": "a5ac4c839a9ec1c33e8a34a1ebc282c6470196b8c19d91a429df3afa24f4b85e"
+    }
+  },
+  "generated_build_inputs": {
+    "CMakeLists.txt": {
+      "sha256": "4ea8d92e23c19d780fff7d6a2c1369ef3363dc1fe87acf1195656ce852684f4f"
+    },
+    "PREPARED.json": {
+      "sha256": "890d8a759be94610a16a5ac976f0775e99220a4e4de3e44abd3c3aeeff99819e"
+    },
+    "ballISA.h": {
+      "sha256": "8f74e9230c45bc270c99b4b31fde6db6ed61b01c0055c7c62855de11bb571606"
+    },
+    "gemmini_linux_check.c": {
+      "sha256": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467"
+    },
+    "gemmini_os_cisc_atranspose_test.c": {
+      "sha256": "d4b44df5f004b4e1d4ada02c247e5f66a6596dfa80cf70a09c54d7448b572712"
+    },
+    "gemmini_os_cisc_basic_test.c": {
+      "sha256": "481733138780de0ef2ce7d867bc375cd22a64990f33b9eabd8a03a45c2e8861c"
+    },
+    "gemmini_os_cisc_btranspose_test.c": {
+      "sha256": "efdf1cefe9277fde1dce1d62eb7c3364ddbb27926e99ddce9800f1fb54be1fec"
+    },
+    "gemmini_os_cisc_shift_test.c": {
+      "sha256": "9676b4e45945de9cbe005be695ffd8d0f3a406fa0448875a8372cc1d1c20fb4c"
+    },
+    "gemmini_os_risc_abtranspose_test.c": {
+      "sha256": "641982f9adc4b898a27d23967807d9f350c3db717b7c276df42281b7c6ba3558"
+    },
+    "gemmini_os_risc_atranspose_test.c": {
+      "sha256": "4583e36cbea777a439e65fb4ca58e51574e2f7686217088922128c36fa8d74f9"
+    },
+    "gemmini_os_risc_basic_test.c": {
+      "sha256": "cd8102c88b58a2ea289212779bd2bf50f9e35806e9039f4cc5a6abf73eef131f"
+    },
+    "gemmini_os_risc_btranspose_test.c": {
+      "sha256": "01ee05bb7a92de708e1bac4041354d9f0363c70a4f5b898af784f47410f63798"
+    },
+    "gemmini_os_risc_shift_test.c": {
+      "sha256": "aae1a632fd3fabc1ae9fea89daf9dc0693880c718f100c86b946257935a4076d"
+    },
+    "gemmini_ws_cisc_conv_test.c": {
+      "sha256": "ab75719d036a6b61b4369514c6771ebac94a04e7448f2127b1be60bab2e8f28b"
+    },
+    "gemmini_ws_risc_basic_test.c": {
+      "sha256": "f5aab861cf0f764e6179e24c70c75d9f3c7e9a0364a4e3aa818784f7f309c03a"
+    },
+    "gemmini_ws_risc_btranspose_test.c": {
+      "sha256": "fff4938ea7c16864e3e1b91a2d30ef2d3eabeb3ed4a1153964f5d351d6980279"
+    },
+    "gemmini_ws_risc_shift_test.c": {
+      "sha256": "a22209c0c02cd5d5b258525dd6266bbe3a7447b410a082e8da19a268478b6307"
+    },
+    "params.h": {
+      "sha256": "cc6bbe816a15f9a7bd133fbeb45d039733a22a6a6f94dace16eecea5eef61b24"
+    }
+  },
+  "payload_sha256": "e2282b5a7ddf1aa01579919aa92df483ed79e739bf5d39530e07532e164118b0"
+}

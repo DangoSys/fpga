@@ -1,0 +1,235 @@
+
+~ # printf 'WB_RESUME_4de39d38\n'
+WB_RESUME_4de39d38
+~ # /bin/busybox sha256sum /root/gemmini_linux_check-linux; printf '\nWB_HASH_0:
+%s\n' "$?"
+3d80717b1f0b593e22761e78626c38dec685c7a25c3d53ed42037357b652aa90  /root/gemmini_linux_check-linux
+
+WB_HASH_0:0
+~ # /bin/busybox sha256sum /root/gemmini_os_cisc_atranspose_test-linux; printf '
+\nWB_HASH_1:%s\n' "$?"
+a2a79cc1d7bb333494ae14307685fb4b8891869a5d1eb037c004c176e0b98f6c  /root/gemmini_os_cisc_atranspose_test-linux
+
+WB_HASH_1:0
+~ # /bin/busybox sha256sum /root/gemmini_os_cisc_basic_test-linux; printf '\nWB_
+HASH_2:%s\n' "$?"
+1215a8cafc2d6c11cfc8f01888f6bbecb8b2ca2201d5145f474bc852b68e4af4  /root/gemmini_os_cisc_basic_test-linux
+
+WB_HASH_2:0
+~ # /bin/busybox sha256sum /root/gemmini_os_cisc_btranspose_test-linux; printf '
+\nWB_HASH_3:%s\n' "$?"
+18fe78a5f89ce0123f475df151d407cdb1b68c99dda7ef94b5255f376a667ec9  /root/gemmini_os_cisc_btranspose_test-linux
+
+WB_HASH_3:0
+~ # /bin/busybox sha256sum /root/gemmini_os_cisc_shift_test-linux; printf '\nWB_
+HASH_4:%s\n' "$?"
+8b909fa200eeb000eb21cc71ca5ee2c960079fea2d57c62914e1ea3db4ba1651  /root/gemmini_os_cisc_shift_test-linux
+
+WB_HASH_4:0
+~ # /bin/busybox sha256sum /root/gemmini_os_risc_abtranspose_test-linux; printf 
+'\nWB_HASH_5:%s\n' "$?"
+443f12c0b2c6695c88592ac6c40b29ec56b09750d4e993c60b1bfceb5fdd1b5d  /root/gemmini_os_risc_abtranspose_test-linux
+
+WB_HASH_5:0
+~ # /bin/busybox sha256sum /root/gemmini_os_risc_atranspose_test-linux; printf '
+\nWB_HASH_6:%s\n' "$?"
+40b99995cb6da30d2c3ba3a22b409033ddb2bd919b65b9eb1e0a3c19b67ff72e  /root/gemmini_os_risc_atranspose_test-linux
+
+WB_HASH_6:0
+~ # /bin/busybox sha256sum /root/gemmini_os_risc_basic_test-linux; printf '\nWB_
+HASH_7:%s\n' "$?"
+c789f91569d945db7c3d0b9d3441ab8938bc63354b0cabdfc003b634928664ba  /root/gemmini_os_risc_basic_test-linux
+
+WB_HASH_7:0
+~ # /bin/busybox sha256sum /root/gemmini_os_risc_btranspose_test-linux; printf '
+\nWB_HASH_8:%s\n' "$?"
+157bc4c831becf30652c60f62cbe65d33a60e8daa2eaa3ede2c8f8462f3a10b7  /root/gemmini_os_risc_btranspose_test-linux
+
+WB_HASH_8:0
+/bin/busybox sha256sum /root/gem~ # mini_os_risc_shi/ft_test-linux; pbrintf '\nWB_HASHi_9:%s\n' "$?"
+n/busybox sha256sum /root/gemmini_os_risc_shift_test-linux; printf '\nWB_
+HASH_9:%s\n' "$?"
+be2b3cdaf1508650b374a36ac71b6a2bc05773366534ccd4cb1ce0a6ff524a76  /root/gemmini_os_risc_shift_test-linux
+
+WB_HASH_9:0
+/bin/busybox sha256sum /root/gem~ # mini_ws_cisc_con/bin/busybox sha256sum /root/gemmini_ws_cisc_conv_test-linux; printf '\nWB_H
+ASH_10:%s\n' "$?"
+dd6d61b4f5d3a3058c6d2ca9a719c2a764533a01931a6e1c8d502f4793cdc9b4  /root/gemmini_ws_cisc_conv_test-linux
+
+WB_HASH_10:0
+~ # /bin/busybox sha256sum /root/gemmini_ws_risc_basic_test-linux; printf '\nWB_
+HASH_11:%s\n' "$?"
+b71942c93c3c6e2fc0ae9a2bfb07f7c061eef863e1282bf1c38a58d3864fa796  /root/gemmini_ws_risc_basic_test-linux
+
+WB_HASH_11:0
+~ # /bin/busybox sha256sum /root/gemmini_ws_risc_btranspose_test-linux; printf '
+\nWB_HASH_12:%s\n' "$?"
+db3c5c781198f5c9f6d4df6c74ed640c1dc20e3964a32908b57b3e6264a584e7  /root/gemmini_ws_risc_btranspose_test-linux
+
+WB_HASH_12:0
+~ # /bin/busybox sha256sum /root/gemmini_ws_risc_shift_test-linux; printf '\nWB_
+HASH_13:%s\n' "$?"
+14ef70b0c8a134ab12deb37bb6d0b245b19243cf556eb0da970d823e7032a822  /root/gemmini_ws_risc_shift_test-linux
+
+WB_HASH_13:0
+~ # /bin/busybox sha256sum /root/linux_system_check-linux; printf '\nWB_HASH_14:
+%s\n' "$?"
+7fff55e3b560fd72482984f225b70a4a1154512452b96fc1467665b2acc32e00  /root/linux_system_check-linux
+
+WB_HASH_14:0
+~ # /root/linux_system_check-linux & p=$!; (sleep 90; kill -KILL $p) & w=$!; wai
+t $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_RC_0:%s\
+n' $r
+BEGIN LINUX_SYSTEM_CHECK
+PASS VM_COPY_ON_WRITE
+linux_system_ch[97]: unhandled signal 11 code 0x2 at 0x0000003fa2571000 in linux_system_check-linux[10000+7a000]
+CPU: 0 PID: 97 Comm: linux_system_ch Not tainted 6.6.0 #1
+Hardware name: ucb-bar,buckyball (DT)
+epc : 00000000000105c6 ra : 000000000001041e sp : 0000003fc329db50
+ gp : 0000000000090078 tp : 0000000000096760 t0 : 0000000000000000
+ t1 : 0000000000000000 t2 : 0000000000000000 s0 : 0000003fc329dbd0
+ s1 : 0000003fa2570000 a0 : 0000000000000000 a1 : 0000000000000000
+ a2 : 0000000000000000 a3 : 0000000000000000 a4 : 0000000000000000
+ a5 : 0000000000000000 a6 : 0000000000000000 a7 : 0000000000000000
+ s2 : 0000000000000042 s3 : 0000000000001000 s4 : 0000003fa2571000
+ s5 : 0000003fc329dd88 s6 : 0000000000000002 s7 : 00000000000106ba
+ s8 : 00000000000101e0 s9 : 000000000000003a s10: 0000000000094e28
+ s11: 0000000000000000 t3 : 0000000000000000 t4 : 0000000000000000
+ t5 : 0000000000000000 t6 : 0000000000000000
+status: 800000020001e020 badaddr: 0000003fa2571000 cause: 000000000000000d
+PASS VM_PAGE_PROTECTION
+PASS FP64_PROCESS_CONTEXT
+PASS LINUX_TIMER elapsed_ns=104200000
+PASS LINUX_SYSTEM_CHECK
+
+WB_TEST_RC_0:0
+~ # /root/gemmini_linux_check-linux & p=$!; (sleep 90; kill -KILL $p) & w=$!; wa
+it $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_RC_1:%s
+\n' $r
+BEGIN GEMMINI_LINUX_CHECK pid=99 dimension=8 bank_width=64
+BEGIN GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=636000 accelerator_end_to_end_ns=2762000
+BEGIN GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=642000 accelerator_end_to_end_ns=906000
+BEGIN GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=5502000 accelerator_end_to_end_ns=7654000
+BEGIN GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=7052000 accelerator_end_to_end_ns=5718000
+BEGIN GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=4104000 accelerator_end_to_end_ns=8738000
+BEGIN GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=4098000 accelerator_end_to_end_ns=8686000
+BEGIN GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=3314000 accelerator_end_to_end_ns=3840000
+BEGIN GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=3244000 accelerator_end_to_end_ns=1664000
+BEGIN GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=608000 accelerator_end_to_end_ns=2862000
+BEGIN GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=606000 accelerator_end_to_end_ns=818000
+BEGIN GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=5532000 accelerator_end_to_end_ns=7240000
+BEGIN GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=7080000 accelerator_end_to_end_ns=7750000
+BEGIN GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=4084000 accelerator_end_to_end_ns=8794000
+BEGIN GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=4048000 accelerator_end_to_end_ns=8642000
+BEGIN GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=3294000 accelerator_end_to_end_ns=3766000
+BEGIN GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=3256000 accelerator_end_to_end_ns=1668000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+WB_TEST_RC_1:0
+~ # /root/gemmini_os_cisc_atranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_2:%s\n' $r
+=== Gemmini OS CISC a_transpose Test ===
+Gemmini OS CISC a_transpose Test PASSED
+
+WB_TEST_RC_2:0
+~ # /root/gemmini_os_cisc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_3:%s\n' $r
+=== Gemmini OS CISC Basic Test ===
+Gemmini OS CISC Basic Test PASSED
+
+WB_TEST_RC_3:0
+~ # /root/gemmini_os_cisc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_4:%s\n' $r
+=== Gemmini OS CISC b_transpose Test ===
+Gemmini OS CISC b_transpose Test PASSED
+
+WB_TEST_RC_4:0
+~ # /root/gemmini_os_cisc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_5:%s\n' $r
+=== Gemmini OS CISC in_shift Test ===
+Gemmini OS CISC in_shift Test PASSED
+
+WB_TEST_RC_5:0
+~ # /root/gemmini_os_risc_abtranspose_test-linux & p=$!; (sleep 90; kill -KILL $
+p) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB
+_TEST_RC_6:%s\n' $r
+=== Gemmini OS RISC ab_transpose Test ===
+Gemmini OS RISC ab_transpose Test PASSED
+
+WB_TEST_RC_6:0
+~ # /root/gemmini_os_risc_atranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_7:%s\n' $r
+=== Gemmini OS RISC a_transpose Test ===
+Gemmini OS RISC a_transpose Test PASSED
+
+WB_TEST_RC_7:0
+~ # /root/gemmini_os_risc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_8:%s\n' $r
+=== Gemmini OS RISC Basic Test ===
+Gemmini OS RISC Basic Test PASSED
+
+WB_TEST_RC_8:0
+~ # /root/gemmini_os_risc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_9:%s\n' $r
+=== Gemmini OS RISC b_transpose Test ===
+Gemmini OS RISC b_transpose Test PASSED
+
+WB_TEST_RC_9:0
+~ # /root/gemmini_os_risc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_10:%s\n' $r
+=== Gemmini OS RISC in_shift Test ===
+Gemmini OS RISC in_shift Test PASSED
+
+WB_TEST_RC_10:0
+~ # /root/gemmini_ws_cisc_conv_test-linux & p=$!; (sleep 90; kill -KILL $p) & w=
+$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_R
+C_11:%s\n' $r
+=== Gemmini WS CISC Loop Conv Test ===
+Gemmini WS CISC Loop Conv Test PASSED
+
+WB_TEST_RC_11:0
+~ # /root/gemmini_ws_risc_basic_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_12:%s\n' $r
+=== Gemmini WS RISC Basic Test ===
+Gemmini WS RISC Basic Test PASSED
+
+WB_TEST_RC_12:0
+~ # /root/gemmini_ws_risc_btranspose_test-linux & p=$!; (sleep 90; kill -KILL $p
+) & w=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_
+TEST_RC_13:%s\n' $r
+=== Gemmini WS RISC b_transpose Test ===
+Gemmini WS RISC b_transpose Test PASSED
+
+WB_TEST_RC_13:0
+~ # /root/gemmini_ws_risc_shift_test-linux & p=$!; (sleep 90; kill -KILL $p) & w
+=$!; wait $p; r=$?; kill $w 2>/dev/null; wait $w 2>/dev/null; printf '\nWB_TEST_
+RC_14:%s\n' $r
+=== Gemmini WS RISC in_shift Test ===
+Gemmini WS RISC in_shift Test PASSED
+
+WB_TEST_RC_14:0
