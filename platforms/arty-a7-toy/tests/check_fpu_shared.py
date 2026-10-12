@@ -1,5 +1,6 @@
 """Execute original-FMA oracle vectors as real H/S/D Rocket instructions."""
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -8,6 +9,11 @@ import sys
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--baseline-core", type=Path,
+                    default=ROOT.parent / "toy-a7-all-dsp-20261010/build/serial-bound",
+                    help="含 ToyLinuxChip.sv 和 FpgaMemories.sv 的原独立 FMA 核心目录")
+args = parser.parse_args()
 out = ROOT / "build/fpu-shared"
 out.mkdir(parents=True, exist_ok=True)
 vectors = ROOT / "build/fma-check/vectors.csv"
@@ -78,7 +84,7 @@ subprocess.run([sys.executable, str(ROOT / "tests/check_cpu_smoke.py"), "--progr
                 "--output-dir", str(out / "simulation"), "--label", "whole Toy shared FPU 1536 oracle vectors"], check=True)
 baseline_output = out / "baseline-simulation"
 subprocess.run([sys.executable, str(ROOT / "tests/check_cpu_smoke.py"), "--program-elf", str(elf),
-                "--core-dir", str(ROOT.parent / "toy-a7-all-dsp-20261010/build/serial-bound"),
+                "--core-dir", str(args.baseline_core),
                 "--output-dir", str(baseline_output), "--label", "whole Toy baseline FPU 1536 oracle vectors"], check=True)
 def measures(path):
     log = (path / "simulation.log").read_text()
