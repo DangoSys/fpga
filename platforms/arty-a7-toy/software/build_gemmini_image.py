@@ -55,21 +55,55 @@ def main():
     prepared = json.loads((ROOT / "build/linux-gemmini/PREPARED.json").read_text())
     installed = sorted(workloads.glob("*-linux"))
     rootfs = ROOT / "build/software/kernel-build/rootfs/root"
+    kernel_config = (ROOT / "build/software/kernel-build/linux/.config").read_text()
+    if "CONFIG_FILE_LOCKING=y\n" not in kernel_config:
+        raise RuntimeError("Board Linux must enable flock via CONFIG_FILE_LOCKING=y")
     if len(installed) != 15:
         raise RuntimeError(f"Expected 15 workloads, got {len(installed)}")
+    owner_symbols = {"main", "bb_workload_main", "bb_gemmini_drain",
+                     "bb_gemmini_lease_acquire", "bb_gemmini_lease_complete",
+                     "bb_gemmini_lease_abandon"}
+    linked_owners = []
     for path in installed:
         if digest(path) != digest(rootfs / path.name):
             raise RuntimeError(f"Rootfs workload mismatch: {path.name}")
+        header = path.read_bytes()[:20]
+        if header[:6] != b"\x7fELF\x02\x01" or int.from_bytes(header[18:20], "little") != 243:
+            raise RuntimeError(f"Expected little-endian RV64 ELF: {path.name}")
+        if path.name != "linux_system_check-linux":
+            symbols = subprocess.run(["riscv64-unknown-linux-gnu-nm", "--defined-only", str(path)],
+                                     env=environment, text=True, capture_output=True,
+                                     check=True, timeout=10).stdout
+            defined = {line.split()[-1] for line in symbols.splitlines() if line.split()}
+            if not owner_symbols <= defined:
+                raise RuntimeError(f"Missing ownership entry in {path.name}: {owner_symbols - defined}")
+            linked_owners.append(path.name)
+    if len(linked_owners) != 14:
+        raise RuntimeError("Not all Gemmini programs linked the ownership runtime")
+    helper = ROOT / "software/runtime/gemmini_concurrency.sh"
+    if digest(helper) != digest(rootfs / helper.name):
+        raise RuntimeError("Rootfs concurrency helper mismatch")
+    source_inputs = [ROOT / "build/linux-gemmini" / name for name in
+                     ["CMakeLists.txt", "params.h", "ballISA.h", "gemmini_linux_check.c"] +
+                     prepared["original_cases"]]
+    source_inputs += [p for p in (ROOT / "build/linux-gemmini/runtime").rglob("*") if p.is_file()]
     result = {
         "result": "PASS_BUILD_NOT_HARDWARE_TESTED",
         "elapsed_seconds": round(time.monotonic() - started, 3),
         "software_baseline": baseline,
         "profile": prepared["profile"],
+        "gemmini_ownership": prepared["gemmini_ownership"],
+        "ownership_link_verified": linked_owners,
+        "build_inputs": {p.relative_to(ROOT / "build/linux-gemmini").as_posix(): digest(p)
+                         for p in sorted(source_inputs)},
         "payload_bytes": payload.stat().st_size,
         "payload_sha256": digest(payload),
         "workloads": {path.name: {"bytes": path.stat().st_size, "sha256": digest(path)}
                       for path in installed},
         "rootfs_install_verified": True,
+        "linux_file_locking_enabled": True,
+        "rootfs_helpers": {helper.name: {"bytes": helper.stat().st_size,
+                                        "sha256": digest(helper)}},
         "flash_modified": False,
         "hardware_gemmini_tested": False,
         "model_end_to_end_tested": False,

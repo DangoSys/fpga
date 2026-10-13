@@ -43,6 +43,9 @@ def main():
         files += list((ROOT / "software").glob("*.py"))
         files += [ROOT / "software/build.sh", ROOT / "software/linux_system_check.c",
                   ROOT / "software/gemmini_linux_check.c"]
+        files += [path for path in (ROOT / "software/runtime").rglob("*") if path.is_file()]
+        files += [ROOT / "scripts/check_gemmini_ownership.py",
+                  ROOT / "tests/gemmini_lease_test.c", ROOT / "tests/gemmini_entry_mock.c"]
         files += [path for path in (ROOT / "tests/reference").rglob("*") if path.is_file()]
         directories = set()
         for path in files:
@@ -54,7 +57,10 @@ def main():
             sftp.mkdir(remote + "/" + directory)
         for path in files:
             sftp.put(str(path), remote + "/" + path.relative_to(ROOT).as_posix())
-        command = "cd " + shlex.quote(remote) + " && timeout --signal=TERM --kill-after=10s 3600s python3 -u software/build_gemmini_image.py --cache-base " + shlex.quote(args.cache_base) + " --sdk " + shlex.quote(args.sdk)
+        command = ("cd " + shlex.quote(remote) +
+                   " && timeout --signal=TERM --kill-after=5s 60s python3 -u scripts/check_gemmini_ownership.py" +
+                   " && timeout --signal=TERM --kill-after=10s 3600s python3 -u software/build_gemmini_image.py --cache-base " +
+                   shlex.quote(args.cache_base) + " --sdk " + shlex.quote(args.sdk))
         print("REMOTE " + remote, flush=True)
         _, stdout, _ = client.exec_command(command, timeout=15)
         channel = stdout.channel
@@ -77,8 +83,11 @@ def main():
         if code:
             raise RuntimeError(f"Remote build failed with exit {code}; see {out / 'build.log'}")
         for filename in ["build/LINUX_GEMMINI_BUILD.json", "build/board-software/fw_payload.bin",
-                         "build/board-software/RESULT.json"]:
+                         "build/board-software/RESULT.json", "build/linux-gemmini/PREPARED.json",
+                         "build/gemmini-ownership-host/RESULT.json", "build/gemmini-ownership-host/host.log"]:
             destination = out / Path(filename).name
+            if "gemmini-ownership-host" in filename:
+                destination = out / ("HOST_" + Path(filename).name)
             sftp.get(remote + "/" + filename, str(destination))
         sftp.close()
         print("DOWNLOADED " + str(out), flush=True)

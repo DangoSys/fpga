@@ -1,0 +1,29 @@
+{
+  "result": "PASS_BUILD",
+  "payload_sha256": "1b935a57fe08beac3b71a50957dec414bbe86f847b20c10e18c019a7477de48e",
+  "payload_bytes": 25797640,
+  "linux_image_sha256": "0ca5769cfccb33b43d59cf1f3f4a4ce806daebcc020ec841d14279344c00ed7b",
+  "linux_image_unchanged": true,
+  "clint_frequency_hz": 500000,
+  "core_frequency_hz": 25000000,
+  "console_base": "0x60020000",
+  "memory_bytes": 268435456,
+  "original_platform_sha256": "215cc16a14101a2b987fb05f8619ccf20eef610f5f88c6561575e9a25fff7773",
+  "adapted_platform_sha256": "f1a7a6d2921105055adb66e9df759d12196cdf9d63d15966c66276f69354fc9f",
+  "original_payload_sha256": "c17edb5e277fe2eb6f66f5fb61579e99e18e798da990f4d7e036d5341c0fbb22",
+  "boot_tested": false,
+  "command": [
+    "make",
+    "-C",
+    "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/board-software/opensbi-src",
+    "-j8",
+    "CROSS_COMPILE=riscv64-unknown-linux-gnu-",
+    "PLATFORM_DIR=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/board-software/platform",
+    "PLATFORM=buckyball",
+    "O=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/board-software/opensbi-build",
+    "FW_PAYLOAD_PATH=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/board-software/Image",
+    "BUCKYBALL_VISIBLE_HART_COUNT=1",
+    "BUCKYBALL_TOTAL_HART_COUNT=1",
+    "BUCKYBALL_HIDDEN_HART_BASE=1"
+  ]
+}

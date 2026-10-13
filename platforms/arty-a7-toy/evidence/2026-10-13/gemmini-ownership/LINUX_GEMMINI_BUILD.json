@@ -1,0 +1,140 @@
+{
+  "result": "PASS_BUILD_NOT_HARDWARE_TESTED",
+  "elapsed_seconds": 158.681,
+  "software_baseline": {
+    "bbkernel": "b80336ce647f6604713f1570e1e1355f705a4355",
+    "linux": "ffc253263a1375a65fa6c9f62a893e9767fbebfa",
+    "opensbi": "c0f87f10d1bfb9e72a84ddfafb5604ee1bfe9d04",
+    "busybox": "1a64f6a20aaf6ea4dbba68bbfa8cc1ab7e5c57c4"
+  },
+  "profile": {
+    "gemmini_rows": 8,
+    "gemmini_columns": 8,
+    "bank_width": 64,
+    "bank_count": 8,
+    "virtual_bank_count": 16,
+    "bank_rows": 1024
+  },
+  "gemmini_ownership": {
+    "protocol": "BBGM1",
+    "wrapped_programs": 14,
+    "scope": "whole_process",
+    "abnormal_exit": "sticky_dirty",
+    "hardware_context_isolation_proven": false
+  },
+  "ownership_link_verified": [
+    "gemmini_linux_check-linux",
+    "gemmini_os_cisc_atranspose_test-linux",
+    "gemmini_os_cisc_basic_test-linux",
+    "gemmini_os_cisc_btranspose_test-linux",
+    "gemmini_os_cisc_shift_test-linux",
+    "gemmini_os_risc_abtranspose_test-linux",
+    "gemmini_os_risc_atranspose_test-linux",
+    "gemmini_os_risc_basic_test-linux",
+    "gemmini_os_risc_btranspose_test-linux",
+    "gemmini_os_risc_shift_test-linux",
+    "gemmini_ws_cisc_conv_test-linux",
+    "gemmini_ws_risc_basic_test-linux",
+    "gemmini_ws_risc_btranspose_test-linux",
+    "gemmini_ws_risc_shift_test-linux"
+  ],
+  "build_inputs": {
+    "CMakeLists.txt": "2ab7234a09ee29e4dc05f04e8864f2e4af9ca6d613bf5508b894baa8476e9a11",
+    "ballISA.h": "8f74e9230c45bc270c99b4b31fde6db6ed61b01c0055c7c62855de11bb571606",
+    "gemmini_linux_check.c": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467",
+    "gemmini_os_cisc_atranspose_test.c": "d4b44df5f004b4e1d4ada02c247e5f66a6596dfa80cf70a09c54d7448b572712",
+    "gemmini_os_cisc_basic_test.c": "481733138780de0ef2ce7d867bc375cd22a64990f33b9eabd8a03a45c2e8861c",
+    "gemmini_os_cisc_btranspose_test.c": "efdf1cefe9277fde1dce1d62eb7c3364ddbb27926e99ddce9800f1fb54be1fec",
+    "gemmini_os_cisc_shift_test.c": "9676b4e45945de9cbe005be695ffd8d0f3a406fa0448875a8372cc1d1c20fb4c",
+    "gemmini_os_risc_abtranspose_test.c": "641982f9adc4b898a27d23967807d9f350c3db717b7c276df42281b7c6ba3558",
+    "gemmini_os_risc_atranspose_test.c": "4583e36cbea777a439e65fb4ca58e51574e2f7686217088922128c36fa8d74f9",
+    "gemmini_os_risc_basic_test.c": "cd8102c88b58a2ea289212779bd2bf50f9e35806e9039f4cc5a6abf73eef131f",
+    "gemmini_os_risc_btranspose_test.c": "01ee05bb7a92de708e1bac4041354d9f0363c70a4f5b898af784f47410f63798",
+    "gemmini_os_risc_shift_test.c": "aae1a632fd3fabc1ae9fea89daf9dc0693880c718f100c86b946257935a4076d",
+    "gemmini_ws_cisc_conv_test.c": "ab75719d036a6b61b4369514c6771ebac94a04e7448f2127b1be60bab2e8f28b",
+    "gemmini_ws_risc_basic_test.c": "f5aab861cf0f764e6179e24c70c75d9f3c7e9a0364a4e3aa818784f7f309c03a",
+    "gemmini_ws_risc_btranspose_test.c": "fff4938ea7c16864e3e1b91a2d30ef2d3eabeb3ed4a1153964f5d351d6980279",
+    "gemmini_ws_risc_shift_test.c": "a22209c0c02cd5d5b258525dd6266bbe3a7447b410a082e8da19a268478b6307",
+    "params.h": "cc6bbe816a15f9a7bd133fbeb45d039733a22a6a6f94dace16eecea5eef61b24",
+    "runtime/gemmini_concurrency.sh": "2b6793c0a6c512e94840b03dce3fe96ca5cf312dbae4d43529133d4c2857c66a",
+    "runtime/gemmini_lease.c": "0cb91ce987131c31ac0c9d8dbbd858e7211bb89d370fda2a267cb76520aba809",
+    "runtime/gemmini_lease.h": "e751430be098d447dcbc6ce66a927e952a91a07a6f9bfca15bddd8244824607f",
+    "runtime/gemmini_linux_entry.c": "ae532a4bc919c3819854dde364ffd93e03f573371d6c41959f78fcce2215213d",
+    "runtime/gemmini_platform.c": "f90a5d7e624e9b95ec1dbb7361914a1e9f8abe04de088e57c2e9ae8afe5c910b"
+  },
+  "payload_bytes": 25797640,
+  "payload_sha256": "1b935a57fe08beac3b71a50957dec414bbe86f847b20c10e18c019a7477de48e",
+  "workloads": {
+    "gemmini_linux_check-linux": {
+      "bytes": 636840,
+      "sha256": "f50e7927a650780a04fd8cdfc372bb60412e461a58a8e5c31118f6f657639cb3"
+    },
+    "gemmini_os_cisc_atranspose_test-linux": {
+      "bytes": 610992,
+      "sha256": "4981bc146abe105b49d181b87162e6bdd4bce2a3049c546c80d07e4ddf5d81da"
+    },
+    "gemmini_os_cisc_basic_test-linux": {
+      "bytes": 610960,
+      "sha256": "f7195d5297ee2b8de69fc925e55b435e1ff66cded9b85965652a5325498c16c7"
+    },
+    "gemmini_os_cisc_btranspose_test-linux": {
+      "bytes": 610992,
+      "sha256": "32a76534bf43c6e30f6bc9ceba4d3bd74d24e6b9c01fa75cbfae18762da482b8"
+    },
+    "gemmini_os_cisc_shift_test-linux": {
+      "bytes": 610960,
+      "sha256": "139fd7fa0b47d4906d3fbec7e85e27b999445afb222a1ab39b48f13c82d018d0"
+    },
+    "gemmini_os_risc_abtranspose_test-linux": {
+      "bytes": 611360,
+      "sha256": "043efe31795297a4ce14d876e19299312c581f3b8d1fae92d9b55f700bf423b0"
+    },
+    "gemmini_os_risc_atranspose_test-linux": {
+      "bytes": 611328,
+      "sha256": "07a6a5d4c250aa828a03fb544cdda45a2c182e08542d6950cf41e5a46f37939c"
+    },
+    "gemmini_os_risc_basic_test-linux": {
+      "bytes": 611320,
+      "sha256": "c2e724959072086f86053c25d6697d38c77c356c08b2bd1cb8b5dac61dce9328"
+    },
+    "gemmini_os_risc_btranspose_test-linux": {
+      "bytes": 611328,
+      "sha256": "b03261fbbde3e7efdc7ae46d7f2d74fa3b38171d59f1a7868548fca9a347c170"
+    },
+    "gemmini_os_risc_shift_test-linux": {
+      "bytes": 611288,
+      "sha256": "51a165906e2cfe3e617f18310814f17b4a8c2e88d9b2a3c318e1527c3f78c0b5"
+    },
+    "gemmini_ws_cisc_conv_test-linux": {
+      "bytes": 610960,
+      "sha256": "d2ae96cb72d1132eee247837e32197abbcec91b9fb264b6b71d538b6e6c30483"
+    },
+    "gemmini_ws_risc_basic_test-linux": {
+      "bytes": 611320,
+      "sha256": "42ff8500a414af91f15766f0f7beb57a318c1bd7d8d4bafbae76caf63280c90c"
+    },
+    "gemmini_ws_risc_btranspose_test-linux": {
+      "bytes": 611360,
+      "sha256": "4a77742538c0bf506726537c82b1b4acff0e70d9e53d27a3a443d1d567f09875"
+    },
+    "gemmini_ws_risc_shift_test-linux": {
+      "bytes": 611320,
+      "sha256": "d95045294c8b8c36e501d9351e5130355e8e42019ffc7feb7387faef1c78bd8d"
+    },
+    "linux_system_check-linux": {
+      "bytes": 616848,
+      "sha256": "7fff55e3b560fd72482984f225b70a4a1154512452b96fc1467665b2acc32e00"
+    }
+  },
+  "rootfs_install_verified": true,
+  "linux_file_locking_enabled": true,
+  "rootfs_helpers": {
+    "gemmini_concurrency.sh": {
+      "bytes": 4098,
+      "sha256": "2b6793c0a6c512e94840b03dce3fe96ca5cf312dbae4d43529133d4c2857c66a"
+    }
+  },
+  "flash_modified": false,
+  "hardware_gemmini_tested": false,
+  "model_end_to_end_tested": false
+}

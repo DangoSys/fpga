@@ -32,6 +32,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     shutil.copytree(reference, out / "reference", dirs_exist_ok=True)
     shutil.copy2(ROOT / "software/gemmini_linux_check.c", out / "gemmini_linux_check.c")
+    shutil.copytree(ROOT / "software/runtime", out / "runtime", dirs_exist_ok=True)
     (out / "params.h").write_text(
         "#define BANK_WIDTH 64\n#define PHYSICAL_BANK_NUM 8\n"
         "#define VIRTUAL_BANK_NUM 16\n#define BANK_ENTRIES 1024\n#define GEMMINI_DIM 8\n",
@@ -65,24 +66,36 @@ set(CMAKE_C_STANDARD 11)
 add_compile_options(-march=rv64gc -mabi=lp64d -O2 -Wall -Wextra -Werror -ffp-contract=off)
 add_link_options(-static)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
-  reference/bb-tests/workloads/lib reference/examples/balls/gemmini/workloads)
+  runtime reference/bb-tests/workloads/lib reference/examples/balls/gemmini/workloads)
 add_library(bb_reference STATIC reference/bb-tests/workloads/lib/buckyball.c
   reference/bb-tests/workloads/lib/bbhw/mem/mem.c
   reference/bb-tests/workloads/lib/bbhw/isa/isa.c)
-set(workloads gemmini_linux_check-linux)
-add_executable(gemmini_linux_check-linux gemmini_linux_check.c)
-target_link_libraries(gemmini_linux_check-linux PRIVATE bb_reference m)
+add_library(bb_gemmini_owner STATIC runtime/gemmini_lease.c
+  runtime/gemmini_linux_entry.c runtime/gemmini_platform.c)
+set(workloads)
+function(add_owned_workload target source)
+  set_source_files_properties(${source} PROPERTIES COMPILE_DEFINITIONS main=bb_workload_main)
+  add_executable(${target} ${source})
+  target_link_libraries(${target} PRIVATE bb_gemmini_owner bb_reference m)
+  list(APPEND workloads ${target})
+  set(workloads ${workloads} PARENT_SCOPE)
+endfunction()
+add_owned_workload(gemmini_linux_check-linux gemmini_linux_check.c)
 '''
     for name in sources:
         target = Path(name).stem + "-linux"
-        cmake += f"add_executable({target} {name})\ntarget_link_libraries({target} PRIVATE bb_reference m)\nlist(APPEND workloads {target})\n"
+        cmake += f"add_owned_workload({target} {name})\n"
     cmake += "install(TARGETS ${workloads} RUNTIME DESTINATION .)\n"
+    cmake += "install(PROGRAMS runtime/gemmini_concurrency.sh DESTINATION .)\n"
     (out / "CMakeLists.txt").write_text(cmake, encoding="utf-8")
     (out / "PREPARED.json").write_text(json.dumps({
         "result": "PREPARED_NOT_BUILT", "dimension": 8,
         "reference_commit": manifest["commit"], "original_cases": sources,
         "new_blocked_matmul_cases": 16, "profile": expected,
         "model_end_to_end_tested": False,
+        "gemmini_ownership": {"protocol": "BBGM1", "wrapped_programs": 14,
+                              "scope": "whole_process", "abnormal_exit": "sticky_dirty",
+                              "hardware_context_isolation_proven": False},
     }, indent=2) + "\n", encoding="utf-8")
     print(f"Prepared {len(sources)} pinned cases and one blocked-matmul workload in {out}")
 

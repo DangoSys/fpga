@@ -1,0 +1,32 @@
+{
+  "git_base": "ccb40f13680689ccdd08a692f87e00fa5758f4dc",
+  "upstream_commit": "1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097",
+  "hardware_bitstream_sha256": "9f6f684361c049527fda09818cc8aa464f1067b75f3762305a27c5c738295942",
+  "hardware_changed": false,
+  "hardware_tested": false,
+  "dma_context_isolation_proven": false,
+  "software_sources": {
+    "SOFTWARE_BASELINE.json": "3a5c9f65771e6fd7f8172674baf22263ba7c2d9244993c9162ba526344a7b0aa",
+    "tests/REFERENCE_MANIFEST.json": "de4c11a8bca5bf8bb0fba0eada731177772756f307abd5523bbe5d60ffe3ff25",
+    "evidence/2026-10-11/ToyLinuxChip.profile.json": "57e251b00a486f406e5e27f666f4416be730b4e08c8838584e4aac49ebb30f86",
+    "software/prepare_gemmini_linux.py": "d283f740423bbee655542649176719df29d80aeaf85c24b7b52913060f82914b",
+    "software/build_gemmini_image.py": "ef09f192077004ce821bef5f4c853e64ee3f195bb1696686d501b065390b93eb",
+    "software/prepare_platform.py": "9f30ab8f30525a4eb5204817eb9c5362ca951b21f1e90b35e39d6c85f3530d86",
+    "software/prepare_dependencies.py": "5bf2eca25081e014ff0de67ae0aeb41cb4380a2767a08a109a3bf6c19238b308",
+    "software/build.sh": "908b5678edf5a710187480974c0c699ca8833faede20d044b7131060c3161292",
+    "software/gemmini_linux_check.c": "2fa2f6d73d674d89344ffd058f28712380c2de04d64a88b43fe141e30e9df467",
+    "software/linux_system_check.c": "c1cedf2ce6e2583393c9e7f51fe20558c1402b8d81faf2152e8f6eeaf8058315",
+    "scripts/remote_linux_gemmini.py": "853a94d3721d77c6c13f19c2ded6a36df42423e5bcb8e26d40bcecb8525ab9bd",
+    "scripts/build_board_firmware.py": "1af5afa3b468fa13a0aaba57a977ba26ff2b0857a765ceda0a0b666fec39b344",
+    "scripts/check_gemmini_ownership.py": "739797af0af89b89f0203330ecd6283119f9b7859ffab81c2993b2e0774bf5a0",
+    "tests/gemmini_lease_test.c": "0cf5fe64ed392699008953221a184d2b2ce2760edd9e1b4ed33d900cb4c3682c",
+    "tests/gemmini_entry_mock.c": "5c4db4ccd5769afc8297e55febed77d04201ade8d6ceb5ce9f88b2095468ea1c",
+    "software/runtime/gemmini_concurrency.sh": "2b6793c0a6c512e94840b03dce3fe96ca5cf312dbae4d43529133d4c2857c66a",
+    "software/runtime/gemmini_lease.c": "0cb91ce987131c31ac0c9d8dbbd858e7211bb89d370fda2a267cb76520aba809",
+    "software/runtime/gemmini_lease.h": "e751430be098d447dcbc6ce66a927e952a91a07a6f9bfca15bddd8244824607f",
+    "software/runtime/gemmini_linux_entry.c": "ae532a4bc919c3819854dde364ffd93e03f573371d6c41959f78fcce2215213d",
+    "software/runtime/gemmini_platform.c": "f90a5d7e624e9b95ec1dbb7361914a1e9f8abe04de088e57c2e9ae8afe5c910b"
+  },
+  "teammate_log_source": "pr10_test_logs.zip/newangles_pr10/console.log",
+  "teammate_log_sha256": "36296416fe84422d6471bb81a2366a4116e3fd2d74350cc9934f7c8dd496defd"
+}
