@@ -1047,7 +1047,7 @@
     "scripts/check_flash_boot.py": "db6f63febbe4dc0b1800df4a13a307380303c871946e31b5d344ea5e13baaf49",
     "scripts/check_flash_guards.py": "76bba3666d73a87aa698fa714933244f59dbdaa2260cb742462ad71505a10a5b",
     "scripts/check_globalrob.py": "d9476b99ea8f68ea1b22fe62648433314c711fb40162349824f9fe89182517b4",
-    "scripts/check_platform_mutations.py": "04f36ab3bd1e4982e98eb28912925b2211c64e7c6e3d1f740e4400c6a70fce09",
+    "scripts/check_platform_mutations.py": "e65f10e1254cdf63815fc6df24181e54ef448c720092724b3e280947639fb1eb",
     "scripts/check_programming_scripts.py": "8bd486cc7b0dbb960984a6dadc1bd97eb5a2b393abbe55e9d99077817dbc02a5",
     "scripts/check_runner_status.py": "e49aa8b3a75e6688af8de4e9e113a6682d1b48a79adad89bf8b92ee4ee5fb670",
     "scripts/elaborate.sh": "fc23feeac3ddaedb3368b87d2dd5f97025242ac59ecc664b974fa7ce313cd2da",

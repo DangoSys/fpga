@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 from offline_check import run_check
@@ -47,7 +48,7 @@ def main():
         if result.returncode != expected or marker not in log:
             raise ValueError(f"Mutation oracle failed: {label}: {log}")
         cases.append({"case": label, "exit_code": result.returncode, "expected_exit_code": expected,
-                      "result": "PASS", "sources": {path.relative_to(ROOT).as_posix():
+                      "result": "PASS", "sources": {Path(os.path.relpath(path, ROOT)).as_posix():
                       hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}})
     record = {"result": "PASS_MUTATION_ORACLES", "physical_hardware_tested": False, "cases": cases}
     (OUT / "RESULT.json").write_text(json.dumps(record, indent=2) + "\n")
