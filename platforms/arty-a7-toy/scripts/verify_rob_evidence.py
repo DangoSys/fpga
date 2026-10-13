@@ -6,8 +6,10 @@ import json
 from pathlib import Path
 import re
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / "evidence/2026-10-12/rob-ram"
+ARCHIVE = evidence_path("2026-10-12/rob-ram")
 
 
 def read(path):
@@ -46,15 +48,15 @@ def main():
     assert run["bitstream_generated"] and run["timeout_seconds"] == 3600
     assert run["candidate_core_unchanged"] and run["candidate_memory_unchanged"]
     assert resources(ARCHIVE / "implementation/routed-utilization.rpt") == record["routed_resources"]
-    before = read(ROOT / "evidence/2026-10-11/BOARD_RESULT.json")["routed_resources"]
+    before = read(evidence_path("2026-10-11/BOARD_RESULT.json"))["routed_resources"]
     for name, value in record["routed_resources"].items():
         assert value - before[name] == record["resource_delta"][name], name
     assert read(ARCHIVE / "ToyLinuxChip.profile.json") == read(
-        ROOT / "evidence/2026-10-11/ToyLinuxChip.profile.json")
+        evidence_path("2026-10-11/ToyLinuxChip.profile.json"))
     assert read(ARCHIVE / "tests/globalrob/RESULT.json")["result"] == "PASS"
     assert "PASS all memory bindings" in (ARCHIVE / "tests/rob-memory-regression.log").read_text()
     regressions = read(ARCHIVE / "tests/BOARD_REGRESSION.json")
-    baseline = read(ROOT / "evidence/2026-10-11/tests/BOARD_REGRESSION.json")
+    baseline = read(evidence_path("2026-10-11/tests/BOARD_REGRESSION.json"))
     assert regressions["result"] == "PASS"
     for name, case in regressions["tests"].items():
         assert case["result"] == "PASS"
@@ -82,7 +84,7 @@ def main():
     assert memory["core_rtl_sha256"] == record["core_rtl_sha256"] == run["core_sha256"]
     assert memory["memory_rtl_sha256"] == record["memory_rtl_sha256"] == run["memory_sha256"]
     for name, expected in record["integration_sources"].items():
-        assert sha(ROOT / name) == expected, name
+        assert sha(ARCHIVE.parent / "integration-inputs" / name) == expected, name
     if args.core:
         assert sha(ROOT / "build/serial-bound/ToyLinuxChip.sv") == record["core_rtl_sha256"]
         assert sha(ROOT / "build/serial-bound/FpgaMemories.sv") == record["memory_rtl_sha256"]

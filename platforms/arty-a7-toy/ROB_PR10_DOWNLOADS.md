@@ -2,7 +2,8 @@
 
 目标为 **Digilent Arty A7-100T / XC7A100T-CSG324-1**。本版合并 ROB 操作数 BRAM 优化
 和 PR10 修复，保持 CPU、Sv39、FP16/32/64、Gemmini 8×8 及既有接口。
-通过完整实现和 RTL 回归；用户本轮无法连接板卡，**新位流尚未做实板验证**。
+通过完整实现和 RTL 回归；发布时未连接板卡。后续队友报告本版实板通过，
+原始实板日志待补，见 [回传说明](evidence/2026-10-13/team-return/README.md)。
 资源、原文报告、测试与已知 MMIO 限制见 [完整报告](evidence/2026-10-13/rob-pr10-full/REPORT.md)。
 
 [GitHub 工程预发布](https://github.com/DangoSys/fpga/releases/tag/arty-a7-rob-pr10-2026-10-13)

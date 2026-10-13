@@ -5,8 +5,10 @@ import json
 from pathlib import Path
 import re
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / "evidence/2026-10-12/flash"
+ARCHIVE = evidence_path("2026-10-12/flash")
 CHECKS = {
     "VM_COPY_ON_WRITE",
     "VM_PAGE_PROTECTION",
@@ -43,7 +45,7 @@ def verify():
     assert software["dtb_address"] == "0x11000" and software["rom_bytes"] == 8192
     assert record["payload_sha256"] == software["payload_sha256"]
     assert record["bitstream_sha256"] == packed["bitstream_sha256"]
-    previous = read(ROOT / "evidence/2026-10-11/BOARD_RESULT.json")
+    previous = read(evidence_path("2026-10-11/BOARD_RESULT.json"))
     assert record["payload_sha256"] == previous["linux"]["payload_sha256"]
 
     labels = {

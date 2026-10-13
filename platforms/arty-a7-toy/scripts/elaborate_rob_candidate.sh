@@ -9,5 +9,5 @@ sbt -Dfpga.robOperandRam=true -batch \
   'runMain fpga.arty.linux.EmitToyLinux build/serial-reference --serial-fpga' \
   'runMain fpga.arty.linux.EmitRoutingCheck build/routing-check'
 python3 scripts/prepare_rob_candidate.py \
-  --baseline-memory-manifest evidence/2026-10-11/MEMORY_MANIFEST.json
+  --baseline-memory-manifest "$(python3 scripts/history_paths.py 2026-10-11/MEMORY_MANIFEST.json)"
 python3 scripts/export_capabilities.py

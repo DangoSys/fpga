@@ -5,8 +5,10 @@ import json
 from pathlib import Path
 import re
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / "evidence/2026-10-12/linux-gemmini"
+ARCHIVE = evidence_path("2026-10-12/linux-gemmini")
 
 
 def read(path):
@@ -31,7 +33,8 @@ def main():
     inputs = read(ARCHIVE / "build/INPUT_MANIFEST.json")
     for name, metadata in inputs["source_files"].items():
         snapshot = ARCHIVE / "sources" / name
-        path = snapshot if snapshot.is_file() else ROOT / name
+        path = (snapshot if snapshot.is_file() else
+                evidence_path(name[len("evidence/"):]) if name.startswith("evidence/") else ROOT / name)
         require(sha(path) == metadata["sha256"], "Source binding mismatch: " + name)
     for name, metadata in inputs["generated_build_inputs"].items():
         require(sha(ARCHIVE / "generated-inputs" / name) == metadata["sha256"], name)

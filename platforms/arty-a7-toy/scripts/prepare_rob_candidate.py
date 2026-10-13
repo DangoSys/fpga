@@ -9,6 +9,8 @@ import sys
 
 from prepare_fpga_memories import unpack_emission, validate
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -22,7 +24,7 @@ def main():
     args = parser.parse_args()
     raw = ROOT / "build/serial-raw/ToyLinuxChip.sv"
     profile = json.loads((ROOT / "build/serial-raw/ToyLinuxChip.profile.json").read_text())
-    expected = json.loads((ROOT / "evidence/2026-10-11/ToyLinuxChip.profile.json").read_text())
+    expected = json.loads((evidence_path("2026-10-11/ToyLinuxChip.profile.json")).read_text())
     if profile != expected:
         raise ValueError("Optimization changed the architectural hardware profile")
     _, memories, config = unpack_emission(raw.read_text())

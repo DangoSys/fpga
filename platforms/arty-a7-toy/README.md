@@ -1,165 +1,58 @@
-# Toy/Linux on Arty A7-100T
+# Arty A7-100T：当前 Toy/Linux 平台
 
-## 队友直接跑实板验证
+当前选择 **ROB 操作数 BRAM + PR10 修复的 UART 集成版**，器件 `xc7a100tcsg324-1`，
+发布 `arty-a7-rob-pr10-2026-10-13`，属于 [阶段 03](../../history/03-rob-pr10/README.md)。
+最早无 Linux 的 A7 原型和旧 Toy 记录已分阶段移入 [history/](../../history/README.md)。
 
-克隆后无需构建工具链或子模块，在 Windows 进入本目录：
+## 队友直接运行
+
+Windows、64 位 Python 3.10+、Vivado Hardware Manager 和 FTDI 驱动，进入本目录执行：
 
 ```powershell
 python -m pip install -r host/requirements-hardware.txt
 .\run_hardware.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
 ```
 
-替换真实串口与 Vivado 路径。入口自动获取固定 ROB/PR10 发布包、核对摘要，并调用原
-Linux/Gemmini 实板验证器；没有接板可先运行 `.\run_hardware.ps1 -PrepareOnly`。
-详细准备、离线 ZIP、超时和日志位置见[中文实板验证指南](HARDWARE_TEST.md)。
+替换真实串口/路径，连接 PROG/UART USB、SW0=0。入口核对固定版本，临时配置 FPGA、
+完整读回 DDR 软件、启动 Linux、执行 15 个程序，一小时超时。无板先用 `-PrepareOnly`；
+[详细指南](HARDWARE_TEST.md)说明 Git 获取、离线 ZIP 与日志位置。
 
-## 当前源码修复的验收范围
+## 两条启动路线
 
-PR #10 修正了平台 AXI 写错误响应与烧录脚本校验，评估、回归和复现命令见
-[修正说明](REVIEW_FIXES.md)。ROB 优化与本次修复已完成重新生成、整板实现及完整 RTL
-回归，产物与原文报告见 [工程预发布下载](ROB_PR10_DOWNLOADS.md)。本轮没有连接板卡，
-新位流尚无实物资格；下述历史实物记录仍属于其归档的旧源码/位流。
+| 路线 | 可用内容 | 验证范围 |
+|---|---|---|
+| 当前 UART | ROB/PR10 位流 + 标准 Linux/Gemmini 镜像；[下载](ROB_PR10_DOWNLOADS.md) | 实现/RTL 通过；队友报告实板通过，原始实板日志待补 |
+| 旧 Flash 恢复 | 阶段 02 Flash 专用位流/MCS与原系统镜像；[流程](FLASH_BOOT.md) | 旧版本烧写与真实断电启动通过，不代表当前 ROB/PR10 已固化验收 |
 
-A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
-FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
-checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,
-the complete image was read back from DDR and five Linux checks passed on hardware.
-This remains a **Rev E engineering target**: PCB revision is unconfirmed and
-the remaining acceptance scope is recorded in [measured results](VALIDATION.md) and
-[the hardware logs](evidence/2026-10-12/README.md).
+启动 ROM、位流与镜像组合各有版本。当前 UART 不擦写 Flash，不能直接替换旧 MCS。
+发布时 `physical_hardware_tested=false` 保留当时状态；后续报告在
+[team-return/](evidence/2026-10-13/team-return/README.md)单独记录。
 
-For stored configuration/software and autonomous power-on startup, see
-[persistent Flash boot](FLASH_BOOT.md). The separate Flash target has passed
-complete FPGA implementation, Flash verification and a physical power cycle:
-it boots the original Linux image and passes all five system checks without
-reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.md).
-Runtime DDR and changes to the initramfs remain volatile.
+## 系统与代码
 
-## 2026-10-12：可选 ROB 存储优化
+- RV64 CPU、M/S/U、PMP、Sv39，8 KiB I/D cache；FP16/32/64 共享 FMA。
+- Gemmini 8×8 OS/WS、64 个 PE DSP、64 KiB SRAM，保留 23 个 opcode。
+- 256 MiB DDR3L；CPU 25 MHz、MIG UI 83.33 MHz、CLINT 500 kHz、UART 1 Mbps。
+- 官方 Rev E MIG 参数；实物 PCB 修订号未知。其他 Balls、L2、BTB、debug 等不在此 FPGA 配置中。
 
-新增 [ROB RAM 候选](ROB_RAM.md)，整板布线后减少 484 LUT、1,657 FF 和
-84 Slice，增加 2 BRAM tile。CPU/Gemmini/Linux RTL 回归周期数保持不变；
-后续实物复测已通过完整镜像读回与两轮 Linux/Gemmini 回归，日志追加在
-[PR #9](https://github.com/DangoSys/fpga/pull/9)。默认构建与既有发布版本保留
-原寄存器路径；候选的 Flash 冷启动尚未验证。
+`src/`、`patches/` 是当前 Chisel 配置/覆盖；`rtl/` 为存储器适配；`board/` 为 DDR/时钟/引脚/Tcl；
+`boot/` 保留 Flash 支持；`software/`、`host/`、`tests/` 为镜像、主机与验证。
+`evidence/` 保存当前证据；旧记录由 `scripts/history_paths.py` 按阶段索引读取。
 
-## 2026-10-12：Linux/Gemmini 实物回归
+## 重建与开发
 
-按标准 rootfs/bbkernel 流程构建的新镜像已完成全部 DDR 读回和实物启动；
-15 个程序返回 0，覆盖五项 Linux 系统检查、原 13 项 Gemmini 测试及新增 16 项
-OS/WS 矩阵对照（包含分块和尾块）。最终运行器回归与看门狗清理检查均通过。
-多数小矩阵端到端路径暂时比 CPU 参考更慢，原始计时和测试记录见
-[中文实物报告](evidence/2026-10-12/linux-gemmini/REPORT.md)，复现方法见
-[验证指南](software/GEMMINI_LINUX.md)。本轮未写 Flash，整模型仍未验收。
-
-## Architecture and scope
-
-- RV64IMAFDC with Zfh/Zba/Zbb/Zbs, M/S/U, PMP, Sv39, interrupts and 8 KiB I/D
-  caches. FP16/32/64 share the FMA; the register file uses validated LUTRAM.
-- Gemmini 8×8 OS/WS, 64 DSP PE MACs, 64 KiB accelerator SRAM and 23 opcodes.
-  Group-query ownership, simultaneous SubROB enqueue/retirement, WS bias and
-  rounding fixes are included as Chisel overrides.
-- 256 MiB DDR3L at `0x80000000`, official Digilent Rev E MIG, real Xilinx AXI
-  Clock Converter and a byte-strobe preserving fullwidth DDR adapter.
-- 100 MHz oscillator, 25 MHz CPU, 83.33 MHz MIG UI, 500 kHz CLINT; UART 1 Mbps
-  8N1. SCU exit/TX/RX/status: `0x60000000`, `0x60020000/04/05`.
-
-This is the previously evaluated FPGA profile, not the default full-size Toy:
-other Balls, L2, BTB, debug, extra performance counters and the separate TL
-scratchpad are absent; broadcast coherence and basic counters remain. Accelerator
-SRAM is distinct from that removed TL scratchpad. No software emulation is
-silently substituted. The current PR adds no further core cuts.
-
-Pinned upstream files are restored into ignored `upstream/`; dependencies into
-ignored `thirdparty/`. `patches/` contains the hardware overrides, `src/` the
-top/configuration, `rtl/` memory/RF adapters, `board/` physical integration,
-`software/` pinned Linux/OpenSBI preparation, and `tests/` independent oracles.
-
-## Build
-
-Run from this directory on Linux with Python 3.12+, Git, curl, JDK 17, sbt,
-firtool 1.62.1, RV64 bare-metal and Linux GCC/binutils, Verilator, Icarus Verilog,
-and Vivado with Artix-7 support. Kernel builds also need CMake, Make, flex,
-bison and the standard kernel development libraries. The tested tool versions
-and byte hashes are recorded in `evidence/2026-10-11/`.
+需要 Linux/Nix、JDK 17、sbt、Scala 2.13.16、Chisel 6.7.0、firtool 1.62.1、RV64 工具链、
+Verilator/Icarus 和带 Artix-7 支持的 Vivado 2024.1。生成当前 BRAM 候选：
 
 ```bash
-cd platforms/arty-a7-toy
-# Optional --repository reuses pinned Git objects without changing that checkout.
-bash scripts/elaborate.sh --repository ../../thirdparty/buckyball
+bash scripts/elaborate_rob_candidate.sh --repository ../../thirdparty/buckyball
 bash scripts/build_test_programs.sh
 timeout --signal=TERM --kill-after=15s 3600s python3 scripts/run_board_regression.py
-python3 scripts/start_board_build.py
+python3 scripts/start_rob_board_build.py
 ```
 
-Omit `--repository` to fetch a private pinned Git cache. Chisel 6.7.0 and Scala
-2.13.16 are set by `build.sbt`; sbt is pinned in `project/build.properties`.
-Set `CHISEL_FIRTOOL_PATH` to the directory containing firtool when required.
-`scripts/verify_target.py --core` rejects a regenerated core or SRAM/RF binding
-whose bytes differ from the validated version.
-
-The board launcher returns immediately with a fresh output directory. Inspect
-its `RUN.json`, `phase.txt` and `vivado.log` until status is `COMPLETED`, exit code
-0 and `bitstream_generated` true. The entire Vivado process group has a
-3,600-second timeout plus 15-second termination grace. Timing, CDC, bus-skew,
-routing and DRC failures prevent bitstream generation. `VIVADO` may point to an
-installed compatibility wrapper; otherwise `vivado` is resolved on PATH.
-
-```bash
-bash software/build.sh
-python3 scripts/build_board_firmware.py
-timeout --signal=TERM --kill-after=15s 3600s python3 scripts/check_board_linux.py
-timeout --signal=TERM --kill-after=15s 1800s python3 scripts/check_board_uart_boot.py
-python3 scripts/check_board_cdc.py board-YYYYMMDD-HHMMSS --output-name board-cdc-new
-```
-
-Use the actual board run name for CDC testing and a fresh simulation output
-name. OpenSBI rebuild defaults to `riscv64-linux-gnu-`; `--cross-compile` selects
-another compatible GNU prefix. `--software-base` can reuse another isolated root
-containing `build/software` produced by the same pinned software flow.
-
-Generated RTL, firmware, dependencies, checkpoints and bitstreams are build
-products and are not committed. A successful fresh board run produces
-`build/board-<timestamp>/toy_a7.bit`; the Linux payload is
-`build/board-software/fw_payload.bin`.
-
-## First hardware boot
-
-Confirm the physical DDR/revision matches the official Rev E parameters and
-connect PROG/UART USB. The script requires exactly one attached JTAG target and
-one XC7A100T. It programs the selected `.bit` into volatile FPGA SRAM.
-
-The portable [program.tcl](program.tcl) delegates to
-[board/program_arty.tcl](board/program_arty.tcl), the script used by the hardware
-run. Set both paths to actual files; a clone contains sources and logs, so build
-the `.bit` and Linux payload first using the commands above.
-
-```bash
-vivado -mode batch -source /absolute/path/to/platforms/arty-a7-toy/program.tcl \
-  -tclargs /absolute/path/to/toy_a7.bit
-```
-
-Windows paths with spaces must be quoted. The equivalent PowerShell wrapper is
-`./program.ps1 -Bitstream <bitstream-path> -VivadoBin <Vivado-bin>`.
-
-After JTAG programming, press BTN0, wait for LED0 (DDR calibrated), and close
-other serial clients. Install `pyserial`, then load and byte-verify the Linux
-image before releasing the CPU:
-
-```bash
-python host/load.py --port COM5 --check-linux build/board-software/fw_payload.bin
-```
-
-Use the actual serial port. Expect OpenSBI, Linux, BusyBox and five PASS markers
-for COW, page protection, FP64 process context, the timer and the total Linux
-system check. The recorded 17 MiB transfer/readback took 544.1 seconds with a
-temporary 2 ms FTDI D2XX latency; default VCP settings can take substantially
-longer. The archived transport script records that experiment; normal loading
-uses `host/load.py`. After it closes the port, an interactive console is available
-with `python -m serial.tools.miniterm COM5 1000000 --eol LF`.
-
-LED1 indicates loader error or nonzero exit, LED2 CPU released, LED3 heartbeat.
-LEDs alone do not establish software success. Preserve the console transcript
-and DDR calibration result; operator acceptance additionally needs Gemmini tests.
-FPGA SRAM and the DDR image are volatile: repeat programming and loading after
-power loss. See the hardware record for exact bitstream/payload SHA256 values.
+`--repository` 可省略，由脚本获取固定输入。普通 `elaborate.sh` / `start_board_build.py`
+仍用于寄存器 ROB/Flash 基线，不是当前 BRAM 发布配置。默认关闭 BRAM，候选入口显式开启。
+检查独立输出的 `RUN.json`，只使用 `COMPLETED`、退出 0、生成位流并通过实现检查的结果。
+软件见 [Linux/Gemmini](software/GEMMINI_LINUX.md)，配置/限制见 [ROB](ROB_RAM.md)、
+[验证范围](VALIDATION.md)和[接口说明](REVIEW_FIXES.md)。重建后须重新取得摘要与验收结果。

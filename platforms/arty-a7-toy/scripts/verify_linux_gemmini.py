@@ -32,14 +32,13 @@ def main():
     parser.add_argument("--hardware-result", type=Path, required=True)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--expected-bit-sha256",
-                        help="核验重建位流的新运行；省略时使用历史实测位流摘要")
+                        help="核验其他位流时显式指定摘要；省略时使用当前固定 UART 发布")
     args = parser.parse_args()
     build = read(args.build_record)
     result = read(args.hardware_result)
-    original = read(ROOT / "evidence/2026-10-11/BOARD_RESULT.json")
     require(build["result"] == "PASS_BUILD_NOT_HARDWARE_TESTED", "Build did not pass")
     require(result["result"] == "PASS_LINUX_AND_GEMMINI_HARDWARE", "Hardware did not pass")
-    expected_bit = args.expected_bit_sha256 or original["bitstream_sha256"]
+    expected_bit = args.expected_bit_sha256 or read(ROOT / "HARDWARE_RELEASE.json")["bitstream_sha256"]
     require(re.fullmatch(r"[0-9a-f]{64}", expected_bit), "Invalid expected bitstream digest")
     require(result["bitstream_sha256"] == expected_bit, "Wrong bitstream")
     require(result["payload_sha256"] == build["payload_sha256"], "Payload mismatch")
