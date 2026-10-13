@@ -1,5 +1,18 @@
 # Toy/Linux on Arty A7-100T
 
+## 队友直接跑实板验证
+
+克隆后无需构建工具链或子模块，在 Windows 进入本目录：
+
+```powershell
+python -m pip install -r host/requirements-hardware.txt
+.\run_hardware.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
+```
+
+替换真实串口与 Vivado 路径。入口自动获取固定 ROB/PR10 发布包、核对摘要，并调用原
+Linux/Gemmini 实板验证器；没有接板可先运行 `.\run_hardware.ps1 -PrepareOnly`。
+详细准备、离线 ZIP、超时和日志位置见[中文实板验证指南](HARDWARE_TEST.md)。
+
 ## 当前源码修复的验收范围
 
 PR #10 修正了平台 AXI 写错误响应与烧录脚本校验，评估、回归和复现命令见

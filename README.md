@@ -14,6 +14,19 @@ The Arty A7 platforms have their own pinned Chisel build, serial loader, firmwar
 constraints and verification record. Follow its guide directly; the setup and
 demo below describe the existing Kintex-7 flow.
 
+### Arty A7-100T 队友实板入口
+
+Windows 克隆后进入 `platforms/arty-a7-toy`，安装
+`python -m pip install -r host/requirements-hardware.txt`，再执行：
+
+```powershell
+.\run_hardware.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
+```
+
+入口自动下载固定 ROB/PR10 工程预发布、核验摘要，再复用原 Linux/Gemmini 验证器。
+无需重建位流或 Linux；没有接板可加 `-PrepareOnly`。
+请先阅读[中文准备与日志说明](platforms/arty-a7-toy/HARDWARE_TEST.md)。
+
 The Toy/Linux target passes complete board implementation, Linux RTL checks and
 a physical Arty A7-100T boot with full image readback and five Linux checks.
 Its PCB revision remains unconfirmed and physical Gemmini testing is pending;

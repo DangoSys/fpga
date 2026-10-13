@@ -22,6 +22,9 @@ RELEASE_MANIFEST.json 同时记录发布源码提交与实际验证输入提交�
 
 Windows 解压完整包后，按真实路径执行：
 
+已克隆仓库的队友可以直接使用仓库的 `run_hardware.ps1` 自动下载并验证这个固定版本，
+无需手动解压；见[仓库实板入口](HARDWARE_TEST.md)。下面的 `run_uart.ps1` 仍适用于已解压包。
+
 ```powershell
 .\run_uart.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
 ```
