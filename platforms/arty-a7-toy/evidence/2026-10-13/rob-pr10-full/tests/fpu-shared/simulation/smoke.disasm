@@ -1,0 +1,538 @@
+
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/simulation/smoke.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000080000000 <_start>:
+    80000000:	00002137          	lui	sp,0x2
+    80000004:	0011011b          	addiw	sp,sp,1 # 2001 <_start-0x7fffdfff>
+    80000008:	01211113          	slli	sp,sp,0x12
+    8000000c:	ff010113          	addi	sp,sp,-16
+    80000010:	00000297          	auipc	t0,0x0
+    80000014:	04c28293          	addi	t0,t0,76 # 8000005c <trap_failure>
+    80000018:	30529073          	csrw	mtvec,t0
+    8000001c:	30401073          	csrw	mie,zero
+    80000020:	30201073          	csrw	medeleg,zero
+    80000024:	0001e2b7          	lui	t0,0x1e
+    80000028:	3002a073          	csrs	mstatus,t0
+    8000002c:	00000097          	auipc	ra,0x0
+    80000030:	050080e7          	jalr	80(ra) # 8000007c <main>
+    80000034:	600002b7          	lui	t0,0x60000
+    80000038:	600d6337          	lui	t1,0x600d6
+    8000003c:	00d3031b          	addiw	t1,t1,13 # 600d600d <_start-0x1ff29ff3>
+    80000040:	00050a63          	beqz	a0,80000054 <passed>
+    80000044:	00001337          	lui	t1,0x1
+    80000048:	bad3031b          	addiw	t1,t1,-1107 # bad <_start-0x7ffff453>
+    8000004c:	01431313          	slli	t1,t1,0x14
+    80000050:	00a36333          	or	t1,t1,a0
+
+0000000080000054 <passed>:
+    80000054:	0062b023          	sd	t1,0(t0) # 60000000 <_start-0x20000000>
+    80000058:	0000006f          	j	80000058 <passed+0x4>
+
+000000008000005c <trap_failure>:
+    8000005c:	342023f3          	csrr	t2,mcause
+    80000060:	600002b7          	lui	t0,0x60000
+    80000064:	000bb337          	lui	t1,0xbb
+    80000068:	d0f3031b          	addiw	t1,t1,-753 # bad0f <_start-0x7ff452f1>
+    8000006c:	00c31313          	slli	t1,t1,0xc
+    80000070:	00736333          	or	t1,t1,t2
+    80000074:	0062b023          	sd	t1,0(t0) # 60000000 <_start-0x20000000>
+    80000078:	0000006f          	j	80000078 <trap_failure+0x1c>
+
+000000008000007c <main>:
+    8000007c:	1101                	addi	sp,sp,-32
+    8000007e:	e822                	sd	s0,16(sp)
+    80000080:	00000f17          	auipc	t5,0x0
+    80000084:	6c0f0f13          	addi	t5,t5,1728 # 80000740 <vectors>
+    80000088:	1000                	addi	s0,sp,32
+    8000008a:	ec06                	sd	ra,24(sp)
+    8000008c:	87fa                	mv	a5,t5
+    8000008e:	4681                	li	a3,0
+    80000090:	4805                	li	a6,1
+    80000092:	4889                	li	a7,2
+    80000094:	4e8d                	li	t4,3
+    80000096:	fe840e13          	addi	t3,s0,-24
+    8000009a:	60000313          	li	t1,1536
+    8000009e:	02c7e603          	lwu	a2,44(a5)
+    800000a2:	fe043423          	sd	zero,-24(s0)
+    800000a6:	00261073          	fsrm	a2
+    800000aa:	5390                	lw	a2,32(a5)
+    800000ac:	3e061b63          	bnez	a2,800004a2 <main+0x426>
+    800000b0:	53d0                	lw	a2,36(a5)
+    800000b2:	34061763          	bnez	a2,80000400 <main+0x384>
+    800000b6:	578c                	lw	a1,40(a5)
+    800000b8:	e19d                	bnez	a1,800000de <main+0x62>
+    800000ba:	00101073          	fsflags	zero
+    800000be:	00079007          	flh	ft0,0(a5)
+    800000c2:	00879087          	flh	ft1,8(a5)
+    800000c6:	01079107          	flh	ft2,16(a5)
+    800000ca:	141071c3          	fmadd.h	ft3,ft0,ft1,ft2
+    800000ce:	003e1027          	fsh	ft3,0(t3)
+    800000d2:	00102773          	frflags	a4
+    800000d6:	53d0                	lw	a2,36(a5)
+    800000d8:	32061463          	bnez	a2,80000400 <main+0x384>
+    800000dc:	578c                	lw	a1,40(a5)
+    800000de:	37058d63          	beq	a1,a6,80000458 <main+0x3dc>
+    800000e2:	39158e63          	beq	a1,a7,8000047e <main+0x402>
+    800000e6:	4601                	li	a2,0
+    800000e8:	2fd58d63          	beq	a1,t4,800003e2 <main+0x366>
+    800000ec:	29160863          	beq	a2,a7,8000037c <main+0x300>
+    800000f0:	fe843583          	ld	a1,-24(s0)
+    800000f4:	6f88                	ld	a0,24(a5)
+    800000f6:	0307e603          	lwu	a2,48(a5)
+    800000fa:	2ab51963          	bne	a0,a1,800003ac <main+0x330>
+    800000fe:	2ac71763          	bne	a4,a2,800003ac <main+0x330>
+    80000102:	0685                	addi	a3,a3,1
+    80000104:	03878793          	addi	a5,a5,56
+    80000108:	f8669be3          	bne	a3,t1,8000009e <main+0x22>
+    8000010c:	6791                	lui	a5,0x4
+    8000010e:	c0078793          	addi	a5,a5,-1024 # 3c00 <_start-0x7fffc400>
+    80000112:	fef43023          	sd	a5,-32(s0)
+    80000116:	fe043423          	sd	zero,-24(s0)
+    8000011a:	fe040793          	addi	a5,s0,-32
+    8000011e:	fe840693          	addi	a3,s0,-24
+    80000122:	00079007          	flh	ft0,0(a5)
+    80000126:	00079087          	flh	ft1,0(a5)
+    8000012a:	02000293          	li	t0,32
+    8000012e:	c00025f3          	rdcycle	a1
+    80000132:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000136:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000013a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000013e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000142:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000146:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000014a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000014e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000152:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000156:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000015a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000015e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000162:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000166:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000016a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000016e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000172:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000176:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000017a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000017e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000182:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000186:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000018a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000018e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000192:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    80000196:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000019a:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    8000019e:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    800001a2:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    800001a6:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    800001aa:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    800001ae:	04100053          	fadd.h	ft0,ft0,ft1,rne
+    800001b2:	12fd                	addi	t0,t0,-1
+    800001b4:	f6029fe3          	bnez	t0,80000132 <main+0xb6>
+    800001b8:	00069027          	fsh	ft0,0(a3)
+    800001bc:	c0002773          	rdcycle	a4
+    800001c0:	fe843603          	ld	a2,-24(s0)
+    800001c4:	6699                	lui	a3,0x6
+    800001c6:	40168693          	addi	a3,a3,1025 # 6401 <_start-0x7fff9bff>
+    800001ca:	56d61663          	bne	a2,a3,80000736 <main+0x6ba>
+    800001ce:	07300693          	li	a3,115
+    800001d2:	8f0d                	sub	a4,a4,a1
+    800001d4:	16e2                	slli	a3,a3,0x38
+    800001d6:	8f55                	or	a4,a4,a3
+    800001d8:	60000637          	lui	a2,0x60000
+    800001dc:	e218                	sd	a4,0(a2)
+    800001de:	3f800737          	lui	a4,0x3f800
+    800001e2:	fee43023          	sd	a4,-32(s0)
+    800001e6:	fe043423          	sd	zero,-24(s0)
+    800001ea:	fe840693          	addi	a3,s0,-24
+    800001ee:	0007a007          	flw	ft0,0(a5)
+    800001f2:	0007a087          	flw	ft1,0(a5)
+    800001f6:	02000293          	li	t0,32
+    800001fa:	c0002573          	rdcycle	a0
+    800001fe:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000202:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000206:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000020a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000020e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000212:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000216:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000021a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000021e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000222:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000226:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000022a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000022e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000232:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000236:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000023a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000023e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000242:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000246:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000024a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000024e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000252:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000256:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000025a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000025e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000262:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000266:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000026a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000026e:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000272:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    80000276:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000027a:	00100053          	fadd.s	ft0,ft0,ft1,rne
+    8000027e:	12fd                	addi	t0,t0,-1
+    80000280:	f6029fe3          	bnez	t0,800001fe <main+0x182>
+    80000284:	0006a027          	fsw	ft0,0(a3)
+    80000288:	c0002773          	rdcycle	a4
+    8000028c:	fe843583          	ld	a1,-24(s0)
+    80000290:	448026b7          	lui	a3,0x44802
+    80000294:	4ad59163          	bne	a1,a3,80000736 <main+0x6ba>
+    80000298:	730006b7          	lui	a3,0x73000
+    8000029c:	0685                	addi	a3,a3,1 # 73000001 <_start-0xcffffff>
+    8000029e:	8f09                	sub	a4,a4,a0
+    800002a0:	1682                	slli	a3,a3,0x20
+    800002a2:	8f55                	or	a4,a4,a3
+    800002a4:	e218                	sd	a4,0(a2)
+    800002a6:	3ff00713          	li	a4,1023
+    800002aa:	1752                	slli	a4,a4,0x34
+    800002ac:	fee43023          	sd	a4,-32(s0)
+    800002b0:	fe043423          	sd	zero,-24(s0)
+    800002b4:	fe840693          	addi	a3,s0,-24
+    800002b8:	0007b007          	fld	ft0,0(a5)
+    800002bc:	0007b087          	fld	ft1,0(a5)
+    800002c0:	02000293          	li	t0,32
+    800002c4:	c00025f3          	rdcycle	a1
+    800002c8:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002cc:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002d0:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002d4:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002d8:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002dc:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002e0:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002e4:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002e8:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002ec:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002f0:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002f4:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002f8:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    800002fc:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000300:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000304:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000308:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    8000030c:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000310:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000314:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000318:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    8000031c:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000320:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000324:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000328:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    8000032c:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000330:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000334:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000338:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    8000033c:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000340:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000344:	02100053          	fadd.d	ft0,ft0,ft1,rne
+    80000348:	12fd                	addi	t0,t0,-1
+    8000034a:	f6029fe3          	bnez	t0,800002c8 <main+0x24c>
+    8000034e:	0006b027          	fsd	ft0,0(a3)
+    80000352:	c0002773          	rdcycle	a4
+    80000356:	001027b7          	lui	a5,0x102
+    8000035a:	fe843683          	ld	a3,-24(s0)
+    8000035e:	40178793          	addi	a5,a5,1025 # 102401 <_start-0x7fefdbff>
+    80000362:	17aa                	slli	a5,a5,0x2a
+    80000364:	3cf69963          	bne	a3,a5,80000736 <main+0x6ba>
+    80000368:	40b707b3          	sub	a5,a4,a1
+    8000036c:	39800737          	lui	a4,0x39800
+    80000370:	0705                	addi	a4,a4,1 # 39800001 <_start-0x467fffff>
+    80000372:	1706                	slli	a4,a4,0x21
+    80000374:	8fd9                	or	a5,a5,a4
+    80000376:	e21c                	sd	a5,0(a2)
+    80000378:	4501                	li	a0,0
+    8000037a:	a085                	j	800003da <main+0x35e>
+    8000037c:	5790                	lw	a2,40(a5)
+    8000037e:	d60619e3          	bnez	a2,800000f0 <main+0x74>
+    80000382:	00101073          	fsflags	zero
+    80000386:	00079007          	flh	ft0,0(a5)
+    8000038a:	00879087          	flh	ft1,8(a5)
+    8000038e:	01079107          	flh	ft2,16(a5)
+    80000392:	141071d3          	fmul.h	ft3,ft0,ft1
+    80000396:	003e1027          	fsh	ft3,0(t3)
+    8000039a:	00102773          	frflags	a4
+    8000039e:	fe843583          	ld	a1,-24(s0)
+    800003a2:	6f88                	ld	a0,24(a5)
+    800003a4:	0307e603          	lwu	a2,48(a5)
+    800003a8:	d4b50be3          	beq	a0,a1,800000fe <main+0x82>
+    800003ac:	02069813          	slli	a6,a3,0x20
+    800003b0:	02085813          	srli	a6,a6,0x20
+    800003b4:	00381793          	slli	a5,a6,0x3
+    800003b8:	410787b3          	sub	a5,a5,a6
+    800003bc:	078e                	slli	a5,a5,0x3
+    800003be:	9f3e                	add	t5,t5,a5
+    800003c0:	60000537          	lui	a0,0x60000
+    800003c4:	018f3803          	ld	a6,24(t5)
+    800003c8:	e914                	sd	a3,16(a0)
+    800003ca:	ed0c                	sd	a1,24(a0)
+    800003cc:	03053023          	sd	a6,32(a0) # 60000020 <_start-0x1fffffe0>
+    800003d0:	f518                	sd	a4,40(a0)
+    800003d2:	01850693          	addi	a3,a0,24
+    800003d6:	f910                	sd	a2,48(a0)
+    800003d8:	457d                	li	a0,31
+    800003da:	60e2                	ld	ra,24(sp)
+    800003dc:	6442                	ld	s0,16(sp)
+    800003de:	6105                	addi	sp,sp,32
+    800003e0:	8082                	ret
+    800003e2:	00101073          	fsflags	zero
+    800003e6:	00079007          	flh	ft0,0(a5)
+    800003ea:	00879087          	flh	ft1,8(a5)
+    800003ee:	01079107          	flh	ft2,16(a5)
+    800003f2:	141071cf          	fnmadd.h	ft3,ft0,ft1,ft2
+    800003f6:	003e1027          	fsh	ft3,0(t3)
+    800003fa:	00102773          	frflags	a4
+    800003fe:	53d0                	lw	a2,36(a5)
+    80000400:	cf0616e3          	bne	a2,a6,800000ec <main+0x70>
+    80000404:	5790                	lw	a2,40(a5)
+    80000406:	e21d                	bnez	a2,8000042c <main+0x3b0>
+    80000408:	00101073          	fsflags	zero
+    8000040c:	00079007          	flh	ft0,0(a5)
+    80000410:	00879087          	flh	ft1,8(a5)
+    80000414:	01079107          	flh	ft2,16(a5)
+    80000418:	042071d3          	fadd.h	ft3,ft0,ft2
+    8000041c:	003e1027          	fsh	ft3,0(t3)
+    80000420:	00102773          	frflags	a4
+    80000424:	53d0                	lw	a2,36(a5)
+    80000426:	cd0613e3          	bne	a2,a6,800000ec <main+0x70>
+    8000042a:	5790                	lw	a2,40(a5)
+    8000042c:	cd0612e3          	bne	a2,a6,800000f0 <main+0x74>
+    80000430:	fe840713          	addi	a4,s0,-24
+    80000434:	00101073          	fsflags	zero
+    80000438:	00079007          	flh	ft0,0(a5)
+    8000043c:	00879087          	flh	ft1,8(a5)
+    80000440:	01079107          	flh	ft2,16(a5)
+    80000444:	0c2071d3          	fsub.h	ft3,ft0,ft2
+    80000448:	00371027          	fsh	ft3,0(a4)
+    8000044c:	00102773          	frflags	a4
+    80000450:	53d0                	lw	a2,36(a5)
+    80000452:	c9161fe3          	bne	a2,a7,800000f0 <main+0x74>
+    80000456:	b71d                	j	8000037c <main+0x300>
+    80000458:	00101073          	fsflags	zero
+    8000045c:	00079007          	flh	ft0,0(a5)
+    80000460:	00879087          	flh	ft1,8(a5)
+    80000464:	01079107          	flh	ft2,16(a5)
+    80000468:	141071c7          	fmsub.h	ft3,ft0,ft1,ft2
+    8000046c:	003e1027          	fsh	ft3,0(t3)
+    80000470:	00102773          	frflags	a4
+    80000474:	53d0                	lw	a2,36(a5)
+    80000476:	f649                	bnez	a2,80000400 <main+0x384>
+    80000478:	578c                	lw	a1,40(a5)
+    8000047a:	c71596e3          	bne	a1,a7,800000e6 <main+0x6a>
+    8000047e:	00101073          	fsflags	zero
+    80000482:	00079007          	flh	ft0,0(a5)
+    80000486:	00879087          	flh	ft1,8(a5)
+    8000048a:	01079107          	flh	ft2,16(a5)
+    8000048e:	141071cb          	fnmsub.h	ft3,ft0,ft1,ft2
+    80000492:	003e1027          	fsh	ft3,0(t3)
+    80000496:	00102773          	frflags	a4
+    8000049a:	53d0                	lw	a2,36(a5)
+    8000049c:	f235                	bnez	a2,80000400 <main+0x384>
+    8000049e:	578c                	lw	a1,40(a5)
+    800004a0:	b199                	j	800000e6 <main+0x6a>
+    800004a2:	07060f63          	beq	a2,a6,80000520 <main+0x4a4>
+    800004a6:	4581                	li	a1,0
+    800004a8:	c51616e3          	bne	a2,a7,800000f4 <main+0x78>
+    800004ac:	53cc                	lw	a1,36(a5)
+    800004ae:	852e                	mv	a0,a1
+    800004b0:	16059e63          	bnez	a1,8000062c <main+0x5b0>
+    800004b4:	5790                	lw	a2,40(a5)
+    800004b6:	e615                	bnez	a2,800004e2 <main+0x466>
+    800004b8:	fe840713          	addi	a4,s0,-24
+    800004bc:	00101073          	fsflags	zero
+    800004c0:	0007b007          	fld	ft0,0(a5)
+    800004c4:	0087b087          	fld	ft1,8(a5)
+    800004c8:	0107b107          	fld	ft2,16(a5)
+    800004cc:	121071c3          	fmadd.d	ft3,ft0,ft1,ft2
+    800004d0:	00373027          	fsd	ft3,0(a4)
+    800004d4:	00102773          	frflags	a4
+    800004d8:	53cc                	lw	a1,36(a5)
+    800004da:	852e                	mv	a0,a1
+    800004dc:	14059863          	bnez	a1,8000062c <main+0x5b0>
+    800004e0:	5790                	lw	a2,40(a5)
+    800004e2:	4505                	li	a0,1
+    800004e4:	22a60363          	beq	a2,a0,8000070a <main+0x68e>
+    800004e8:	4509                	li	a0,2
+    800004ea:	1ea60b63          	beq	a2,a0,800006e0 <main+0x664>
+    800004ee:	450d                	li	a0,3
+    800004f0:	10a60c63          	beq	a2,a0,80000608 <main+0x58c>
+    800004f4:	bf159ee3          	bne	a1,a7,800000f0 <main+0x74>
+    800004f8:	5790                	lw	a2,40(a5)
+    800004fa:	be061be3          	bnez	a2,800000f0 <main+0x74>
+    800004fe:	fe840713          	addi	a4,s0,-24
+    80000502:	00101073          	fsflags	zero
+    80000506:	0007b007          	fld	ft0,0(a5)
+    8000050a:	0087b087          	fld	ft1,8(a5)
+    8000050e:	0107b107          	fld	ft2,16(a5)
+    80000512:	121071d3          	fmul.d	ft3,ft0,ft1
+    80000516:	00373027          	fsd	ft3,0(a4)
+    8000051a:	00102773          	frflags	a4
+    8000051e:	bec9                	j	800000f0 <main+0x74>
+    80000520:	53cc                	lw	a1,36(a5)
+    80000522:	e5d1                	bnez	a1,800005ae <main+0x532>
+    80000524:	5790                	lw	a2,40(a5)
+    80000526:	e605                	bnez	a2,8000054e <main+0x4d2>
+    80000528:	fe840713          	addi	a4,s0,-24
+    8000052c:	00101073          	fsflags	zero
+    80000530:	0007a007          	flw	ft0,0(a5)
+    80000534:	0087a087          	flw	ft1,8(a5)
+    80000538:	0107a107          	flw	ft2,16(a5)
+    8000053c:	101071c3          	fmadd.s	ft3,ft0,ft1,ft2
+    80000540:	00372027          	fsw	ft3,0(a4)
+    80000544:	00102773          	frflags	a4
+    80000548:	53cc                	lw	a1,36(a5)
+    8000054a:	e1b5                	bnez	a1,800005ae <main+0x532>
+    8000054c:	5790                	lw	a2,40(a5)
+    8000054e:	13060f63          	beq	a2,a6,8000068c <main+0x610>
+    80000552:	17160263          	beq	a2,a7,800006b6 <main+0x63a>
+    80000556:	4581                	li	a1,0
+    80000558:	03d60a63          	beq	a2,t4,8000058c <main+0x510>
+    8000055c:	b9159ae3          	bne	a1,a7,800000f0 <main+0x74>
+    80000560:	5790                	lw	a2,40(a5)
+    80000562:	b80617e3          	bnez	a2,800000f0 <main+0x74>
+    80000566:	fe840713          	addi	a4,s0,-24
+    8000056a:	00101073          	fsflags	zero
+    8000056e:	0007a007          	flw	ft0,0(a5)
+    80000572:	0087a087          	flw	ft1,8(a5)
+    80000576:	0107a107          	flw	ft2,16(a5)
+    8000057a:	101071d3          	fmul.s	ft3,ft0,ft1
+    8000057e:	00372027          	fsw	ft3,0(a4)
+    80000582:	00102773          	frflags	a4
+    80000586:	fe843583          	ld	a1,-24(s0)
+    8000058a:	b6ad                	j	800000f4 <main+0x78>
+    8000058c:	fe840713          	addi	a4,s0,-24
+    80000590:	00101073          	fsflags	zero
+    80000594:	0007a007          	flw	ft0,0(a5)
+    80000598:	0087a087          	flw	ft1,8(a5)
+    8000059c:	0107a107          	flw	ft2,16(a5)
+    800005a0:	101071cf          	fnmadd.s	ft3,ft0,ft1,ft2
+    800005a4:	00372027          	fsw	ft3,0(a4)
+    800005a8:	00102773          	frflags	a4
+    800005ac:	53cc                	lw	a1,36(a5)
+    800005ae:	fb0597e3          	bne	a1,a6,8000055c <main+0x4e0>
+    800005b2:	5790                	lw	a2,40(a5)
+    800005b4:	e60d                	bnez	a2,800005de <main+0x562>
+    800005b6:	fe840713          	addi	a4,s0,-24
+    800005ba:	00101073          	fsflags	zero
+    800005be:	0007a007          	flw	ft0,0(a5)
+    800005c2:	0087a087          	flw	ft1,8(a5)
+    800005c6:	0107a107          	flw	ft2,16(a5)
+    800005ca:	002071d3          	fadd.s	ft3,ft0,ft2
+    800005ce:	00372027          	fsw	ft3,0(a4)
+    800005d2:	00102773          	frflags	a4
+    800005d6:	53cc                	lw	a1,36(a5)
+    800005d8:	f90592e3          	bne	a1,a6,8000055c <main+0x4e0>
+    800005dc:	5790                	lw	a2,40(a5)
+    800005de:	4585                	li	a1,1
+    800005e0:	b0b618e3          	bne	a2,a1,800000f0 <main+0x74>
+    800005e4:	fe840713          	addi	a4,s0,-24
+    800005e8:	00101073          	fsflags	zero
+    800005ec:	0007a007          	flw	ft0,0(a5)
+    800005f0:	0087a087          	flw	ft1,8(a5)
+    800005f4:	0107a107          	flw	ft2,16(a5)
+    800005f8:	082071d3          	fsub.s	ft3,ft0,ft2
+    800005fc:	00372027          	fsw	ft3,0(a4)
+    80000600:	00102773          	frflags	a4
+    80000604:	53cc                	lw	a1,36(a5)
+    80000606:	bf99                	j	8000055c <main+0x4e0>
+    80000608:	fe840713          	addi	a4,s0,-24
+    8000060c:	00101073          	fsflags	zero
+    80000610:	0007b007          	fld	ft0,0(a5)
+    80000614:	0087b087          	fld	ft1,8(a5)
+    80000618:	0107b107          	fld	ft2,16(a5)
+    8000061c:	121071cf          	fnmadd.d	ft3,ft0,ft1,ft2
+    80000620:	00373027          	fsd	ft3,0(a4)
+    80000624:	00102773          	frflags	a4
+    80000628:	53cc                	lw	a1,36(a5)
+    8000062a:	852e                	mv	a0,a1
+    8000062c:	4605                	li	a2,1
+    8000062e:	ecc593e3          	bne	a1,a2,800004f4 <main+0x478>
+    80000632:	5790                	lw	a2,40(a5)
+    80000634:	e60d                	bnez	a2,8000065e <main+0x5e2>
+    80000636:	fe840713          	addi	a4,s0,-24
+    8000063a:	00101073          	fsflags	zero
+    8000063e:	0007b007          	fld	ft0,0(a5)
+    80000642:	0087b087          	fld	ft1,8(a5)
+    80000646:	0107b107          	fld	ft2,16(a5)
+    8000064a:	022071d3          	fadd.d	ft3,ft0,ft2
+    8000064e:	00373027          	fsd	ft3,0(a4)
+    80000652:	00102773          	frflags	a4
+    80000656:	53cc                	lw	a1,36(a5)
+    80000658:	e8a59ee3          	bne	a1,a0,800004f4 <main+0x478>
+    8000065c:	5790                	lw	a2,40(a5)
+    8000065e:	4585                	li	a1,1
+    80000660:	a8b618e3          	bne	a2,a1,800000f0 <main+0x74>
+    80000664:	fe840713          	addi	a4,s0,-24
+    80000668:	00101073          	fsflags	zero
+    8000066c:	0007b007          	fld	ft0,0(a5)
+    80000670:	0087b087          	fld	ft1,8(a5)
+    80000674:	0107b107          	fld	ft2,16(a5)
+    80000678:	0a2071d3          	fsub.d	ft3,ft0,ft2
+    8000067c:	00373027          	fsd	ft3,0(a4)
+    80000680:	00102773          	frflags	a4
+    80000684:	53cc                	lw	a1,36(a5)
+    80000686:	a71595e3          	bne	a1,a7,800000f0 <main+0x74>
+    8000068a:	b5bd                	j	800004f8 <main+0x47c>
+    8000068c:	fe840713          	addi	a4,s0,-24
+    80000690:	00101073          	fsflags	zero
+    80000694:	0007a007          	flw	ft0,0(a5)
+    80000698:	0087a087          	flw	ft1,8(a5)
+    8000069c:	0107a107          	flw	ft2,16(a5)
+    800006a0:	101071c7          	fmsub.s	ft3,ft0,ft1,ft2
+    800006a4:	00372027          	fsw	ft3,0(a4)
+    800006a8:	00102773          	frflags	a4
+    800006ac:	53cc                	lw	a1,36(a5)
+    800006ae:	f181                	bnez	a1,800005ae <main+0x532>
+    800006b0:	5790                	lw	a2,40(a5)
+    800006b2:	eb1612e3          	bne	a2,a7,80000556 <main+0x4da>
+    800006b6:	fe840713          	addi	a4,s0,-24
+    800006ba:	00101073          	fsflags	zero
+    800006be:	0007a007          	flw	ft0,0(a5)
+    800006c2:	0087a087          	flw	ft1,8(a5)
+    800006c6:	0107a107          	flw	ft2,16(a5)
+    800006ca:	101071cb          	fnmsub.s	ft3,ft0,ft1,ft2
+    800006ce:	00372027          	fsw	ft3,0(a4)
+    800006d2:	00102773          	frflags	a4
+    800006d6:	53cc                	lw	a1,36(a5)
+    800006d8:	ec059be3          	bnez	a1,800005ae <main+0x532>
+    800006dc:	5790                	lw	a2,40(a5)
+    800006de:	bda5                	j	80000556 <main+0x4da>
+    800006e0:	fe840713          	addi	a4,s0,-24
+    800006e4:	00101073          	fsflags	zero
+    800006e8:	0007b007          	fld	ft0,0(a5)
+    800006ec:	0087b087          	fld	ft1,8(a5)
+    800006f0:	0107b107          	fld	ft2,16(a5)
+    800006f4:	121071cb          	fnmsub.d	ft3,ft0,ft1,ft2
+    800006f8:	00373027          	fsd	ft3,0(a4)
+    800006fc:	00102773          	frflags	a4
+    80000700:	53cc                	lw	a1,36(a5)
+    80000702:	852e                	mv	a0,a1
+    80000704:	f585                	bnez	a1,8000062c <main+0x5b0>
+    80000706:	5790                	lw	a2,40(a5)
+    80000708:	b3dd                	j	800004ee <main+0x472>
+    8000070a:	fe840713          	addi	a4,s0,-24
+    8000070e:	00101073          	fsflags	zero
+    80000712:	0007b007          	fld	ft0,0(a5)
+    80000716:	0087b087          	fld	ft1,8(a5)
+    8000071a:	0107b107          	fld	ft2,16(a5)
+    8000071e:	121071c7          	fmsub.d	ft3,ft0,ft1,ft2
+    80000722:	00373027          	fsd	ft3,0(a4)
+    80000726:	00102773          	frflags	a4
+    8000072a:	53cc                	lw	a1,36(a5)
+    8000072c:	852e                	mv	a0,a1
+    8000072e:	ee059fe3          	bnez	a1,8000062c <main+0x5b0>
+    80000732:	5790                	lw	a2,40(a5)
+    80000734:	bb55                	j	800004e8 <main+0x46c>
+    80000736:	02000513          	li	a0,32
+    8000073a:	b145                	j	800003da <main+0x35e>

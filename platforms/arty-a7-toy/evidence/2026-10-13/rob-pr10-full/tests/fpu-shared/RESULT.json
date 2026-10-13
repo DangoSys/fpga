@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "vector_count": 1536,
+  "precision_counts": [
+    512,
+    512,
+    512
+  ],
+  "rounding_modes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "vector_sha256": "c3f667a561aeb6dccee4ed24866eb084a17c35eb5aa9accf56255b4f3a555f56",
+  "oracle": "unchanged original H/S/D FPUFMAPipe data and exception flags",
+  "regression": {
+    "result": "PASS",
+    "test_label": "whole Toy shared FPU 1536 oracle vectors",
+    "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+    "test_binary_sha256": "6b484b5850f3f8f84fdc1bb1d43a15cfc6669d938d4829b69f1ca675df0b16ba",
+    "cycles_including_boot": 168403,
+    "memory_read_bursts": 1387,
+    "memory_write_bursts": 11,
+    "linux_boot_tested": false
+  },
+  "baseline_regression": {
+    "result": "PASS",
+    "test_label": "whole Toy baseline FPU 1536 oracle vectors",
+    "core_rtl_sha256": "81fb5cbe38d2feb3a9498b0a25f695f2d32468f7ee3fd3368426b079358eb35f",
+    "test_binary_sha256": "6b484b5850f3f8f84fdc1bb1d43a15cfc6669d938d4829b69f1ca675df0b16ba",
+    "cycles_including_boot": 165339,
+    "memory_read_bursts": 1387,
+    "memory_write_bursts": 11,
+    "linux_boot_tested": false
+  },
+  "dependency_benchmark": {
+    "operation": "1024 dependent FADD; groups of 32, including loop overhead and final store",
+    "baseline_cycles_HSD": {
+      "0": 7242,
+      "1": 7271,
+      "2": 8211
+    },
+    "candidate_cycles_HSD": {
+      "0": 8264,
+      "1": 8291,
+      "2": 8213
+    },
+    "delta_cycles_HSD": {
+      "0": 1022,
+      "1": 1020,
+      "2": 2
+    }
+  }
+}

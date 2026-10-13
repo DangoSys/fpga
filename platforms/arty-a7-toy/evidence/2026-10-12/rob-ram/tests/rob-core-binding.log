@@ -1,0 +1,24 @@
+Bound 7 memory types, 20 instances
+PASS RF adapter matches original port contract; only RF module body replaced
+Final core SHA256: 31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9
+{
+  "result": "PREPARED_NOT_VALIDATED",
+  "architectural_profile_unchanged": true,
+  "existing_memory_geometry_unchanged": true,
+  "rob_operand_memory": {
+    "module_name": "robOperands_ext",
+    "depth": 16,
+    "width": 128,
+    "masked": false,
+    "read": 1,
+    "write": 1,
+    "readwrite": 0,
+    "extra_ports": [],
+    "hierarchy": [
+      "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.frontend.scheduler.rob.robOperands.robOperands_ext"
+    ]
+  },
+  "rob_operand_ram_style": "block",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "memory_rtl_sha256": "d5a37896aee19c8d4931c87dc9683861abf32f096a1c1441f4362370d3d7b054"
+}

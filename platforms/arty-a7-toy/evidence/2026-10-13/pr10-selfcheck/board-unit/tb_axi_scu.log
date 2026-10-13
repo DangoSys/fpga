@@ -1,0 +1,2 @@
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)

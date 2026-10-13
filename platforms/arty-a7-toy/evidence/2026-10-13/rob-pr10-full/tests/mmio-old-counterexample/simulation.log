@@ -1,0 +1,3 @@
+[1535000] %Fatal: tb_mmio_error.sv:106: Assertion failed in tb_mmio_error: CPU did not receive SLVERR
+%Error: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-mmio-error/tb_mmio_error.sv:106: Verilog $stop
+Aborting...

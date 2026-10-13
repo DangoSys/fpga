@@ -1,5 +1,25 @@
 # Toy/Linux on Arty A7-100T
 
+## 队友直接跑实板验证
+
+克隆后无需构建工具链或子模块，在 Windows 进入本目录：
+
+```powershell
+python -m pip install -r host/requirements-hardware.txt
+.\run_hardware.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
+```
+
+替换真实串口与 Vivado 路径。入口自动获取固定 ROB/PR10 发布包、核对摘要，并调用原
+Linux/Gemmini 实板验证器；没有接板可先运行 `.\run_hardware.ps1 -PrepareOnly`。
+详细准备、离线 ZIP、超时和日志位置见[中文实板验证指南](HARDWARE_TEST.md)。
+
+## 当前源码修复的验收范围
+
+PR #10 修正了平台 AXI 写错误响应与烧录脚本校验，评估、回归和复现命令见
+[修正说明](REVIEW_FIXES.md)。ROB 优化与本次修复已完成重新生成、整板实现及完整 RTL
+回归，产物与原文报告见 [工程预发布下载](ROB_PR10_DOWNLOADS.md)。本轮没有连接板卡，
+新位流尚无实物资格；下述历史实物记录仍属于其归档的旧源码/位流。
+
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC
 checks and Linux RTL tests pass. On 2026-10-12 the connected board was programmed,
@@ -14,6 +34,14 @@ complete FPGA implementation, Flash verification and a physical power cycle:
 it boots the original Linux image and passes all five system checks without
 reloading from the host. See [Flash evidence](evidence/2026-10-12/flash/README.md).
 Runtime DDR and changes to the initramfs remain volatile.
+
+## 2026-10-12：可选 ROB 存储优化
+
+新增 [ROB RAM 候选](ROB_RAM.md)，整板布线后减少 484 LUT、1,657 FF 和
+84 Slice，增加 2 BRAM tile。CPU/Gemmini/Linux RTL 回归周期数保持不变；
+后续实物复测已通过完整镜像读回与两轮 Linux/Gemmini 回归，日志追加在
+[PR #9](https://github.com/DangoSys/fpga/pull/9)。默认构建与既有发布版本保留
+原寄存器路径；候选的 Flash 冷启动尚未验证。
 
 ## 2026-10-12：Linux/Gemmini 实物回归
 

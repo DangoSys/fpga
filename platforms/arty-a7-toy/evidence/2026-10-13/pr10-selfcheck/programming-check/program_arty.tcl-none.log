@@ -1,0 +1,3 @@
+ARTY_JTAG_PROGRAMMED: /home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/programming-check/tmp45o_w1im/input.bit
+MOCK_EVENTS program_device
+MOCK_SUCCESS

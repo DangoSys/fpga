@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmpyiwyqd9q\scripts\check_programming_scripts.py", line 56, in <module>
+    main()
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmpyiwyqd9q\scripts\check_programming_scripts.py", line 40, in main
+    raise ValueError(f"Documented success return rejected: {script}: {transcript}")
+ValueError: Documented success return rejected: program_arty.tcl: Traceback (most recent call last):
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmpyiwyqd9q\tests\mock_programming.tcl", line 1, in <module>
+    raise RuntimeError('INJECTED_CHECK_FAILURE')
+RuntimeError: INJECTED_CHECK_FAILURE
+
+
+OBSERVED_RESULT {"result": "PASS_OFFLINE_TCL_CONTRACTS"}

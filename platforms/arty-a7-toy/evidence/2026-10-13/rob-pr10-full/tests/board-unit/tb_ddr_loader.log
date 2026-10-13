@@ -1,0 +1,2 @@
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)

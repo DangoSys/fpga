@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 13 01:09:22 2026
+# Process ID: 533642
+# Current directory: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform
+# Command line: vivado -mode batch -source /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/build_board.tcl -log /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921/vivado.log -journal /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921/vivado.jou -tclargs /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921
+# Log file: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921/vivado.log
+# Journal file: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921/vivado.jou
+# Running On        :amax
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
+# Processor Detail  :INTEL(R) XEON(R) GOLD 6542Y
+# CPU Frequency     :2495.797 MHz
+# CPU Physical cores:48
+# CPU Logical cores :96
+# Host memory       :540650 MB
+# Swap memory       :130443 MB
+# Total Virtual     :671094 MB
+# Available Virtual :562344 MB
+#-----------------------------------------------------------
+source /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/build_board.tcl

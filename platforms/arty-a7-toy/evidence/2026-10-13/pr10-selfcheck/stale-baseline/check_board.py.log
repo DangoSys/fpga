@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmprr247ah_\scripts\check_board.py", line 76, in <module>
+    main()
+  File "D:\Verilog_Dev\fpga-arty-a7-pr10-review\platforms\arty-a7-toy\build\runner-status-check\tmprr247ah_\scripts\check_board.py", line 27, in main
+    raise ValueError("CPU port fixture differs from its manifest")
+ValueError: CPU port fixture differs from its manifest
+
+OBSERVED_RESULT {"result": "PASS"}

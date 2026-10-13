@@ -1,0 +1,2 @@
+PASS fullwidth AXI: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/tests/tb_axi_fullwidth.sv:107: $finish called at 9270000 (1ps)

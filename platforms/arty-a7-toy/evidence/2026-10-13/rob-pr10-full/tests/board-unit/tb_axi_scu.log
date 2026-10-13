@@ -1,0 +1,2 @@
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)

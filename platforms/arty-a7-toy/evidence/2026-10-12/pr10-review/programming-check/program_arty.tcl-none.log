@@ -1,0 +1,3 @@
+ARTY_JTAG_PROGRAMMED: /home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/build/programming-check/tmpugs87vr9/input.bit
+MOCK_EVENTS program_device
+MOCK_SUCCESS

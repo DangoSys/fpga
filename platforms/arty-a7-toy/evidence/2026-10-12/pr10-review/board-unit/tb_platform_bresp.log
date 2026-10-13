@@ -1,0 +1,2 @@
+PASS platform AXI B response: valid, invalid address, unaligned, burst, ID and backpressure
+/home/yys/codex-builds/arty-a7-pr10-review-20261012-6eae4386/tests/tb_platform_bresp.sv:52: $finish called at 420000 (1ps)

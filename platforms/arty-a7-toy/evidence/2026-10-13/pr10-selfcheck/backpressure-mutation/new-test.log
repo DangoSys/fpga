@@ -1,0 +1,2 @@
+FATAL: /home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/tests/tb_platform_bresp.sv:28: Platform B response addr=60000000 valid=0 id=10 actual=00 expected=00
+       Time: 90000  Scope: tb_platform_bresp.write_case

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmp7hs1muus/scripts/check_programming_scripts.py", line 57, in <module>
+    run_check(main, ROOT / "build/programming-check")
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmp7hs1muus/scripts/offline_check.py", line 19, in run_check
+    main()
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmp7hs1muus/scripts/check_programming_scripts.py", line 41, in main
+    raise ValueError(f"Documented success return rejected: {script}: {transcript}")
+ValueError: Documented success return rejected: program_arty.tcl: Traceback (most recent call last):
+  File "/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmp7hs1muus/tests/mock_programming.tcl", line 1, in <module>
+    raise RuntimeError('INJECTED_CHECK_FAILURE')
+RuntimeError: INJECTED_CHECK_FAILURE
+
+
+OBSERVED_RESULT {"result": "FAILED", "physical_hardware_tested": false, "error_type": "ValueError", "error": "Documented success return rejected: program_arty.tcl: Traceback (most recent call last):\n  File \"/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/runner-status-check/tmp7hs1muus/tests/mock_programming.tcl\", line 1, in <module>\n    raise RuntimeError('INJECTED_CHECK_FAILURE')\nRuntimeError: INJECTED_CHECK_FAILURE\n"}

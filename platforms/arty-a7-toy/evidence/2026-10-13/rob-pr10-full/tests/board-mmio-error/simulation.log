@@ -1,0 +1,6 @@
+MMIO_SYNCHRONOUS_TRAPS 0
+PASS MMIO_ERROR CPU AXI/SCU response delivery cycles=208
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-mmio-error/tb_mmio_error.sv:57: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2us; walltime 0.002 s; speed 1.005 ms/s
+- Verilator: cpu 0.002 s on 1 threads; allocated 8 MB

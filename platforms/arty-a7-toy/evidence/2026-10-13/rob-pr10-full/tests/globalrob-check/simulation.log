@@ -1,0 +1,5 @@
+PASS GLOBALROB RAM/register cycle comparison, payloads, wrap, stalls, resets cycles=8029
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_globalrob.sv:25: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 80us; walltime 0.032 s; speed 2.475 ms/s
+- Verilator: cpu 0.032 s on 1 threads; allocated 7 MB

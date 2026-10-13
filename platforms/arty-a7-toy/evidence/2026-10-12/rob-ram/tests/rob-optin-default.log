@@ -1,0 +1,196 @@
+[info] welcome to sbt 1.12.11 (N/A Java 17.0.20)
+[info] loading project definition from /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to toy-arty-a7-linux (in build file:/home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/)
+[info] compiling 1 Scala source to /home/yys/codex-builds/toy-a7-rob-ram-20261012-2ebcbc31/target/scala-2.13/classes ...
+[info] done compiling
+[info] running fpga.arty.linux.EmitToyLinux build/rob-default-raw --fpga-memories --serial-fpga
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 67:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         op2Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 83:51: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           VecInit((0 until DIM).map(i => op2Buf(i)(transpose_col)))
+[warn]                                                   ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 16:13: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]             ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 46:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op1Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 51:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op2Buf(xpose_row_cnt) := rdQueue1.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 68:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val a_col_row = VecInit((0 until DIM).map(i => op1Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 69:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val x_col_row = VecInit((0 until DIM).map(i => op2Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 27:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         outBuf(total_rows - 1.U - outBufCollected) := widenMeshToAcc(
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 69:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 100:31: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       val row         = outBuf(rowIdx)
+[warn]                               ^
+[warn] There were 10 warning(s) during hardware elaboration.
+espresso is not found in your PATH:
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/lib/openjdk/bin
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/bin
+/nix/store/ahvmb4byixykslwcxiay7c4ivhgpf8vg-sbt-1.8.2/bin
+/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/bin
+/nix/store/y8vkcyc8frd7ipcq0a6jix4xilgm93j7-riscv64-unknown-elf-gcc/bin
+/nix/store/ywdz7hiyhb7hkp0vyzqfdx3fmrf1v8pa-yosys-0.67/bin
+/home/yys/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+Interrupt map (2 harts 1 interrupts):
+  [1, 1] => system
+
+<stdin>:52.18-57.5: Warning (simple_bus_reg): /soc/cbus_clock: missing or empty reg/ranges property
+<stdin>:68.28-71.5: Warning (simple_bus_reg): /soc/external-interrupts: missing or empty reg/ranges property
+<stdin>:72.18-77.5: Warning (simple_bus_reg): /soc/fbus_clock: missing or empty reg/ranges property
+<stdin>:88.18-93.5: Warning (simple_bus_reg): /soc/mbus_clock: missing or empty reg/ranges property
+<stdin>:100.18-105.5: Warning (simple_bus_reg): /soc/pbus_clock: missing or empty reg/ranges property
+<stdin>:111.18-116.5: Warning (simple_bus_reg): /soc/sbus_clock: missing or empty reg/ranges property
+/dts-v1/;
+
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	compatible = "ucb-bar,buckyball-dev";
+	model = "ucb-bar,buckyball";
+	L10: cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		timebase-frequency = <1000000>;
+		L12: cpu@0 {
+			clock-frequency = <0>;
+			compatible = "sifive,rocket0", "riscv";
+			d-cache-block-size = <64>;
+			d-cache-sets = <32>;
+			d-cache-size = <8192>;
+			d-tlb-sets = <1>;
+			d-tlb-size = <32>;
+			device_type = "cpu";
+			hardware-exec-breakpoint-count = <0>;
+			i-cache-block-size = <64>;
+			i-cache-sets = <64>;
+			i-cache-size = <8192>;
+			i-tlb-sets = <1>;
+			i-tlb-size = <32>;
+			mmu-type = "riscv,sv39";
+			next-level-cache = <&L16>;
+			reg = <0x0>;
+			riscv,isa = "rv64imafdcbzicsr_zifencei_zihpm_zfh_zba_zbb_zbs_xrocket";
+			riscv,pmpgranularity = <4>;
+			riscv,pmpregions = <8>;
+			status = "okay";
+			timebase-frequency = <1000000>;
+			tlb-split;
+			L6: interrupt-controller {
+				#interrupt-cells = <1>;
+				compatible = "riscv,cpu-intc";
+				interrupt-controller;
+			};
+		};
+	};
+	L16: memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x10000000>;
+	};
+	L9: soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "ucb-bar,buckyball-soc", "simple-bus";
+		ranges;
+		L3: cbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "cbus_clock";
+			compatible = "fixed-clock";
+		};
+		L13: clint@2000000 {
+			compatible = "riscv,clint0";
+			interrupts-extended = <&L6 3 &L6 7>;
+			reg = <0x2000000 0x10000>;
+			reg-names = "control";
+		};
+		L4: error-device@3000 {
+			compatible = "sifive,error0";
+			reg = <0x3000 0x1000>;
+		};
+		L15: external-interrupts {
+			interrupt-parent = <&L14>;
+			interrupts = <1>;
+		};
+		L2: fbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "fbus_clock";
+			compatible = "fixed-clock";
+		};
+		L14: interrupt-controller@c000000 {
+			#interrupt-cells = <1>;
+			compatible = "riscv,plic0";
+			interrupt-controller;
+			interrupts-extended = <&L6 11 &L6 9>;
+			reg = <0xc000000 0x4000000>;
+			reg-names = "control";
+			riscv,max-priority = <1>;
+			riscv,ndev = <1>;
+		};
+		L5: mbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "mbus_clock";
+			compatible = "fixed-clock";
+		};
+		L17: mmio-port-axi4@60000000 {
+			#address-cells = <1>;
+			#size-cells = <1>;
+			compatible = "simple-bus";
+			ranges = <0x60000000 0x60000000 0x10000000>;
+		};
+		L1: pbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "pbus_clock";
+			compatible = "fixed-clock";
+		};
+		L18: rom@10000 {
+			compatible = "sifive,rom0";
+			reg = <0x10000 0x10000>;
+			reg-names = "mem";
+		};
+		L0: sbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "sbus_clock";
+			compatible = "fixed-clock";
+		};
+	};
+};
+
+Generated Address Map
+	    3000 -     4000 ARWX  error-device@3000
+	   10000 -    20000  R X  rom@10000
+	 2000000 -  2010000 ARW   clint@2000000
+	 c000000 - 10000000 ARW   interrupt-controller@c000000
+	60000000 - 70000000  RWX  mmio-port-axi4@60000000
+	80000000 - 90000000  RWXC memory@80000000
+
+[warn] thirdparty/rocket-chip/src/main/scala/rocket/NBDcache.scala 456:25: [W004] Dynamic index with width 1 is too wide for Vec of size 1 (expected index width 0).
+[warn]   io.refill := refillMux(io.mem_grant.bits.source)
+[warn]                         ^
+[warn] There were 1 warning(s) during hardware elaboration.
+[success] Total time: 19 s, completed Oct 12, 2026, 8:54:06 PM

@@ -1,0 +1,3 @@
+PASS FLASH_BACKUP: D:/Verilog_Dev/fpga-arty-a7-pr10-review/platforms/arty-a7-toy/build/original-pr-evaluation/tmps2iklm9m/backup.bin bytes=16777216
+MOCK_EVENTS program_device readback program_flash
+MOCK_FAILURE expected boolean value but got "Program and verification completed"

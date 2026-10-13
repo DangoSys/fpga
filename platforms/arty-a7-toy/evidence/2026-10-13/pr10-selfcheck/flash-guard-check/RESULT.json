@@ -1,0 +1,56 @@
+{
+  "result": "PASS_FLASH_GUARDS_NORMAL_AND_OPTIMIZED",
+  "physical_hardware_tested": false,
+  "cases": [
+    {
+      "optimized": false,
+      "field": "valid",
+      "result": "PASS"
+    },
+    {
+      "optimized": false,
+      "field": "result",
+      "result": "PASS"
+    },
+    {
+      "optimized": false,
+      "field": "bitstream_sha256",
+      "result": "PASS"
+    },
+    {
+      "optimized": false,
+      "field": "packed_payload_sha256",
+      "result": "PASS"
+    },
+    {
+      "optimized": false,
+      "field": "flash_image_sha256",
+      "result": "PASS"
+    },
+    {
+      "optimized": true,
+      "field": "valid",
+      "result": "PASS"
+    },
+    {
+      "optimized": true,
+      "field": "result",
+      "result": "PASS"
+    },
+    {
+      "optimized": true,
+      "field": "bitstream_sha256",
+      "result": "PASS"
+    },
+    {
+      "optimized": true,
+      "field": "packed_payload_sha256",
+      "result": "PASS"
+    },
+    {
+      "optimized": true,
+      "field": "flash_image_sha256",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:2:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    2 | module ReferenceMacUnit(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.050
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:13:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   13 | module ReferencePE(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:115:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  115 | module MacUnit(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:126:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  126 | module PE(
+      |        ^~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:226:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  226 | module MacUnit_1(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:241:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  241 | module PE_1(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:339:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  339 | module PeCycleEquivalence(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/cycles/PeCycleEquivalence_rtl.sv:477:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  477 | module FpgaDspMac(input [7:0] a, b, input [19:0] c, output [19:0] y);
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:3:8: ... Location of module with timescale
+    3 | module tb;
+      |        ^~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:22:65: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'shift' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   22 |       control_dataflow=df; control_propagate=prop; control_shift=shift;
+      |                                                                 ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.050
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:23:11: Operator ASSIGN expects 8 bits on the Assign RHS, but Assign RHS's VARREF 'a' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   23 |       in_a=a; in_b=b; in_d=d; valid=v;
+      |           ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:23:19: Operator ASSIGN expects 20 bits on the Assign RHS, but Assign RHS's VARREF 'b' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   23 |       in_a=a; in_b=b; in_d=d; valid=v;
+      |                   ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:23:27: Operator ASSIGN expects 20 bits on the Assign RHS, but Assign RHS's VARREF 'd' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   23 |       in_a=a; in_b=b; in_d=d; valid=v;
+      |                           ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:24:9: Operator ASSIGN expects 2 bits on the Assign RHS, but Assign RHS's RAND generates 32 bits.
+                                                                                                                    : ... note: In instance 'tb'
+   24 |       id=$random(seed); last=$random(seed);
+      |         ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:24:29: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's RAND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   24 |       id=$random(seed); last=$random(seed);
+      |                             ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:44:34: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   44 |             step(df,p,shift,(n&1)?-128:127,(n&2)?-524288:524287,
+      |                                  ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:44:49: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   44 |             step(df,p,shift,(n&1)?-128:127,(n&2)?-524288:524287,
+      |                                                 ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:45:23: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   45 |                  (n&4)?-524288:524287,1,1);
+      |                       ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:44:13: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's VARREF 'df' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   44 |             step(df,p,shift,(n&1)?-128:127,(n&2)?-524288:524287,
+      |             ^~~~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:44:13: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's VARREF 'p' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   44 |             step(df,p,shift,(n&1)?-128:127,(n&2)?-524288:524287,
+      |             ^~~~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:46:21: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'p' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   46 |             step(df,!p,shift,(n&1)?-1:1,(n&2)?-3:3,(n&4)?-1:1,1,1);
+      |                     ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:46:35: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   46 |             step(df,!p,shift,(n&1)?-1:1,(n&2)?-3:3,(n&4)?-1:1,1,1);
+      |                                   ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:46:46: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   46 |             step(df,!p,shift,(n&1)?-1:1,(n&2)?-3:3,(n&4)?-1:1,1,1);
+      |                                              ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:46:57: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   46 |             step(df,!p,shift,(n&1)?-1:1,(n&2)?-3:3,(n&4)?-1:1,1,1);
+      |                                                         ^
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:46:13: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's VARREF 'df' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   46 |             step(df,!p,shift,(n&1)?-1:1,(n&2)?-3:3,(n&4)?-1:1,1,1);
+      |             ^~~~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:47:13: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's VARREF 'df' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   47 |             step(df,p,shift,0,0,0,0,1);
+      |             ^~~~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:47:13: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's VARREF 'p' generates 32 bits.
+                                                                                                                     : ... note: In instance 'tb'
+   47 |             step(df,p,shift,0,0,0,0,1);
+      |             ^~~~
+%Warning-WIDTHTRUNC: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:50:7: Operator TASKREF 'step' expects 1 bits on the Function Argument, but Function Argument's AND generates 32 bits.
+                                                                                                                    : ... note: In instance 'tb'
+   50 |       step($random(seed)&1,$random(seed)&1,$random(seed)&31,
+      |       ^~~~
+make: Entering directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/obj'
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_threads.cpp
+python3 /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb.cpp Vtb___024root__0.cpp Vtb__main.cpp Vtb___024root__Slow.cpp Vtb___024root__0__Slow.cpp Vtb__Syms__Slow.cpp > Vtb__ALL.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vtb__ALL.o Vtb__ALL.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb__ALL.a    -pthread -lpthread -latomic   -o Vtb
+rm Vtb__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/obj'
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev v5.050
+- Verilator: Built from 0.091 MB sources in 10 modules, into 0.135 MB in 6 C++ files needing 0.001 MB
+- Verilator: Walltime 3.402 s (elab=0.004, cvt=0.019, bld=3.368); cpu 0.041 s on 8 threads; allocated 360.035 MB

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy 64 OS WS RNE edge cases 4096 results",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "test_binary_sha256": "fbf5f1205e364accf5cdd7973cadefc8529947d3c236e65cb384cb9e41b29462",
+  "cycles_including_boot": 979581,
+  "memory_read_bursts": 3347,
+  "memory_write_bursts": 2496,
+  "linux_boot_tested": false
+}

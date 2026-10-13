@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy CPU smoke",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "test_binary_sha256": "3bbf33f7bf2b6bb0f3888ab4a649a11272de3f74458f6ea36b266f9670df75f5",
+  "cycles_including_boot": 639544,
+  "memory_read_bursts": 5970,
+  "memory_write_bursts": 2049,
+  "linux_boot_tested": false
+}

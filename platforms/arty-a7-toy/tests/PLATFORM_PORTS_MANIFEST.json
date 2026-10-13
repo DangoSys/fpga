@@ -1,0 +1,7 @@
+{
+  "source_core_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "port_header_sha256": "3329804932f5a7632f78bbe56797f9bff35fb6f94910f0a474c59a9a0a90bf5d",
+  "stub_sha256": "e4c06220cd7025972d432b06c452e85c62bd2cfccad618b2b993499b62e6621a",
+  "cpu_behavior_included": false,
+  "port_header_hash_encoding": "UTF-8 with LF newlines"
+}

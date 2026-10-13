@@ -1,0 +1,6 @@
+{
+  "result": "FAILED",
+  "physical_hardware_tested": false,
+  "error_type": "CalledProcessError",
+  "error": "Command '['/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-mmio-error/obj/Vtb_mmio_error']' returned non-zero exit status 1."
+}

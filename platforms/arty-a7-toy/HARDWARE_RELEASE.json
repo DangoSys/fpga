@@ -1,0 +1,17 @@
+{
+  "tag": "arty-a7-rob-pr10-2026-10-13",
+  "url": "https://github.com/DangoSys/fpga/releases/download/arty-a7-rob-pr10-2026-10-13/arty-a7-rob-pr10-uart.zip",
+  "archive_bytes": 9666180,
+  "archive_sha256": "97ac0e4f624f77f40c60351279f80457c9ac21de95c81bf952ffbc2ca31dad92",
+  "manifest_sha256": "786d18edfa027a3e994792ee0d963ba99b3543f52eb9e71de7d175803e880d2d",
+  "source_commit": "9eaa67668a0db8b05653023722c3ec03f765e8d0",
+  "validation_input_commit": "5d20e94e6c85cce7f09424749cb9d0117023e000",
+  "flow": "ROB_PR10_UART",
+  "profile": "ROB_OPERAND_BRAM_WITH_PR10_FIXES",
+  "target": "xc7a100tcsg324-1",
+  "bitstream_sha256": "9f6f684361c049527fda09818cc8aa464f1067b75f3762305a27c5c738295942",
+  "payload_sha256": "e2282b5a7ddf1aa01579919aa92df483ed79e739bf5d39530e07532e164118b0",
+  "payload_bytes": 25797640,
+  "test_count": 15,
+  "timeout_seconds": 3600
+}

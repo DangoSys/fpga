@@ -1,0 +1,28 @@
+{
+  "result": "PASS_RUNNER_FAILURE_STATUS",
+  "baseline_ref": null,
+  "physical_hardware_tested": false,
+  "cases": [
+    {
+      "script": "check_board.py",
+      "source_sha256": "2c6cb06f301bfc4b98f66d21e5f34d7627a73b490ee60e385185bfaf2377711b",
+      "exit_code": 1,
+      "observed_result": "FAILED",
+      "result": "PASS"
+    },
+    {
+      "script": "check_programming_scripts.py",
+      "source_sha256": "8bd486cc7b0dbb960984a6dadc1bd97eb5a2b393abbe55e9d99077817dbc02a5",
+      "exit_code": 1,
+      "observed_result": "FAILED",
+      "result": "PASS"
+    },
+    {
+      "script": "check_flash_guards.py",
+      "source_sha256": "76bba3666d73a87aa698fa714933244f59dbdaa2260cb742462ad71505a10a5b",
+      "exit_code": 1,
+      "observed_result": "FAILED",
+      "result": "PASS"
+    }
+  ]
+}

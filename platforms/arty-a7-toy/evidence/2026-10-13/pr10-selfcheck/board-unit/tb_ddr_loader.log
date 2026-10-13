@@ -1,0 +1,2 @@
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/arty-a7-pr10-selfcheck-20261013-d044483d/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)

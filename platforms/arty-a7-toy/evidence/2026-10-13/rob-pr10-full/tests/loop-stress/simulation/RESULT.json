@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy 40 alternating multi tile OS WS loops",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "test_binary_sha256": "bbe9646dc565ac9ac1188c6b3d53d24b1b37985ee158ee2ac918df04c3267ce2",
+  "cycles_including_boot": 652682,
+  "memory_read_bursts": 3498,
+  "memory_write_bursts": 5766,
+  "linux_boot_tested": false
+}

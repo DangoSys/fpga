@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "test": "dma",
+  "binary_sha256": "082965476d4dcc98cc556b8f79fa2fdf659cea501665e207d04349d40469e9d2",
+  "original_cpu_oracle": true,
+  "ddr_phy_simulated": false,
+  "physical_linux_boot_tested": false,
+  "cycles": 1914839
+}

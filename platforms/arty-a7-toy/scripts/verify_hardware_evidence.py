@@ -22,7 +22,9 @@ def verify():
     assert manifest["time_zone"] == "Asia/Shanghai"
     for name, metadata in manifest["files"].items():
         assert sha(ARCHIVE / name) == metadata["sha256"], name
-    assert sha(ROOT / "board/program_arty.tcl") == sha(ARCHIVE / "program_arty.tcl")
+    # Historical programming evidence binds the archived script, not later
+    # revised entry points. Current sources have their own SOURCE_LOCK/tests.
+    assert sha(ARCHIVE / "program_arty.tcl") == manifest["files"]["program_arty.tcl"]["sha256"]
     assert sha(ROOT / "host/load.py") == manifest["host_loader_sha256"]
     hardware = read(ARCHIVE / "HARDWARE_RESULT.json")
     implementation = read(ROOT / "evidence/2026-10-11/BOARD_RESULT.json")

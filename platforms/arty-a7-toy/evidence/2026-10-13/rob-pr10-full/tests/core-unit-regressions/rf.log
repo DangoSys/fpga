@@ -1,0 +1,2 @@
+PASS FPU_RF_LVT cycles=20032 comparisons=144129 dual_writes=15000 same_address_writes=2876
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_fpu_rf.sv:95: $finish called at 200327000 (1ps)

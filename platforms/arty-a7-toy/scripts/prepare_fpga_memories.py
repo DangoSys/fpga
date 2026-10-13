@@ -93,14 +93,14 @@ def emit_dual_memory(mem, style):
     return "\n".join(lines), style
 
 
-def emit_memory(mem):
+def emit_memory(mem, force_block=False):
     name, depth, width = (mem[k] for k in ("module_name", "depth", "width"))
     gran = mem.get("mask_granularity", width)
     lanes = width // gran
     addr = (depth - 1).bit_length()
     # A 64-row bank fits one LUT RAM per bit. Avoid wasting deep BRAM blocks
     # on shallow tags, MMIO banks and SubROB; keep 1024-row data banks in BRAM.
-    style = "distributed" if depth <= 64 else "block"
+    style = "block" if force_block else "distributed" if depth <= 64 else "block"
     if mem["read"] == 1:
         return emit_dual_memory(mem, style)
     ports = [
@@ -156,13 +156,19 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("emission", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--block-memory", action="append", default=[],
+                        help="明确将指定宏映射到 BRAM，包括 ROB 的浅层宽操作数 RAM")
     args = parser.parse_args()
     raw = args.emission.read_bytes()
     rtl, metadata, config = unpack_emission(raw.decode())
     validate(metadata, config)
+    requested = set(args.block_memory)
+    available = {mem["module_name"] for mem in metadata}
+    if not requested <= available:
+        raise ValueError("Unknown block memory: " + ", ".join(sorted(requested - available)))
     modules, mappings = [], []
     for mem in metadata:
-        module, style = emit_memory(mem)
+        module, style = emit_memory(mem, mem["module_name"] in requested)
         modules.append(module)
         mappings.append({**mem, "ram_style": style})
     macros = "\n".join(modules)

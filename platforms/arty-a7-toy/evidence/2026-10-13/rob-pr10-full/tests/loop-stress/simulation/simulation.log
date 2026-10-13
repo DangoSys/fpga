@@ -1,0 +1,7 @@
+CPU status = 00000000600d600d
+PASS whole Toy 40 alternating multi tile OS WS loops
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=652682 memory_reads=3498 memory_writes=5766
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 4.818 s; speed 1.355 ms/s
+- Verilator: cpu 4.817 s on 1 threads; allocated 8 MB

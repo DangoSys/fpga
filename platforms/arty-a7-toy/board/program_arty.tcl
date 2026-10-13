@@ -16,8 +16,15 @@ if {[llength $devices] != 1} { error "Expected one XC7A100T; inspect the connect
 set device [lindex $devices 0]
 current_hw_device $device
 set_property PROGRAM.FILE $bitfile $device
-program_hw_devices $device
+if {[catch {program_hw_devices $device} message options]} {
+  return -options $options "JTAG programming failed: $message"
+}
 refresh_hw_device $device
+if {[get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS $device]!=1 ||
+    [get_property REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR $device]!=0} {
+  error "JTAG configuration status rejected: expected DONE/EOS high and CRC error clear"
+}
 puts "ARTY_JTAG_PROGRAMMED: $bitfile"
 close_hw_target
 disconnect_hw_server

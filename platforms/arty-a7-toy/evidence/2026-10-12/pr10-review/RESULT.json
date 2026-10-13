@@ -1,0 +1,79 @@
+{
+  "result": "PASS_PR10_EVALUATION_AND_OFFLINE_REGRESSIONS",
+  "original_pr_head": "f20b504946ee0b12cd8a0c720fc3b6ceabac4e97",
+  "original_base": "4bdd4e446fd973b29a0b6318324031dfc7b57872",
+  "compared_current_rob_head": "8f7bd63c874609360058b8fe1f0aabe9fe3bc505",
+  "comparison": {
+    "board/backup_flash.tcl": {
+      "base_sha256": "63d84e9055f00bd7ed97485912b0c8db83bee19b6950ba4c12fc3f9a639c3ea3",
+      "current_sha256": "63d84e9055f00bd7ed97485912b0c8db83bee19b6950ba4c12fc3f9a639c3ea3",
+      "byte_identical": true
+    },
+    "board/program_arty.tcl": {
+      "base_sha256": "fbb62bafb6df602b0f5f638fb05ae4ecc90494ac162b9a5f5ac314200f7a241c",
+      "current_sha256": "fbb62bafb6df602b0f5f638fb05ae4ecc90494ac162b9a5f5ac314200f7a241c",
+      "byte_identical": true
+    },
+    "board/program_flash.tcl": {
+      "base_sha256": "a2cfa55d7f61f5cecd74e68e2bbede9c535399291eea274e76fe416bdc8d3626",
+      "current_sha256": "a2cfa55d7f61f5cecd74e68e2bbede9c535399291eea274e76fe416bdc8d3626",
+      "byte_identical": true
+    },
+    "board/toy_a7_platform.sv": {
+      "base_sha256": "01fe1f8e2621a1a023ac3b8d91758868b190760f6e706ae1d34a67857b96d846",
+      "current_sha256": "01fe1f8e2621a1a023ac3b8d91758868b190760f6e706ae1d34a67857b96d846",
+      "byte_identical": true
+    },
+    "host/flash.py": {
+      "base_sha256": "47ad35043c9a04e9f6730dd4d53cf84f0d7bb018a03f76754d549f7bebe936dc",
+      "current_sha256": "47ad35043c9a04e9f6730dd4d53cf84f0d7bb018a03f76754d549f7bebe936dc",
+      "byte_identical": true
+    }
+  },
+  "focused_patch_apply_check_exit_code": 0,
+  "focused_patch_sha256": "7c0775aa1cc2c8e7e5f0c03a3901451e4aaa3460b4c0ae08202b0f23a0c90737",
+  "interface_test_groups": 4,
+  "tcl_contract_cases": 20,
+  "python_guard_cases": 10,
+  "old_platform_expected_negative": {
+    "exit_code": 1,
+    "address": "0x60030000",
+    "actual_bresp": "01",
+    "expected_bresp": "10",
+    "source_sha256": "01fe1f8e2621a1a023ac3b8d91758868b190760f6e706ae1d34a67857b96d846"
+  },
+  "original_pr_tcl_expected_negatives": 3,
+  "physical_hardware_tested": false,
+  "new_bitstream_generated": false,
+  "cpu_behavior_simulated": false,
+  "physical_mig_simulated": false,
+  "timeout_seconds": 600,
+  "sources": {
+    "board/axi_fullwidth.sv": "bf07ae27724dbd0a361d732dfb57109f06beef207c47a066d400cb06d7f07d5a",
+    "board/axi_scu.sv": "ee77bf641d61811b4c1faea845752850c22461a63b4cdfd3d6f9cd223e6c2fc2",
+    "board/backup_flash.tcl": "fa9185afad3537bf15b4f2f0c952a4eebf9d6c5693619819ff5e57897ce6a86d",
+    "board/ddr_uart_loader.sv": "980f4cd2e3fa2a00b66143f879bc749ed952c2c1e54331460821bac0300c43d6",
+    "board/flash_spi_byte.sv": "4d1fac5238f31fb3a69a58d1aca9ccec722e833d788113b94d86c6a1b861045a",
+    "board/loader_axi.sv": "05609b0870054ea675aedb406f6215cd456f18db6d6428b461cbae03d9a662f4",
+    "board/program_arty.tcl": "8af4c07627910536079eb4be647c6f0f447882950588c40588cdc571a72133ac",
+    "board/program_flash.tcl": "f9bf2b6fc6c9fdd268c308f417831c94707b464bbae75a5d2cc416f4c92bf424",
+    "board/toy_a7_platform.sv": "f9bc06535b7de19a6b1b501f06effe90519fd43a78e669ab7425d301662540b8",
+    "board/toy_a7_top.sv": "c8af97f543b8ae5d6dc21a85ba13b16a28fe3ba5bf93f8051c9e38c99f3350bd",
+    "board/uart_rx.sv": "0b35263884577324f146ff7fd516e5b561dcc8787e0d8ad599669bac1958406d",
+    "board/uart_tx.sv": "c20d420fc20be4f6313bdde5abc45ef0b9f8e93bf75350dd9951bc8868b3b65c",
+    "host/flash.py": "83e366dab1dbf2c9cda3b3259a237bb970293742c13e3f7a5496d2478a1cbff1",
+    "scripts/check_board.py": "e3618121401bd811eac50c017a016d3a548cdc004f8a47b01ae74466f02a786c",
+    "scripts/check_flash_guards.py": "42129a0be9f1399fac294799294fea791a83004463f9391f77b18c3d828e2535",
+    "scripts/check_programming_scripts.py": "b91b146da58df41b8453a61fd8eaf87e7314d56a8e8fff327270cb3dbed10f10",
+    "tests/PLATFORM_PORTS_MANIFEST.json": "5456ad060837d30818d6084b194896714921617b11dcada5ac897bc1c655f1dc",
+    "tests/ToyLinuxChipPorts.sv": "e4c06220cd7025972d432b06c452e85c62bd2cfccad618b2b993499b62e6621a",
+    "tests/axi_smoke_memory.sv": "7d0d410549217e73d319b807488812da06d54404a50fce484e1b527ea0e6632d",
+    "tests/board_loader_template.sv": "34be31c066ec317d5a1053d6e840145eb0af78766707915294a01cb96ec9b766",
+    "tests/flash_guard_probe.py": "b4e59e6cfbe6c95e99b6f733a7597043f8f394d4c10b0919fd92ab7c5372ada4",
+    "tests/mock_programming.tcl": "fd25ee00f3af89a3ec0416bd68a54f6cf7b3dac99c4a44f0c532cc36228312f1",
+    "tests/tb_axi_fullwidth.sv": "1d3964fab0eaa76a6f864f07a7dedf01639ba12a9400a15d0839e707ab73c4ed",
+    "tests/tb_axi_scu.sv": "5dfd1d6cac3201f0e5188e9b73e60ade27c4551570d4b00d387301713d9fbe97",
+    "tests/tb_platform_bresp.sv": "e69671fb9a5ea6a77ccc0ec8d7a8ca0afa07e9e8b035d0e107530032beabe1a0"
+  },
+  "interface_final_rerun_timeout_seconds": 180
+}

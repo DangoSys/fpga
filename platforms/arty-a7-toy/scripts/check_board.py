@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+from offline_check import run_check
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"build/board-unit"
@@ -22,9 +23,17 @@ def run(name, files, marker):
 
 
 def main():
+    fixture=json.loads((ROOT/"tests/PLATFORM_PORTS_MANIFEST.json").read_text())
+    if hashlib.sha256((ROOT/"tests/ToyLinuxChipPorts.sv").read_bytes()).hexdigest()!=fixture["stub_sha256"]:
+        raise ValueError("CPU port fixture differs from its manifest")
     OUT.mkdir(parents=True,exist_ok=True)
     run("tb_axi_fullwidth",[ROOT/"board/axi_fullwidth.sv",ROOT/"tests/axi_smoke_memory.sv",ROOT/"tests/tb_axi_fullwidth.sv"],"PASS fullwidth AXI")
     run("tb_axi_scu",[ROOT/"board/axi_scu.sv",ROOT/"tests/tb_axi_scu.sv"],"PASS SCU")
+    platform_files=[ROOT/"board"/name for name in
+                    ("toy_a7_platform.sv","axi_fullwidth.sv","axi_scu.sv","ddr_uart_loader.sv",
+                     "loader_axi.sv","uart_rx.sv","uart_tx.sv","flash_spi_byte.sv")]
+    run("tb_platform_bresp",platform_files+[ROOT/"tests/ToyLinuxChipPorts.sv",ROOT/"tests/tb_platform_bresp.sv"],
+        "PASS platform AXI B response")
     # Retain the CRC/range/timeout/rejected RUN oracle from the earlier loader,
     # but connect its new acknowledgement boundary to AXI, not zero-latency RAM.
     template=(ROOT/"tests/board_loader_template.sv").read_text()
@@ -38,7 +47,8 @@ def main():
     (OUT/"tb_ddr_loader.sv").write_text(template)
     run("tb_ddr_loader",[ROOT/"board/ddr_uart_loader.sv",ROOT/"board/loader_axi.sv",ROOT/"tests/axi_smoke_memory.sv",OUT/"tb_ddr_loader.sv"],"PASS: DDR UART loader")
     files=[p for p in (ROOT/"board").glob("*.sv")]+[ROOT/"tests/tb_axi_fullwidth.sv",ROOT/"tests/tb_axi_scu.sv"]
-    record=dict(result="PASS",tests=3,physical_mig_simulated=False,
+    files += [ROOT/"tests/ToyLinuxChipPorts.sv",ROOT/"tests/tb_platform_bresp.sv"]
+    record=dict(result="PASS",tests=4,physical_mig_simulated=False,
                 sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
     (OUT/"RESULT.json").write_text(json.dumps(record,indent=2)+"\n")
 
@@ -64,4 +74,4 @@ LOADER_MEMORY="""
 
 
 if __name__=="__main__":
-    main()
+    run_check(main, OUT)

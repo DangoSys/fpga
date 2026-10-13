@@ -1,0 +1,2 @@
+FATAL: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_platform_bresp.sv:28: Platform B response addr=60000000 valid=0 id=10 actual=00 expected=00
+       Time: 90000  Scope: tb_platform_bresp.write_case

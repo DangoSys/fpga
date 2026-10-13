@@ -1,0 +1,593 @@
+[info] welcome to sbt 1.12.11 (N/A Java 17.0.20)
+[info] loading project definition from /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to toy-arty-a7-linux (in build file:/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/)
+[info] compiling 1 Scala source to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/cde/target/scala-2.13/classes ...
+[info] compiling 1 Scala source to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/macros/target/scala-2.13/classes ...
+[info] compiling 7 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim-compile/target/scala-2.13/classes ...
+[info] done compiling
+[info] done compiling
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/InstrumentationPredication.scala:7:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.annotations.{ReferenceTarget, SingleTargetAnnotation}
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:24:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.RenameMap
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:25:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.annotations.{
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/RAMStyleHint.scala:6:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.annotations.ReferenceTarget
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:7:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.RenameMap
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:8:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.annotations.{Annotation, HasSerializationHints, NoTargetAnnotation, ReferenceTarget}
+[warn]        ^
+[info] compiling 36 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/diplomacy/diplomacy/target/scala-2.13/classes ...
+[info] compiling 20 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/hardfloat/hardfloat/target/scala-2.13/classes ...
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/InstrumentationPredication.scala:51:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation { def toFirrtl = GlobalResetCondition(condition.toTarget) })
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/InstrumentationPredication.scala:51:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation { def toFirrtl = GlobalResetCondition(condition.toTarget) })
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/InstrumentationPredication.scala:59:42: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]   def sink(target: chisel3.Bool): Unit = annotate(new ChiselAnnotation {
+[warn]                                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/InstrumentationPredication.scala:59:55: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]   def sink(target: chisel3.Bool): Unit = annotate(new ChiselAnnotation {
+[warn]                                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:38:54: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn] case class FpgaDebugAnnotation(target: Data) extends ChiselAnnotation {
+[warn]                                                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:49:24: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     targets.map({ t => annotate(FpgaDebugAnnotation(t)) })
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:90:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:90:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:146:60: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn] case class FAMEModelAnnotation(target: BaseModule) extends ChiselAnnotation {
+[warn]                                                            ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:163:76: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn] case class EnableModelMultiThreadingAnnotation(target: BaseModule) extends ChiselAnnotation {
+[warn]                                                                            ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:182:70: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn] case class MemModelAnnotation[T <: Data](target: MemBase[T]) extends ChiselAnnotation {
+[warn]                                                                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:195:40: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]   def apply(target: (String, String)): ChiselAnnotation =
+[warn]                                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:196:9: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     new ChiselAnnotation {
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:248:75: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn] case class AutoCounterCoverModuleAnnotation(target: ModuleTarget) extends ChiselAnnotation {
+[warn]                                                                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:264:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:264:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:337:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:337:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:400:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:400:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:462:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:462:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:510:5: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/annotations.scala:510:18: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     annotate(new ChiselAnnotation {
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/QSFPPortLocHint.scala:23:26: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/QSFPPortLocHint.scala:23:39: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/RAMStyleHint.scala:51:26: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/RAMStyleHint.scala:51:39: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:89:26: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:89:39: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:105:26: method apply in object annotate is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/firesim/sim/midas/targetutils/src/main/scala/midas/xdc/XDCAnnotation.scala:105:39: trait ChiselAnnotation in package experimental is deprecated (since Chisel 6.7.0): Avoid custom annotations. If you must use annotations, use annotate.apply method that takes Data
+[warn]     chisel3.experimental.annotate(new ChiselAnnotation {
+[warn]                                       ^
+[warn] 38 warnings found
+[info] done compiling
+[info] done compiling
+[info] done compiling
+[info] compiling 324 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/target/scala-2.13/classes ...
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/src/main/scala/diplomacy/Main.scala:6:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.AnnotationSeq
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/src/main/scala/diplomacy/Main.scala:7:8: Importing from firrtl is deprecated as of Chisel's 3.6.0 release.
+[warn] import firrtl.options.TargetDirAnnotation
+[warn]        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/src/main/scala/diplomacy/Main.scala:40:14: class MaybeInjectingPhase in package phases is deprecated (since 6.6.0): injecting aspects are being removed in Chisel 7
+[warn]     ) { case (annos, phase) => phase.transform(annos) }
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/src/main/scala/tilelink/Monitor.scala:860:11: method legalizeADSourceOld in class TLMonitor is deprecated: Use legalizeADSource instead if possible
+[warn]           legalizeADSourceOld(bundle, edge)
+[warn]           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/rocket-chip/src/main/scala/util/SynchronizerReg.scala:127:52: class SyncResetSynchronizerShiftReg in package util is deprecated (since rocket-chip 1.2): SyncResetSynchronizerShiftReg is unecessary with Chisel3 inferred resets. Use ResetSynchronizerShiftReg which will use the inferred reset type.
+[warn]     if (sync == 0) in else AbstractPipelineReg(new SyncResetSynchronizerShiftReg(in.getWidth, sync, init), in, name)
+[warn]                                                    ^
+[warn] 5 warnings found
+[info] done compiling
+[info] compiling 21 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/target/scala-2.13/classes ...
+[info] compiling 56 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini-compile/target/scala-2.13/classes ...
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:343:83: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `eviction`'s return type [quickfixable]
+[warn]   def eviction(from: CacheState, cover: Boolean)(implicit sourceInfo: SourceInfo) {
+[warn]                                                                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:356:101: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `transition`'s return type [quickfixable]
+[warn]   def transition(from: CacheState, to: CacheState, cover: Boolean)(implicit sourceInfo: SourceInfo) {
+[warn]                                                                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/MSHR.scala:513:81: procedure syntax is deprecated: instead, add `: Unit =` to explicitly declare `bypass`'s return type [quickfixable]
+[warn]   def bypass(from: CacheState, cover: Boolean)(implicit sourceInfo: SourceInfo) {
+[warn]                                                                                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Arithmetic.scala:54:27: Implicit definition should have explicit type (inferred gemmini.ArithmeticOps[chisel3.UInt]) [quickfixable]
+[warn]     override implicit def cast(self: UInt) = new ArithmeticOps(self) {
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Arithmetic.scala:91:27: Implicit definition should have explicit type (inferred gemmini.ArithmeticOps[chisel3.SInt]) [quickfixable]
+[warn]     override implicit def cast(self: SInt) = new ArithmeticOps(self) {
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Arithmetic.scala:531:27: Implicit definition should have explicit type (inferred gemmini.ArithmeticOps[gemmini.DummySInt]) [quickfixable]
+[warn]     override implicit def cast(self: DummySInt) = new ArithmeticOps(self) {
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Arithmetic.scala:28:16: implicit conversion method cast should be enabled
+[warn] by making the implicit value scala.language.implicitConversions visible.
+[warn] This can be achieved by adding the import clause 'import scala.language.implicitConversions'
+[warn] or by setting the compiler option -language:implicitConversions.
+[warn] See the Scaladoc for value scala.language.implicitConversions for a discussion
+[warn] why the feature should be explicitly enabled.
+[warn]   implicit def cast(t: T): ArithmeticOps[T]
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Arithmetic.scala:331:27: implicit conversion method cast should be enabled
+[warn] by making the implicit value scala.language.implicitConversions visible.
+[warn]     override implicit def cast(self: Float): ArithmeticOps[Float] = new ArithmeticOps(self) {
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Controller.scala:173:16: Implicit definition should have explicit type (inferred freechips.rocketchip.tilelink.TLEdgeOut) [quickfixable]
+[warn]   implicit val edge = outer.spad.id_node.edges.out.head
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:54:29: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case InclusiveCacheKey => up(InclusiveCacheKey, site).copy(schedulerBypass = enable)
+[warn]                             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:58:29: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case InclusiveCacheKey => up(InclusiveCacheKey, site).copy(dirReg = enable)
+[warn]                             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:73:67: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]       sets = (capacityKB * 1024)/(site(CacheBlockBytes) * nWays * up(SubsystemBankedCoherenceKey, site).nBanks),
+[warn]                                                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:82:39: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case SubsystemBankedCoherenceKey => up(SubsystemBankedCoherenceKey, site).copy(coherenceManager = { context =>
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:110:14: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     val l2 = LazyModule(new InclusiveCache(
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:136:18: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     val filter = LazyModule(new TLFilter(cfilter = skipMMIO))
+[warn]                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:139:16: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     val cork = LazyModule(new TLCacheCork)
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:153:30: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         val physicalFilter = LazyModule(new PhysicalFilter(fp.copy(controlBeatBytes = cbus.beatBytes)))
+[warn]                              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:155:39: value LazyScope in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         physicalFilter.controlNode := LazyScope("physical_filter_xing", "TLPhysicalFilterCtrlCrossing") {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Configs.scala:162:21: value LazyScope in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       _.ctrlnode := LazyScope("l2_ctrl_xing", "TLL2CtrlCrossing") {
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Control.scala:30:126: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn] class InclusiveCacheControl(outer: InclusiveCache, control: InclusiveCacheControlParameters)(implicit p: Parameters) extends LazyModule()(p) {
+[warn]                                                                                                                              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Control.scala:38:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:35:13: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     extends LazyModule
+[warn]             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:41:21: type ResourceBindings in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceBindings
+[warn]   var resourcesOpt: Option[ResourceBindings] = None
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:43:15: type SimpleDevice in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.SimpleDevice
+[warn]   val device: SimpleDevice = new SimpleDevice("cache-controller", Seq("sifive,inclusivecache0", "cache")) {
+[warn]               ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:43:34: type SimpleDevice in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.SimpleDevice
+[warn]   val device: SimpleDevice = new SimpleDevice("cache-controller", Seq("sifive,inclusivecache0", "cache")) {
+[warn]                                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:44:29: value ResourceInt in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceInt
+[warn]     def ofInt(x: Int) = Seq(ResourceInt(BigInt(x)))
+[warn]                             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:46:38: type ResourceBindings in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceBindings
+[warn]     override def describe(resources: ResourceBindings): Description = {
+[warn]                                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:46:57: type Description in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Description
+[warn]     override def describe(resources: ResourceBindings): Description = {
+[warn]                                                         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:57:22: type ResourceValue in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceValue
+[warn]       val nextlevel: Option[(String, Seq[ResourceValue])] =
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:61:53: value ResourceReference in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.ResourceReference
+[warn]           Some("next-level-cache" -> outer.map(l => ResourceReference(l)).toList)
+[warn]                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:71:7: value Description in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Description
+[warn]       Description(name, mapping ++ extra ++ nextlevel)
+[warn]       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:76:24: method apply in object TLClientPortParameters is deprecated: Use TLMasterPortParameters.v1 instead of TLClientPortParameters
+[warn]     clientFn  = { _ => TLClientPortParameters(Seq(TLClientParameters(
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:76:51: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]     clientFn  = { _ => TLClientPortParameters(Seq(TLClientParameters(
+[warn]                                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:81:24: method apply in object TLManagerPortParameters is deprecated: Use TLSlavePortParameters.v1 instead of TLManagerPortParameters
+[warn]     managerFn = { m => TLManagerPortParameters(
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:84:30: value Resource in package diplomacy is deprecated (since rocketchip 2.0.0): Use freechips.rocketchip.resources.Resource
+[warn]         resources          = Resource(device, "caches") +: m.resources,
+[warn]                              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:82:42: method copy in class TLSlaveParameters is deprecated: Use v1copy instead of copy
+[warn]       managers = m.managers.map { m => m.copy(
+[warn]                                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:103:33: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     Seq.tabulate(nCtrls) { i => LazyModule(new InclusiveCacheControl(this,
+[warn]                                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/InclusiveCache.scala:108:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Parameters.scala:56:48: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   def apply()(implicit p: Parameters, valName: ValName) = LazyModule(new TLBuffer(a, b, c, d, e))
+[warn]                                                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Parameters.scala:56:59: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   def apply()(implicit p: Parameters, valName: ValName) = LazyModule(new TLBuffer(a, b, c, d, e))
+[warn]                                                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/inclusive-cache/design/craft/inclusivecache/src/Parameters.scala:239:14: method copyArrayToImmutableIndexedSeq in class LowPriorityImplicits2 is deprecated (since 2.13.0): implicit conversions from Array to immutable.IndexedSeq are implemented by copying; use `toIndexedSeq` explicitly if you want to copy, or use the more efficient non-copying ArraySeq.unsafeWrapArray
+[warn]     Cat(bits.reverse)
+[warn]              ^
+[warn] 35 warnings found
+[info] done compiling
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/patches/gemmini/Mesh.scala:86:46: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys).lazyZip(zs)
+[warn]         (tile.io.in_control, in_ctrl, valid).zipped.foreach { case (tile_ctrl, ctrl, v) =>
+[warn]                                              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:261:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:276:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:288:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:300:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:314:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       int_gemmini = LazyModule(new Gemmini(GemminiConfigs.chipConfig.copy(
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:323:20: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       fp_gemmini = LazyModule(new Gemmini(GemminiFPConfigs.BF16DefaultConfig.copy(
+[warn]                    ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Configs.scala:339:7: value InModuleBody in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       InModuleBody {
+[warn]       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:146:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:147:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(GemminiFPConfigs.FP32DefaultConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:158:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:170:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:171:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(GemminiFPConfigs.FP16DefaultConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:181:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:182:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(GemminiFPConfigs.BF16DefaultConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:191:35: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       implicit val v = implicitly[ValName]
+[warn]                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:192:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(GemminiFPConfigs.BF16DefaultConfig.copy(
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:206:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ConfigsFP.scala:207:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(GemminiFPConfigs.BF16Default8Config))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Controller.scala:35:14: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   val spad = LazyModule(new Scratchpad(config))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Controller.scala:380:82: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys).lazyZip(zs)
+[warn]   (ex_controller.io.srams.read, im2col.io.sram_reads, spad.module.io.srams.read).zipped.foreach { case (ex_read, im2col_read, spad_read) =>
+[warn]                                                                                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/CustomConfigs.scala:73:21: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       val gemmini = LazyModule(new Gemmini(gemminiConfig))
+[warn]                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:55:52: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]                   (implicit p: Parameters) extends LazyModule {
+[warn]                                                    ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:56:14: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   val core = LazyModule(new StreamReaderCore(config, nXacts, beatBits, maxBytes, spadWidth, accWidth, aligned_to, spad_rows, acc_rows, meshRows, use_tlb_register_filter, use_firesim_simulation_counters))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:60:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:129:67: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]                                  (implicit p: Parameters) extends LazyModule {
+[warn]                                                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:130:61: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]   val node = TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:138:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) with HasCoreParameters with MemoryOpConstants {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:332:16: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]         printf(SynthesizePrintf("RDMA bytes rec: %d\n", total_bytes_read))
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:354:52: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]                   (implicit p: Parameters) extends LazyModule {
+[warn]                                                    ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:355:61: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]   val node = TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                             ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:363:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) with HasCoreParameters with MemoryOpConstants {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:649:16: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]         printf(SynthesizePrintf("WDMA bytes sent: %d\n", total_bytes_sent))
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DMA.scala:650:16: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]         printf(SynthesizePrintf("WDMA total latency: %d\n", total_latency))
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:121:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:122:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.baseConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:132:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:133:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.wsOnlyConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:143:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:144:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.bothDataflowsConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:154:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:155:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.highBitwidthConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:165:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:166:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.largerDimConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:176:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:177:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.fullyCombinationalConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:187:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:188:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.moreMemoryConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:198:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:199:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.moreBanksConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:209:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:210:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.narrowerBusConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:220:35: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       implicit val v = implicitly[ValName]
+[warn]                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:221:7: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       LazyModule(new Gemmini(DSEConfigs.pnr16Config))
+[warn]       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:231:35: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       implicit val v = implicitly[ValName]
+[warn]                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:232:7: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]       LazyModule(new Gemmini(DSEConfigs.pnr32Config))
+[warn]       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:242:37: type ValName in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         implicit val v = implicitly[ValName]
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/DSEConfigs.scala:243:9: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]         LazyModule(new Gemmini(DSEConfigs.baseConfig))
+[warn]         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Pipeline.scala:29:49: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys).lazyZip(zs)
+[warn]     (stalling.init, stalling.tail, valids.init).zipped.foreach { case (s1, s2, v1) =>
+[warn]                                                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Pipeline.scala:39:34: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.init, stalling.tail).zipped.foreach { case (v1, s2) =>
+[warn]                                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Pipeline.scala:48:32: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.tail, valids.init).zipped.foreach { case (v2, v1) =>
+[warn]                                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:585:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization: %d\n", utilization))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:586:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization ld q (incomplete): %d\n", utilization_ld_q_unissued))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:587:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization st q (incomplete): %d\n", utilization_st_q_unissued))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:588:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization ex q (incomplete): %d\n", utilization_ex_q_unissued))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:589:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization ld q: %d\n", utilization_ld_q))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:590:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization st q: %d\n", utilization_st_q))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/ReservationStation.scala:591:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("Utilization ex q: %d\n", utilization_ex_q))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Scratchpad.scala:192:57: type LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]     (implicit p: Parameters, ev: Arithmetic[T]) extends LazyModule {
+[warn]                                                         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Scratchpad.scala:208:16: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   val reader = LazyModule(new StreamReader(config, max_in_flight_mem_reqs, dataBits, maxBytes, spad_w, acc_w, aligned_to,
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Scratchpad.scala:211:16: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   val writer = LazyModule(new StreamWriter(max_in_flight_mem_reqs, dataBits, maxBytes,
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Scratchpad.scala:214:56: value LazyModule in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   val spad_writer = Option.when(config.use_tl_ext_mem)(LazyModule(new StreamWriter(max_in_flight_mem_reqs, dataBits, maxBytes,
+[warn]                                                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/Scratchpad.scala:227:22: type LazyModuleImp in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   class Impl extends LazyModuleImp(this) with HasCoreParameters {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/XactTracker.scala:106:14: method apply in object SynthesizePrintf is deprecated (since FireSim 1.14): This method will be removed. Annotate the printf statement directly
+[warn]       printf(SynthesizePrintf("RDMA total latency: %d\n", total_latency))
+[warn]              ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/thirdparty/gemmini/src/main/scala/gemmini/VectorScalarMultiplier.scala:135:32: unreachable code
+[warn]             case b: Bool => 1.U(1.W)
+[warn]                                ^
+[warn] 81 warnings found
+[info] done compiling
+[info] compiling 213 Scala sources to /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/target/scala-2.13/classes ...
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/T1DecodePattern.scala:38:43: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,
+[warn] or remove the empty argument list from its definition (Java-defined methods are exempt).
+[warn] In Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable]
+[warn]   val attributes      = IO(Output(Property[Seq[AnyClassType]]))
+[warn]                                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/T1DecodePattern.scala:40:42: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,
+[warn] or remove the empty argument list from its definition (Java-defined methods are exempt).
+[warn] In Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable]
+[warn]   val attributesIn    = IO(Input(Property[Seq[AnyClassType]]))
+[warn]                                          ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:22:16: implicit conversion method bool2str should be enabled
+[warn] by making the implicit value scala.language.implicitConversions visible.
+[warn] This can be achieved by adding the import clause 'import scala.language.implicitConversions'
+[warn] or by setting the compiler option -language:implicitConversions.
+[warn] See the Scaladoc for value scala.language.implicitConversions for a discussion
+[warn] why the feature should be explicitly enabled.
+[warn]   implicit def bool2str(b: Boolean): String = if (b) "b1" else "b0"
+[warn]                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:72:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case SystemBusKey => up(SystemBusKey, site).copy(beatBytes = 16, dtsFrequency = Some(BigInt(50000000)))
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:73:24: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case MemoryBusKey => up(MemoryBusKey, site).copy(beatBytes = 16, dtsFrequency = Some(BigInt(50000000)))
+[warn]                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:74:27: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case PeripheryBusKey => up(PeripheryBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                           ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:75:25: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case ControlBusKey => up(ControlBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                         ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:76:23: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case FrontBusKey => up(FrontBusKey, site).copy(dtsFrequency = Some(BigInt(50000000)))
+[warn]                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:78:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:116:5: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]     up(TilesLocated(InSubsystem), site).map {
+[warn]     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:135:17: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]     val cache = up(InclusiveCacheKey, site)
+[warn]                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:138:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/src/main/scala/ToyLinuxConfig.scala:171:37: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]   case TilesLocated(InSubsystem) => up(TilesLocated(InSubsystem), site).map {
+[warn]                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:30:49: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys).lazyZip(zs)
+[warn]     (stalling.init, stalling.tail, valids.init).zipped.foreach {
+[warn]                                                 ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:41:34: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.init, stalling.tail).zipped.foreach {
+[warn]                                  ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/builtin/pipeline/Pipeline.scala:51:32: method zipped in class Ops is deprecated (since 2.13.0): Use xs.lazyZip(ys)
+[warn]     (valids.tail, valids.init).zipped.foreach {
+[warn]                                ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:13:35: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]   implicit class CrossAble[X](xs: Traversable[X]) {
+[warn]                                   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:15:22: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]     def cross[Y](ys: Traversable[Y]): Traversable[(X, Y)] = for {
+[warn]                      ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/gpdomain/sequencer/decoder/TableGenerator.scala:15:39: type Traversable in package scala is deprecated (since 2.13.0): Use Iterable instead of Traversable
+[warn]     def cross[Y](ys: Traversable[Y]): Traversable[(X, Y)] = for {
+[warn]                                       ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:175:85: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]     if (bbPerCore(i).isDefined) Some(TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:183:85: method apply in object TLClientParameters is deprecated: Use TLMasterParameters.v1 instead of TLClientParameters
+[warn]     if (bbPerCore(i).isDefined) Some(TLClientNode(Seq(TLMasterPortParameters.v1(Seq(TLClientParameters(
+[warn]                                                                                     ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/system/tile/BBTile.scala:305:3: method DisableMonitors in package diplomacy is deprecated (since rocketchip 2.0.0): Diplomacy has been split to a standalone library
+[warn]   DisableMonitors(implicit p => tlSlaveXbar.node :*= slaveNode)
+[warn]   ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/system/tile/Configs.scala:59:40: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]         val prev                     = up(TilesLocated(`location`), site)
+[warn]                                        ^
+[warn] /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/upstream/arch/src/main/scala/framework/system/tile/Configs.scala:110:40: method apply in class View is deprecated (since CDE 0.1): up(XYZ, site) is no longer necessary; remove the superfluous site argument
+[warn]         val prev                     = up(TilesLocated(`location`), site)
+[warn]                                        ^
+[warn] 24 warnings found
+[info] done compiling
+[info] running fpga.arty.linux.EmitGlobalRobCheck 
+[success] Total time: 59 s, completed Oct 13, 2026, 12:56:44 AM

@@ -1,0 +1,14 @@
+[info] welcome to sbt 1.12.11 (N/A Java 17.0.20)
+[info] loading project definition from /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to toy-arty-a7-linux (in build file:/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/)
+[info] running fpga.arty.linux.EmitPeChecks 
+[success] Total time: 3 s, completed Oct 13, 2026, 12:57:36 AM
+[info] running fpga.arty.linux.EmitFmaChecks 
+[success] Total time: 1 s, completed Oct 13, 2026, 12:57:38 AM
+[info] running fpga.arty.linux.EmitRoundShiftChecks 
+[success] Total time: 1 s, completed Oct 13, 2026, 12:57:38 AM
+[info] running fpga.arty.linux.EmitGroupQueryCheck 
+[success] Total time: 1 s, completed Oct 13, 2026, 12:57:39 AM
+[info] running fpga.arty.linux.EmitSubRobCheck 
+[success] Total time: 1 s, completed Oct 13, 2026, 12:57:40 AM

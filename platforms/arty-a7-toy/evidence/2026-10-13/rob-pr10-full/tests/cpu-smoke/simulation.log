@@ -1,0 +1,8 @@
+CPU status = 000000000000b007
+CPU status = 00000000600d600d
+PASS whole Toy CPU smoke
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=639544 memory_reads=5970 memory_writes=2049
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 6ms; walltime 4.710 s; speed 1.358 ms/s
+- Verilator: cpu 4.709 s on 1 threads; allocated 8 MB

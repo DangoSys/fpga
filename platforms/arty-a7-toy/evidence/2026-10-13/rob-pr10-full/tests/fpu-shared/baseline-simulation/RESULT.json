@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy baseline FPU 1536 oracle vectors",
+  "core_rtl_sha256": "81fb5cbe38d2feb3a9498b0a25f695f2d32468f7ee3fd3368426b079358eb35f",
+  "test_binary_sha256": "6b484b5850f3f8f84fdc1bb1d43a15cfc6669d938d4829b69f1ca675df0b16ba",
+  "cycles_including_boot": 165339,
+  "memory_read_bursts": 1387,
+  "memory_write_bursts": 11,
+  "linux_boot_tested": false
+}
