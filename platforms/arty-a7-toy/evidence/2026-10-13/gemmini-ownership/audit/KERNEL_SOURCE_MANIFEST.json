@@ -1,0 +1,91 @@
+{
+  "repository": "https://github.com/DangoSys/bbkernel",
+  "commit": "b80336ce647f6604713f1570e1e1355f705a4355",
+  "archive_sha256": "a950c71b7067c64b4aecbfa1b984be4e6441cf7a6fbdffcc88e46b1a5c07c388",
+  "adaptations": {
+    "clint_hz": 1000000,
+    "memory_limit_mib": 256
+  },
+  "files": {
+    ".gitignore": {
+      "original_sha256": "f6448a486a9e66ca1145b321d02be2940776086be9bee71d1329b96ac2dfdcb1",
+      "fpga_sha256": "f6448a486a9e66ca1145b321d02be2940776086be9bee71d1329b96ac2dfdcb1"
+    },
+    "CMakeLists.txt": {
+      "original_sha256": "7d67329cb98b62fe7b0d3f12d5d8b88fa34697a49b530bdf892c7eed50a06950",
+      "fpga_sha256": "7d67329cb98b62fe7b0d3f12d5d8b88fa34697a49b530bdf892c7eed50a06950"
+    },
+    "LICENSE": {
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "fpga_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "README.md": {
+      "original_sha256": "d3d03d8ff0199972784fcef40d9fe7eb0ff17ec252217ef98891168aadb85981",
+      "fpga_sha256": "d3d03d8ff0199972784fcef40d9fe7eb0ff17ec252217ef98891168aadb85981"
+    },
+    "config/busybox-config": {
+      "original_sha256": "9b2e08a8863058681b2f2ec5f82600ef9c6d294b219a45e2b548687d71217934",
+      "fpga_sha256": "9b2e08a8863058681b2f2ec5f82600ef9c6d294b219a45e2b548687d71217934"
+    },
+    "config/initramfs-devnodes.list": {
+      "original_sha256": "95f681b20b6dcfe59ffa95ae0d9cd523fb9b00e154486defe4ee004c8236be4a",
+      "fpga_sha256": "95f681b20b6dcfe59ffa95ae0d9cd523fb9b00e154486defe4ee004c8236be4a"
+    },
+    "config/linux-config": {
+      "original_sha256": "e740495a8fec7439518c57e69026d11ee27226e72cd2bc1751d2454c313645ec",
+      "fpga_sha256": "3bd4eb94eb38daea7c8f107b6e7184a1115e26bef09e4183fed48359fd473228"
+    },
+    "opensbi-platform/buckyball/Kconfig": {
+      "original_sha256": "945cef14b06612ae805a04d20668347647cfd7e6d3f02d2c1717005be772bc7e",
+      "fpga_sha256": "945cef14b06612ae805a04d20668347647cfd7e6d3f02d2c1717005be772bc7e"
+    },
+    "opensbi-platform/buckyball/configs/defconfig": {
+      "original_sha256": "7f65a6a2099f0f9b796e6ae04b9faa0c0acf1e19de2d1a0237bfc3a0ca1e8c46",
+      "fpga_sha256": "7f65a6a2099f0f9b796e6ae04b9faa0c0acf1e19de2d1a0237bfc3a0ca1e8c46"
+    },
+    "opensbi-platform/buckyball/objects.mk": {
+      "original_sha256": "205e934fd3a38e781e6a2d6e435007f0b372a71d173ae51db12bfa3eb5bc9dac",
+      "fpga_sha256": "205e934fd3a38e781e6a2d6e435007f0b372a71d173ae51db12bfa3eb5bc9dac"
+    },
+    "opensbi-platform/buckyball/platform.c": {
+      "original_sha256": "40b3d012cfad269bb3fc6496cadb627a4588279be0af2895c1a2c52a8878d467",
+      "fpga_sha256": "215cc16a14101a2b987fb05f8619ccf20eef610f5f88c6561575e9a25fff7773"
+    },
+    "overlay-model/init.in": {
+      "original_sha256": "5438927a94912ba91f7acdf71260df728814ed477d58725e714aeb17d7eca1c7",
+      "fpga_sha256": "5438927a94912ba91f7acdf71260df728814ed477d58725e714aeb17d7eca1c7"
+    },
+    "overlay/etc/group": {
+      "original_sha256": "7a696fcfba89a55a6d73fa1a03c7f071fad2141340027b17a25db249e26b9be8",
+      "fpga_sha256": "7a696fcfba89a55a6d73fa1a03c7f071fad2141340027b17a25db249e26b9be8"
+    },
+    "overlay/etc/passwd": {
+      "original_sha256": "79492b90d473e2387338ef1518dfbceb9e3392ae5740235a6696621e42218efa",
+      "fpga_sha256": "79492b90d473e2387338ef1518dfbceb9e3392ae5740235a6696621e42218efa"
+    },
+    "overlay/init": {
+      "original_sha256": "c9efda587f66d30c8bf5d9243d8f00fe9fa78fce88c776c8954e103425f8a541",
+      "fpga_sha256": "c9efda587f66d30c8bf5d9243d8f00fe9fa78fce88c776c8954e103425f8a541"
+    },
+    "scripts/extract_toml_tests.py": {
+      "original_sha256": "fe43a03bc2caa25072c768667e9a9a03652519c298a5c5a965375ffd6052ba86",
+      "fpga_sha256": "fe43a03bc2caa25072c768667e9a9a03652519c298a5c5a965375ffd6052ba86"
+    },
+    "scripts/install-dataset.sh": {
+      "original_sha256": "96efcffdb2d50b315331ec32e9b5472edd0738015424562c4fe9619fa145b479",
+      "fpga_sha256": "96efcffdb2d50b315331ec32e9b5472edd0738015424562c4fe9619fa145b479"
+    },
+    "scripts/install-model.sh": {
+      "original_sha256": "bdfbbb93ae859982df105080bd2adee4ccb3b1f4e01d3c59d3d4a27297b904a4",
+      "fpga_sha256": "bdfbbb93ae859982df105080bd2adee4ccb3b1f4e01d3c59d3d4a27297b904a4"
+    },
+    "scripts/install-workloads.sh": {
+      "original_sha256": "96fcfe206bfb70a046c49a1868c9b0430f95e106d159572fdefdbb5ec308376e",
+      "fpga_sha256": "96fcfe206bfb70a046c49a1868c9b0430f95e106d159572fdefdbb5ec308376e"
+    }
+  },
+  "extra_overlay_files": {
+    "root/gemmini_concurrency.sh": "2b6793c0a6c512e94840b03dce3fe96ca5cf312dbae4d43529133d4c2857c66a"
+  },
+  "kernel_image_built": false
+}

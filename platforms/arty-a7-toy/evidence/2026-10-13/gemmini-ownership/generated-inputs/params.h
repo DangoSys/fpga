@@ -1,0 +1,5 @@
+#define BANK_WIDTH 64
+#define PHYSICAL_BANK_NUM 8
+#define VIRTUAL_BANK_NUM 16
+#define BANK_ENTRIES 1024
+#define GEMMINI_DIM 8

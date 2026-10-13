@@ -68,12 +68,20 @@ def prepare():
         "CONFIG_RISCV_SBI_V01=y",
     ):
         assert required in config, required
+    # bbkernel's shared overlay is the standard rootfs extension mechanism.
+    # This helper is a script, not one of the 15 *-linux workload binaries.
+    helper = ROOT / "software/runtime/gemmini_concurrency.sh"
+    overlay_helper = OUTPUT / "overlay/root/gemmini_concurrency.sh"
+    overlay_helper.parent.mkdir(parents=True, exist_ok=True)
+    overlay_helper.write_bytes(helper.read_bytes())
     result = {
         "repository": "https://github.com/DangoSys/bbkernel",
         "commit": commit,
         "archive_sha256": hashlib.sha256(cache.read_bytes()).hexdigest(),
         "adaptations": {"clint_hz": 1000000, "memory_limit_mib": 256},
         "files": records,
+        "extra_overlay_files": {"root/gemmini_concurrency.sh":
+                                hashlib.sha256(helper.read_bytes()).hexdigest()},
         "kernel_image_built": False,
     }
     (ROOT / "build/software/SOURCE_MANIFEST.json").write_text(

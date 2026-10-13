@@ -1,0 +1,159 @@
+{
+  "result": "PASS_HOST_SOFTWARE_ONLY",
+  "cases": 14,
+  "concurrency": {
+    "processes": 6,
+    "transactions": 120,
+    "overlap": 0
+  },
+  "elapsed_seconds": 6.225,
+  "hardware_tested": false,
+  "dma_context_isolation_proven": false,
+  "board_controller_cases": [
+    "same",
+    "mixed",
+    "cpu",
+    "kill"
+  ],
+  "board_controller_backend": "native_mock_not_hardware",
+  "sources": {
+    "software/runtime/gemmini_lease.c": "0cb91ce987131c31ac0c9d8dbbd858e7211bb89d370fda2a267cb76520aba809",
+    "software/runtime/gemmini_lease.h": "e751430be098d447dcbc6ce66a927e952a91a07a6f9bfca15bddd8244824607f",
+    "software/runtime/gemmini_linux_entry.c": "ae532a4bc919c3819854dde364ffd93e03f573371d6c41959f78fcce2215213d",
+    "tests/gemmini_lease_test.c": "0cf5fe64ed392699008953221a184d2b2ce2760edd9e1b4ed33d900cb4c3682c",
+    "tests/gemmini_entry_mock.c": "5c4db4ccd5769afc8297e55febed77d04201ade8d6ceb5ce9f88b2095468ea1c",
+    "software/runtime/gemmini_concurrency.sh": "2b6793c0a6c512e94840b03dce3fe96ca5cf312dbae4d43529133d4c2857c66a"
+  },
+  "commands": [
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_lease_test.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/lease-test"
+    ],
+    [
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/lease-test",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a"
+    ],
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "-DBB_GEMMINI_LOCK_PATH=\"/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/wrapper.lock\"",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_linux_entry.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_entry_mock.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/entry-test"
+    ],
+    [
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/entry-test"
+    ],
+    [
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/entry-test"
+    ],
+    [
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/entry-test"
+    ],
+    [
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/entry-test"
+    ],
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "-DBB_GEMMINI_LOCK_PATH=\"/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/same/device.lock\"",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_linux_entry.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_entry_mock.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/same/gemmini_linux_check-linux"
+    ],
+    [
+      "sh",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/same/gemmini_concurrency.sh",
+      "same"
+    ],
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "-DBB_GEMMINI_LOCK_PATH=\"/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/mixed/device.lock\"",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_linux_entry.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_entry_mock.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/mixed/gemmini_linux_check-linux"
+    ],
+    [
+      "sh",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/mixed/gemmini_concurrency.sh",
+      "mixed"
+    ],
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "-DBB_GEMMINI_LOCK_PATH=\"/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/cpu/device.lock\"",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_linux_entry.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_entry_mock.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/cpu/gemmini_linux_check-linux"
+    ],
+    [
+      "sh",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/cpu/gemmini_concurrency.sh",
+      "cpu"
+    ],
+    [
+      "cc",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime",
+      "-DBB_GEMMINI_LOCK_PATH=\"/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/kill/device.lock\"",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_lease.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/software/runtime/gemmini_linux_entry.c",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/tests/gemmini_entry_mock.c",
+      "-o",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/kill/gemmini_linux_check-linux"
+    ],
+    [
+      "sh",
+      "/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/kill/gemmini_concurrency.sh",
+      "kill"
+    ]
+  ]
+}

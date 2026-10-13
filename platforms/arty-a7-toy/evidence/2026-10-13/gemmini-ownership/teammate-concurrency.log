@@ -1,0 +1,333 @@
+
+### 13:43:11 $ busybox ln -sf /root/gemmini_linux_check-linux /tmp/g; busybox rm -f /tmp/r /tmp/r2
+
+~ # busybox ln -sf /root/gemmini_linux_check-linux /tmp/g; busybox rm -f /tmp/r 
+/tmp/r2; printf '\nNA_1:%s\n' $?
+
+NA_1:0
+
+### 13:43:13 $ cat /proc/uptime
+~ # cat /proc/uptime; printf '\nNA_2:%s\n' $?
+1163.19 1076.46
+
+NA_2:0
+
+### 13:43:14 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_3:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=65 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=12082000 accelerator_end_to_end_ns=7756000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=616000 accelerator_end_to_end_ns=16534000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=27764000 accelerator_end_to_end_ns=47458000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=35404000 accelerator_end_to_end_ns=48198000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=4410000 accelerator_end_to_end_ns=42836000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=4670000 accelerator_end_to_end_ns=39360000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=3724000 accelerator_end_to_end_ns=15520000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=19840000 accelerator_end_to_end_ns=4172000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=15068000 accelerator_end_to_end_ns=904000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=15072000 accelerator_end_to_end_ns=868000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=24004000 accelerator_end_to_end_ns=19776000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=31490000 accelerator_end_to_end_ns=14834000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=18298000 accelerator_end_to_end_ns=24706000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=6458000 accelerator_end_to_end_ns=16802000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=16276000 accelerator_end_to_end_ns=3794000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=19684000 accelerator_end_to_end_ns=15468000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_3:0
+
+### 13:43:17 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_4:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=67 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=660000 accelerator_end_to_end_ns=7852000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=682000 accelerator_end_to_end_ns=7798000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=35158000 accelerator_end_to_end_ns=31772000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=20172000 accelerator_end_to_end_ns=35446000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=4422000 accelerator_end_to_end_ns=39986000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=20668000 accelerator_end_to_end_ns=24270000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=19656000 accelerator_end_to_end_ns=8576000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=18422000 accelerator_end_to_end_ns=1738000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=15232000 accelerator_end_to_end_ns=3282000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=15100000 accelerator_end_to_end_ns=870000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=19998000 accelerator_end_to_end_ns=19754000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=12912000 accelerator_end_to_end_ns=14062000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=6500000 accelerator_end_to_end_ns=19594000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=23088000 accelerator_end_to_end_ns=19762000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=26592000 accelerator_end_to_end_ns=8654000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=3712000 accelerator_end_to_end_ns=8582000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_4:0
+
+### 13:43:20 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_5:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=69 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=664000 accelerator_end_to_end_ns=19914000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=634000 accelerator_end_to_end_ns=8274000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=28498000 accelerator_end_to_end_ns=31440000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=43662000 accelerator_end_to_end_ns=23402000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=9312000 accelerator_end_to_end_ns=43550000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=20780000 accelerator_end_to_end_ns=17900000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=15754000 accelerator_end_to_end_ns=4094000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=23080000 accelerator_end_to_end_ns=4284000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=626000 accelerator_end_to_end_ns=3216000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=15060000 accelerator_end_to_end_ns=892000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=27676000 accelerator_end_to_end_ns=14434000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=19870000 accelerator_end_to_end_ns=22342000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=23118000 accelerator_end_to_end_ns=23230000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=8500000 accelerator_end_to_end_ns=22702000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=16072000 accelerator_end_to_end_ns=3826000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=15894000 accelerator_end_to_end_ns=3946000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_5:0
+
+### 13:43:24 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_6:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=71 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=11066000 accelerator_end_to_end_ns=864000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=624000 accelerator_end_to_end_ns=8292000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=38616000 accelerator_end_to_end_ns=25110000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=27724000 accelerator_end_to_end_ns=36086000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=23060000 accelerator_end_to_end_ns=39734000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=9282000 accelerator_end_to_end_ns=35928000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=15734000 accelerator_end_to_end_ns=3904000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=20308000 accelerator_end_to_end_ns=8882000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=598000 accelerator_end_to_end_ns=3212000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=14998000 accelerator_end_to_end_ns=888000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=35766000 accelerator_end_to_end_ns=7816000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=20864000 accelerator_end_to_end_ns=7454000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=4444000 accelerator_end_to_end_ns=27548000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=16510000 accelerator_end_to_end_ns=23822000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=16038000 accelerator_end_to_end_ns=3832000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=3634000 accelerator_end_to_end_ns=1704000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_6:0
+
+### 13:43:27 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_7:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=73 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=7636000 accelerator_end_to_end_ns=8624000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=7450000 accelerator_end_to_end_ns=7610000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=28352000 accelerator_end_to_end_ns=36356000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=36180000 accelerator_end_to_end_ns=20024000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=23656000 accelerator_end_to_end_ns=35866000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=24004000 accelerator_end_to_end_ns=19864000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=18502000 accelerator_end_to_end_ns=8610000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=16082000 accelerator_end_to_end_ns=3794000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=23356000 accelerator_end_to_end_ns=3256000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=608000 accelerator_end_to_end_ns=15318000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=12850000 accelerator_end_to_end_ns=14834000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=19410000 accelerator_end_to_end_ns=7558000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=15866000 accelerator_end_to_end_ns=8776000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=16942000 accelerator_end_to_end_ns=30116000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=16130000 accelerator_end_to_end_ns=3996000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=22646000 accelerator_end_to_end_ns=4082000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_7:0
+
+### 13:43:30 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_8:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=75 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=7602000 accelerator_end_to_end_ns=19876000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=606000 accelerator_end_to_end_ns=24182000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=21042000 accelerator_end_to_end_ns=35870000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=24716000 accelerator_end_to_end_ns=39812000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=24508000 accelerator_end_to_end_ns=20088000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=19850000 accelerator_end_to_end_ns=28454000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=20072000 accelerator_end_to_end_ns=15460000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=16132000 accelerator_end_to_end_ns=3930000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=14924000 accelerator_end_to_end_ns=916000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=624000 accelerator_end_to_end_ns=3010000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=35550000 accelerator_end_to_end_ns=12552000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=20166000 accelerator_end_to_end_ns=12610000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=4458000 accelerator_end_to_end_ns=24148000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=16392000 accelerator_end_to_end_ns=24420000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=15686000 accelerator_end_to_end_ns=15758000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=23712000 accelerator_end_to_end_ns=15052000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_8:0
+
+### 13:43:33 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_9:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=77 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=632000 accelerator_end_to_end_ns=11644000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=11098000 accelerator_end_to_end_ns=902000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=35848000 accelerator_end_to_end_ns=34830000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=12794000 accelerator_end_to_end_ns=43306000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=16036000 accelerator_end_to_end_ns=31916000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=6542000 accelerator_end_to_end_ns=24444000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=3708000 accelerator_end_to_end_ns=3978000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=19906000 accelerator_end_to_end_ns=3916000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=15844000 accelerator_end_to_end_ns=6996000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=2696000 accelerator_end_to_end_ns=896000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=19660000 accelerator_end_to_end_ns=23618000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=27250000 accelerator_end_to_end_ns=12624000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=9304000 accelerator_end_to_end_ns=15446000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=23430000 accelerator_end_to_end_ns=24666000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=3672000 accelerator_end_to_end_ns=15298000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=18290000 accelerator_end_to_end_ns=1720000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_9:0
+
+### 13:43:37 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_10:%s\
+n' $?
+BEGIN GEMMINI_LINUX_CHECK pid=79 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=658000 accelerator_end_to_end_ns=896000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=7806000 accelerator_end_to_end_ns=8316000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=24648000 accelerator_end_to_end_ns=31400000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=35946000 accelerator_end_to_end_ns=35400000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=16426000 accelerator_end_to_end_ns=51818000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=20388000 accelerator_end_to_end_ns=35212000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=19648000 accelerator_end_to_end_ns=4114000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=3678000 accelerator_end_to_end_ns=15626000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=604000 accelerator_end_to_end_ns=8086000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=610000 accelerator_end_to_end_ns=11664000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=20540000 accelerator_end_to_end_ns=35266000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=8060000 accelerator_end_to_end_ns=23750000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=30338000 accelerator_end_to_end_ns=8848000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=23268000 accelerator_end_to_end_ns=15712000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=24140000 accelerator_end_to_end_ns=4196000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=15884000 accelerator_end_to_end_ns=3954000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_10:0
+
+### 13:43:40 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_11:%s\
+n' $?
+BEGIN GEMMINI_LINUX_CHECK pid=81 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=690000 accelerator_end_to_end_ns=7726000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=616000 accelerator_end_to_end_ns=8316000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=39326000 accelerator_end_to_end_ns=24738000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=19900000 accelerator_end_to_end_ns=47258000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=8094000 accelerator_end_to_end_ns=39708000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=4388000 accelerator_end_to_end_ns=39688000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=15744000 accelerator_end_to_end_ns=8452000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=3662000 accelerator_end_to_end_ns=8576000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=15250000 accelerator_end_to_end_ns=880000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=7628000 accelerator_end_to_end_ns=3306000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=26630000 accelerator_end_to_end_ns=17226000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=12884000 accelerator_end_to_end_ns=14778000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=4512000 accelerator_end_to_end_ns=26638000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=16590000 accelerator_end_to_end_ns=26900000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=15640000 accelerator_end_to_end_ns=8482000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=18398000 accelerator_end_to_end_ns=8562000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_11:0
+
+### 13:43:43 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+~ # /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_12:%s\
+n' $?
+BEGIN GEMMINI_LINUX_CHECK pid=83 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=2928000 accelerator_end_to_end_ns=884000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=626000 accelerator_end_to_end_ns=7770000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=28204000 accelerator_end_to_end_ns=28530000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=43236000 accelerator_end_to_end_ns=19742000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=23708000 accelerator_end_to_end_ns=16508000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=12178000 accelerator_end_to_end_ns=32408000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=22584000 accelerator_end_to_end_ns=8554000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=15142000 accelerator_end_to_end_ns=8782000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=15410000 accelerator_end_to_end_ns=3252000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=7470000 accelerator_end_to_end_ns=15400000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=27036000 accelerator_end_to_end_ns=23516000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=19398000 accelerator_end_to_end_ns=7754000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=13098000 accelerator_end_to_end_ns=15546000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=11408000 accelerator_end_to_end_ns=19460000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=8540000 accelerator_end_to_end_ns=16058000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=8454000 accelerator_end_to_end_ns=10698000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_12:0
+
+### 13:43:46 $ busybox dd if=/dev/urandom of=/tmp/r bs=1M count=32 2>&1
+~ # busybox dd if=/dev/urandom of=/tmp/r bs=1M count=32 2>&1; printf '\nNA_13:%s
+\n' $?
+random: crng init done
+32+0 records in
+32+0 records out
+
+NA_13:0
+
+### 13:46:07 $ busybox sha256sum /tmp/r
+busybox sha256sum /tmp/r; printf '\nNA_14:%s\n' ~ # $?
+busybox sha256sum /tmp/r; printf '\nNA_14:%s\n' $?
+5aa9a03b56f2d3f5f888292ad2738bbe8ca5d26740eb9a5008ffbada7d9655a7  /tmp/r
+
+NA_14:0
+
+### 13:50:26 $ busybox cp /tmp/r /tmp/r2 && busybox cmp /tmp/r /tmp/r2
+~ # busybox cp /tmp/r /tmp/r2 && busybox cmp /tmp/r /tmp/r2; printf '\nNA_15:%s\
+n' $?
+
+NA_15:0
+
+### 13:54:49 $ busybox sha256sum /tmp/r /tmp/r2
+busybox sha256sum /tmp/r /tmp/r2; printf '\nNA_1:%s\n' $?
+5aa9a03b56f2d3f5f888292ad2738bbe8ca5d26740eb9a5008ffbada7d9655a7  /tmp/r
+5aa9a03b56f2d3f5f888292ad2738bbe8ca5d26740eb9a5008ffbada7d9655a7  /tmp/r2
+
+NA_1:0
+
+### 14:03:21 $ cat /proc/uptime
+~ # cat /proc/uptime; printf '\nNA_2:%s\n' $?
+2373.52 1080.74
+
+NA_2:0
+
+### 14:03:24 $ (busybox yes >/dev/null) & echo $! >/tmp/yp
+~ # (busybox yes >/dev/null) & echo $! >/tmp/yp; printf '\nNA_3:%s\n' $?
+
+NA_3:0
+
+### 14:03:25 $ /tmp/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'
+/tmp/g | busybox grep -E 'PASS G~ # EMMINI_CASE|FAIL/|CHECK'; printf t'\nNA_4:%s\n' $?m
+p/g | busybox grep -E 'PASS GEMMINI_CASE|FAIL|CHECK'; printf '\nNA_4:%s\n
+' $?
+BEGIN GEMMINI_LINUX_CHECK pid=92 dimension=8 bank_width=64
+PASS GEMMINI_CASE id=1 mode=OS m=8 n=8 k=8 cpu_ns=11520000 accelerator_end_to_end_ns=11948000
+PASS GEMMINI_CASE id=2 mode=WS m=8 n=8 k=8 cpu_ns=648000 accelerator_end_to_end_ns=11546000
+PASS GEMMINI_CASE id=3 mode=OS m=16 n=16 k=16 cpu_ns=36030000 accelerator_end_to_end_ns=44386000
+PASS GEMMINI_CASE id=4 mode=WS m=16 n=16 k=16 cpu_ns=32138000 accelerator_end_to_end_ns=51926000
+PASS GEMMINI_CASE id=5 mode=OS m=13 n=11 k=17 cpu_ns=24132000 accelerator_end_to_end_ns=59802000
+PASS GEMMINI_CASE id=6 mode=WS m=13 n=11 k=17 cpu_ns=28934000 accelerator_end_to_end_ns=59098000
+PASS GEMMINI_CASE id=7 mode=OS m=8 n=24 k=8 cpu_ns=30956000 accelerator_end_to_end_ns=12664000
+PASS GEMMINI_CASE id=8 mode=WS m=8 n=24 k=8 cpu_ns=8362000 accelerator_end_to_end_ns=12442000
+PASS GEMMINI_CASE id=9 mode=OS m=8 n=8 k=8 cpu_ns=23320000 accelerator_end_to_end_ns=7432000
+PASS GEMMINI_CASE id=10 mode=WS m=8 n=8 k=8 cpu_ns=23356000 accelerator_end_to_end_ns=7472000
+PASS GEMMINI_CASE id=11 mode=OS m=16 n=16 k=16 cpu_ns=47316000 accelerator_end_to_end_ns=35548000
+PASS GEMMINI_CASE id=12 mode=WS m=16 n=16 k=16 cpu_ns=31990000 accelerator_end_to_end_ns=23520000
+PASS GEMMINI_CASE id=13 mode=OS m=13 n=11 k=17 cpu_ns=35818000 accelerator_end_to_end_ns=35562000
+PASS GEMMINI_CASE id=14 mode=WS m=13 n=11 k=17 cpu_ns=23788000 accelerator_end_to_end_ns=28662000
+PASS GEMMINI_CASE id=15 mode=OS m=8 n=24 k=8 cpu_ns=20158000 accelerator_end_to_end_ns=16428000
+PASS GEMMINI_CASE id=16 mode=WS m=8 n=24 k=8 cpu_ns=8290000 accelerator_end_to_end_ns=19262000
+PASS GEMMINI_LINUX_CHECK cases=16
+
+NA_4:0
+
+### 14:03:30 $ kill $(cat /tmp/yp)
+kill $(cat /tmp/yp); printf '\nN~ # A_5:%s\n' $?
+kill $(cat /tmp/yp); printf '\nNA_5:%s\n' $?
+
+NA_5:0
+
+### 14:03:33 $ /tmp/g>/tmp/a 2>&1& A=$!; /tmp/g>/tmp/b 2>&1& B=$!; wait $A; a=$?; wait $B; echo $a $? $(busybox grep -c 'PASS GEMMINI_C' /tmp/a /tmp/b)
+~ # /tmp/g>/tmp/a 2>&1& A=$!; /tmp/g>/tmp/b 2>&1& B=$!; wait $A; a=$?; wait $B; 
+echo $a $? $(busybox grep -c 'PASS GEMMINI_C' /tmp/a /tmp/b); printf '\nNA_6:%s\
+n' $?
+
+### 14:13:33 $ /root/gemmini_os_cisc_basic_test-linux>/tmp/c 2>&1& C=$!; /root/gemmini_ws_risc_basic_test-linux>/tmp/d 2>&1; d=$?; wait $C; echo MIX $? $d
+
+### 14:18:33 $ busybox free; busybox rm -f /tmp/r /tmp/r2 /tmp/a /tmp/b /tmp/c /tmp/d

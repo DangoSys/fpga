@@ -1,0 +1,49 @@
+
+PASS lease_clean_reuse
+PASS lease_concurrency processes=6 transactions=120 overlap=0
+PASS lease_timeout_and_fork_owner
+PASS lease_sigkill_sticky_dirty
+PASS lease_failure_sticky_dirty
+PASS lease_partial_record_rejected
+PASS lease_symlink_rejected
+PASS GEMMINI_LEASE_HOST_TESTS cases=7 hardware_tested=0
+
+
+MOCK_DRAIN
+MOCK_WORKLOAD
+MOCK_DRAIN
+GEMMINI_LEASE acquired pid=2065592
+GEMMINI_LEASE complete
+
+MOCK_DRAIN
+MOCK_WORKLOAD
+MOCK_DRAIN
+GEMMINI_LEASE acquired pid=2065594
+GEMMINI_LEASE complete
+
+MOCK_DRAIN
+MOCK_WORKLOAD
+GEMMINI_LEASE acquired pid=2065596
+GEMMINI_LEASE workload failed; device left DIRTY
+
+GEMMINI_LEASE rejected errno=117 (Structure needs cleaning)
+GEMMINI_LEASE device state unknown; reset the complete FPGA/Linux platform before reuse; do not delete the lock
+
+
+OWNERSHIP_CASE START mode=same logs=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/same/gemmini-ownership-same-2065630
+OWNERSHIP_CASE PASS mode=same results_correct=1 both_completed=1 shell_responsive=1
+
+
+OWNERSHIP_CASE START mode=mixed logs=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/mixed/gemmini-ownership-mixed-2065794
+OWNERSHIP_CASE PASS mode=mixed results_correct=1 both_completed=1 shell_responsive=1
+
+
+OWNERSHIP_CASE START mode=cpu logs=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/cpu/gemmini-ownership-cpu-2065955
+OWNERSHIP_CASE PASS mode=cpu results_correct=1 both_completed=1 shell_responsive=1
+
+
+OWNERSHIP_CASE START mode=kill logs=/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/kill/gemmini-ownership-kill-2066126
+OWNERSHIP_CASE PASS kill: next task rejected; full FPGA/Linux reset required
+/home/yys/codex-builds/linux-gemmini-20261013-32f86594/build/gemmini-ownership-host/bb-gemmini-host-0v86a04a/kill/gemmini_concurrency.sh: line 78: 2066134 Killed                  ( while [ ! -f "$dir/go" ]; do
+    sleep 1;
+done; exec "$first" ) > "$dir/a.log" 2>&1

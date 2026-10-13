@@ -1,5 +1,12 @@
 # Toy/Linux on Arty A7-100T
 
+## Gemmini 多进程软件规避候选
+
+新增[统一设备所有权入口与并发对照](software/GEMMINI_OWNERSHIP.md)：全部 14 个 Linux
+Gemmini 程序共用跨进程锁，完整完成并释放 bank 后才交接；异常退出保留 DIRTY 并拒绝
+后续访问。离线软件验证与实板验证分开记录。当前下载的旧软件包不包含本修改，
+板级并发回归和 DMA 上下文隔离仍待验证。
+
 ## 队友直接跑实板验证
 
 克隆后无需构建工具链或子模块，在 Windows 进入本目录：
