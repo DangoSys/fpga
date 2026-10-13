@@ -97,10 +97,17 @@ def main():
     shutil.copytree(args.os_inputs / "notices", uart / "notices")
     (uart / "requirements.txt").write_text("pyserial==3.5\n")
     bind(uart, "ROB_PR10_UART", commit)
-    tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=repo).decode().split("\0")
-    for name in tracked:
-        if name:
-            copy(repo / name, sources, "repository/" + name)
+    tracked = subprocess.check_output(["git", "ls-files", "--stage", "-z"], cwd=repo).decode().split("\0")
+    submodules = {}
+    for entry in tracked:
+        if entry:
+            metadata, name = entry.split("\t", 1)
+            mode, object_id, _ = metadata.split()
+            if mode == "160000":
+                submodules[name] = object_id
+            else:
+                copy(repo / name, sources, "repository/" + name)
+    (sources / "SUBMODULES.json").write_text(json.dumps(submodules, indent=2) + "\n")
     copy(args.validation, sources, "VALIDATION_RESULT.json")
     shutil.copytree(args.os_inputs / "build", sources / "software-inputs/build")
     copy(args.os_inputs / "INPUTS.json", sources, "software-inputs/INPUTS.json")

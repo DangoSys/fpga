@@ -983,7 +983,7 @@
     "scripts/export_capabilities.py": "d741bddf8ef92fa3116bc5b33f24b9c9403c1b39b98c4c9701a8015cd02de78d",
     "scripts/make_flash_image.py": "7944308a95cf3c99b42203496a95ebd269a929aff1f6b3bdccb9efa7383bce23",
     "scripts/offline_check.py": "91c5a9a31f4da1ccc08b71af9a08f9b49786190ce80abe4aa21f5231f14696d0",
-    "scripts/package_rob_release.py": "625f5355feef613ca750fd8c14bf7998be221a4b6bc1098bbbc8c0ae4ea8c000",
+    "scripts/package_rob_release.py": "1b39105830db7e2999e90fa4019b1d9141b1dcc881c9b3579869350a88a046ff",
     "scripts/prepare_flash_boot.py": "75ff16be3f820dc2e9e167132d0ca4f20e67ca359a95398413e80430eebf2101",
     "scripts/prepare_fpga_memories.py": "9d40763492ebbf2bc5aa183e760ec349e31765a0e999af88f476d5e945ab74c4",
     "scripts/prepare_rob_candidate.py": "321b4569d2638342a7c0002ba1db3eb72229c369397289a11ed49633b1f27823",
