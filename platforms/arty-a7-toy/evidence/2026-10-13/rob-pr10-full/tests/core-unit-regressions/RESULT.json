@@ -1,0 +1,18 @@
+{
+  "result": "PASS_UNIT_REGRESSIONS",
+  "physical_hardware_tested": false,
+  "tests": {
+    "round": "PASS",
+    "group": "PASS",
+    "subrob": "PASS",
+    "fma": "PASS",
+    "rf": "PASS",
+    "pe": "PASS"
+  },
+  "generated_rtl": {
+    "FmaPrecisionCheck.sv": "6d2af6cb54d8d190938afe0018f5ee72f964a178de2a158861c041aea04765a4",
+    "SubRobCheck.sv": "90c6e4cd01383fcd0a5a2956f0390998454f605c728d0830a371db288c02cc94",
+    "GroupQueryCheck.sv": "cc94ec9c0917f8ad6a6a6eece7fc7927b255ee1fb73052085e3ebb0319309294",
+    "RoundShiftChecks.sv": "d1da6458d0802ef201f7ecb90d62b8d0716cebdd3a29e6055174390ba7f7d3e2"
+  }
+}

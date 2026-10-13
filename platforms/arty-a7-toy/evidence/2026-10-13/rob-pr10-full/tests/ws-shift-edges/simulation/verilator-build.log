@@ -1,0 +1,2123 @@
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:31:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   31 | module NonSyncResetSynchronizerPrimitiveShiftReg_d3(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.050
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:48:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   48 | module SynchronizerShiftReg_w1_d3(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:61:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   61 | module IntSyncAsyncCrossingSink_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:74:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   74 | module AsyncResetRegVec_w1_i0(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:103:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  103 | module IntSyncCrossingSource_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:118:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  118 | module FixedClockBroadcast_3(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:139:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  139 | module TLMonitor(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:987:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  987 | module TLMonitor_1(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:2434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 2434 | module TLXbar_sbus_i2_o3_a32d128s3k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:3195:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 3195 | module TLMonitor_2(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4151 | module Repeater_TLBundleA_a28d128s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4218:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4218 | module TLWidthWidget16(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4386:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4386 | module TLInterconnectCoupler_sbus_to_bus_named_cbus(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4478:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4478 | module ram_2x58(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4497:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4497 | module Queue2_AXI4BundleAW(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4581:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4581 | module ram_2x73(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4600:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4600 | module Queue2_AXI4BundleW(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4657:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4657 | module ram_2x4(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4676:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4676 | module Queue2_AXI4BundleB(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4729:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4729 | module Queue2_AXI4BundleAR(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4813:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4813 | module ram_2x69(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4832:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4832 | module Queue2_AXI4BundleR(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:4891:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4891 | module AXI4Buffer(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5067:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5067 | module ram_2x8(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5086:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5086 | module Queue2_BundleMap(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5143:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5143 | module Queue1_BundleMap(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5178:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5178 | module AXI4UserYanker(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5540:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5540 | module ram_8x77(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5559:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5559 | module Queue8_AXI4BundleR(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:5631:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5631 | module AXI4Deinterleaver(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:6073:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 6073 | module AXI4IdIndexer(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:6219:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 6219 | module TLMonitor_3(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:7048:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7048 | module Queue1_AXI4BundleW(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:7082:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7082 | module Queue1_AXI4BundleARW(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:7148:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7148 | module TLToAXI4(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:7529:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7529 | module TLMonitor_4(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:8396:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8396 | module Repeater_TLBundleA_a31d128s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:8463:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8463 | module TLWidthWidget16_2(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:8623:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8623 | module TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:9400:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 9400 | module SystemBus(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:10050:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10050 | module FixedClockBroadcast_4(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:10073:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10073 | module TLMonitor_5(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:10975:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10975 | module TLXbar_cbus_out_i1_o4_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:11288:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+11288 | module TLMonitor_6(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12202:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12202 | module ram_2x114(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12221:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12221 | module Queue2_TLBundleA_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12301:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12301 | module ram_2x79(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12320:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12320 | module Queue2_TLBundleD_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12399:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12399 | module TLBuffer_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:12534:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12534 | module TLMonitor_7(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:13449:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+13449 | module TLAtomicAutomata_cbus(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:13973:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+13973 | module TLMonitor_8(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:14799:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14799 | module Queue1_TLBundleA_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:14846:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14846 | module TLError(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:14953:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14953 | module TLMonitor_9(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:15857:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15857 | module ram_2x100(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:15876:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15876 | module Queue2_TLBundleA_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:15955:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15955 | module Queue2_TLBundleD_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:16028:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16028 | module TLBuffer_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:16155:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16155 | module ErrorDeviceWrapper(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:16258:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16258 | module TLMonitor_10(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:17017:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17017 | module Repeater_TLBundleA_a26d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:17081:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17081 | module TLFragmenter_CLINT(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:17261:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17261 | module TLInterconnectCoupler_cbus_to_clint(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:17336:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17336 | module TLMonitor_11(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:18106:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18106 | module Repeater_TLBundleA_a28d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:18170:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18170 | module TLFragmenter_PLIC(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:18350:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18350 | module TLInterconnectCoupler_cbus_to_plic(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:18425:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18425 | module TLMonitor_12(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:19040:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19040 | module Repeater_TLBundleA_a17d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:19104:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19104 | module TLFragmenter_bootrom(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:19263:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19263 | module TLInterconnectCoupler_cbus_to_bootrom(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:19330:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19330 | module PeripheryBus_cbus(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:19882:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19882 | module TLMonitor_13(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:20610:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20610 | module ProbePicker(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:20688:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20688 | module ram_2x10(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:20707:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20707 | module Queue2_BundleMap_6(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:20764:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20764 | module AXI4UserYanker_1(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:21713:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+21713 | module AXI4IdIndexer_1(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:21859:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+21859 | module TLMonitor_14(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:22587:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22587 | module Queue1_AXI4BundleW_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:22621:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22621 | module Queue1_AXI4BundleARW_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:22687:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22687 | module TLToAXI4_1(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:23555:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+23555 | module TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:24031:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+24031 | module MemoryBus(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:24349:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+24349 | module TLMonitor_15(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:25732:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25732 | module BroadcastFilter(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:25756:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25756 | module ram_4x144(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:25775:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25775 | module Queue4_TLBroadcastData(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:25828:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25828 | module TLBroadcastTracker(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:25964:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25964 | module TLBroadcastTracker_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:26100:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+26100 | module TLBroadcast(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:26686:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+26686 | module TLMonitor_16(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:27414:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27414 | module BankBinder(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:27491:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27491 | module CoherenceManagerWrapper(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:27669:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27669 | module TLMonitor_17(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:29229:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29229 | module TLMonitor_18(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:29635:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29635 | module TLXbar_MasterXbar_BBTile_i2_o1_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:29898:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29898 | module IntXbar_i4_o1(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:29918:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29918 | module WritebackUnit(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30014:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30014 | module ProbeUnit(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30154:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30154 | module Arbiter1_L1MetaReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30168:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30168 | module Arbiter1_L1MetaWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30191:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30191 | module Arbiter1_WritebackReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30214:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30214 | module Arbiter1_ReplayInternal(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30249:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30249 | module Arbiter1_Bool(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30258:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30258 | module ram_16x64(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30277:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30277 | module Queue16_ReplayInternal(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30360:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30360 | module Queue1_TLBundleE_a32d128s1k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30388:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30388 | module MSHR(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30835:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30835 | module Arbiter1_HellaCacheResp(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:30879:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30879 | module IOMSHR(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:31790:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+31790 | module sdq_17x64(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:31809:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+31809 | module MSHRFile(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:32350:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32350 | module OptimizationBarrier_TLBEntryData(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:32406:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32406 | module PMPChecker_s3(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:32691:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32691 | module PMAChecker(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:32731:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32731 | module DTLB(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:35923:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+35923 | module L1MetadataArray(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:35990:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+35990 | module Arbiter5_L1MetaReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36023:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36023 | module Arbiter2_L1MetaWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36055:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36055 | module DataArray(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36151 | module Arbiter4_L1DataReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36180:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36180 | module Arbiter2_L1DataWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36206:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36206 | module AMOALU(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36248:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36248 | module MaxPeriodFibonacciLFSR(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36342:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36342 | module Arbiter2_WritebackReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:36377:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36377 | module NonBlockingDCache(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:37660:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+37660 | module ICache(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:37914:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+37914 | module ShiftQueue(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:38054:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+38054 | module PMPChecker_s2(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:38215:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+38215 | module ITLB(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:41129:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+41129 | module Frontend(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:41494:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+41494 | module TLMonitor_19(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:42301:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+42301 | module TLMonitor_20(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43108:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43108 | module TLXbar_i2_o1_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43343:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43343 | module TLMonitor_21(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43851:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43851 | module ram_2x116(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43870:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43870 | module Queue2_TLBundleA_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43947:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43947 | module ram_2x77(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:43966:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43966 | module Queue2_TLBundleD_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:44045:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44045 | module TLBuffer_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:44158:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44158 | module TLMonitor_22(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:44783:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44783 | module TLBuffer_a32d64s1k1z4u_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:44892:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44892 | module TLMonitor_23(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:45699:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+45699 | module Repeater_TLBundleD_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:45766:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+45766 | module TLWidthWidget8_4(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:46074:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46074 | module TLMonitor_24(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:46882:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46882 | module ram_2x117(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:46901:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46901 | module Queue2_TLBundleA_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:46981:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46981 | module ram_2x78(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47000:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47000 | module Queue2_TLBundleD_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47079:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47079 | module TLBuffer_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47214:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47214 | module HellaCacheArbiter(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47381:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47381 | module Arbiter3_Valid_PTWReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47419:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47419 | module OptimizationBarrier_UInt(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47427:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47427 | module OptimizationBarrier_PTE(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:47459:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47459 | module PTW(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:48434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+48434 | module FPUDecoder(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:49794:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49794 | module CompareRecFN(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:49824:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49824 | module RecFNToIN_e11_s53_i64(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:49873:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49873 | module RecFNToIN_e11_s53_i32(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:49912:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49912 | module FPToInt(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50375:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50375 | module RoundAnyRawFNToRecFN_ie7_is64_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50410:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50410 | module PipelinedINToRecFN(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50513:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50513 | module RoundAnyRawFNToRecFN_ie7_is64_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50539:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50539 | module PipelinedINToRecFN_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50614:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50614 | module RoundAnyRawFNToRecFN_ie7_is64_oe11_os53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50642:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50642 | module PipelinedINToRecFN_2(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:50717:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50717 | module IntToFP(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51072:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51072 | module RoundAnyRawFNToRecFN_ie11_is53_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51199:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51199 | module RecFNToRecFN(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51221:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51221 | module RoundAnyRawFNToRecFN_ie11_is53_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51321:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51321 | module RecFNToRecFN_1(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51343:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51343 | module FPToFP(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51469:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51469 | module MulAddRecFNToRaw_preMul_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51569:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51569 | module MulAddRecFNToRaw_postMul_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51822:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51822 | module RoundAnyRawFNToRecFN_ie11_is55_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:51953:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51953 | module RoundAnyRawFNToRecFN_ie11_is55_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52060:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52060 | module RoundAnyRawFNToRecFN_ie11_is55_oe11_os53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52194:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52194 | module SharedMulAddRecFNPipe(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52551:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52551 | module FPUSharedFMAPipe(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52682:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52682 | module DivSqrtRawFN_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52852:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52852 | module DivSqrtRecFMToRaw_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:52907:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52907 | module RoundAnyRawFNToRecFN_ie5_is13_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53039:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53039 | module RoundRawFNToRecFN_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53068:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53068 | module DivSqrtRecFM_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53128:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53128 | module DivSqrtRawFN_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53297:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53297 | module DivSqrtRecFMToRaw_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53352:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53352 | module RoundAnyRawFNToRecFN_ie8_is26_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53456:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53456 | module RoundRawFNToRecFN_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53485:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53485 | module DivSqrtRecFM_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53545:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53545 | module DivSqrtRawFN_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53715:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53715 | module DivSqrtRecFMToRaw_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53770:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53770 | module RoundRawFNToRecFN_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53799:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53799 | module DivSqrtRecFM_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53860:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53860 | module regfile_32x65(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:53905:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53905 | module FPU(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:54820:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54820 | module RVCExpander(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:55183:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+55183 | module IBuf(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:55307:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+55307 | module CSRFile(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:57223:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+57223 | module RocketALU(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:57809:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+57809 | module MulDiv(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:58107:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+58107 | module Arbiter3_LLWB(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:58125:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+58125 | module rf_31x64(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:58149:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+58149 | module RocketBB(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:62838:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+62838 | module GlobalDecoder(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:62928:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+62928 | module BankAliasTable(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:64252:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+64252 | module BankScoreboard(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:64627:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+64627 | module GlobalROB(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:68674:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+68674 | module Arbiter3_GlobalSchedComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:68717:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+68717 | module ram_16x4(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:68736:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+68736 | module Queue16_UInt4(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:68782:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+68782 | module SubROB(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:69357:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69357 | module Arbiter1_SubRobRow(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:69722:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69722 | module GlobalScheduler(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:70973:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+70973 | module BootRom(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:71013:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+71013 | module Frontend_1(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:71637:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+71637 | module PE(
+      |        ^~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:71656:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+71656 | module AlwaysOutTransposer(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:72411:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72411 | module MacUnit(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:72426:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72426 | module PE_64(
+      |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:72524:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72524 | module Tile(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:72571:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72571 | module Mesh(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:76050:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+76050 | module TagQueue(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:76191:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+76191 | module ram_6x7(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:76210:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+76210 | module Queue6_TagWithIdAndTotalRows(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:76271:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+76271 | module MeshWithDelays(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:77318:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77318 | module ram_data_8x64(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:77337:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77337 | module Queue8_SramReadResp(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:77385:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77385 | module GemminiExCtrl(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:79354:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+79354 | module LoopMatmulUnroller(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:79637:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+79637 | module LoopConvAddrGen(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:79690:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+79690 | module LoopConvUnroller(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:80113:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80113 | module LoopCmdEncoder(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:80402:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80402 | module Arbiter2_LoopCmd(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:80598:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80598 | module GemminiBall(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:81783:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+81783 | module RRArbiter(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:81857:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+81857 | module CmdRouter(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:81985:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+81985 | module BallCyclePMC(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:82095:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82095 | module BBus(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:82898:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82898 | module BallDomainDecoder(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:83028:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83028 | module ram_4x281(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:83047:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83047 | module Queue4_BallReservationStation_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:83178:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83178 | module Arbiter1_BallRsComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:83198:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83198 | module BallReservationStation(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:83328:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83328 | module BallDomain(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84141:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84141 | module MemDomainDecoder(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84300:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84300 | module ram_4x158(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84319:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84319 | module Queue4_MemReservationStation_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84421:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84421 | module Arbiter3_MemRsComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84463:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84463 | module MemReservationStation(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84631:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84631 | module MemLoader(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:84869:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84869 | module MemStorer(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:85122:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85122 | module MemCyclePMC(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:85241:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85241 | module TLB(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:85621:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85621 | module RRArbiter_1(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:85649:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85649 | module BBTLBCluster(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:85777:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85777 | module StreamReader(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86142:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86142 | module StreamWriter(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86223:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86223 | module ZeroLineGenerator(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86264:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86264 | module MemConfiger(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86433:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86433 | module RRArbiter_2(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86465:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86465 | module MemGroupQueryArbiter(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:86543:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86543 | module MemFrontend(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:87160:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87160 | module MemMidend(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:87621:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87621 | module SramBank(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:87672:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87672 | module AccPipe(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:87781:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87781 | module PrivateMemBackend(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:90777:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+90777 | module MemBackend(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:91055:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+91055 | module MemDomain(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:91973:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+91973 | module Queue1_GlobalSchedComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:92008:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92008 | module GpDomain(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:92040:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92040 | module ram_8x21(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:92059:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92059 | module Queue8_BuckyballAccelerator_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:92123:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92123 | module BuckyballAccelerator(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93569:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93569 | module Queue3_UInt2(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93614:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93614 | module SimpleHellaCacheIFReplayQueue(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93667:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93667 | module Arbiter2_HellaCacheReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93678:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93678 | module SimpleHellaCacheIF(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93768:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93768 | module BarrierUnit(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:93785:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+93785 | module BBTile(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:95579:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+95579 | module TLMonitor_25(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:96427:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+96427 | module TLMonitor_26(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98184:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98184 | module ram_2x189(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98203:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98203 | module Queue2_TLBundleA_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98283:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98283 | module ram_2x142(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98302:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98302 | module Queue2_TLBundleD_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98381:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98381 | module Queue2_TLBundleA_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98459:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98459 | module Queue2_TLBundleD_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98539:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98539 | module ram_2x60(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98558:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98558 | module Queue2_TLBundleB_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98622:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98622 | module ram_2x173(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98641:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98641 | module Queue2_TLBundleC_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98716:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98716 | module ram_sink_2x1(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98735:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98735 | module Queue2_TLBundleE_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:98781:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98781 | module TLBuffer_a32d128s2k1z4u_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:99162:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99162 | module IntSyncSyncCrossingSink_n1x2(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:99173:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99173 | module IntSyncSyncCrossingSink_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:99181:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99181 | module TilePRCIDomain(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:99589:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99589 | module BundleBridgeNexus_UInt1_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:99597:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99597 | module TLMonitor_27(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:100216:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100216 | module CLINT(
+       |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:100337:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100337 | module AsyncResetRegVec_w2_i0(
+       |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:100366:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100366 | module IntSyncCrossingSource_n1x2(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:100386:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100386 | module CLINTClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:100449:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100449 | module TLMonitor_28(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101080:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101080 | module LevelGateway(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101099:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101099 | module PLICFanIn(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101111:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101111 | module Queue1_RegMapperInput_i23_m8(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101160:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101160 | module TLPLIC(
+       |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101389:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101389 | module PLICClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101452:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101452 | module TLMonitor_29(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:101973:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101973 | module TLROM(
+       |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:102530:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+102530 | module bootromClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:102569:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+102569 | module ToyLinuxSystem(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:103817:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+103817 | module ToyLinuxChip(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:103984:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+103984 | module tag_array(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104007:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104007 | module array_0_0(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104034:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104034 | module array_0_1(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104059:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104059 | module array_2_0(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104084:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104084 | module array_2_1(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104109:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104109 | module bbtile_icache_tag_array(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104132:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104132 | module bbtile_icache_data_arrays_0(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104155:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104155 | module bbtile_icache_data_arrays_1(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104176:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104176 | module bbtile_icache_data_arrays_2(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104197:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104197 | module bbtile_icache_data_arrays_3(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104218:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104218 | module robOperands(
+       |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104243:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104243 | module sram(
+       |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104268:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104268 | module mem(
+       |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104301:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104301 | module plusarg_reader #(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104326:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104326 | module ITraceDPI(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104404:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104404 | module FpgaDspMac(input [7:0] a, b, input [19:0] c, output [19:0] y);
+       |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104414:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104414 | module PMCTraceDPI(
+       |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104464:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104464 | module MemPMCTraceDPI(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/ToyLinuxChip.sv:104514:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104514 | module MTraceDPI(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:1:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    1 | module tag_array_ext(  input [4:0] RW0_addr,
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:19:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   19 | module array_0_0_ext(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:37:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   37 | module bbtile_icache_tag_array_ext(  input [5:0] RW0_addr,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:55:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   55 | module bbtile_icache_data_arrays_0_ext(  input [7:0] RW0_addr,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:73:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   73 | module robOperands_ext(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:90:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   90 | module sram_ext(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/serial-bound/FpgaMemories.sv:107:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  107 | module mem_ext(  input [9:0] RW0_addr,
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module axi_smoke_memory #(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:52:20: Operator AND expects 32 bits on the LHS, but LHS's VARREF 'addr' generates 31 bits.
+                                                                                                                       : ... note: In instance 'tb.peripherals_model'
+   52 |       offset=(addr & ~(LANES-1))-BASE;
+      |                    ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.050
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:78:28: Operator AND expects 32 bits on the LHS, but LHS's VARREF 'write_addr' generates 31 bits.
+                                                                                                                       : ... note: In instance 'tb.peripherals_model'
+   78 |         offset=(write_addr & ~(LANES-1))-BASE;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:86:26: Operator EQ expects 128 bits on the RHS, but RHS's CONST '64'h600d600d' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   86 |           if (w_bits_data==64'h600d600d) begin
+      |                          ^~
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:91:66: Operator AND expects 128 bits on the RHS, but RHS's CONST '64'hffff' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   91 |             $fatal(1,"CPU smoke failed at stage %0d",w_bits_data & 64'hffff);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:90:28: Operator AND expects 128 bits on the RHS, but RHS's CONST '64'hffff0000' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   90 |           if ((w_bits_data & 64'hffff0000)==64'hbad00000)
+      |                            ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:90:43: Operator EQ expects 128 bits on the RHS, but RHS's CONST '64'hbad00000' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   90 |           if ((w_bits_data & 64'hffff0000)==64'hbad00000)
+      |                                           ^~
+make: Entering directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/obj'
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb__pch.h -o Vtb__pch.h.fast.gch
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb__pch.h -o Vtb__pch.h.slow.gch
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb__ConstPool__0__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__0__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__1__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__2__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__3__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb__Syms__Slow.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__0.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__1.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__2.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__3.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__4.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__5.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__6.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__7.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__8.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__9.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb__main.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb__ALL.a    -pthread -lpthread -latomic   -o Vtb
+rm Vtb__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/simulation/obj'
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev v5.050
+- Verilator: Built from 15.468 MB sources in 346 modules, into 23.746 MB in 19 C++ files needing 0.019 MB
+- Verilator: Walltime 14.167 s (elab=0.604, cvt=3.423, bld=9.465); cpu 4.984 s on 8 threads; allocated 561.754 MB

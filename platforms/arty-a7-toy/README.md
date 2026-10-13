@@ -3,8 +3,9 @@
 ## 当前源码修复的验收范围
 
 PR #10 修正了平台 AXI 写错误响应与烧录脚本校验，评估、回归和复现命令见
-[修正说明](REVIEW_FIXES.md)。下述实现及实物记录属于各自归档的旧源码/位流，
-当前 AXI RTL 修复尚未生成新位流或完成实物验收，不能直接沿用旧位流的资格。
+[修正说明](REVIEW_FIXES.md)。ROB 优化与本次修复已完成重新生成、整板实现及完整 RTL
+回归，产物与原文报告见 [工程预发布下载](ROB_PR10_DOWNLOADS.md)。本轮没有连接板卡，
+新位流尚无实物资格；下述历史实物记录仍属于其归档的旧源码/位流。
 
 A Chisel-generated Toy platform for `xc7a100tcsg324-1`, with CPU, Sv39, full
 FP16/32/64 support and Gemmini 8×8. Complete board implementation, timing, CDC

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/runner-status-check/tmpgiugwnkk/scripts/check_board.py", line 77, in <module>
+    run_check(main, OUT)
+  File "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/runner-status-check/tmpgiugwnkk/scripts/offline_check.py", line 19, in run_check
+    main()
+  File "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/runner-status-check/tmpgiugwnkk/scripts/check_board.py", line 28, in main
+    raise ValueError("CPU port fixture differs from its manifest")
+ValueError: CPU port fixture differs from its manifest
+
+OBSERVED_RESULT {"result": "FAILED", "physical_hardware_tested": false, "error_type": "ValueError", "error": "CPU port fixture differs from its manifest"}

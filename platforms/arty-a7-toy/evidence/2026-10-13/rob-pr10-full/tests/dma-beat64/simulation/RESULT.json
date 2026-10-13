@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy unaligned DMA 64 bit beats",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "test_binary_sha256": "082965476d4dcc98cc556b8f79fa2fdf659cea501665e207d04349d40469e9d2",
+  "cycles_including_boot": 1879410,
+  "memory_read_bursts": 2249,
+  "memory_write_bursts": 1790,
+  "linux_boot_tested": false
+}

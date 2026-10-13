@@ -1,0 +1,33 @@
+CPU status = 0000000071000001
+CPU status = 0000000072000001
+CPU status = 0000000071000002
+CPU status = 0000000072000002
+CPU status = 0000000071000003
+CPU status = 0000000072000003
+CPU status = 0000000071000004
+CPU status = 0000000072000004
+CPU status = 0000000071000005
+CPU status = 0000000072000005
+CPU status = 0000000071000006
+CPU status = 0000000072000006
+CPU status = 0000000071000007
+CPU status = 0000000072000007
+CPU status = 0000000071000008
+CPU status = 0000000072000008
+CPU status = 0000000071000009
+CPU status = 0000000072000009
+CPU status = 000000007100000a
+CPU status = 000000007200000a
+CPU status = 000000007100000b
+CPU status = 000000007200000b
+CPU status = 000000007100000c
+CPU status = 000000007200000c
+CPU status = 000000007100000d
+CPU status = 000000007200000d
+CPU status = 00000000600d600d
+PASS whole Toy Gemmini regression
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=245517 memory_reads=674 memory_writes=444
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2ms; walltime 2.089 s; speed 1.175 ms/s
+- Verilator: cpu 2.089 s on 1 threads; allocated 8 MB

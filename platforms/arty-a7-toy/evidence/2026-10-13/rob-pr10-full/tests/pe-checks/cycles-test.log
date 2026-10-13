@@ -1,0 +1,5 @@
+PASS original/LUT/DSP PE: 91115 valid-cycle comparisons
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/pe-checks/tb_pe.sv:53: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 1ms; walltime 0.146 s; speed 7.247 ms/s
+- Verilator: cpu 0.146 s on 1 threads; allocated 6 MB

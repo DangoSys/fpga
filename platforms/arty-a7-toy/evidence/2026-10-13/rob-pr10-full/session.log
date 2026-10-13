@@ -1,0 +1,749 @@
+FULLCHECK_PHASE INPUTS
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/baseline.git/
+PASS physical hardware archive: 14 original artifacts; complete DDR image readback, five Linux checks and live shell
+PASS Flash evidence: implementation, program/verify and physical cold-start Linux checks
+PASS Toy target: 668 source hashes; published implementation and RTL evidence
+PASS ROB RAM archive: 91 files; unchanged regression cycles; routed candidate
+This initial archive predates physical tests; later hardware evidence is in PR #9
+PASS PR10 archive: 77 artifacts; 4/20/10 offline checks and expected negatives
+PASS PR10 selfcheck archive: 90 artifacts; fresh failure status and BVALID oracles
+FULLCHECK_PHASE ELABORATE
+From https://github.com/DangoSys/buckyball
+ * branch            1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097 -> FETCH_HEAD
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  422k    0  422k    0     0   410k      0 --:--:--  0:00:01 --:--:--  411k100  938k    0  938k    0     0   841k      0 --:--:--  0:00:01 --:--:--  842k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  8818    0  8818    0     0   8599      0 --:--:--  0:00:01 --:--:--  8602100 39278    0 39278    0     0  28601      0 --:--:--  0:00:01 --:--:-- 28607
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 12943    0 12943    0     0  23637      0 --:--:-- --:--:-- --:--:-- 23618100 17164    0 17164    0     0  26872      0 --:--:-- --:--:-- --:--:-- 26860
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 41595    0 41595    0     0  54541      0 --:--:-- --:--:-- --:--:-- 54515100 44650    0 44650    0     0  58531      0 --:--:-- --:--:-- --:--:-- 58519
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  412k    0  412k    0     0   402k      0 --:--:--  0:00:01 --:--:--  402k100 1001k    0 1001k    0     0   897k      0 --:--:--  0:00:01 --:--:--  897k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 96974    0 96974    0     0   115k      0 --:--:-- --:--:-- --:--:--  115k100  535k    0  535k    0     0   540k      0 --:--:-- --:--:-- --:--:--  540k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 42343    0 42343    0     0  48863      0 --:--:-- --:--:-- --:--:-- 48838100 3393k    0 3393k    0     0  2380k      0 --:--:--  0:00:01 --:--:-- 2381k
+Verified 336 original Buckyball files at 1f3d54535bd5fb76d5fd2f6b05ed36e591cf3097
+Verified/exported rocket-chip: 411 files at 35488f108c1ee9e42175b5240ae957d8970e9c5b
+Verified/exported inclusive-cache: 27 files at 88317ea415459d274026bd59850517a9fcc87ede
+Verified/exported cde: 15 files at 2bcaeae2b9914bd25497ce3c6fa62dc5ca80e09f
+Verified/exported diplomacy: 53 files at fe5e131d4fc8adec14a3ce4a4935bb5c0a269871
+Verified/exported hardfloat: 127 files at 536cf3727f655713f424438190100bb08cbf2e5a
+Verified/exported gemmini: 102 files at 8c3f9923a44a2fe2c7930587be297d6d4f8c09ca
+Verified/exported firesim: 9 files at da2a1cbcebbb96e21c551ebef513fd95a9d73403
+Original Toy: VM=True, FPU={'enable': True, 'minFLen': 16, 'fLen': 64}, Balls=4, banks={'num': 16, 'width': 128, 'entries': 1024, 'maskLen': 16, 'channel': 7}
+PASS GLOBALROB RAM/register cycle comparison, payloads, wrap, stalls, resets cycles=8029
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_globalrob.sv:25: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 80us; walltime 0.032 s; speed 2.475 ms/s
+- Verilator: cpu 0.032 s on 1 threads; allocated 7 MB
+
+[info] welcome to sbt 1.12.11 (N/A Java 17.0.20)
+[info] loading project definition from /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to toy-arty-a7-linux (in build file:/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/)
+[info] running fpga.arty.linux.EmitToyLinux build/serial-raw --fpga-memories --serial-fpga
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 67:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         op2Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 83:51: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           VecInit((0 until DIM).map(i => op2Buf(i)(transpose_col)))
+[warn]                                                   ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 16:13: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]             ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 46:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op1Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 51:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op2Buf(xpose_row_cnt) := rdQueue1.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 68:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val a_col_row = VecInit((0 until DIM).map(i => op1Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 69:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val x_col_row = VecInit((0 until DIM).map(i => op2Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 27:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         outBuf(total_rows - 1.U - outBufCollected) := widenMeshToAcc(
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 69:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 100:31: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       val row         = outBuf(rowIdx)
+[warn]                               ^
+[warn] There were 10 warning(s) during hardware elaboration.
+espresso is not found in your PATH:
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/lib/openjdk/bin
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/bin
+/nix/store/ahvmb4byixykslwcxiay7c4ivhgpf8vg-sbt-1.8.2/bin
+/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/bin
+/nix/store/y8vkcyc8frd7ipcq0a6jix4xilgm93j7-riscv64-unknown-elf-gcc/bin
+/nix/store/ywdz7hiyhb7hkp0vyzqfdx3fmrf1v8pa-yosys-0.67/bin
+/home/yys/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+Interrupt map (2 harts 1 interrupts):
+  [1, 1] => system
+
+<stdin>:52.18-57.5: Warning (simple_bus_reg): /soc/cbus_clock: missing or empty reg/ranges property
+<stdin>:68.28-71.5: Warning (simple_bus_reg): /soc/external-interrupts: missing or empty reg/ranges property
+<stdin>:72.18-77.5: Warning (simple_bus_reg): /soc/fbus_clock: missing or empty reg/ranges property
+<stdin>:88.18-93.5: Warning (simple_bus_reg): /soc/mbus_clock: missing or empty reg/ranges property
+<stdin>:100.18-105.5: Warning (simple_bus_reg): /soc/pbus_clock: missing or empty reg/ranges property
+<stdin>:111.18-116.5: Warning (simple_bus_reg): /soc/sbus_clock: missing or empty reg/ranges property
+/dts-v1/;
+
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	compatible = "ucb-bar,buckyball-dev";
+	model = "ucb-bar,buckyball";
+	L10: cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		timebase-frequency = <1000000>;
+		L12: cpu@0 {
+			clock-frequency = <0>;
+			compatible = "sifive,rocket0", "riscv";
+			d-cache-block-size = <64>;
+			d-cache-sets = <32>;
+			d-cache-size = <8192>;
+			d-tlb-sets = <1>;
+			d-tlb-size = <32>;
+			device_type = "cpu";
+			hardware-exec-breakpoint-count = <0>;
+			i-cache-block-size = <64>;
+			i-cache-sets = <64>;
+			i-cache-size = <8192>;
+			i-tlb-sets = <1>;
+			i-tlb-size = <32>;
+			mmu-type = "riscv,sv39";
+			next-level-cache = <&L16>;
+			reg = <0x0>;
+			riscv,isa = "rv64imafdcbzicsr_zifencei_zihpm_zfh_zba_zbb_zbs_xrocket";
+			riscv,pmpgranularity = <4>;
+			riscv,pmpregions = <8>;
+			status = "okay";
+			timebase-frequency = <1000000>;
+			tlb-split;
+			L6: interrupt-controller {
+				#interrupt-cells = <1>;
+				compatible = "riscv,cpu-intc";
+				interrupt-controller;
+			};
+		};
+	};
+	L16: memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x10000000>;
+	};
+	L9: soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "ucb-bar,buckyball-soc", "simple-bus";
+		ranges;
+		L3: cbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "cbus_clock";
+			compatible = "fixed-clock";
+		};
+		L13: clint@2000000 {
+			compatible = "riscv,clint0";
+			interrupts-extended = <&L6 3 &L6 7>;
+			reg = <0x2000000 0x10000>;
+			reg-names = "control";
+		};
+		L4: error-device@3000 {
+			compatible = "sifive,error0";
+			reg = <0x3000 0x1000>;
+		};
+		L15: external-interrupts {
+			interrupt-parent = <&L14>;
+			interrupts = <1>;
+		};
+		L2: fbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "fbus_clock";
+			compatible = "fixed-clock";
+		};
+		L14: interrupt-controller@c000000 {
+			#interrupt-cells = <1>;
+			compatible = "riscv,plic0";
+			interrupt-controller;
+			interrupts-extended = <&L6 11 &L6 9>;
+			reg = <0xc000000 0x4000000>;
+			reg-names = "control";
+			riscv,max-priority = <1>;
+			riscv,ndev = <1>;
+		};
+		L5: mbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "mbus_clock";
+			compatible = "fixed-clock";
+		};
+		L17: mmio-port-axi4@60000000 {
+			#address-cells = <1>;
+			#size-cells = <1>;
+			compatible = "simple-bus";
+			ranges = <0x60000000 0x60000000 0x10000000>;
+		};
+		L1: pbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "pbus_clock";
+			compatible = "fixed-clock";
+		};
+		L18: rom@10000 {
+			compatible = "sifive,rom0";
+			reg = <0x10000 0x10000>;
+			reg-names = "mem";
+		};
+		L0: sbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "sbus_clock";
+			compatible = "fixed-clock";
+		};
+	};
+};
+
+Generated Address Map
+	    3000 -     4000 ARWX  error-device@3000
+	   10000 -    20000  R X  rom@10000
+	 2000000 -  2010000 ARW   clint@2000000
+	 c000000 - 10000000 ARW   interrupt-controller@c000000
+	60000000 - 70000000  RWX  mmio-port-axi4@60000000
+	80000000 - 90000000  RWXC memory@80000000
+
+[warn] thirdparty/rocket-chip/src/main/scala/rocket/NBDcache.scala 456:25: [W004] Dynamic index with width 1 is too wide for Vec of size 1 (expected index width 0).
+[warn]   io.refill := refillMux(io.mem_grant.bits.source)
+[warn]                         ^
+[warn] There were 1 warning(s) during hardware elaboration.
+[success] Total time: 13 s, completed Oct 13, 2026, 12:57:12 AM
+[info] running fpga.arty.linux.EmitToyLinux build/serial-reference --serial-fpga
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 67:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         op2Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlPreloadStates.scala 83:51: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           VecInit((0 until DIM).map(i => op2Buf(i)(transpose_col)))
+[warn]                                                   ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 16:13: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]             ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 46:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op1Buf(xpose_row_cnt) := rdQueue0.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 51:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           op2Buf(xpose_row_cnt) := rdQueue1.io.deq.bits.data
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 68:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val a_col_row = VecInit((0 until DIM).map(i => op1Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlComputeFeedState.scala 69:65: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         val x_col_row = VecInit((0 until DIM).map(i => op2Buf(i)(feed_row_cnt)))
+[warn]                                                                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 27:15: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]         outBuf(total_rows - 1.U - outBufCollected) := widenMeshToAcc(
+[warn]               ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 69:17: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]           outBuf(outBufRows) := widenMeshToAcc(mesh.io.resp.bits.data)
+[warn]                 ^
+[warn] patches/buckyball/GemminiExCtrlStoreOps.scala 100:31: [W004] Dynamic index with width 4 is too wide for Vec of size 8 (expected index width 3).
+[warn]       val row         = outBuf(rowIdx)
+[warn]                               ^
+[warn] There were 10 warning(s) during hardware elaboration.
+espresso is not found in your PATH:
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/lib/openjdk/bin
+/nix/store/2y0qz1r84ckgmmrnfvx9bbysnyn1zb61-openjdk-17.0.20+8/bin
+/nix/store/ahvmb4byixykslwcxiay7c4ivhgpf8vg-sbt-1.8.2/bin
+/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/bin
+/nix/store/y8vkcyc8frd7ipcq0a6jix4xilgm93j7-riscv64-unknown-elf-gcc/bin
+/nix/store/ywdz7hiyhb7hkp0vyzqfdx3fmrf1v8pa-yosys-0.67/bin
+/home/yys/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+Interrupt map (2 harts 1 interrupts):
+  [1, 1] => system
+
+<stdin>:52.18-57.5: Warning (simple_bus_reg): /soc/cbus_clock: missing or empty reg/ranges property
+<stdin>:68.28-71.5: Warning (simple_bus_reg): /soc/external-interrupts: missing or empty reg/ranges property
+<stdin>:72.18-77.5: Warning (simple_bus_reg): /soc/fbus_clock: missing or empty reg/ranges property
+<stdin>:88.18-93.5: Warning (simple_bus_reg): /soc/mbus_clock: missing or empty reg/ranges property
+<stdin>:100.18-105.5: Warning (simple_bus_reg): /soc/pbus_clock: missing or empty reg/ranges property
+<stdin>:111.18-116.5: Warning (simple_bus_reg): /soc/sbus_clock: missing or empty reg/ranges property
+/dts-v1/;
+
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	compatible = "ucb-bar,buckyball-dev";
+	model = "ucb-bar,buckyball";
+	L10: cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		timebase-frequency = <1000000>;
+		L12: cpu@0 {
+			clock-frequency = <0>;
+			compatible = "sifive,rocket0", "riscv";
+			d-cache-block-size = <64>;
+			d-cache-sets = <32>;
+			d-cache-size = <8192>;
+			d-tlb-sets = <1>;
+			d-tlb-size = <32>;
+			device_type = "cpu";
+			hardware-exec-breakpoint-count = <0>;
+			i-cache-block-size = <64>;
+			i-cache-sets = <64>;
+			i-cache-size = <8192>;
+			i-tlb-sets = <1>;
+			i-tlb-size = <32>;
+			mmu-type = "riscv,sv39";
+			next-level-cache = <&L16>;
+			reg = <0x0>;
+			riscv,isa = "rv64imafdcbzicsr_zifencei_zihpm_zfh_zba_zbb_zbs_xrocket";
+			riscv,pmpgranularity = <4>;
+			riscv,pmpregions = <8>;
+			status = "okay";
+			timebase-frequency = <1000000>;
+			tlb-split;
+			L6: interrupt-controller {
+				#interrupt-cells = <1>;
+				compatible = "riscv,cpu-intc";
+				interrupt-controller;
+			};
+		};
+	};
+	L16: memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x10000000>;
+	};
+	L9: soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "ucb-bar,buckyball-soc", "simple-bus";
+		ranges;
+		L3: cbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "cbus_clock";
+			compatible = "fixed-clock";
+		};
+		L13: clint@2000000 {
+			compatible = "riscv,clint0";
+			interrupts-extended = <&L6 3 &L6 7>;
+			reg = <0x2000000 0x10000>;
+			reg-names = "control";
+		};
+		L4: error-device@3000 {
+			compatible = "sifive,error0";
+			reg = <0x3000 0x1000>;
+		};
+		L15: external-interrupts {
+			interrupt-parent = <&L14>;
+			interrupts = <1>;
+		};
+		L2: fbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "fbus_clock";
+			compatible = "fixed-clock";
+		};
+		L14: interrupt-controller@c000000 {
+			#interrupt-cells = <1>;
+			compatible = "riscv,plic0";
+			interrupt-controller;
+			interrupts-extended = <&L6 11 &L6 9>;
+			reg = <0xc000000 0x4000000>;
+			reg-names = "control";
+			riscv,max-priority = <1>;
+			riscv,ndev = <1>;
+		};
+		L5: mbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "mbus_clock";
+			compatible = "fixed-clock";
+		};
+		L17: mmio-port-axi4@60000000 {
+			#address-cells = <1>;
+			#size-cells = <1>;
+			compatible = "simple-bus";
+			ranges = <0x60000000 0x60000000 0x10000000>;
+		};
+		L1: pbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "pbus_clock";
+			compatible = "fixed-clock";
+		};
+		L18: rom@10000 {
+			compatible = "sifive,rom0";
+			reg = <0x10000 0x10000>;
+			reg-names = "mem";
+		};
+		L0: sbus_clock {
+			#clock-cells = <0>;
+			clock-frequency = <50000000>;
+			clock-output-names = "sbus_clock";
+			compatible = "fixed-clock";
+		};
+	};
+};
+
+Generated Address Map
+	    3000 -     4000 ARWX  error-device@3000
+	   10000 -    20000  R X  rom@10000
+	 2000000 -  2010000 ARW   clint@2000000
+	 c000000 - 10000000 ARW   interrupt-controller@c000000
+	60000000 - 70000000  RWX  mmio-port-axi4@60000000
+	80000000 - 90000000  RWXC memory@80000000
+
+[warn] thirdparty/rocket-chip/src/main/scala/rocket/NBDcache.scala 456:25: [W004] Dynamic index with width 1 is too wide for Vec of size 1 (expected index width 0).
+[warn]   io.refill := refillMux(io.mem_grant.bits.source)
+[warn]                         ^
+[warn] There were 1 warning(s) during hardware elaboration.
+[success] Total time: 10 s, completed Oct 13, 2026, 12:57:22 AM
+[info] running fpga.arty.linux.EmitRoutingCheck build/routing-check
+[success] Total time: 1 s, completed Oct 13, 2026, 12:57:23 AM
+Bound 7 memory types, 20 instances
+PASS RF adapter matches original port contract; only RF module body replaced
+Final core SHA256: 31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9
+{
+  "result": "PREPARED_NOT_VALIDATED",
+  "architectural_profile_unchanged": true,
+  "existing_memory_geometry_unchanged": true,
+  "rob_operand_memory": {
+    "module_name": "robOperands_ext",
+    "depth": 16,
+    "width": 128,
+    "masked": false,
+    "read": 1,
+    "write": 1,
+    "readwrite": 0,
+    "extra_ports": [],
+    "hierarchy": [
+      "ToyLinuxChip.system.tile_prci_domain.element_reset_domain_bbtile.accelerators_0.frontend.scheduler.rob.robOperands.robOperands_ext"
+    ]
+  },
+  "rob_operand_ram_style": "block",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "memory_rtl_sha256": "d5a37896aee19c8d4931c87dc9683861abf32f096a1c1441f4362370d3d7b054"
+}
+Exported 23 Ball opcodes from the elaborated profile
+PASS ROB RAM archive: 91 files; unchanged regression cycles; routed candidate
+This initial archive predates physical tests; later hardware evidence is in PR #9
+FULLCHECK_PHASE OFFLINE_INTERFACES
+PASS fullwidth AXI: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_axi_fullwidth.sv:107: $finish called at 9270000 (1ps)
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)
+PASS platform AXI B response: valid, invalid address, unaligned, burst, ID and backpressure
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_platform_bresp.sv:55: $finish called at 420000 (1ps)
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)
+PASS programming scripts: 20 documented-return/status/error cases; no hardware
+PASS Flash image guards: 10 normal/-O tamper/control cases; no hardware
+PASS runner failure status: 3 actual entrypoints; baseline=current
+PASS mutation oracles: old test misses premature BVALID drop; new test rejects it and old response bug
+FULLCHECK_PHASE MEMORY_AND_UNITS
+PASS sram_ext depth=8 width=1269 1R1W
+PASS robOperands_ext depth=16 width=128 1R1W
+PASS tag_array_ext: original RTL + scoreboard, full depth/mask/enable
+PASS array_0_0_ext depth=128 width=128 1R1W
+PASS bbtile_icache_tag_array_ext: original RTL + scoreboard, full depth/mask/enable
+PASS bbtile_icache_data_arrays_0_ext: original RTL + scoreboard, full depth/mask/enable
+PASS mem_ext: original RTL + scoreboard, full depth/mask/enable
+PASS all memory bindings
+build/serial-bound/tb_memories.sv:585: $finish called at 51147000 (1ps)
+
+PASS core units: PE/formal quantizer, FMA, round shift, FPU RF, group query and SubROB
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/RoutingCheck.sv:22:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   22 | module MemMidend(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/tb.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.050
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/RoutingCheck.sv:272:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  272 | module AccPipe(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/tb.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/RoutingCheck.sv:379:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  379 | module RoutingCheck(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/tb.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+PASS fixed routing: 512 transactions, DMA arbitration, stalls
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/routing-check/tb.sv:12: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 15us; walltime 0.001 s; speed 12.635 ms/s
+- Verilator: cpu 0.001 s on 1 threads; allocated 6 MB
+
+FULLCHECK_PHASE WHOLE_CHIP
+CPU status = 000000000000b007
+CPU status = 00000000600d600d
+PASS whole Toy CPU smoke
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=639544 memory_reads=5970 memory_writes=2049
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 6ms; walltime 4.710 s; speed 1.358 ms/s
+- Verilator: cpu 4.709 s on 1 threads; allocated 8 MB
+
+/nix/store/ifip54psm478vypifgx8pjl0zv4gw2ci-riscv64-none-elf-binutils-2.46/bin/riscv64-none-elf-ld.bfd: warning: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/gemmini-tests/gemmini.elf has a LOAD segment with RWX permissions
+CPU status = 0000000071000001
+CPU status = 0000000072000001
+CPU status = 0000000071000002
+CPU status = 0000000072000002
+CPU status = 0000000071000003
+CPU status = 0000000072000003
+CPU status = 0000000071000004
+CPU status = 0000000072000004
+CPU status = 0000000071000005
+CPU status = 0000000072000005
+CPU status = 0000000071000006
+CPU status = 0000000072000006
+CPU status = 0000000071000007
+CPU status = 0000000072000007
+CPU status = 0000000071000008
+CPU status = 0000000072000008
+CPU status = 0000000071000009
+CPU status = 0000000072000009
+CPU status = 000000007100000a
+CPU status = 000000007200000a
+CPU status = 000000007100000b
+CPU status = 000000007200000b
+CPU status = 000000007100000c
+CPU status = 000000007200000c
+CPU status = 000000007100000d
+CPU status = 000000007200000d
+CPU status = 00000000600d600d
+PASS whole Toy Gemmini regression
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=245517 memory_reads=674 memory_writes=444
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2ms; walltime 2.089 s; speed 1.175 ms/s
+- Verilator: cpu 2.089 s on 1 threads; allocated 8 MB
+
+13/13 upstream Gemmini workloads passed
+/nix/store/ifip54psm478vypifgx8pjl0zv4gw2ci-riscv64-none-elf-binutils-2.46/bin/riscv64-none-elf-ld.bfd: warning: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/loop-stress/stress.elf has a LOAD segment with RWX permissions
+CPU status = 00000000600d600d
+PASS whole Toy 40 alternating multi tile OS WS loops
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=652682 memory_reads=3498 memory_writes=5766
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 4.818 s; speed 1.355 ms/s
+- Verilator: cpu 4.817 s on 1 threads; allocated 8 MB
+
+CPU status = 00000000600d600d
+PASS whole Toy unaligned DMA 64 bit beats
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=1879410 memory_reads=2249 memory_writes=1790
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 19ms; walltime 15.300 s; speed 1.228 ms/s
+- Verilator: cpu 15.297 s on 1 threads; allocated 8 MB
+
+/nix/store/ifip54psm478vypifgx8pjl0zv4gw2ci-riscv64-none-elf-binutils-2.46/bin/riscv64-none-elf-ld.bfd: warning: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-round-edges/edges.elf has a LOAD segment with RWX permissions
+CPU status = 00000000600d600d
+PASS whole Toy 64 OS WS RNE edge cases 4096 results
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=979581 memory_reads=3347 memory_writes=2496
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 10ms; walltime 7.903 s; speed 1.239 ms/s
+- Verilator: cpu 7.902 s on 1 threads; allocated 8 MB
+
+/nix/store/ifip54psm478vypifgx8pjl0zv4gw2ci-riscv64-none-elf-binutils-2.46/bin/riscv64-none-elf-ld.bfd: warning: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/ws-shift-edges/edges.elf has a LOAD segment with RWX permissions
+CPU status = 00000000600d600d
+PASS whole Toy 64 OS WS RNE edge cases 4096 results
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=978208 memory_reads=3219 memory_writes=2496
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 10ms; walltime 7.258 s; speed 1.348 ms/s
+- Verilator: cpu 7.257 s on 1 threads; allocated 8 MB
+
+CPU status = 7300000000002048
+CPU status = 7300000100002063
+CPU status = 7300000200002015
+CPU status = 00000000600d600d
+PASS whole Toy shared FPU 1536 oracle vectors
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=168403 memory_reads=1387 memory_writes=11
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2ms; walltime 1.552 s; speed 1.085 ms/s
+- Verilator: cpu 1.552 s on 1 threads; allocated 8 MB
+
+CPU status = 7300000000001c4a
+CPU status = 7300000100001c67
+CPU status = 7300000200002013
+CPU status = 00000000600d600d
+PASS whole Toy baseline FPU 1536 oracle vectors
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=165339 memory_reads=1387 memory_writes=11
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2ms; walltime 1.258 s; speed 1.314 ms/s
+- Verilator: cpu 1.258 s on 1 threads; allocated 8 MB
+
+FULLCHECK_PHASE BOARD_REGRESSION
+PASS fullwidth AXI: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_axi_fullwidth.sv:107: $finish called at 9270000 (1ps)
+PASS SCU OpenSBI byte addresses, AXI lanes, RX pop/IRQ, TX backpressure, EXIT
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_axi_scu.sv:64: $finish called at 20580000 (1ps)
+PASS platform AXI B response: valid, invalid address, unaligned, burst, ID and backpressure
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/tb_platform_bresp.sv:55: $finish called at 420000 (1ps)
+PASS: DDR UART loader CRC, 256-byte unaligned RAM roundtrip, rejected writes/RUN, timeout and boot
+/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-unit/tb_ddr_loader.sv:116: $finish called at 78290000 (1ps)
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=709434
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cpu/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 6.002 s; speed 1.182 ms/s
+- Verilator: cpu 6.001 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=251063
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-gemmini/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 3ms; walltime 1.874 s; speed 1.340 ms/s
+- Verilator: cpu 1.874 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=684219
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-loop/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 7ms; walltime 5.045 s; speed 1.356 ms/s
+- Verilator: cpu 5.045 s on 1 threads; allocated 8 MB
+
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=1914839
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-dma/tb_board_cpu.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 19ms; walltime 14.179 s; speed 1.351 ms/s
+- Verilator: cpu 14.175 s on 1 threads; allocated 8 MB
+
+PASS BOARD_REGRESSION CPU/Gemmini/loop/DMA
+PASS UART_PAYLOAD_READBACK bytes=110592 cycles=61134003
+PASS UART_VERIFIED_RUN cycles=61144580
+PASS CPU Sv39/FPU/AMO/cache/interrupt through board AXI/SCU cycles=61853990
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-uart-boot/tb_board_uart_boot.sv:56: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2s; walltime 415.489 s; speed 5.955 ms/s
+- Verilator: cpu 415.438 s on 1 threads; allocated 8 MB
+
+FULLCHECK_PHASE BOARD_IMPLEMENTATION
+FULLCHECK_PHASE LINUX_RTL
+         ____
+
+    / / / /___ __   _____      ____ _    / /_  ____ _/ / /
+
+   / /_/ / __ `/ | / / _ \    / __ `/   / __ \/ __ `/ / /
+
+  / __  / /_/ /| |/ /  __/   / /_/ /   / /_/ / /_/ / / /
+
+ /_/ /_/\__,_/ |___/\___/    \__,_/   /_.___/\__,_/_/_/
+
+
+
+/bin/sh: can't access tty; job control turned off
+
+~ # 
+SIM_SHELL_PROMPT cycles=309244118
+/root/linux_system_check-linux
+SIM_COMMAND_SENT cycles=317001898 overflow=0 framing=0 pending_rx=1
+
+
+BEGIN LINUX_SYSTEM_CHECK
+
+PASS VM_COPY_ON_WRITE
+
+linux_system_ch[25]: unhandled signal 11 code 0x2 at 0x0000003fac65e000 in linux_system_check-linux[10000+7a000]
+
+CPU: 0 PID: 25 Comm: linux_system_ch Not tainted 6.6.0 #1
+
+Hardware name: ucb-bar,buckyball (DT)
+
+epc : 00000000000105c6 ra : 000000000001041e sp : 0000003fecfb5b50
+
+ gp : 0000000000090078 tp : 0000000000096760 t0 : 0000000000000000
+
+ t1 : 0000000000000000 t2 : 0000000000000000 s0 : 0000003fecfb5bd0
+
+ s1 : 0000003fac65d000 a0 : 0000000000000000 a1 : 0000000000000000
+
+ a2 : 0000000000000000 a3 : 0000000000000000 a4 : 0000000000000000
+
+ a5 : 0000000000000000 a6 : 0000000000000000 a7 : 0000000000000000
+
+ s2 : 0000000000000042 s3 : 0000000000001000 s4 : 0000003fac65e000
+
+ s5 : 0000003fecfb5d88 s6 : 0000000000000002 s7 : 00000000000106ba
+
+ s8 : 00000000000101e0 s9 : 000000000000003a s10: 0000000000094e28
+
+ s11: 0000000000000000 t3 : 0000000000000000 t4 : 0000000000000000
+
+ t5 : 0000000000000000 t6 : 0000000000000000
+
+status: 800000020001e020 badaddr: 0000003fac65e000 cause: 000000000000000d
+
+PASS VM_PAGE_PROTECTION
+
+PASS FP64_PROCESS_CONTEXT
+
+PASS LINUX_TIMER elapsed_ns=104208000
+
+PASS LINUX_SYSTEM_CHECK
+PASS BOARD_LINUX_USERSPACE cycles=340774843 characters=7994
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-linux-final/tb_board_linux.sv:99: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 14s; walltime 2622.251 s; speed 5.198 ms/s
+- Verilator: cpu 2621.942 s on 1 threads; allocated 264 MB
+
+FULLCHECK_PHASE WAIT_BOARD
+PASS full board implementation /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-rob-ram-20261013-010921
+FULLCHECK_PHASE REAL_XILINX_CDC
+RNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+PASS BOARD_CDC: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+$finish called at time : 100800 ns : File "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/tb_board_cdc.sv" Line 221
+
+FULLCHECK_PHASE COMPLETE
+PASS ROB_PR10_FULL_VALIDATION

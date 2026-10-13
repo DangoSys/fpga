@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct 13 01:53:28 2026
+# Process ID: 639617
+# Current directory: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc
+# Command line: vivado -mode batch -source /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/simulate.tcl -log /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/vivado.log -journal /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/vivado.jou
+# Log file: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/vivado.log
+# Journal file: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/vivado.jou
+# Running On        :amax
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04 LTS
+# Processor Detail  :INTEL(R) XEON(R) GOLD 6542Y
+# CPU Frequency     :3600.185 MHz
+# CPU Physical cores:48
+# CPU Logical cores :96
+# Host memory       :540650 MB
+# Swap memory       :130443 MB
+# Total Virtual     :671094 MB
+# Available Virtual :517609 MB
+#-----------------------------------------------------------
+source /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/simulate.tcl
+# create_project -force cdc_test {/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project} -part xc7a100tcsg324-1
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1452.602 ; gain = 17.871 ; free physical = 120755 ; free virtual = 492259
+# read_ip {/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/ip/toy_axi_cdc/toy_axi_cdc.xci}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data0/tools/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Vivado 12-13650] The IP file '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/ip/toy_axi_cdc/toy_axi_cdc.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/ip/toy_axi_cdc'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+# read_verilog -sv {/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/axi_fullwidth.sv}
+# read_verilog -sv {/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv}
+# read_verilog -sv {/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/tb_board_cdc.sv}
+# set_property top tb_board_cdc [get_filesets sim_1]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_board_cdc'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/data0/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/data0/tools/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_board_cdc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_board_cdc_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/ip/toy_axi_cdc/sim/toy_axi_cdc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module toy_axi_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/axi_fullwidth.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fullwidth
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_smoke_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/tb_board_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_board_cdc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj tb_board_cdc_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L fifo_generator_v13_2_10 -L axi_clock_converter_v2_1_30 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_board_cdc_behav xil_defaultlib.tb_board_cdc xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /data0/tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L fifo_generator_v13_2_10 -L axi_clock_converter_v2_1_30 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_board_cdc_behav xil_defaultlib.tb_board_cdc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/axi_fullwidth.sv" Line 4. Module axi_fullwidth doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv" Line 3. Module axi_smoke_memory(ADDR_BITS=28,BASE=0,CAPACITY=4096) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/board/axi_fullwidth.sv" Line 4. Module axi_fullwidth doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv" Line 3. Module axi_smoke_memory(ADDR_BITS=28,BASE=0,CAPACITY=4096) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_sync_sta...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_CONV_VER...
+Compiling module fifo_generator_v13_2_10.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_CONV_VER...
+Compiling module fifo_generator_v13_2_10.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_CONV_VER...
+Compiling module fifo_generator_v13_2_10.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_10.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_bhv_ver_...
+Compiling module fifo_generator_v13_2_10.fifo_generator_v13_2_10_CONV_VER...
+Compiling module fifo_generator_v13_2_10.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module axi_clock_converter_v2_1_30.axi_clock_converter_v2_1_30_axi_...
+Compiling module xil_defaultlib.toy_axi_cdc
+Compiling module xil_defaultlib.axi_fullwidth
+Compiling module xil_defaultlib.axi_smoke_memory(ADDR_BITS=28,BA...
+Compiling module xil_defaultlib.tb_board_cdc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_board_cdc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/project/cdc_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_board_cdc_behav -key {Behavioral:sim_1:Functional:tb_board_cdc} -tclbatch {tb_board_cdc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_board_cdc.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+PASS BOARD_CDC: sizes 8..128 bits, INCR/FIXED, strobes, concurrent R/W, stalls, IDs, range/4KiB rejection; read beats=90
+$finish called at time : 100800 ns : File "/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/board-cdc/tb_board_cdc.sv" Line 221
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_board_cdc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1581.262 ; gain = 115.785 ; free physical = 119468 ; free virtual = 491146
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 01:53:48 2026...

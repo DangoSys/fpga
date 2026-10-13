@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "transactions": 512,
+  "coverage": [
+    "two Gemmini reads",
+    "four Gemmini writes",
+    "concurrent DMA requests",
+    "request stalls",
+    "response stalls",
+    "backend route look-ahead",
+    "opposite-direction request arriving during pending route",
+    "Ball release with responses pending"
+  ],
+  "rtl_sha256": "0393da410194867126ec59332fe94a8882895852cd2685e086ce0fa56ec0b2ca"
+}

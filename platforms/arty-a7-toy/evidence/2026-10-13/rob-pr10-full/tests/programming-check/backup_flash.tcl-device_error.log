@@ -1,0 +1,2 @@
+MOCK_EVENTS program_device
+MOCK_FAILURE SPI bridge programming failed: injected programming exception

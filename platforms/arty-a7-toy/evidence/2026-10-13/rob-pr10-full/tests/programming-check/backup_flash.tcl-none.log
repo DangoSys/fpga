@@ -1,0 +1,3 @@
+PASS FLASH_BACKUP: mt25ql128-spi-x1_x2_x4 /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/programming-check/tmpojanmxcc/backup.bin bytes=16777216
+MOCK_EVENTS program_device readback
+MOCK_SUCCESS

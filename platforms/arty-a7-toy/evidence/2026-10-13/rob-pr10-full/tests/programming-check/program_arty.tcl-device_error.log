@@ -1,0 +1,2 @@
+MOCK_EVENTS program_device
+MOCK_FAILURE JTAG programming failed: injected programming exception

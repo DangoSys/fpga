@@ -1,0 +1,2 @@
+MOCK_EVENTS program_device
+MOCK_FAILURE JTAG configuration status rejected: expected DONE/EOS high and CRC error clear

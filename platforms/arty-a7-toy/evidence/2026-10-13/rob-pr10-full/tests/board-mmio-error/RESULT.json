@@ -1,0 +1,9 @@
+{
+  "result": "PASS_CPU_MMIO_SLVERR",
+  "physical_hardware_tested": false,
+  "synchronous_traps_observed": 0,
+  "synchronous_trap_guaranteed": false,
+  "invalid_address": "0x60030000",
+  "required_read_write_response": "10",
+  "binary_sha256": "d1951159e9fe5dc05adfdb2b35eed6ff37eae04c5c255c1e07c853c9c1fa2247"
+}

@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "test_label": "whole Toy Gemmini regression",
+  "core_rtl_sha256": "31e7e07f94d08208dbb564edf9546240df26ff834935bfb646b71b541d875fb9",
+  "test_binary_sha256": "d6307d194aadb9f23e14edf695ce98ab1ea361881237576b15c251573af2826e",
+  "cycles_including_boot": 245517,
+  "memory_read_bursts": 674,
+  "memory_write_bursts": 444,
+  "linux_boot_tested": false
+}

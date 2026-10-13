@@ -1,0 +1,2135 @@
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:31:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   31 | module NonSyncResetSynchronizerPrimitiveShiftReg_d3(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.050
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:48:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   48 | module SynchronizerShiftReg_w1_d3(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:61:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   61 | module IntSyncAsyncCrossingSink_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:74:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   74 | module AsyncResetRegVec_w1_i0(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:103:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  103 | module IntSyncCrossingSource_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:118:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  118 | module FixedClockBroadcast_3(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:139:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  139 | module TLMonitor(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:987:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  987 | module TLMonitor_1(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:2434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 2434 | module TLXbar_sbus_i2_o3_a32d128s3k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:3195:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 3195 | module TLMonitor_2(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4151 | module Repeater_TLBundleA_a28d128s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4218:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4218 | module TLWidthWidget16(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4386:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4386 | module TLInterconnectCoupler_sbus_to_bus_named_cbus(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4478:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4478 | module ram_2x58(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4497:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4497 | module Queue2_AXI4BundleAW(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4581:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4581 | module ram_2x73(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4600:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4600 | module Queue2_AXI4BundleW(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4657:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4657 | module ram_2x4(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4676:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4676 | module Queue2_AXI4BundleB(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4729:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4729 | module Queue2_AXI4BundleAR(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4813:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4813 | module ram_2x69(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4832:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4832 | module Queue2_AXI4BundleR(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:4891:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 4891 | module AXI4Buffer(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5067:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5067 | module ram_2x8(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5086:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5086 | module Queue2_BundleMap(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5143:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5143 | module Queue1_BundleMap(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5178:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5178 | module AXI4UserYanker(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5540:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5540 | module ram_8x77(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5559:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5559 | module Queue8_AXI4BundleR(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:5631:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 5631 | module AXI4Deinterleaver(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:6073:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 6073 | module AXI4IdIndexer(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:6219:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 6219 | module TLMonitor_3(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:7048:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7048 | module Queue1_AXI4BundleW(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:7082:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7082 | module Queue1_AXI4BundleARW(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:7148:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7148 | module TLToAXI4(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:7529:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 7529 | module TLMonitor_4(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:8396:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8396 | module Repeater_TLBundleA_a31d128s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:8463:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8463 | module TLWidthWidget16_2(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:8623:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 8623 | module TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:9400:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+ 9400 | module SystemBus(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:10050:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10050 | module FixedClockBroadcast_4(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:10073:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10073 | module TLMonitor_5(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:10975:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+10975 | module TLXbar_cbus_out_i1_o4_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:11288:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+11288 | module TLMonitor_6(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12202:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12202 | module ram_2x114(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12221:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12221 | module Queue2_TLBundleA_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12301:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12301 | module ram_2x79(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12320:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12320 | module Queue2_TLBundleD_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12399:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12399 | module TLBuffer_a28d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:12534:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+12534 | module TLMonitor_7(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:13449:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+13449 | module TLAtomicAutomata_cbus(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:13973:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+13973 | module TLMonitor_8(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:14799:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14799 | module Queue1_TLBundleA_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:14846:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14846 | module TLError(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:14953:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+14953 | module TLMonitor_9(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:15857:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15857 | module ram_2x100(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:15876:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15876 | module Queue2_TLBundleA_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:15955:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+15955 | module Queue2_TLBundleD_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:16028:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16028 | module TLBuffer_a14d64s3k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:16155:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16155 | module ErrorDeviceWrapper(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:16258:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+16258 | module TLMonitor_10(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:17017:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17017 | module Repeater_TLBundleA_a26d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:17081:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17081 | module TLFragmenter_CLINT(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:17261:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17261 | module TLInterconnectCoupler_cbus_to_clint(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:17336:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+17336 | module TLMonitor_11(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:18106:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18106 | module Repeater_TLBundleA_a28d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:18170:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18170 | module TLFragmenter_PLIC(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:18350:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18350 | module TLInterconnectCoupler_cbus_to_plic(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:18425:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+18425 | module TLMonitor_12(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:19040:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19040 | module Repeater_TLBundleA_a17d64s3k1z3u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:19104:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19104 | module TLFragmenter_bootrom(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:19263:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19263 | module TLInterconnectCoupler_cbus_to_bootrom(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:19330:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19330 | module PeripheryBus_cbus(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:19882:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+19882 | module TLMonitor_13(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:20610:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20610 | module ProbePicker(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:20688:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20688 | module ram_2x10(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:20707:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20707 | module Queue2_BundleMap_6(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:20764:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+20764 | module AXI4UserYanker_1(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:21713:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+21713 | module AXI4IdIndexer_1(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:21859:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+21859 | module TLMonitor_14(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:22587:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22587 | module Queue1_AXI4BundleW_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:22621:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22621 | module Queue1_AXI4BundleARW_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:22687:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+22687 | module TLToAXI4_1(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:23555:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+23555 | module TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:24031:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+24031 | module MemoryBus(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:24349:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+24349 | module TLMonitor_15(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:25732:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25732 | module BroadcastFilter(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:25756:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25756 | module ram_4x144(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:25775:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25775 | module Queue4_TLBroadcastData(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:25828:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25828 | module TLBroadcastTracker(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:25964:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+25964 | module TLBroadcastTracker_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:26100:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+26100 | module TLBroadcast(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:26686:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+26686 | module TLMonitor_16(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:27414:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27414 | module BankBinder(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:27491:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27491 | module CoherenceManagerWrapper(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:27669:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+27669 | module TLMonitor_17(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:29229:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29229 | module TLMonitor_18(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:29635:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29635 | module TLXbar_MasterXbar_BBTile_i2_o1_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:29898:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29898 | module IntXbar_i4_o1(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:29918:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+29918 | module WritebackUnit(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30014:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30014 | module ProbeUnit(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30154:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30154 | module Arbiter1_L1MetaReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30168:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30168 | module Arbiter1_L1MetaWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30191:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30191 | module Arbiter1_WritebackReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30214:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30214 | module Arbiter1_ReplayInternal(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30249:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30249 | module Arbiter1_Bool(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30258:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30258 | module ram_16x64(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30277:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30277 | module Queue16_ReplayInternal(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30360:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30360 | module Queue1_TLBundleE_a32d128s1k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30388:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30388 | module MSHR(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30835:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30835 | module Arbiter1_HellaCacheResp(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:30879:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+30879 | module IOMSHR(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:31790:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+31790 | module sdq_17x64(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:31809:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+31809 | module MSHRFile(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:32350:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32350 | module OptimizationBarrier_TLBEntryData(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:32406:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32406 | module PMPChecker_s3(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:32691:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32691 | module PMAChecker(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:32731:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+32731 | module DTLB(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:35923:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+35923 | module L1MetadataArray(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:35990:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+35990 | module Arbiter5_L1MetaReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36023:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36023 | module Arbiter2_L1MetaWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36055:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36055 | module DataArray(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36151 | module Arbiter4_L1DataReadReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36180:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36180 | module Arbiter2_L1DataWriteReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36206:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36206 | module AMOALU(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36248:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36248 | module MaxPeriodFibonacciLFSR(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36342:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36342 | module Arbiter2_WritebackReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:36377:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+36377 | module NonBlockingDCache(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:37660:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+37660 | module ICache(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:37914:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+37914 | module ShiftQueue(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:38054:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+38054 | module PMPChecker_s2(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:38215:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+38215 | module ITLB(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:41129:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+41129 | module Frontend(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:41494:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+41494 | module TLMonitor_19(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:42301:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+42301 | module TLMonitor_20(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43108:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43108 | module TLXbar_i2_o1_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43343:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43343 | module TLMonitor_21(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43851:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43851 | module ram_2x116(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43870:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43870 | module Queue2_TLBundleA_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43947:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43947 | module ram_2x77(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:43966:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+43966 | module Queue2_TLBundleD_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:44045:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44045 | module TLBuffer_a32d64s1k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:44158:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44158 | module TLMonitor_22(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:44783:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44783 | module TLBuffer_a32d64s1k1z4u_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:44892:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+44892 | module TLMonitor_23(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:45699:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+45699 | module Repeater_TLBundleD_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:45766:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+45766 | module TLWidthWidget8_4(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:46074:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46074 | module TLMonitor_24(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:46882:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46882 | module ram_2x117(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:46901:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46901 | module Queue2_TLBundleA_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:46981:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+46981 | module ram_2x78(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47000:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47000 | module Queue2_TLBundleD_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47079:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47079 | module TLBuffer_a32d64s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47214:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47214 | module HellaCacheArbiter(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47381:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47381 | module Arbiter3_Valid_PTWReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47419:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47419 | module OptimizationBarrier_UInt(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47427:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47427 | module OptimizationBarrier_PTE(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:47459:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+47459 | module PTW(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:48434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+48434 | module FPUDecoder(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:49794:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49794 | module MulAddRecFNToRaw_preMul_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:49878:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+49878 | module MulAddRecFNToRaw_postMul_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50044:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50044 | module RoundAnyRawFNToRecFN_ie8_is26_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50148:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50148 | module RoundRawFNToRecFN_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50177:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50177 | module MulAddRecFNPipe_l4_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50499:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50499 | module FPUFMAPipe_l5_f32(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50550:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50550 | module CompareRecFN(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50580:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50580 | module RecFNToIN_e11_s53_i64(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50629:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50629 | module RecFNToIN_e11_s53_i32(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:50668:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+50668 | module FPToInt(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51131:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51131 | module RoundAnyRawFNToRecFN_ie7_is64_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51166:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51166 | module PipelinedINToRecFN(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51269:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51269 | module RoundAnyRawFNToRecFN_ie7_is64_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51295:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51295 | module PipelinedINToRecFN_1(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51370:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51370 | module RoundAnyRawFNToRecFN_ie7_is64_oe11_os53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51398:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51398 | module PipelinedINToRecFN_2(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51473:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51473 | module IntToFP(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51828:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51828 | module RoundAnyRawFNToRecFN_ie11_is53_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51955:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51955 | module RecFNToRecFN(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:51977:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+51977 | module RoundAnyRawFNToRecFN_ie11_is53_oe8_os24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52077:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52077 | module RecFNToRecFN_1(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52099:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52099 | module FPToFP(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52225:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52225 | module MulAddRecFNToRaw_preMul_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52325:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52325 | module MulAddRecFNToRaw_postMul_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52578:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52578 | module RoundAnyRawFNToRecFN_ie11_is55_oe11_os53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52712:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52712 | module RoundRawFNToRecFN_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:52741:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+52741 | module MulAddRecFNPipe_l4_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53068:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53068 | module FPUFMAPipe_l6_f64(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53129:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53129 | module MulAddRecFNToRaw_preMul_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53202:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53202 | module MulAddRecFNToRaw_postMul_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53325:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53325 | module RoundAnyRawFNToRecFN_ie5_is13_oe5_os11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53457:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53457 | module RoundRawFNToRecFN_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53486:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53486 | module MulAddRecFNPipe_l4_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53808:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53808 | module FPUFMAPipe_l5_f16(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:53858:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+53858 | module DivSqrtRawFN_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54028:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54028 | module DivSqrtRecFMToRaw_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54083:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54083 | module DivSqrtRecFM_small_e5_s11(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54143:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54143 | module DivSqrtRawFN_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54312:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54312 | module DivSqrtRecFMToRaw_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54367:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54367 | module DivSqrtRecFM_small_e8_s24(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54427:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54427 | module DivSqrtRawFN_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54597:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54597 | module DivSqrtRecFMToRaw_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54652:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54652 | module DivSqrtRecFM_small_e11_s53(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54713:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54713 | module regfile_32x65(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:54758:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+54758 | module FPU(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:55729:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+55729 | module RVCExpander(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:56092:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+56092 | module IBuf(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:56216:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+56216 | module CSRFile(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:58132:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+58132 | module RocketALU(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:58718:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+58718 | module MulDiv(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:59016:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+59016 | module Arbiter3_LLWB(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:59034:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+59034 | module rf_31x64(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:59058:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+59058 | module RocketBB(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:63747:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+63747 | module GlobalDecoder(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:63837:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+63837 | module BankAliasTable(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:65161:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+65161 | module BankScoreboard(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:65536:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+65536 | module GlobalROB(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:69560:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69560 | module Arbiter3_GlobalSchedComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:69603:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69603 | module ram_16x4(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:69622:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69622 | module Queue16_UInt4(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:69668:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+69668 | module SubROB(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:70243:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+70243 | module Arbiter1_SubRobRow(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:70608:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+70608 | module GlobalScheduler(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:71859:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+71859 | module BootRom(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:71899:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+71899 | module Frontend_1(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:72523:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72523 | module PE(
+      |        ^~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:72542:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+72542 | module AlwaysOutTransposer(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:73297:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+73297 | module MacUnit(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:73312:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+73312 | module PE_64(
+      |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:73410:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+73410 | module Tile(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:73457:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+73457 | module Mesh(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:76936:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+76936 | module TagQueue(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:77077:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77077 | module ram_6x7(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:77096:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77096 | module Queue6_TagWithIdAndTotalRows(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:77157:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+77157 | module MeshWithDelays(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:78204:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+78204 | module ram_data_8x64(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:78223:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+78223 | module Queue8_SramReadResp(
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:78271:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+78271 | module GemminiExCtrl(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:80027:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80027 | module LoopMatmulUnroller(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:80297:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80297 | module LoopConvAddrGen(
+      |        ^~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:80350:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80350 | module LoopConvUnroller(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:80773:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+80773 | module LoopCmdEncoder(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:81062:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+81062 | module Arbiter2_LoopCmd(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:81255:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+81255 | module GemminiBall(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:82430:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82430 | module RRArbiter(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:82504:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82504 | module CmdRouter(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:82632:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82632 | module BallCyclePMC(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:82742:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+82742 | module BBus(
+      |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83545:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83545 | module BallDomainDecoder(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83675:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83675 | module ram_4x281(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83694:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83694 | module Queue4_BallReservationStation_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83825:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83825 | module Arbiter1_BallRsComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83845:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83845 | module BallReservationStation(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:83975:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+83975 | module BallDomain(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:84788:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84788 | module MemDomainDecoder(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:84947:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84947 | module ram_4x158(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:84966:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+84966 | module Queue4_MemReservationStation_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85068:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85068 | module Arbiter3_MemRsComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85110:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85110 | module MemReservationStation(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85284:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85284 | module MemLoader(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85528:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85528 | module MemStorer(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85787:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85787 | module MemCyclePMC(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:85906:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+85906 | module TLB(
+      |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86286:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86286 | module RRArbiter_1(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86314:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86314 | module BBTLBCluster(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86442:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86442 | module StreamReader(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86807:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86807 | module StreamWriter(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86888:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86888 | module ZeroLineGenerator(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:86929:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+86929 | module MemConfiger(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:87098:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87098 | module MemFrontend(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:87709:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+87709 | module MemMidend(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:88170:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+88170 | module SramBank(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:88221:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+88221 | module AccPipe(
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:88330:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+88330 | module PrivateMemBackend(
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:91326:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+91326 | module MemBackend(
+      |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:91604:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+91604 | module MemDomain(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:92522:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92522 | module Queue1_GlobalSchedComplete(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:92557:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92557 | module GpDomain(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:92589:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92589 | module ram_8x21(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:92608:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92608 | module Queue8_BuckyballAccelerator_Anon(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:92672:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+92672 | module BuckyballAccelerator(
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94118:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94118 | module Queue3_UInt2(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94163:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94163 | module SimpleHellaCacheIFReplayQueue(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94216:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94216 | module Arbiter2_HellaCacheReq(
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94227:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94227 | module SimpleHellaCacheIF(
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94317:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94317 | module BarrierUnit(
+      |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:94334:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+94334 | module BBTile(
+      |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:96128:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+96128 | module TLMonitor_25(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:96976:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+96976 | module TLMonitor_26(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:98733:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98733 | module ram_2x189(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:98752:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98752 | module Queue2_TLBundleA_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:98832:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98832 | module ram_2x142(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:98851:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98851 | module Queue2_TLBundleD_a32d128s2k1z4u(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:98930:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+98930 | module Queue2_TLBundleA_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99008:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99008 | module Queue2_TLBundleD_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99088:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99088 | module ram_2x60(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99107:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99107 | module Queue2_TLBundleB_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99171:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99171 | module ram_2x173(
+      |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99190:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99190 | module Queue2_TLBundleC_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99265:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99265 | module ram_sink_2x1(
+      |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99284:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99284 | module Queue2_TLBundleE_a32d128s2k1z4c(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99330:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99330 | module TLBuffer_a32d128s2k1z4u_1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99711:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99711 | module IntSyncSyncCrossingSink_n1x2(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99722:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99722 | module IntSyncSyncCrossingSink_n1x1(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:99730:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+99730 | module TilePRCIDomain(
+      |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100138:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100138 | module BundleBridgeNexus_UInt1_1(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100146:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100146 | module TLMonitor_27(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100765:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100765 | module CLINT(
+       |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100886:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100886 | module AsyncResetRegVec_w2_i0(
+       |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100915:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100915 | module IntSyncCrossingSource_n1x2(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100935:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100935 | module CLINTClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:100998:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+100998 | module TLMonitor_28(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:101629:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101629 | module LevelGateway(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:101648:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101648 | module PLICFanIn(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:101660:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101660 | module Queue1_RegMapperInput_i23_m8(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:101709:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101709 | module TLPLIC(
+       |        ^~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:101938:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+101938 | module PLICClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:102001:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+102001 | module TLMonitor_29(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:102522:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+102522 | module TLROM(
+       |        ^~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:103079:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+103079 | module bootromClockSinkDomain(
+       |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:103118:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+103118 | module ToyLinuxSystem(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104366:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104366 | module ToyLinuxChip(
+       |        ^~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104533:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104533 | module tag_array(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104556:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104556 | module array_0_0(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104583:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104583 | module array_0_1(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104608:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104608 | module array_2_0(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104633:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104633 | module array_2_1(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104658:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104658 | module bbtile_icache_tag_array(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104681:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104681 | module bbtile_icache_data_arrays_0(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104704:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104704 | module bbtile_icache_data_arrays_1(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104725:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104725 | module bbtile_icache_data_arrays_2(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104746:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104746 | module bbtile_icache_data_arrays_3(
+       |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104767:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104767 | module sram(
+       |        ^~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104792:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104792 | module mem(
+       |        ^~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104825:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104825 | module plusarg_reader #(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104850:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104850 | module ITraceDPI(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104928:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104928 | module FpgaDspMac(input [7:0] a, b, input [19:0] c, output [19:0] y);
+       |        ^~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104938:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104938 | module PMCTraceDPI(
+       |        ^~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:104988:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+104988 | module MemPMCTraceDPI(
+       |        ^~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/ToyLinuxChip.sv:105038:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+105038 | module MTraceDPI(
+       |        ^~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:1:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    1 | module tag_array_ext(  input [4:0] RW0_addr,
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:19:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   19 | module array_0_0_ext(
+      |        ^~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:37:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   37 | module bbtile_icache_tag_array_ext(  input [5:0] RW0_addr,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:55:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   55 | module bbtile_icache_data_arrays_0_ext(  input [7:0] RW0_addr,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:73:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   73 | module sram_ext(
+      |        ^~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/reference-fpu/FpgaMemories.sv:90:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   90 | module mem_ext(  input [9:0] RW0_addr,
+      |        ^~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-TIMESCALEMOD: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module axi_smoke_memory #(
+      |        ^~~~~~~~~~~~~~~~
+                       /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/tb_cpu.sv:2:8: ... Location of module with timescale
+    2 | module tb;
+      |        ^~
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:52:20: Operator AND expects 32 bits on the LHS, but LHS's VARREF 'addr' generates 31 bits.
+                                                                                                                       : ... note: In instance 'tb.peripherals_model'
+   52 |       offset=(addr & ~(LANES-1))-BASE;
+      |                    ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.050
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:78:28: Operator AND expects 32 bits on the LHS, but LHS's VARREF 'write_addr' generates 31 bits.
+                                                                                                                       : ... note: In instance 'tb.peripherals_model'
+   78 |         offset=(write_addr & ~(LANES-1))-BASE;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:86:26: Operator EQ expects 128 bits on the RHS, but RHS's CONST '64'h600d600d' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   86 |           if (w_bits_data==64'h600d600d) begin
+      |                          ^~
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:91:66: Operator AND expects 128 bits on the RHS, but RHS's CONST '64'hffff' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   91 |             $fatal(1,"CPU smoke failed at stage %0d",w_bits_data & 64'hffff);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:90:28: Operator AND expects 128 bits on the RHS, but RHS's CONST '64'hffff0000' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   90 |           if ((w_bits_data & 64'hffff0000)==64'hbad00000)
+      |                            ^
+%Warning-WIDTHEXPAND: /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:90:43: Operator EQ expects 128 bits on the RHS, but RHS's CONST '64'hbad00000' generates 64 bits.
+                                                                                                                       : ... note: In instance 'tb.memory_model'
+   90 |           if ((w_bits_data & 64'hffff0000)==64'hbad00000)
+      |                                           ^~
+make: Entering directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/obj'
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb__pch.h -o Vtb__pch.h.fast.gch
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb__pch.h -o Vtb__pch.h.slow.gch
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__0.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__1.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__2.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__3.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__4.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__5.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__6.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__7.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__8.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb___024root__9.cpp
+g++ -Os  -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.fast -c Vtb__main.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb__ConstPool__0__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__0__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__1__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__2__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb___024root__3__Slow.cpp
+g++   -I.  -MMD -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include -I/nix/store/0zhg9pq5x1kjgmhy2zdqgj1q310wr5d4-verilator-5.050/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vtb__pch.h.slow -c Vtb__Syms__Slow.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb__ALL.a    -pthread -lpthread -latomic   -o Vtb
+rm Vtb__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/build/fpu-shared/baseline-simulation/obj'
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev v5.050
+- Verilator: Built from 15.576 MB sources in 348 modules, into 23.888 MB in 19 C++ files needing 0.018 MB
+- Verilator: Walltime 14.614 s (elab=0.678, cvt=4.041, bld=9.178); cpu 5.725 s on 8 threads; allocated 434.969 MB

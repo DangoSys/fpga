@@ -1,0 +1,7 @@
+CPU status = 00000000600d600d
+PASS whole Toy unaligned DMA 64 bit beats
+- /home/yys/codex-builds/toy-a7-rob-pr10-20261013-c0881ec8/platform/tests/axi_smoke_memory.sv:88: Verilog $finish
+MEASURE cycles=1879410 memory_reads=2249 memory_writes=1790
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 19ms; walltime 15.300 s; speed 1.228 ms/s
+- Verilator: cpu 15.297 s on 1 threads; allocated 8 MB
