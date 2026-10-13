@@ -8,6 +8,8 @@ import shutil
 import subprocess
 import zipfile
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -63,7 +65,7 @@ def main():
         require(digest(name) == expected, "验证输入摘要不匹配：" + name.name)
     for name, expected in record["board_sources"].items():
         require(digest(ROOT / name) == expected, "板级源码已变：" + name)
-    software = json.loads((ROOT / "evidence/2026-10-12/linux-gemmini/build/LINUX_GEMMINI_BUILD.json").read_text())
+    software = json.loads((evidence_path("2026-10-12/linux-gemmini/build/LINUX_GEMMINI_BUILD.json")).read_text())
     require(software["payload_sha256"] == record["payload_sha256"] and
             args.payload.stat().st_size == software["payload_bytes"], "软件镜像未匹配标准构建记录")
     inputs = json.loads((args.os_inputs / "INPUTS.json").read_text())
@@ -82,7 +84,7 @@ def main():
     copy(args.bitstream, uart, "toy_a7_uart.bit")
     copy(args.payload, uart, "fw_payload.bin")
     copy(args.validation, uart, "VALIDATION_RESULT.json")
-    copy(ROOT / "evidence/2026-10-12/linux-gemmini/build/LINUX_GEMMINI_BUILD.json", uart, "LINUX_GEMMINI_BUILD.json")
+    copy(evidence_path("2026-10-12/linux-gemmini/build/LINUX_GEMMINI_BUILD.json"), uart, "LINUX_GEMMINI_BUILD.json")
     for name in ["README.md", "run_uart.ps1", "verify_bundle.py"]:
         copy(ROOT / "distribution-rob" / name, uart, name)
     copy(repo / "LICENSE", uart, "LICENSE")

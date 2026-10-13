@@ -15,7 +15,7 @@ from ftdi_transport import D2xxPort
 from load import Loader
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_BIT = "ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1"
+EXPECTED_BIT = "9f6f684361c049527fda09818cc8aa464f1067b75f3762305a27c5c738295942"
 
 
 def digest(path):

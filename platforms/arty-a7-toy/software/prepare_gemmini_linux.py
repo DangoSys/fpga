@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile", type=Path,
-                        default=ROOT / "evidence/2026-10-11/ToyLinuxChip.profile.json")
+                        default=ROOT / "evidence/2026-10-13/rob-pr10-full/ToyLinuxChip.profile.json")
     parser.add_argument("--output", type=Path, default=ROOT / "build/linux-gemmini")
     args = parser.parse_args()
     profile = json.loads(args.profile.read_text(encoding="utf-8"))

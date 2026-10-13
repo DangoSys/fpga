@@ -4,7 +4,9 @@ import hashlib
 import json
 from pathlib import Path
 
-ARCHIVE = Path(__file__).resolve().parents[1] / "evidence/2026-10-12/pr10-review"
+from history_paths import evidence_path
+
+ARCHIVE = evidence_path("2026-10-12/pr10-review")
 
 
 def read(name):
@@ -52,7 +54,7 @@ def main():
 
 
 def verify_selfcheck():
-    archive = ARCHIVE.parents[1] / "2026-10-13/pr10-selfcheck"
+    archive = evidence_path("2026-10-13/pr10-selfcheck")
 
     def load(name):
         return json.loads((archive / name).read_text(encoding="utf-8"))

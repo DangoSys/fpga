@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "current_platform": "platforms/arty-a7-toy",
+  "current_stage": "03-rob-pr10",
+  "stages": [
+    {
+      "id": "01-arty-a7-prototype",
+      "title": "最早 A7 原型",
+      "branches": [
+        "project"
+      ]
+    },
+    {
+      "id": "02-toy-linux",
+      "title": "完整 Toy/Linux 与对应验证",
+      "branches": [
+        "uart",
+        "flash"
+      ]
+    },
+    {
+      "id": "03-rob-pr10",
+      "title": "ROB 优化与 PR10 修复",
+      "branches": [
+        "uart",
+        "fixes"
+      ],
+      "current_code": "platforms/arty-a7-toy"
+    }
+  ],
+  "moves": [
+    {
+      "from": "platforms/arty-a7",
+      "to": "history/01-arty-a7-prototype/project"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-11",
+      "to": "history/02-toy-linux/uart/2026-10-11"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/hardware",
+      "to": "history/02-toy-linux/uart/2026-10-12/hardware"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/README.md",
+      "to": "history/02-toy-linux/uart/2026-10-12/README.md"
+    },
+    {
+      "from": "platforms/arty-a7-toy/VALIDATION.md",
+      "to": "history/02-toy-linux/uart/docs/VALIDATION.md"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/flash",
+      "to": "history/02-toy-linux/flash/2026-10-12"
+    },
+    {
+      "from": "platforms/arty-a7-toy/FLASH_BOOT.md",
+      "to": "history/02-toy-linux/flash/docs/FLASH_BOOT.md"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/linux-gemmini",
+      "to": "history/02-toy-linux/uart/linux-gemmini/2026-10-12"
+    },
+    {
+      "from": "platforms/arty-a7-toy/software/GEMMINI_LINUX.md",
+      "to": "history/02-toy-linux/uart/docs/GEMMINI_LINUX.md"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/rob-ram",
+      "to": "history/03-rob-pr10/uart/2026-10-12"
+    },
+    {
+      "from": "platforms/arty-a7-toy/ROB_RAM.md",
+      "to": "history/03-rob-pr10/uart/docs/ROB_RAM.md"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-12/pr10-review",
+      "to": "history/03-rob-pr10/fixes/review/2026-10-12"
+    },
+    {
+      "from": "platforms/arty-a7-toy/evidence/2026-10-13/pr10-selfcheck",
+      "to": "history/03-rob-pr10/fixes/selfcheck/2026-10-13"
+    }
+  ]
+}

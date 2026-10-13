@@ -4,16 +4,17 @@
 `HARDWARE_RELEASE.json` 中的 ROB/PR10 UART 工程预发布，自动下载约 9.7 MB 的运行包，
 核对 ZIP、清单、位流和软件摘要，再复用原 `host/check_linux_gemmini.py` 与烧录 Tcl。
 无需重新编译硬件、构建 Linux、拉取子模块或登录研究服务器。
-该位流目前通过实现和 RTL 验证，尚未取得本版实板验收结果。
+该位流通过实现和 RTL 验证，队友已回传本版实板通过的报告，原始日志待补；
+见 [回传说明](evidence/2026-10-13/team-return/README.md)。旧阶段见 [history/](../../history/README.md)。
 
 ## 首次准备
 
 使用 Windows、64 位 Python 3.10+、Vivado Hardware Manager 与 Digilent/FTDI 驱动。
-仅下载和烧录不要求安装 Artix-7 综合器件包。入口当前随 PR #10 提交；尚未合并时，
-先在仓库根目录取得该 PR，然后进入平台目录：
+仅下载和烧录不要求安装 Artix-7 综合器件包。本次目录整理单独位于
+`codex/organize-history` 分支；尚未合并时先在仓库根目录取得该分支，再进入平台目录：
 
 ```powershell
-git fetch origin pull/10/head
+git fetch origin codex/organize-history
 git switch --detach FETCH_HEAD
 cd platforms/arty-a7-toy
 python -m pip install -r host/requirements-hardware.txt

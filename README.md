@@ -1,67 +1,30 @@
 # FPGA
 
-This repo is where we put [Buckyball](https://github.com/DangoSys/buckyball) onto FPGA boards.
+将 [Buckyball](https://github.com/DangoSys/buckyball) 适配到 FPGA。
+当前 A7 入口为 **Arty A7-100T 的 Toy/Linux ROB/PR10 UART 集成版**。
 
-## Platforms
+## 当前平台
 
-| Platform | Target | Build guide |
+| 目标 | 使用方式 | 说明 |
 |---|---|---|
-| Kintex-7 | `xc7k160tffg676-2` | [Existing P2E flow](platforms/xc7k160t/README.md) |
-| Digilent Arty A7-100T | `xc7a100tcsg324-1` | [Standalone CPU/BRAM/UART platform](platforms/arty-a7/README.md) |
-| Digilent Arty A7-100T, Toy/Linux | `xc7a100tcsg324-1` | [CPU/Sv39/FPU/Gemmini 8×8 with DDR](platforms/arty-a7-toy/README.md) |
+| 当前 Toy/Linux UART | 临时 JTAG、UART 加载与 Linux/Gemmini 回归 | [平台](platforms/arty-a7-toy/README.md)、[直接运行](platforms/arty-a7-toy/HARDWARE_TEST.md) |
+| 旧 Flash 恢复方案 | 对应 Flash 组合掉电启动 | [版本与流程](platforms/arty-a7-toy/FLASH_BOOT.md)，不能套用当前 UART 位流 |
+| Kintex-7 `xc7k160tffg676-2` | 原 P2E 示例 | [K7 指南](platforms/xc7k160t/README.md)，独立于 A7 迭代 |
 
-The Arty A7 platforms have their own pinned Chisel build, serial loader, firmware,
-constraints and verification record. Follow its guide directly; the setup and
-demo below describe the existing Kintex-7 flow.
-
-### Arty A7-100T 队友实板入口
-
-Windows 克隆后进入 `platforms/arty-a7-toy`，安装
-`python -m pip install -r host/requirements-hardware.txt`，再执行：
+Windows 进入 `platforms/arty-a7-toy`，替换真实串口和 Vivado 路径：
 
 ```powershell
+python -m pip install -r host/requirements-hardware.txt
 .\run_hardware.ps1 -Port COM5 -Vivado 'D:\Xilinx\2025.1\Vivado\bin\vivado.bat'
 ```
 
-入口自动下载固定 ROB/PR10 工程预发布、核验摘要，再复用原 Linux/Gemmini 验证器。
-无需重建位流或 Linux；没有接板可加 `-PrepareOnly`。
-请先阅读[中文准备与日志说明](platforms/arty-a7-toy/HARDWARE_TEST.md)。
+自动取固定发布包并复用原验证器，无需重建硬件/Linux 或登录服务器；无板可用 `-PrepareOnly`。
+当前整理版位于 `codex/organize-history` 分支，未合并时的 Git 获取方式见验证指南。
+硬件/接口集成来自 [PR #10](https://github.com/DangoSys/fpga/pull/10)，目录整理单独提交。
 
-The Toy/Linux target passes complete board implementation, Linux RTL checks and
-a physical Arty A7-100T boot with full image readback and five Linux checks.
-Its PCB revision remains unconfirmed and physical Gemmini testing is pending;
-see [the hardware record](platforms/arty-a7-toy/evidence/2026-10-12/README.md)
-and its build/programming guide before using another board.
+## 阶段与历史
 
-## Kintex-7 setup
-
-First, build the repository with these steps:
-
-```bash
-git clone https://github.com/DangoSys/fpga.git
-cd fpga
-git submodule update --init
-cd thirdparty/buckyball
-./scripts/nix/build-all.sh
-```
-
-After the first install, we need do `nix develop` each time from the Buckyball directory to get environment.
-
-# Demo
-
-The demo on this board is Pebble with a Linux boot ROM.  We have been running this with Vivado 2024.1.
-
-```bash
-cd thirdparty/buckyball
-nix develop
-bbdev bebop-p2e --verilog "--chip pebble"
-```
-
-Then leave that shell, go to the platform directory, and run the batch flow. It reads every `.sv` in the generated directory, stubs out the Verilator-only DPI and plusarg modules so synthesis does not choke on them, synthesizes `DigitalTop`, and continues through place, route, and bitstream. Utilization, timing, and power reports are written next to the `.bit` file.
-
-```bash
-cd platforms/xc7k160t
-vivado -mode batch -source build.tcl
-```
-
-`build.tcl` will pick up `platforms/constraints/pin.xdc` when that file exists. Until it does, Vivado still runs, but there is no board pin mapping. Details that are specific to this Kintex-7 part live in `platforms/xc7k160t/README.md`.
+[history/](history/README.md)按三大阶段整理：**①早期 A7 原型 → ②完整 Toy/Linux
+（UART/Flash 与对应验证）→ ③ROB 优化与 PR10 修复**。
+旧工程、旧说明和旧证据分类归档；当前源码、运行入口和当前证据保留在平台目录。
+报告绑定各自的位流/软件，不能混用不同启动路线、版本的 PPA 与验收结论。

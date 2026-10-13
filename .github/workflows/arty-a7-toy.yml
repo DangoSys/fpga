@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'platforms/arty-a7-toy/**'
+      - 'history/**'
       - '.github/workflows/arty-a7-toy.yml'
   push:
     branches: [main]
     paths:
       - 'platforms/arty-a7-toy/**'
+      - 'history/**'
       - '.github/workflows/arty-a7-toy.yml'
 
 permissions:
@@ -30,7 +32,7 @@ jobs:
           python3 scripts/verify_rob_evidence.py
           python3 scripts/verify_rob_pr10_full.py
           python3 scripts/verify_linux_gemmini_archive.py
-          python3 scripts/verify_linux_gemmini.py --build-record evidence/2026-10-12/linux-gemmini/build/LINUX_GEMMINI_BUILD.json --hardware-result evidence/2026-10-12/linux-gemmini/hardware/RESULT.json
+          python3 scripts/verify_linux_gemmini.py --build-record ../../history/02-toy-linux/uart/linux-gemmini/2026-10-12/build/LINUX_GEMMINI_BUILD.json --hardware-result ../../history/02-toy-linux/uart/linux-gemmini/2026-10-12/hardware/RESULT.json --expected-bit-sha256 ccc33c511e613561fb9dd1e9c847bd3b84037da1d078c44cd3de197d55dffde1
           python3 -m compileall -q scripts tests host software
           bash -n scripts/elaborate.sh scripts/elaborate_rob_candidate.sh scripts/build_test_programs.sh software/build.sh
       - name: Install interface simulator

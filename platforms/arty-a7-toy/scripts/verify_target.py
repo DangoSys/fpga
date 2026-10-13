@@ -7,8 +7,10 @@ import re
 from verify_hardware_evidence import verify as verify_hardware
 from verify_flash_evidence import verify as verify_flash
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / "evidence/2026-10-11"
+EVIDENCE = evidence_path("2026-10-11")
 
 
 def read(path):

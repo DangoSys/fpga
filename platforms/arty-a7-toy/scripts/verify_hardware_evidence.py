@@ -4,8 +4,10 @@ import json
 from pathlib import Path
 import re
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE = ROOT / "evidence/2026-10-12/hardware"
+ARCHIVE = evidence_path("2026-10-12/hardware")
 
 
 def read(path):
@@ -27,7 +29,7 @@ def verify():
     assert sha(ARCHIVE / "program_arty.tcl") == manifest["files"]["program_arty.tcl"]["sha256"]
     assert sha(ROOT / "host/load.py") == manifest["host_loader_sha256"]
     hardware = read(ARCHIVE / "HARDWARE_RESULT.json")
-    implementation = read(ROOT / "evidence/2026-10-11/BOARD_RESULT.json")
+    implementation = read(evidence_path("2026-10-11/BOARD_RESULT.json"))
     assert hardware["result"] == "PASS_HARDWARE_LOAD_AND_LINUX_CHECK"
     assert hardware["physical_linux_boot_tested"]
     assert hardware["bitstream_sha256"] == implementation["bitstream_sha256"]

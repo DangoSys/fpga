@@ -38,7 +38,7 @@ def main():
         remote = sftp.normalize(".") + "/codex-builds/" + label
         sftp.mkdir(remote)
         files = [ROOT / "SOFTWARE_BASELINE.json", ROOT / "tests/REFERENCE_MANIFEST.json",
-                 ROOT / "evidence/2026-10-11/ToyLinuxChip.profile.json",
+                 ROOT / "evidence/2026-10-13/rob-pr10-full/ToyLinuxChip.profile.json",
                  ROOT / "scripts/build_board_firmware.py"]
         files += list((ROOT / "software").glob("*.py"))
         files += [ROOT / "software/build.sh", ROOT / "software/linux_system_check.c",

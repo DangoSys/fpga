@@ -6,9 +6,11 @@ from pathlib import Path
 import subprocess
 from offline_check import run_check
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "build/backpressure-mutation"
-OLD = ROOT / "evidence/2026-10-12/pr10-review"
+OLD = evidence_path("2026-10-12/pr10-review")
 
 
 def main():

@@ -1,0 +1,14 @@
+{
+  "source_commit": "ccb40f13680689ccdd08a692f87e00fa5758f4dc",
+  "files": {
+    "build.sbt": "c4581ef9345fb3d3bd326c95b6f46a0ae8538ed6c0cc22ac675bd0c9a10fd407",
+    "patches/framework/GlobalROB.scala": "7998e486ffa0f6e4f1cdb3ee991ed5a7c8d389268da94e4fbbc9a9bd56573c7d",
+    "scripts/check_globalrob.py": "d9476b99ea8f68ea1b22fe62648433314c711fb40162349824f9fe89182517b4",
+    "scripts/prepare_fpga_memories.py": "9d40763492ebbf2bc5aa183e760ec349e31765a0e999af88f476d5e945ab74c4",
+    "scripts/prepare_rob_candidate.py": "321b4569d2638342a7c0002ba1db3eb72229c369397289a11ed49633b1f27823",
+    "scripts/start_rob_board_build.py": "0c99afafe707a51fba935a59076288a50b7179e01d330f8a1294c81ee1956cf9",
+    "scripts/elaborate_rob_candidate.sh": "ce65656a3ae6c9fd49d651b9cef434cf8cf3bcfb393180d210f233741c6ffa0f",
+    "src/main/scala/EmitGlobalRobCheck.scala": "5d366fce3e96278f60c648dc114896246b5c595c8ef783986524e6583c490a05",
+    "tests/tb_globalrob.sv": "8ded6fc969a05ead874fd8771b86dadafe51f7ccec54fafd55a9d48a4e7361a6"
+  }
+}

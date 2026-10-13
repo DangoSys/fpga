@@ -6,6 +6,8 @@ import json
 from pathlib import Path
 import re
 
+from history_paths import evidence_path
+
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = ROOT / "evidence/2026-10-13/rob-pr10-full"
 
@@ -63,7 +65,7 @@ def main():
     require(linux["payload_sha256"] == result["payload_sha256"], "Linux input")
     regressions = read("BOARD_REGRESSION.json")["tests"]
     require(len(regressions) == 4 and all(case["result"] == "PASS" for case in regressions.values()), "board cases")
-    baseline = json.loads((ROOT / "evidence/2026-10-12/rob-ram/tests/BOARD_REGRESSION.json").read_text())
+    baseline = json.loads((evidence_path("2026-10-12/rob-ram/tests/BOARD_REGRESSION.json")).read_text())
     require(all(case["cycles"] == baseline["tests"][name]["cycles"] for name, case in regressions.items()), "same cycles")
     require(read("tests/core-unit-regressions/RESULT.json")["result"] == "PASS_UNIT_REGRESSIONS", "units")
     require(read("tests/fpu-shared/RESULT.json")["vector_count"] == 1536, "floating vectors")

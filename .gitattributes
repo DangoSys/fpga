@@ -1,0 +1,2 @@
+# Preserve archived reports, logs and source snapshots byte for byte.
+history/** -text -whitespace
